@@ -1,0 +1,949 @@
+C:\Users\huide\Desktop>adb shell
+/ #
+/ # wpa_cli -iwlan0 remove_network 0
+twork 0
+wpa_cli -iwlan0 set_network 0 ssid '"Eip8"'
+wpa_cli -iwlan0 set_network 0 key_mgmt WPA-PSK
+wpa_cli -iwlan0 set_network 0 psk '"05161234"'
+wpa_cli -OK
+/ # wpa_cli -iwlan0 add_network 0
+iwlan0 set_network 0 pairwise CCMP
+wpa_cli -iwlan0 set_network 0 group CCMP
+wpa_cli -iwlan0 set_network 0 proto RSN
+wpa0
+/ # wpa_cli -iwlan0 set_network 0 ssid '"Eip8"'
+_cli -iwlan0 enable_network 0
+wpa_cli -iwlan0 status
+wpa_cli -iwlan0 save
+dhcpcd wlan0OK
+/ # wpa_cli -iwlan0 set_network 0 key_mgmt WPA-PSK
+OK
+/ # wpa_cli -iwlan0 set_network 0 psk '"05161234"'
+OK
+/ # wpa_cli -iwlan0 set_network 0 pairwise CCMP
+OK
+/ # wpa_cli -iwlan0 set_network 0 group CCMP
+OK
+/ # wpa_cli -iwlan0 set_network 0 proto RSN
+OK
+/ # wpa_cli -iwlan0 enable_network 0
+OK
+/ # wpa_cli -iwlan0 status
+wpa_state=SCANNING
+address=40:80:e1:31:13:2b
+uuid=e189a9a1-6f9a-5674-a2a9-78089c1b79f9
+/ # wpa_cli -iwlan0 save
+OK
+/ # dhcpcd wlan0
+no such user dhcpcd
+sending commands to dhcpcd process
+/ #
+/ # iv
+/ # ifconfig
+dummy0    Link encap:Ethernet  HWaddr 32:78:5B:25:CD:DF
+          inet addr:169.254.92.161  Bcast:169.254.255.255  Mask:255.255.0.0
+          inet6 addr: fe80::e2b0:5b60:759b:4b49/64 Scope:Link
+          UP BROADCAST RUNNING NOARP  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:64 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000
+          RX bytes:0 (0.0 B)  TX bytes:6228 (6.0 KiB)
+
+eth0      Link encap:Ethernet  HWaddr 02:AD:40:01:D3:7B
+          UP BROADCAST MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+          Interrupt:43
+
+lo        Link encap:Local Loopback
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:282 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:282 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000
+          RX bytes:20528 (20.0 KiB)  TX bytes:20528 (20.0 KiB)
+
+wlan0     Link encap:Ethernet  HWaddr 40:80:E1:31:13:2B
+          inet addr:172.20.10.2  Bcast:172.20.10.15  Mask:255.255.255.240
+          inet6 addr: 2409:895b:3242:ddfc:458e:56cf:93b6:f6bc/64 Scope:Global
+          inet6 addr: fe80::65ef:ce50:7ce3:9faa/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:38 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:76 errors:1 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000
+          RX bytes:4615 (4.5 KiB)  TX bytes:7550 (7.3 KiB)
+
+wlan1     Link encap:Ethernet  HWaddr 40:80:F1:31:13:2B
+          inet addr:192.168.2.1  Bcast:192.168.2.255  Mask:255.255.255.0
+          inet6 addr: fe80::b8aa:5527:f699:fe4e/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:65 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+
+/ #
+/ # ping
+/ # ping www.a
+/ # ping www.bau
+/ # ping www.baidu.com
+PING www.baidu.com (183.240.98.198): 56 data bytes
+64 bytes from 183.240.98.198: seq=0 ttl=51 time=60.504 ms
+64 bytes from 183.240.98.198: seq=1 ttl=51 time=84.932 ms
+64 bytes from 183.240.98.198: seq=2 ttl=51 time=80.189 ms
+^C
+--- www.baidu.com ping statistics ---
+3 packets transmitted, 3 packets received, 0% packet loss
+round-trip min/avg/max = 60.504/75.208/84.932 ms
+/ #
+/ # rm -rf /tmp/chip_* && chip-tool pairing ble-wifi 0x1 "Eip8" "05161234" 81732
+706 1450 --paa-trust-store-path /etc/matter_credentials/paa-root-certs/
+[1726052913.499767][1565:1565] CHIP:DL: ChipLinuxStorage::Init: Using KVS config file: /tmp/chip_tool_kvs
+[1726052913.499923][1565:1565] CHIP:DL: writing settings to file (/tmp/chip_tool_kvs-3OCJHx)
+[1726052913.499977][1565:1565] CHIP:DL: renamed tmp file to file (/tmp/chip_tool_kvs)
+[1726052913.500611][1565:1565] CHIP:DL: ChipLinuxStorage::Init: Using KVS config file: /tmp/chip_kvs
+[1726052913.500642][1565:1565] CHIP:DL: ChipLinuxStorage::Init: Attempt to re-initialize with KVS config file: /tmp/chip_kvs
+[1726052913.500873][1565:1565] CHIP:DL: ChipLinuxStorage::Init: Using KVS config file: /tmp/chip_factory.ini
+[1726052913.501402][1565:1565] CHIP:DL: writing settings to file (/tmp/chip_factory.ini-97mO2v)
+[1726052913.501482][1565:1565] CHIP:DL: renamed tmp file to file (/tmp/chip_factory.ini)
+[1726052913.501532][1565:1565] CHIP:DL: ChipLinuxStorage::Init: Using KVS config file: /tmp/chip_config.ini
+[1726052913.501574][1565:1565] CHIP:DL: writing settings to file (/tmp/chip_config.ini-psXHHw)
+[1726052913.501611][1565:1565] CHIP:DL: renamed tmp file to file (/tmp/chip_config.ini)
+[1726052913.501643][1565:1565] CHIP:DL: ChipLinuxStorage::Init: Using KVS config file: /tmp/chip_counters.ini
+[1726052913.501683][1565:1565] CHIP:DL: writing settings to file (/tmp/chip_counters.ini-n3zSUv)
+[1726052913.501738][1565:1565] CHIP:DL: renamed tmp file to file (/tmp/chip_counters.ini)
+[1726052913.501844][1565:1565] CHIP:DL: writing settings to file (/tmp/chip_factory.ini-Yk1w8v)
+[1726052913.501959][1565:1565] CHIP:DL: renamed tmp file to file (/tmp/chip_factory.ini)
+[1726052913.501977][1565:1565] CHIP:DL: NVS set: chip-factory/unique-id = "B0A70C56237717A4"
+[1726052913.502024][1565:1565] CHIP:DL: writing settings to file (/tmp/chip_factory.ini-4wvvdx)
+[1726052913.502096][1565:1565] CHIP:DL: renamed tmp file to file (/tmp/chip_factory.ini)
+[1726052913.502115][1565:1565] CHIP:DL: NVS set: chip-factory/vendor-id = 65521 (0xFFF1)
+[1726052913.502150][1565:1565] CHIP:DL: writing settings to file (/tmp/chip_factory.ini-BrT0Jw)
+[1726052913.502213][1565:1565] CHIP:DL: renamed tmp file to file (/tmp/chip_factory.ini)
+[1726052913.502230][1565:1565] CHIP:DL: NVS set: chip-factory/product-id = 32769 (0x8001)
+[1726052913.502264][1565:1565] CHIP:DL: writing settings to file (/tmp/chip_counters.ini-8ChvRv)
+[1726052913.502317][1565:1565] CHIP:DL: renamed tmp file to file (/tmp/chip_counters.ini)
+[1726052913.502334][1565:1565] CHIP:DL: NVS set: chip-counters/reboot-count = 1 (0x1)
+[1726052913.502367][1565:1565] CHIP:DL: writing settings to file (/tmp/chip_counters.ini-EP4O0y)
+[1726052913.502428][1565:1565] CHIP:DL: renamed tmp file to file (/tmp/chip_counters.ini)
+[1726052913.502445][1565:1565] CHIP:DL: NVS set: chip-counters/total-operational-hours = 0 (0x0)
+[1726052913.502484][1565:1565] CHIP:DL: writing settings to file (/tmp/chip_counters.ini-sxRqyy)
+[1726052913.502547][1565:1565] CHIP:DL: renamed tmp file to file (/tmp/chip_counters.ini)
+[1726052913.502564][1565:1565] CHIP:DL: NVS set: chip-counters/boot-reason = 0 (0x0)
+[1726052913.502596][1565:1565] CHIP:DL: writing settings to file (/tmp/chip_config.ini-WRbQIz)
+[1726052913.502651][1565:1565] CHIP:DL: renamed tmp file to file (/tmp/chip_config.ini)
+[1726052913.502667][1565:1565] CHIP:DL: NVS set: chip-config/regulatory-location = 0 (0x0)
+[1726052913.502701][1565:1565] CHIP:DL: writing settings to file (/tmp/chip_config.ini-xlFTKw)
+[1726052913.502761][1565:1565] CHIP:DL: renamed tmp file to file (/tmp/chip_config.ini)
+[1726052913.502783][1565:1565] CHIP:DL: NVS set: chip-config/location-capability = 2 (0x2)
+[1726052913.503246][1565:1565] CHIP:DL: Got Ethernet interface: eth0
+[1726052913.503530][1565:1565] CHIP:DL: Found the primary Ethernet interface:eth0
+[1726052913.503907][1565:1565] CHIP:DL: Failed to get WiFi interface
+[1726052913.503933][1565:1565] CHIP:DL: Failed to reset WiFi statistic counts
+[1726052913.503976][1565:1565] CHIP:IN: UDP::Init bind&listen port=0
+[1726052913.504033][1565:1565] CHIP:IN: UDP::Init bound to port=54635
+[1726052913.504046][1565:1565] CHIP:IN: UDP::Init bind&listen port=0
+[1726052913.504085][1565:1565] CHIP:IN: UDP::Init bound to port=35715
+[1726052913.504098][1565:1565] CHIP:IN: BLEBase::Init - setting/overriding transport
+[1726052913.504106][1565:1565] CHIP:IN: TransportMgr initialized
+[1726052913.504120][1565:1565] CHIP:FP: Initializing FabricTable from persistent storage
+[1726052913.504160][1565:1565] CHIP:TS: Last Known Good Time: [unknown]
+[1726052913.504177][1565:1565] CHIP:TS: Setting Last Known Good Time to firmware build time 2023-10-14T01:16:48
+[1726052913.504600][1565:1565] CHIP:ZCL: Using ZAP configuration...
+[1726052913.507164][1565:1565] CHIP:CTL: System State Initialized...
+[1726052913.533538][1565:1565] CHIP:CTL: Setting attestation nonce to random value
+[1726052913.533611][1565:1565] CHIP:CTL: Setting CSR nonce to random value
+[1726052913.533651][1565:1565] CHIP:IN: UDP::Init bind&listen port=5550
+[1726052913.533722][1565:1565] CHIP:IN: UDP::Init bound to port=5550
+[1726052913.533739][1565:1565] CHIP:IN: UDP::Init bind&listen port=5550
+[1726052913.533785][1565:1565] CHIP:IN: UDP::Init bound to port=5550
+[1726052913.533798][1565:1565] CHIP:IN: TransportMgr initialized
+[1726052913.534215][1565:1567] CHIP:DL: CHIP task running
+[1726052913.534294][1565:1567] CHIP:DL: HandlePlatformSpecificBLEEvent 32786
+[1726052913.534511][1565:1567] CHIP:CTL: Setting attestation nonce to random value
+[1726052913.534582][1565:1567] CHIP:CTL: Setting CSR nonce to random value
+[1726052913.534646][1565:1567] CHIP:CTL: Couldn't get ExampleOpCredsCAKey from storage: src/controller/ExamplePersistentStorage.cpp:106: CHIP Error 0x000000A0: Value not found in the persisted storage
+[1726052913.535326][1565:1567] CHIP:CTL: Couldn't get ExampleOpCredsICAKey from storage: src/controller/ExamplePersistentStorage.cpp:106: CHIP Error 0x000000A0: Value not found in the persisted storage
+[1726052913.536067][1565:1567] CHIP:CTL: Generating RCAC
+[1726052913.536511][1565:1567] CHIP:CTL: Generating ICAC
+[1726052913.536990][1565:1567] CHIP:CTL: Generating NOC
+[1726052913.537411][1565:1567] CHIP:FP: Validating NOC chain
+[1726052913.539203][1565:1567] CHIP:FP: NOC chain validation successful
+[1726052913.539403][1565:1567] CHIP:FP: Added new fabric at index: 0x1
+[1726052913.539417][1565:1567] CHIP:FP: Assigned compressed fabric ID: 0x611094AAB132C301, node ID: 0x000000000001B669
+[1726052913.539434][1565:1567] CHIP:TS: Last Known Good Time: 2023-10-14T01:16:48
+[1726052913.539447][1565:1567] CHIP:TS: New proposed Last Known Good Time: 2021-01-01T00:00:00
+[1726052913.539458][1565:1567] CHIP:TS: Retaining current Last Known Good Time
+[1726052913.539852][1565:1567] CHIP:FP: Metadata for Fabric 0x1 persisted to storage.
+[1726052913.540156][1565:1567] CHIP:TS: Committing Last Known Good Time to storage: 2023-10-14T01:16:48
+[1726052913.540454][1565:1567] CHIP:CTL: Joined the fabric at index 1. Fabric ID is 0x0000000000000001 (Compressed Fabric ID: 611094AAB132C301)
+[1726052913.540476][1565:1567] CHIP:IN: UDP::Init bind&listen port=5550
+[1726052913.540537][1565:1567] CHIP:IN: UDP::Init bound to port=5550
+[1726052913.540550][1565:1567] CHIP:IN: UDP::Init bind&listen port=5550
+[1726052913.540586][1565:1567] CHIP:IN: UDP::Init bound to port=5550
+[1726052913.540597][1565:1567] CHIP:IN: TransportMgr initialized
+[1726052913.546682][1565:1567] CHIP:CTL: Setting wifi credentials from parameters
+[1726052913.546733][1565:1567] CHIP:CTL: Setting attestation nonce to random value
+[1726052913.546753][1565:1567] CHIP:CTL: Setting CSR nonce to random value
+[1726052913.546774][1565:1567] CHIP:CTL: Checking ICD registration parameters
+[1726052913.546785][1565:1567] CHIP:CTL: Commission called for node ID 0x0000000000000001
+[1726052913.559802][1565:1566] CHIP:BLE: BLE removing known devices
+[1726052913.561260][1565:1566] CHIP:BLE: BLE initiating scan
+[1726052914.186582][1565:1567] CHIP:BLE: ChipDeviceScanner has started scanning!
+[1726052914.186629][1565:1567] CHIP:DL: Long dispatch time: 640 ms, for event type 3
+[1726052914.215107][1565:1566] CHIP:BLE: Device F0:FA:C7:E9:B9:13 does not look like a CHIP device.
+[1726052914.234688][1565:1566] CHIP:BLE: Device 79:68:98:9D:CE:16 does not look like a CHIP device.
+[1726052914.246094][1565:1566] CHIP:BLE: Device E7:E6:19:92:D6:09 does not look like a CHIP device.
+[1726052914.822099][1565:1566] CHIP:BLE: Device 23:1E:BC:F2:76:D8 does not look like a CHIP device.
+[1726052914.827331][1565:1566] CHIP:BLE: Device 02:C0:0E:0F:A0:8D does not look like a CHIP device.
+[1726052914.864724][1565:1566] CHIP:BLE: Device EE:2B:29:41:2D:2C does not look like a CHIP device.
+[1726052916.276865][1565:1566] CHIP:BLE: Device 6E:F0:32:6E:12:9C does not look like a CHIP device.
+[1726052916.277580][1565:1566] CHIP:BLE: Device 1E:36:77:5D:84:21 does not look like a CHIP device.
+[1726052916.927266][1565:1566] CHIP:BLE: New device scanned: 6A:1C:2A:66:D3:23
+[1726052916.927313][1565:1566] CHIP:BLE: Device discriminator match. Attempting to connect.
+[1726052916.932179][1565:1566] CHIP:BLE: ChipDeviceScanner has stopped scanning!
+[1726052918.337604][1565:1566] CHIP:DL: ConnectDevice complete
+[1726052918.337648][1565:1566] CHIP:BLE: New device connected: 6A:1C:2A:66:D3:23
+[1726052919.233233][1565:1566] CHIP:DL: Char /org/bluez/hci0/dev_6A_1C_2A_66_D3_23/service0008 on service /org/bluez/hci0/dev_6A_1C_2A_66_D3_23/service0010
+[1726052919.233288][1565:1566] CHIP:DL: Char /org/bluez/hci0/dev_6A_1C_2A_66_D3_23/service0008 on service /org/bluez/hci0/dev_6A_1C_2A_66_D3_23/service0010
+[1726052919.233307][1565:1566] CHIP:DL: Char /org/bluez/hci0/dev_6A_1C_2A_66_D3_23/service0008 on service /org/bluez/hci0/dev_6A_1C_2A_66_D3_23/service0010
+[1726052919.233318][1565:1566] CHIP:DL: Char /org/bluez/hci0/dev_6A_1C_2A_66_D3_23/service0008 on service /org/bluez/hci0/dev_6A_1C_2A_66_D3_23/service0010
+[1726052919.233343][1565:1566] CHIP:DL: Char /org/bluez/hci0/dev_6A_1C_2A_66_D3_23/service0008 on service /org/bluez/hci0/dev_6A_1C_2A_66_D3_23/service0010
+[1726052919.233355][1565:1566] CHIP:DL: Char /org/bluez/hci0/dev_6A_1C_2A_66_D3_23/service0008 on service /org/bluez/hci0/dev_6A_1C_2A_66_D3_23/service0010
+[1726052919.233369][1565:1566] CHIP:DL: Char /org/bluez/hci0/dev_6A_1C_2A_66_D3_23/service0010 on service /org/bluez/hci0/dev_6A_1C_2A_66_D3_23/service0010
+[1726052919.233389][1565:1566] CHIP:DL: Char /org/bluez/hci0/dev_6A_1C_2A_66_D3_23/service0010 on service /org/bluez/hci0/dev_6A_1C_2A_66_D3_23/service0010
+[1726052919.233402][1565:1566] CHIP:DL: Char /org/bluez/hci0/dev_6A_1C_2A_66_D3_23/service0010 on service /org/bluez/hci0/dev_6A_1C_2A_66_D3_23/service0010
+[1726052919.233514][1565:1566] CHIP:DL: New BLE connection: conn=0x7f7401f9f0 device=6A:1C:2A:66:D3:23 path=/org/bluez/hci0/dev_6A_1C_2A_66_D3_23
+[1726052919.233608][1565:1567] CHIP:DL: HandlePlatformSpecificBLEEvent 16385
+[1726052919.233628][1565:1567] CHIP:DIS: Closing all BLE connections
+[1726052919.233667][1565:1567] CHIP:IN: BleConnectionComplete: endPoint 0x557df7a2a0
+[1726052919.234202][1565:1567] CHIP:IN: SecureSession[0x7f7c0118f0]: Allocated Type:1 LSID:59631
+[1726052919.234248][1565:1567] CHIP:SC: Assigned local session key ID 59631
+[1726052919.234305][1565:1567] CHIP:EM: <<< [E:50060i S:0 M:229409480] (U) Msg TX to 0:0000000000000000 [0000] [BLE] --- Type 0000:20 (SecureChannel:PBKDFParamRequest)
+[1726052919.234325][1565:1567] CHIP:IN: Message appended to BLE send queue
+[1726052919.234334][1565:1567] CHIP:SC: Sent PBKDF param request
+[1726052919.581062][1565:1567] CHIP:DL: HandlePlatformSpecificBLEEvent 16387
+[1726052919.661678][1565:1567] CHIP:DL: HandlePlatformSpecificBLEEvent 16388
+[1726052919.661725][1565:1567] CHIP:BLE: subscribe complete, ep = 0x557df7a2a0
+[1726052919.662897][1565:1566] CHIP:DL: Indication received, conn = 0x7f7401f9f0
+[1726052919.663091][1565:1567] CHIP:DL: HandlePlatformSpecificBLEEvent 16389
+[1726052919.663110][1565:1567] CHIP:BLE: peripheral chose BTP version 4; central expected between 4 and 4
+[1726052919.663119][1565:1567] CHIP:BLE: using BTP fragment sizes rx 244 / tx 244.
+[1726052919.663126][1565:1567] CHIP:BLE: local and remote recv window size = 5
+[1726052919.663602][1565:1567] CHIP:IN: BLE EndPoint 0x557df7a2a0 Connection Complete
+[1726052919.741142][1565:1567] CHIP:DL: HandlePlatformSpecificBLEEvent 16387
+[1726052919.745407][1565:1566] CHIP:DL: Indication received, conn = 0x7f7401f9f0
+[1726052919.745585][1565:1567] CHIP:DL: HandlePlatformSpecificBLEEvent 16389
+[1726052919.745641][1565:1567] CHIP:EM: >>> [E:50060i S:0 M:226015789] (U) Msg RX from 0:0000000000000000 [0000] --- Type 0000:21 (SecureChannel:PBKDFParamResponse)
+[1726052919.745659][1565:1567] CHIP:EM: Found matching exchange: 50060i, Delegate: 0x7f7c00fcc0
+[1726052919.745676][1565:1567] CHIP:SC: Received PBKDF param response
+[1726052919.745696][1565:1567] CHIP:SC: Peer assigned session ID 8961
+[1726052919.752645][1565:1567] CHIP:EM: <<< [E:50060i S:0 M:229409481] (U) Msg TX to 0:0000000000000000 [0000] [BLE] --- Type 0000:22 (SecureChannel:PASE_Pake1)
+[1726052919.753378][1565:1567] CHIP:SC: Sent spake2p msg1
+[1726052919.821082][1565:1567] CHIP:DL: HandlePlatformSpecificBLEEvent 16387
+[1726052921.145429][1565:1566] CHIP:DL: Indication received, conn = 0x7f7401f9f0
+[1726052921.145610][1565:1567] CHIP:DL: HandlePlatformSpecificBLEEvent 16389
+[1726052921.145668][1565:1567] CHIP:EM: >>> [E:50060i S:0 M:226015790] (U) Msg RX from 0:0000000000000000 [0000] --- Type 0000:23 (SecureChannel:PASE_Pake2)
+[1726052921.145686][1565:1567] CHIP:EM: Found matching exchange: 50060i, Delegate: 0x7f7c00fcc0
+[1726052921.145705][1565:1567] CHIP:SC: Received spake2p msg2
+[1726052921.146978][1565:1567] CHIP:EM: <<< [E:50060i S:0 M:229409482] (U) Msg TX to 0:0000000000000000 [0000] [BLE] --- Type 0000:24 (SecureChannel:PASE_Pake3)
+[1726052921.147467][1565:1567] CHIP:SC: Sent spake2p msg3
+[1726052921.261043][1565:1567] CHIP:DL: HandlePlatformSpecificBLEEvent 16387
+[1726052921.262913][1565:1566] CHIP:DL: Indication received, conn = 0x7f7401f9f0
+[1726052921.263474][1565:1567] CHIP:DL: HandlePlatformSpecificBLEEvent 16389
+[1726052921.263550][1565:1567] CHIP:EM: >>> [E:50060i S:0 M:226015791] (U) Msg RX from 0:0000000000000000 [0000] --- Type 0000:40 (SecureChannel:StatusReport)
+[1726052921.263568][1565:1567] CHIP:EM: Found matching exchange: 50060i, Delegate: 0x7f7c00fcc0
+[1726052921.263627][1565:1567] CHIP:SC: SecureSession[0x7f7c0118f0, LSID:59631]: State change 'kEstablishing' --> 'kActive'
+[1726052921.263638][1565:1567] CHIP:IN: SecureSession[0x7f7c0118f0]: Activated - Type:1 LSID:59631
+[1726052921.263646][1565:1567] CHIP:IN: New secure session activated for device <FFFFFFFB00000000, 0>, LSID:59631 PSID:8961!
+[1726052921.263658][1565:1567] CHIP:CTL: Remote device completed SPAKE2+ handshake
+[1726052921.263666][1565:1567] CHIP:TOO: Pairing Success
+[1726052921.263673][1565:1567] CHIP:TOO: PASE establishment successful
+[1726052921.263683][1565:1567] CHIP:CTL: Commissioning stage next step: 'SecurePairing' -> 'ReadCommissioningInfo'
+[1726052921.263727][1565:1567] CHIP:CTL: Performing next commissioning step 'ReadCommissioningInfo'
+[1726052921.263736][1565:1567] CHIP:CTL: Sending read request for commissioning information
+[1726052921.263749][1565:1567] CHIP:DMG: SendReadRequest ReadClient[0x7f7c009720]: Sending Read Request
+[1726052921.263841][1565:1567] CHIP:EM: <<< [E:50061i S:59631 M:76785616] (S) Msg TX to 0:FFFFFFFB00000000 [0000] [BLE] --- Type 0001:02 (IM:ReadRequest)
+[1726052921.265043][1565:1567] CHIP:DMG: MoveToState ReadClient[0x7f7c009720]: Moving to [AwaitingIn]
+[1726052921.381122][1565:1567] CHIP:DL: HandlePlatformSpecificBLEEvent 16387
+[1726052921.463926][1565:1566] CHIP:DL: Indication received, conn = 0x7f7401f9f0
+[1726052921.464235][1565:1567] CHIP:DL: HandlePlatformSpecificBLEEvent 16389
+[1726052921.542308][1565:1566] CHIP:DL: Indication received, conn = 0x7f7401f9f0
+[1726052921.542439][1565:1567] CHIP:DL: HandlePlatformSpecificBLEEvent 16389
+[1726052921.542528][1565:1567] CHIP:EM: >>> [E:50061i S:59631 M:133083841] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:05 (IM:ReportData)
+[1726052921.542547][1565:1567] CHIP:EM: Found matching exchange: 50061i, Delegate: 0x7f7c009730
+[1726052921.542793][1565:1567] CHIP:CTL: Successfully finished commissioning step 'ReadCommissioningInfo'
+[1726052921.542804][1565:1567] CHIP:CTL: Commissioning stage next step: 'ReadCommissioningInfo' -> 'ReadCommissioningInfo2'
+[1726052921.542817][1565:1567] CHIP:CTL: Performing next commissioning step 'ReadCommissioningInfo2'
+[1726052921.542830][1565:1567] CHIP:DMG: SendReadRequest ReadClient[0x7f7c009720]: Sending Read Request
+[1726052921.542889][1565:1567] CHIP:EM: <<< [E:50062i S:59631 M:76785617] (S) Msg TX to 0:FFFFFFFB00000000 [0000] [BLE] --- Type 0001:02 (IM:ReadRequest)
+[1726052921.543716][1565:1567] CHIP:DMG: MoveToState ReadClient[0x7f7c009720]: Moving to [AwaitingIn]
+[1726052921.621032][1565:1567] CHIP:DL: HandlePlatformSpecificBLEEvent 16387
+[1726052921.663791][1565:1566] CHIP:DL: Indication received, conn = 0x7f7401f9f0
+[1726052921.664079][1565:1567] CHIP:DL: HandlePlatformSpecificBLEEvent 16389
+[1726052921.664163][1565:1567] CHIP:EM: >>> [E:50062i S:59631 M:133083842] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:05 (IM:ReportData)
+[1726052921.664181][1565:1567] CHIP:EM: Found matching exchange: 50062i, Delegate: 0x7f7c009730
+[1726052921.668766][1565:1567] CHIP:CTL: ----- NetworkCommissioning Features: has WiFi. endpointid = 0
+[1726052921.668860][1565:1567] CHIP:SVR: OnReadCommissioningInfo - vendorId=0x1410 productId=0x03E9
+[1726052921.668879][1565:1567] CHIP:CTL: Successfully finished commissioning step 'ReadCommissioningInfo2'
+[1726052921.668919][1565:1567] CHIP:CTL: Commissioning stage next step: 'ReadCommissioningInfo2' -> 'ArmFailSafe'
+[1726052921.668934][1565:1567] CHIP:CTL: Performing next commissioning step 'ArmFailSafe'
+[1726052921.668947][1565:1567] CHIP:CTL: Arming failsafe (60 seconds)
+[1726052921.668982][1565:1567] CHIP:DMG: ICR moving to [AddingComm]
+[1726052921.670975][1565:1567] CHIP:DMG: ICR moving to [AddedComma]
+[1726052921.671088][1565:1567] CHIP:EM: <<< [E:50063i S:59631 M:76785618] (S) Msg TX to 0:FFFFFFFB00000000 [0000] [BLE] --- Type 0001:08 (IM:InvokeCommandRequest)
+[1726052921.671627][1565:1567] CHIP:DMG: ICR moving to [AwaitingRe]
+[1726052921.741086][1565:1567] CHIP:DL: HandlePlatformSpecificBLEEvent 16387
+[1726052921.743346][1565:1566] CHIP:DL: Indication received, conn = 0x7f7401f9f0
+[1726052921.743649][1565:1567] CHIP:DL: HandlePlatformSpecificBLEEvent 16389
+[1726052921.743759][1565:1567] CHIP:EM: >>> [E:50063i S:59631 M:133083843] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:09 (IM:InvokeCommandResponse)
+[1726052921.743793][1565:1567] CHIP:EM: Found matching exchange: 50063i, Delegate: 0x7f7c006ba8
+[1726052921.743824][1565:1567] CHIP:DMG: ICR moving to [ResponseRe]
+[1726052921.743874][1565:1567] CHIP:DMG: Received Command Response Data, Endpoint=0 Cluster=0x0000_0030 Command=0x0000_0001
+[1726052921.743903][1565:1567] CHIP:CTL: Received ArmFailSafe response errorCode=0
+[1726052921.743930][1565:1567] CHIP:CTL: Successfully finished commissioning step 'ArmFailSafe'
+[1726052921.743954][1565:1567] CHIP:CTL: Commissioning stage next step: 'ArmFailSafe' -> 'ConfigRegulatory'
+[1726052921.743979][1565:1567] CHIP:CTL: Performing next commissioning step 'ConfigRegulatory'
+[1726052921.744000][1565:1567] CHIP:CTL: Setting Regulatory Config
+[1726052921.744021][1565:1567] CHIP:CTL: Device does not support configurable regulatory location
+[1726052921.744060][1565:1567] CHIP:DMG: ICR moving to [AddingComm]
+[1726052921.744087][1565:1567] CHIP:DMG: ICR moving to [AddedComma]
+[1726052921.744139][1565:1567] CHIP:EM: <<< [E:50064i S:59631 M:76785619] (S) Msg TX to 0:FFFFFFFB00000000 [0000] [BLE] --- Type 0001:08 (IM:InvokeCommandRequest)
+[1726052921.745264][1565:1567] CHIP:DMG: ICR moving to [AwaitingRe]
+[1726052921.745336][1565:1567] CHIP:DMG: ICR moving to [AwaitingDe]
+[1726052921.821157][1565:1567] CHIP:DL: HandlePlatformSpecificBLEEvent 16387
+[1726052921.823501][1565:1566] CHIP:DL: Indication received, conn = 0x7f7401f9f0
+[1726052921.823815][1565:1567] CHIP:DL: HandlePlatformSpecificBLEEvent 16389
+[1726052921.823924][1565:1567] CHIP:EM: >>> [E:50064i S:59631 M:133083844] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:09 (IM:InvokeCommandResponse)
+[1726052921.823959][1565:1567] CHIP:EM: Found matching exchange: 50064i, Delegate: 0x7f7c015e68
+[1726052921.823989][1565:1567] CHIP:DMG: ICR moving to [ResponseRe]
+[1726052921.824040][1565:1567] CHIP:DMG: Received Command Response Data, Endpoint=0 Cluster=0x0000_0030 Command=0x0000_0003
+[1726052921.824070][1565:1567] CHIP:CTL: Received SetRegulatoryConfig response errorCode=0
+[1726052921.824097][1565:1567] CHIP:CTL: Successfully finished commissioning step 'ConfigRegulatory'
+[1726052921.824119][1565:1567] CHIP:CTL: Commissioning stage next step: 'ConfigRegulatory' -> 'SendPAICertificateRequest'
+[1726052921.824144][1565:1567] CHIP:CTL: Performing next commissioning step 'SendPAICertificateRequest'
+[1726052921.824166][1565:1567] CHIP:CTL: Sending request for PAI certificate
+[1726052921.824186][1565:1567] CHIP:CTL: Sending Certificate Chain request to 0x7f7c00fc70 device
+[1726052921.824223][1565:1567] CHIP:DMG: ICR moving to [AddingComm]
+[1726052921.824248][1565:1567] CHIP:DMG: ICR moving to [AddedComma]
+[1726052921.824299][1565:1567] CHIP:EM: <<< [E:50065i S:59631 M:76785620] (S) Msg TX to 0:FFFFFFFB00000000 [0000] [BLE] --- Type 0001:08 (IM:InvokeCommandRequest)
+[1726052921.824794][1565:1567] CHIP:DMG: ICR moving to [AwaitingRe]
+[1726052921.824832][1565:1567] CHIP:DMG: ICR moving to [AwaitingDe]
+[1726052921.901049][1565:1567] CHIP:DL: HandlePlatformSpecificBLEEvent 16387
+[1726052921.945659][1565:1566] CHIP:DL: Indication received, conn = 0x7f7401f9f0
+[1726052921.945925][1565:1567] CHIP:DL: HandlePlatformSpecificBLEEvent 16389
+[1726052922.066119][1565:1566] CHIP:DL: Indication received, conn = 0x7f7401f9f0
+[1726052922.066478][1565:1567] CHIP:DL: HandlePlatformSpecificBLEEvent 16389
+[1726052922.142783][1565:1566] CHIP:DL: Indication received, conn = 0x7f7401f9f0
+[1726052922.143549][1565:1567] CHIP:DL: HandlePlatformSpecificBLEEvent 16389
+[1726052922.143640][1565:1567] CHIP:EM: >>> [E:50065i S:59631 M:133083845] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:09 (IM:InvokeCommandResponse)
+[1726052922.143662][1565:1567] CHIP:EM: Found matching exchange: 50065i, Delegate: 0x7f7c006ba8
+[1726052922.143685][1565:1567] CHIP:DMG: ICR moving to [ResponseRe]
+[1726052922.143725][1565:1567] CHIP:DMG: Received Command Response Data, Endpoint=0 Cluster=0x0000_003E Command=0x0000_0003
+[1726052922.143777][1565:1567] CHIP:CTL: Received certificate chain from the device
+[1726052922.143795][1565:1567] CHIP:CTL: Successfully finished commissioning step 'SendPAICertificateRequest'
+[1726052922.143808][1565:1567] CHIP:CTL: Commissioning stage next step: 'SendPAICertificateRequest' -> 'SendDACCertificateRequest'
+[1726052922.143823][1565:1567] CHIP:CTL: Performing next commissioning step 'SendDACCertificateRequest'
+[1726052922.143834][1565:1567] CHIP:CTL: Sending request for DAC certificate
+[1726052922.143844][1565:1567] CHIP:CTL: Sending Certificate Chain request to 0x7f7c00fc70 device
+[1726052922.143872][1565:1567] CHIP:DMG: ICR moving to [AddingComm]
+[1726052922.143886][1565:1567] CHIP:DMG: ICR moving to [AddedComma]
+[1726052922.143928][1565:1567] CHIP:EM: <<< [E:50066i S:59631 M:76785621] (S) Msg TX to 0:FFFFFFFB00000000 [0000] [BLE] --- Type 0001:08 (IM:InvokeCommandRequest)
+[1726052922.145175][1565:1567] CHIP:DMG: ICR moving to [AwaitingRe]
+[1726052922.145246][1565:1567] CHIP:DMG: ICR moving to [AwaitingDe]
+[1726052922.261246][1565:1567] CHIP:DL: HandlePlatformSpecificBLEEvent 16387
+[1726052922.304441][1565:1566] CHIP:DL: Indication received, conn = 0x7f7401f9f0
+[1726052922.304611][1565:1567] CHIP:DL: HandlePlatformSpecificBLEEvent 16389
+[1726052922.423044][1565:1566] CHIP:DL: Indication received, conn = 0x7f7401f9f0
+[1726052922.423225][1565:1567] CHIP:DL: HandlePlatformSpecificBLEEvent 16389
+[1726052922.505141][1565:1566] CHIP:DL: Indication received, conn = 0x7f7401f9f0
+[1726052922.505258][1565:1567] CHIP:DL: HandlePlatformSpecificBLEEvent 16389
+[1726052922.505331][1565:1567] CHIP:EM: >>> [E:50066i S:59631 M:133083846] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:09 (IM:InvokeCommandResponse)
+[1726052922.505357][1565:1567] CHIP:EM: Found matching exchange: 50066i, Delegate: 0x7f7c015e68
+[1726052922.505375][1565:1567] CHIP:DMG: ICR moving to [ResponseRe]
+[1726052922.505412][1565:1567] CHIP:DMG: Received Command Response Data, Endpoint=0 Cluster=0x0000_003E Command=0x0000_0003
+[1726052922.505428][1565:1567] CHIP:CTL: Received certificate chain from the device
+[1726052922.505440][1565:1567] CHIP:CTL: Successfully finished commissioning step 'SendDACCertificateRequest'
+[1726052922.505452][1565:1567] CHIP:CTL: Commissioning stage next step: 'SendDACCertificateRequest' -> 'SendAttestationRequest'
+[1726052922.505464][1565:1567] CHIP:CTL: Performing next commissioning step 'SendAttestationRequest'
+[1726052922.505472][1565:1567] CHIP:CTL: Sending Attestation Request to the device.
+[1726052922.505480][1565:1567] CHIP:CTL: Sending Attestation request to 0x7f7c00fc70 device
+[1726052922.505507][1565:1567] CHIP:DMG: ICR moving to [AddingComm]
+[1726052922.505518][1565:1567] CHIP:DMG: ICR moving to [AddedComma]
+[1726052922.505562][1565:1567] CHIP:EM: <<< [E:50067i S:59631 M:76785622] (S) Msg TX to 0:FFFFFFFB00000000 [0000] [BLE] --- Type 0001:08 (IM:InvokeCommandRequest)
+[1726052922.506358][1565:1567] CHIP:DMG: ICR moving to [AwaitingRe]
+[1726052922.506393][1565:1567] CHIP:CTL: Sent Attestation request, waiting for the Attestation Information
+[1726052922.506420][1565:1567] CHIP:DMG: ICR moving to [AwaitingDe]
+[1726052922.581138][1565:1567] CHIP:DL: HandlePlatformSpecificBLEEvent 16387
+[1726052922.941804][1565:1566] CHIP:DL: Indication received, conn = 0x7f7401f9f0
+[1726052922.942047][1565:1567] CHIP:DL: HandlePlatformSpecificBLEEvent 16389
+[1726052923.025929][1565:1566] CHIP:DL: Indication received, conn = 0x7f7401f9f0
+[1726052923.026255][1565:1567] CHIP:DL: HandlePlatformSpecificBLEEvent 16389
+[1726052923.026329][1565:1567] CHIP:EM: >>> [E:50067i S:59631 M:133083847] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:09 (IM:InvokeCommandResponse)
+[1726052923.026347][1565:1567] CHIP:EM: Found matching exchange: 50067i, Delegate: 0x7f7c006ba8
+[1726052923.026364][1565:1567] CHIP:DMG: ICR moving to [ResponseRe]
+[1726052923.026401][1565:1567] CHIP:DMG: Received Command Response Data, Endpoint=0 Cluster=0x0000_003E Command=0x0000_0001
+[1726052923.026416][1565:1567] CHIP:CTL: Received Attestation Information from the device
+[1726052923.026428][1565:1567] CHIP:CTL: Successfully finished commissioning step 'SendAttestationRequest'
+[1726052923.026437][1565:1567] CHIP:CTL: AutoCommissioner setting attestationElements buffer size 278/278
+[1726052923.026469][1565:1567] CHIP:CTL: Commissioning stage next step: 'SendAttestationRequest' -> 'AttestationVerification'
+[1726052923.026481][1565:1567] CHIP:CTL: Performing next commissioning step 'AttestationVerification'
+[1726052923.026489][1565:1567] CHIP:CTL: Verifying attestation
+[1726052923.037260][1565:1567] CHIP:CTL: Successfully validated 'Attestation Information' command received from the device.
+[1726052923.037320][1565:1567] CHIP:CTL: Successfully finished commissioning step 'AttestationVerification'
+[1726052923.037338][1565:1567] CHIP:CTL: Commissioning stage next step: 'AttestationVerification' -> 'SendOpCertSigningRequest'
+[1726052923.037362][1565:1567] CHIP:CTL: Performing next commissioning step 'SendOpCertSigningRequest'
+[1726052923.037375][1565:1567] CHIP:CTL: Sending CSR request to 0x7f7c00fc70 device
+[1726052923.037412][1565:1567] CHIP:DMG: ICR moving to [AddingComm]
+[1726052923.037457][1565:1567] CHIP:DMG: ICR moving to [AddedComma]
+[1726052923.037543][1565:1567] CHIP:EM: <<< [E:50068i S:59631 M:76785623] (S) Msg TX to 0:FFFFFFFB00000000 [0000] [BLE] --- Type 0001:08 (IM:InvokeCommandRequest)
+[1726052923.038060][1565:1567] CHIP:DMG: ICR moving to [AwaitingRe]
+[1726052923.038089][1565:1567] CHIP:CTL: Sent CSR request, waiting for the CSR
+[1726052923.038119][1565:1567] CHIP:DMG: ICR moving to [AwaitingDe]
+[1726052923.141029][1565:1567] CHIP:DL: HandlePlatformSpecificBLEEvent 16387
+[1726052923.422821][1565:1566] CHIP:DL: Indication received, conn = 0x7f7401f9f0
+[1726052923.423059][1565:1567] CHIP:DL: HandlePlatformSpecificBLEEvent 16389
+[1726052923.505283][1565:1566] CHIP:DL: Indication received, conn = 0x7f7401f9f0
+[1726052923.505656][1565:1567] CHIP:DL: HandlePlatformSpecificBLEEvent 16389
+[1726052923.505737][1565:1567] CHIP:EM: >>> [E:50068i S:59631 M:133083848] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:09 (IM:InvokeCommandResponse)
+[1726052923.505755][1565:1567] CHIP:EM: Found matching exchange: 50068i, Delegate: 0x7f7c015e68
+[1726052923.505773][1565:1567] CHIP:DMG: ICR moving to [ResponseRe]
+[1726052923.505811][1565:1567] CHIP:DMG: Received Command Response Data, Endpoint=0 Cluster=0x0000_003E Command=0x0000_0005
+[1726052923.505827][1565:1567] CHIP:CTL: Received certificate signing request from the device
+[1726052923.505839][1565:1567] CHIP:CTL: Successfully finished commissioning step 'SendOpCertSigningRequest'
+[1726052923.505849][1565:1567] CHIP:CTL: Commissioning stage next step: 'SendOpCertSigningRequest' -> 'ValidateCSR'
+[1726052923.505860][1565:1567] CHIP:CTL: Performing next commissioning step 'ValidateCSR'
+[1726052923.507062][1565:1567] CHIP:CTL: Successfully finished commissioning step 'ValidateCSR'
+[1726052923.507151][1565:1567] CHIP:CTL: Commissioning stage next step: 'ValidateCSR' -> 'GenerateNOCChain'
+[1726052923.507181][1565:1567] CHIP:CTL: Performing next commissioning step 'GenerateNOCChain'
+[1726052923.507205][1565:1567] CHIP:CTL: Getting certificate chain for the device from the issuer
+[1726052923.507533][1565:1567] CHIP:CTL: Verifying Certificate Signing Request
+[1726052923.508614][1565:1567] CHIP:CTL: Generating NOC
+[1726052923.508967][1565:1567] CHIP:CTL: Providing certificate chain to the commissioner
+[1726052923.509009][1565:1567] CHIP:CTL: Received callback from the CA for NOC Chain generation. Status src/controller/ExampleOperationalCredentialsIssuer.cpp:395: Success
+[1726052923.509038][1565:1567] CHIP:CTL: Successfully finished commissioning step 'GenerateNOCChain'
+[1726052923.509114][1565:1567] CHIP:CTL: Performing next commissioning step 'SendTrustedRootCert'
+[1726052923.509140][1565:1567] CHIP:CTL: Sending root certificate to the device
+[1726052923.509187][1565:1567] CHIP:DMG: ICR moving to [AddingComm]
+[1726052923.509214][1565:1567] CHIP:DMG: ICR moving to [AddedComma]
+[1726052923.509284][1565:1567] CHIP:EM: <<< [E:50069i S:59631 M:76785624] (S) Msg TX to 0:FFFFFFFB00000000 [0000] [BLE] --- Type 0001:08 (IM:InvokeCommandRequest)
+[1726052923.510573][1565:1567] CHIP:DMG: ICR moving to [AwaitingRe]
+[1726052923.510614][1565:1567] CHIP:CTL: Sent root certificate to the device
+[1726052923.510774][1565:1567] CHIP:DMG: ICR moving to [AwaitingDe]
+[1726052923.621091][1565:1567] CHIP:DL: HandlePlatformSpecificBLEEvent 16387
+[1726052923.741357][1565:1567] CHIP:DL: HandlePlatformSpecificBLEEvent 16387
+[1726052924.303272][1565:1566] CHIP:DL: Indication received, conn = 0x7f7401f9f0
+[1726052924.303598][1565:1567] CHIP:DL: HandlePlatformSpecificBLEEvent 16389
+[1726052924.303696][1565:1567] CHIP:EM: >>> [E:50069i S:59631 M:133083849] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:09 (IM:InvokeCommandResponse)
+[1726052924.303730][1565:1567] CHIP:EM: Found matching exchange: 50069i, Delegate: 0x7f7c006ba8
+[1726052924.303759][1565:1567] CHIP:DMG: ICR moving to [ResponseRe]
+[1726052924.303808][1565:1567] CHIP:DMG: Received Command Response Status for Endpoint=0 Cluster=0x0000_003E Command=0x0000_000B Status=0x0
+[1726052924.303836][1565:1567] CHIP:CTL: Device confirmed that it has received the root certificate
+[1726052924.303861][1565:1567] CHIP:CTL: Successfully finished commissioning step 'SendTrustedRootCert'
+[1726052924.303884][1565:1567] CHIP:CTL: Commissioning stage next step: 'SendTrustedRootCert' -> 'SendNOC'
+[1726052924.303909][1565:1567] CHIP:CTL: Performing next commissioning step 'SendNOC'
+[1726052924.303949][1565:1567] CHIP:DMG: ICR moving to [AddingComm]
+[1726052924.303977][1565:1567] CHIP:DMG: ICR moving to [AddedComma]
+[1726052924.304030][1565:1567] CHIP:EM: <<< [E:50070i S:59631 M:76785625] (S) Msg TX to 0:FFFFFFFB00000000 [0000] [BLE] --- Type 0001:08 (IM:InvokeCommandRequest)
+[1726052924.305179][1565:1567] CHIP:DMG: ICR moving to [AwaitingRe]
+[1726052924.305263][1565:1567] CHIP:CTL: Sent operational certificate to the device
+[1726052924.305316][1565:1567] CHIP:DMG: ICR moving to [AwaitingDe]
+[1726052924.421292][1565:1567] CHIP:DL: HandlePlatformSpecificBLEEvent 16387
+[1726052924.541115][1565:1567] CHIP:DL: HandlePlatformSpecificBLEEvent 16387
+[1726052924.661222][1565:1567] CHIP:DL: HandlePlatformSpecificBLEEvent 16387
+[1726052924.703033][1565:1566] CHIP:DL: Indication received, conn = 0x7f7401f9f0
+[1726052924.703268][1565:1567] CHIP:DL: HandlePlatformSpecificBLEEvent 16389
+[1726052924.703362][1565:1567] CHIP:EM: >>> [E:50070i S:59631 M:133083850] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:09 (IM:InvokeCommandResponse)
+[1726052924.703380][1565:1567] CHIP:EM: Found matching exchange: 50070i, Delegate: 0x7f7c015e68
+[1726052924.703395][1565:1567] CHIP:DMG: ICR moving to [ResponseRe]
+[1726052924.703431][1565:1567] CHIP:DMG: Received Command Response Data, Endpoint=0 Cluster=0x0000_003E Command=0x0000_0008
+[1726052924.703445][1565:1567] CHIP:CTL: Device returned status 0 on receiving the NOC
+[1726052924.703455][1565:1567] CHIP:CTL: Operational credentials provisioned on device 0x7f7c00fc70
+[1726052924.703463][1565:1567] CHIP:TOO: Secure Pairing Success
+[1726052924.703470][1565:1567] CHIP:TOO: CASE establishment successful
+[1726052924.703480][1565:1567] CHIP:CTL: Successfully finished commissioning step 'SendNOC'
+[1726052924.703490][1565:1567] CHIP:CTL: No NetworkScan enabled or WiFi/Thread endpoint not specified, skipping ScanNetworks
+[1726052924.703498][1565:1567] CHIP:CTL: Commissioning stage next step: 'SendNOC' -> 'WiFiNetworkSetup'
+[1726052924.703509][1565:1567] CHIP:CTL: Performing next commissioning step 'WiFiNetworkSetup'
+[1726052924.703535][1565:1567] CHIP:DMG: ICR moving to [AddingComm]
+[1726052924.703579][1565:1567] CHIP:DMG: ICR moving to [AddedComma]
+[1726052924.703621][1565:1567] CHIP:EM: <<< [E:50071i S:59631 M:76785626] (S) Msg TX to 0:FFFFFFFB00000000 [0000] [BLE] --- Type 0001:08 (IM:InvokeCommandRequest)
+[1726052924.704688][1565:1567] CHIP:DMG: ICR moving to [AwaitingRe]
+[1726052924.704766][1565:1567] CHIP:DMG: ICR moving to [AwaitingDe]
+[1726052924.781108][1565:1567] CHIP:DL: HandlePlatformSpecificBLEEvent 16387
+[1726052924.783630][1565:1566] CHIP:DL: Indication received, conn = 0x7f7401f9f0
+[1726052924.783904][1565:1567] CHIP:DL: HandlePlatformSpecificBLEEvent 16389
+[1726052924.783996][1565:1567] CHIP:EM: >>> [E:50071i S:59631 M:133083851] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:09 (IM:InvokeCommandResponse)
+[1726052924.784014][1565:1567] CHIP:EM: Found matching exchange: 50071i, Delegate: 0x7f7c006ba8
+[1726052924.784029][1565:1567] CHIP:DMG: ICR moving to [ResponseRe]
+[1726052924.784065][1565:1567] CHIP:DMG: Received Command Response Data, Endpoint=0 Cluster=0x0000_0031 Command=0x0000_0005
+[1726052924.784080][1565:1567] CHIP:CTL: Received NetworkConfig response, networkingStatus=0
+[1726052924.784092][1565:1567] CHIP:CTL: Successfully finished commissioning step 'WiFiNetworkSetup'
+[1726052924.784101][1565:1567] CHIP:CTL: Commissioning stage next step: 'WiFiNetworkSetup' -> 'FailsafeBeforeWiFiEnable'
+[1726052924.784112][1565:1567] CHIP:CTL: Performing next commissioning step 'FailsafeBeforeWiFiEnable'
+[1726052924.784125][1565:1567] CHIP:CTL: Arming failsafe (69 seconds)
+[1726052924.784149][1565:1567] CHIP:DMG: ICR moving to [AddingComm]
+[1726052924.784159][1565:1567] CHIP:DMG: ICR moving to [AddedComma]
+[1726052924.784196][1565:1567] CHIP:EM: <<< [E:50072i S:59631 M:76785627] (S) Msg TX to 0:FFFFFFFB00000000 [0000] [BLE] --- Type 0001:08 (IM:InvokeCommandRequest)
+[1726052924.784859][1565:1567] CHIP:DMG: ICR moving to [AwaitingRe]
+[1726052924.784933][1565:1567] CHIP:DMG: ICR moving to [AwaitingDe]
+[1726052924.861141][1565:1567] CHIP:DL: HandlePlatformSpecificBLEEvent 16387
+[1726052924.863865][1565:1566] CHIP:DL: Indication received, conn = 0x7f7401f9f0
+[1726052924.864137][1565:1567] CHIP:DL: HandlePlatformSpecificBLEEvent 16389
+[1726052924.864226][1565:1567] CHIP:EM: >>> [E:50072i S:59631 M:133083852] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:09 (IM:InvokeCommandResponse)
+[1726052924.864244][1565:1567] CHIP:EM: Found matching exchange: 50072i, Delegate: 0x7f7c015e68
+[1726052924.864259][1565:1567] CHIP:DMG: ICR moving to [ResponseRe]
+[1726052924.864295][1565:1567] CHIP:DMG: Received Command Response Data, Endpoint=0 Cluster=0x0000_0030 Command=0x0000_0001
+[1726052924.864311][1565:1567] CHIP:CTL: Received ArmFailSafe response errorCode=0
+[1726052924.864323][1565:1567] CHIP:CTL: Successfully finished commissioning step 'FailsafeBeforeWiFiEnable'
+[1726052924.864333][1565:1567] CHIP:CTL: Commissioning stage next step: 'FailsafeBeforeWiFiEnable' -> 'WiFiNetworkEnable'
+[1726052924.864343][1565:1567] CHIP:CTL: Setting wifi connection time min = 20
+[1726052924.864352][1565:1567] CHIP:CTL: Performing next commissioning step 'WiFiNetworkEnable'
+[1726052924.864360][1565:1567] CHIP:CTL: SendCommand kWiFiNetworkEnable, supportsConcurrentConnection=true
+[1726052924.864385][1565:1567] CHIP:DMG: ICR moving to [AddingComm]
+[1726052924.864397][1565:1567] CHIP:DMG: ICR moving to [AddedComma]
+[1726052924.864433][1565:1567] CHIP:EM: <<< [E:50073i S:59631 M:76785628] (S) Msg TX to 0:FFFFFFFB00000000 [0000] [BLE] --- Type 0001:08 (IM:InvokeCommandRequest)
+[1726052924.865104][1565:1567] CHIP:DMG: ICR moving to [AwaitingRe]
+[1726052924.865156][1565:1567] CHIP:DMG: ICR moving to [AwaitingDe]
+[1726052924.941109][1565:1567] CHIP:DL: HandlePlatformSpecificBLEEvent 16387
+[1726052927.223145][1565:1566] CHIP:DL: Indication received, conn = 0x7f7401f9f0
+[1726052927.223350][1565:1567] CHIP:DL: HandlePlatformSpecificBLEEvent 16389
+[1726052927.223436][1565:1567] CHIP:EM: >>> [E:50073i S:59631 M:133083853] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:09 (IM:InvokeCommandResponse)
+[1726052927.223453][1565:1567] CHIP:EM: Found matching exchange: 50073i, Delegate: 0x7f7c006ba8
+[1726052927.223468][1565:1567] CHIP:DMG: ICR moving to [ResponseRe]
+[1726052927.223505][1565:1567] CHIP:DMG: Received Command Response Data, Endpoint=0 Cluster=0x0000_0031 Command=0x0000_0007
+[1726052927.223520][1565:1567] CHIP:CTL: Received ConnectNetwork response, networkingStatus=0
+[1726052927.223532][1565:1567] CHIP:CTL: Successfully finished commissioning step 'WiFiNetworkEnable'
+[1726052927.223542][1565:1567] CHIP:CTL: Commissioning stage next step: 'WiFiNetworkEnable' -> 'kEvictPreviousCaseSessions'
+[1726052927.223554][1565:1567] CHIP:CTL: Performing next commissioning step 'kEvictPreviousCaseSessions'
+[1726052927.223562][1565:1567] CHIP:IN: Expiring all sessions for node <0000000000000001, 1>!!
+[1726052927.223570][1565:1567] CHIP:CTL: Successfully finished commissioning step 'kEvictPreviousCaseSessions'
+[1726052927.223578][1565:1567] CHIP:CTL: Commissioning stage next step: 'kEvictPreviousCaseSessions' -> 'kFindOperationalForStayActive'
+[1726052927.223587][1565:1567] CHIP:CTL: Performing next commissioning step 'kFindOperationalForStayActive'
+[1726052927.223594][1565:1567] CHIP:CSM: FindOrEstablishSession: PeerId = [1:0000000000000001]
+[1726052927.223603][1565:1567] CHIP:CSM: FindOrEstablishSession: No existing OperationalSessionSetup instance found
+[1726052927.223616][1565:1567] CHIP:DIS: OperationalSessionSetup[1:0000000000000001]: State change 1 --> 2
+[1726052927.224864][1565:1567] CHIP:DMG: ICR moving to [AwaitingDe]
+[1726052927.341079][1565:1567] CHIP:DIS: Lookup clearing interface for non LL address
+[1726052927.341199][1565:1567] CHIP:DIS: UDP:172.20.10.4%wlan0:5540: new best score: 2
+[1726052927.341209][1565:1567] CHIP:DIS: Lookup clearing interface for non LL address
+[1726052927.341232][1565:1567] CHIP:DIS: UDP:172.20.10.4%wlan0:5540: new best score: 2
+[1726052927.341242][1565:1567] CHIP:DIS: Checking node lookup status after 118 ms
+[1726052927.341249][1565:1567] CHIP:DIS: Keeping DNSSD lookup active
+[1726052927.341333][1565:1567] CHIP:DIS: Lookup clearing interface for non LL address
+[1726052927.341358][1565:1567] CHIP:DIS: UDP:172.20.10.4%wlan0:5540: new best score: 2
+[1726052927.341366][1565:1567] CHIP:DIS: Lookup clearing interface for non LL address
+[1726052927.341388][1565:1567] CHIP:DIS: UDP:172.20.10.4%wlan0:5540: new best score: 2
+[1726052927.341396][1565:1567] CHIP:DIS: Checking node lookup status after 118 ms
+[1726052927.341403][1565:1567] CHIP:DIS: Keeping DNSSD lookup active
+[1726052927.404175][1565:1567] CHIP:DIS: Lookup clearing interface for non LL address
+[1726052927.404275][1565:1567] CHIP:DIS: UDP:172.20.10.4%wlan0:5540: new best score: 2
+[1726052927.404300][1565:1567] CHIP:DIS: UDP:172.20.10.4%wlan0:5540: score has not improved: 2
+[1726052927.404309][1565:1567] CHIP:DIS: Checking node lookup status after 181 ms
+[1726052927.404318][1565:1567] CHIP:DIS: Keeping DNSSD lookup active
+[1726052927.404406][1565:1567] CHIP:DIS: UDP:172.20.10.4%wlan0:5540: score has not improved: 2
+[1726052927.404429][1565:1567] CHIP:DIS: UDP:172.20.10.4%wlan0:5540: score has not improved: 2
+[1726052927.404437][1565:1567] CHIP:DIS: Checking node lookup status after 181 ms
+[1726052927.404445][1565:1567] CHIP:DIS: Keeping DNSSD lookup active
+[1726052927.405037][1565:1567] CHIP:DIS: UDP:172.20.10.4%wlan0:5540: score has not improved: 2
+[1726052927.405067][1565:1567] CHIP:DIS: Checking node lookup status after 182 ms
+[1726052927.405076][1565:1567] CHIP:DIS: Keeping DNSSD lookup active
+[1726052927.405138][1565:1567] CHIP:DIS: UDP:172.20.10.4%wlan0:5540: score has not improved: 2
+[1726052927.405152][1565:1567] CHIP:DIS: Checking node lookup status after 182 ms
+[1726052927.405160][1565:1567] CHIP:DIS: Keeping DNSSD lookup active
+[1726052927.409480][1565:1567] CHIP:DIS: UDP:172.20.10.4%wlan0:5540: score has not improved: 2
+[1726052927.409532][1565:1567] CHIP:DIS: UDP:172.20.10.4%wlan0:5540: score has not improved: 2
+[1726052927.409541][1565:1567] CHIP:DIS: Checking node lookup status after 186 ms
+[1726052927.409549][1565:1567] CHIP:DIS: Keeping DNSSD lookup active
+[1726052927.409609][1565:1567] CHIP:DIS: UDP:172.20.10.4%wlan0:5540: score has not improved: 2
+[1726052927.409631][1565:1567] CHIP:DIS: UDP:172.20.10.4%wlan0:5540: score has not improved: 2
+[1726052927.409639][1565:1567] CHIP:DIS: Checking node lookup status after 186 ms
+[1726052927.409646][1565:1567] CHIP:DIS: Keeping DNSSD lookup active
+[1726052927.423751][1565:1567] CHIP:DIS: Checking node lookup status after 200 ms
+[1726052927.423786][1565:1567] CHIP:DIS: OperationalSessionSetup[1:0000000000000001]: Updating device address to UDP:172.20.10.4:5540 while in state 2
+[1726052927.423799][1565:1567] CHIP:DIS: OperationalSessionSetup[1:0000000000000001]: State change 2 --> 3
+[1726052927.423864][1565:1567] CHIP:IN: SecureSession[0x7f7c016be0]: Allocated Type:2 LSID:59632
+[1726052927.423881][1565:1567] CHIP:SC: Initiating session on local FabricIndex 1 from 0x000000000001B669 -> 0x0000000000000001
+[1726052927.424464][1565:1567] CHIP:EM: <<< [E:50074i S:0 M:229409483] (U) Msg TX to 0:0000000000000000 [0000] [UDP:172.20.10.4:5540] --- Type 0000:30 (SecureChannel:CASE_Sigma1)
+[1726052927.424666][1565:1567] CHIP:SC: Sent Sigma1 msg
+[1726052927.424710][1565:1567] CHIP:DIS: OperationalSessionSetup[1:0000000000000001]: State change 3 --> 4
+[1726052927.581307][1565:1567] CHIP:EM: >>> [E:50074i S:0 M:226015792 (Ack:229409483)] (U) Msg RX from 0:0000000000000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)
+[1726052927.581365][1565:1567] CHIP:EM: Found matching exchange: 50074i, Delegate: 0x7f7c0184d8
+[1726052927.581386][1565:1567] CHIP:EM: Rxd Ack; Removing MessageCounter:229409483 from Retrans Table on exchange 50074i
+[1726052928.445043][1565:1567] CHIP:EM: >>> [E:50074i S:0 M:226015793 (Ack:229409483)] (U) Msg RX from 0:0000000000000000 [0000] --- Type 0000:31 (SecureChannel:CASE_Sigma2)
+[1726052928.445093][1565:1567] CHIP:EM: Found matching exchange: 50074i, Delegate: 0x7f7c0184d8
+[1726052928.445105][1565:1567] CHIP:EM: CHIP MessageCounter:229409483 not in RetransTable on exchange 50074i
+[1726052928.445125][1565:1567] CHIP:SC: Received Sigma2 msg
+[1726052928.445142][1565:1567] CHIP:SC: Peer assigned session session ID 8962
+[1726052928.448245][1565:1567] CHIP:SC: Sending Sigma3
+[1726052928.448543][1565:1567] CHIP:EM: <<< [E:50074i S:0 M:229409484 (Ack:226015793)] (U) Msg TX to 0:0000000000000000 [0000] [UDP:172.20.10.4:5540] --- Type 0000:32 (SecureChannel:CASE_Sigma3)
+[1726052928.448761][1565:1567] CHIP:SC: Sent Sigma3 msg
+[1726052928.594412][1565:1567] CHIP:EM: >>> [E:50074i S:0 M:226015794 (Ack:229409484)] (U) Msg RX from 0:0000000000000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)
+[1726052928.594466][1565:1567] CHIP:EM: Found matching exchange: 50074i, Delegate: 0x7f7c0184d8
+[1726052928.594485][1565:1567] CHIP:EM: Rxd Ack; Removing MessageCounter:229409484 from Retrans Table on exchange 50074i
+[1726052929.697077][1565:1567] CHIP:EM: >>> [E:50074i S:0 M:226015795 (Ack:229409484)] (U) Msg RX from 0:0000000000000000 [0000] --- Type 0000:40 (SecureChannel:StatusReport)
+[1726052929.697130][1565:1567] CHIP:EM: Found matching exchange: 50074i, Delegate: 0x7f7c0184d8
+[1726052929.697143][1565:1567] CHIP:EM: CHIP MessageCounter:229409484 not in RetransTable on exchange 50074i
+[1726052929.697163][1565:1567] CHIP:SC: Success status report received. Session was established
+[1726052929.697930][1565:1567] CHIP:SC: SecureSession[0x7f7c016be0, LSID:59632]: State change 'kEstablishing' --> 'kActive'
+[1726052929.697946][1565:1567] CHIP:IN: SecureSession[0x7f7c016be0]: Activated - Type:2 LSID:59632
+[1726052929.697956][1565:1567] CHIP:IN: New secure session activated for device <0000000000000001, 1>, LSID:59632 PSID:8962!
+[1726052929.697968][1565:1567] CHIP:DIS: OperationalSessionSetup[1:0000000000000001]: State change 4 --> 5
+[1726052929.698011][1565:1567] CHIP:CTL: Successfully finished commissioning step 'kFindOperationalForStayActive'
+[1726052929.698022][1565:1567] CHIP:CTL: Commissioning stage next step: 'kFindOperationalForStayActive' -> 'ICDSendStayActive'
+[1726052929.698034][1565:1567] CHIP:CTL: Performing next commissioning step 'ICDSendStayActive'
+[1726052929.698042][1565:1567] CHIP:CTL: Skipping kICDSendStayActive
+[1726052929.698049][1565:1567] CHIP:CTL: Successfully finished commissioning step 'ICDSendStayActive'
+[1726052929.698057][1565:1567] CHIP:CTL: Commissioning stage next step: 'ICDSendStayActive' -> 'kFindOperationalForCommissioningComplete'
+[1726052929.698066][1565:1567] CHIP:CTL: Performing next commissioning step 'kFindOperationalForCommissioningComplete'
+[1726052929.698074][1565:1567] CHIP:CSM: FindOrEstablishSession: PeerId = [1:0000000000000001]
+[1726052929.698083][1565:1567] CHIP:CSM: FindOrEstablishSession: No existing OperationalSessionSetup instance found
+[1726052929.698095][1565:1567] CHIP:DIS: Found an existing secure session to [1:0000000000000001]!
+[1726052929.698105][1565:1567] CHIP:DIS: OperationalSessionSetup[1:0000000000000001]: State change 1 --> 5
+[1726052929.698116][1565:1567] CHIP:CTL: Successfully finished commissioning step 'kFindOperationalForCommissioningComplete'
+[1726052929.698125][1565:1567] CHIP:CTL: Commissioning stage next step: 'kFindOperationalForCommissioningComplete' -> 'SendComplete'
+[1726052929.698133][1565:1567] CHIP:CTL: Performing next commissioning step 'SendComplete'
+[1726052929.698161][1565:1567] CHIP:DMG: ICR moving to [AddingComm]
+[1726052929.698173][1565:1567] CHIP:DMG: ICR moving to [AddedComma]
+[1726052929.698225][1565:1567] CHIP:EM: <<< [E:50075i S:59632 M:145481267] (S) Msg TX to 1:0000000000000001 [C301] [UDP:172.20.10.4:5540] --- Type 0001:08 (IM:InvokeCommandRequest)
+[1726052929.698428][1565:1567] CHIP:DMG: ICR moving to [AwaitingRe]
+[1726052929.698460][1565:1567] CHIP:EM: <<< [E:50074i S:0 M:229409485 (Ack:226015795)] (U) Msg TX to 0:0000000000000000 [0000] [UDP:172.20.10.4:5540] --- Type 0000:10 (SecureChannel:StandaloneAck)
+[1726052929.698532][1565:1567] CHIP:EM: Flushed pending ack for MessageCounter:226015795 on exchange 50074i
+[1726052929.781121][1565:1567] CHIP:DL: HandlePlatformSpecificBLEEvent 16387
+[1726052929.849093][1565:1567] CHIP:EM: >>> [E:50075i S:59632 M:151057168 (Ack:145481267)] (S) Msg RX from 1:0000000000000001 [C301] --- Type 0001:09 (IM:InvokeCommandResponse)
+[1726052929.849143][1565:1567] CHIP:EM: Found matching exchange: 50075i, Delegate: 0x7f7c006ba8
+[1726052929.849161][1565:1567] CHIP:EM: Rxd Ack; Removing MessageCounter:145481267 from Retrans Table on exchange 50075i
+[1726052929.849177][1565:1567] CHIP:DMG: ICR moving to [ResponseRe]
+[1726052929.849213][1565:1567] CHIP:DMG: Received Command Response Data, Endpoint=0 Cluster=0x0000_0030 Command=0x0000_0005
+[1726052929.849229][1565:1567] CHIP:CTL: Received CommissioningComplete response, errorCode=0
+[1726052929.849241][1565:1567] CHIP:CTL: Successfully finished commissioning step 'SendComplete'
+[1726052929.849249][1565:1567] CHIP:CTL: Commissioning stage next step: 'SendComplete' -> 'Cleanup'
+[1726052929.849261][1565:1567] CHIP:CTL: Performing next commissioning step 'Cleanup'
+[1726052929.849271][1565:1567] CHIP:DIS: Closing all BLE connections
+[1726052929.849280][1565:1567] CHIP:IN: Clearing BLE pending packets.
+[1726052929.850439][1565:1567] CHIP:BLE: Auto-closing end point's BLE connection.
+[1726052929.850477][1565:1567] CHIP:DL: Closing BLE GATT connection (con 0x7f7401f9f0)
+[1726052929.850589][1565:1566] CHIP:DL: BluezDisconnect peer=6A:1C:2A:66:D3:23
+[1726052934.826250][1565:1567] CHIP:IN: SecureSession[0x7f7c0118f0]: MarkForEviction Type:1 LSID:59631
+[1726052934.826304][1565:1567] CHIP:SC: SecureSession[0x7f7c0118f0, LSID:59631]: State change 'kActive' --> 'kPendingEviction'
+[1726052934.826357][1565:1567] CHIP:IN: SecureSession[0x7f7c0118f0]: Released - Type:1 LSID:59631
+[1726052934.826377][1565:1567] CHIP:CTL: Successfully finished commissioning step 'Cleanup'
+[1726052934.826389][1565:1567] CHIP:CTL: Commissioning complete for node ID 0x0000000000000001: success
+[1726052934.826400][1565:1567] CHIP:TOO: Device commissioning completed with success
+[1726052934.826448][1565:1567] CHIP:DMG: ICR moving to [AwaitingDe]
+[1726052934.826472][1565:1566] CHIP:DL: Bluez disconnected
+[1726052934.826484][1565:1566] CHIP:DL: Bluez notify CHIPoBluez connection disconnected
+[1726052934.826507][1565:1567] CHIP:EM: <<< [E:50075i S:59632 M:145481268 (Ack:151057168)] (S) Msg TX to 1:0000000000000001 [C301] [UDP:172.20.10.4:5540] --- Type 0000:10 (SecureChannel:StandaloneAck)
+[1726052934.827101][1565:1567] CHIP:EM: Flushed pending ack for MessageCounter:151057168 on exchange 50075i
+[1726052934.827321][1565:1567] CHIP:DL: HandlePlatformSpecificBLEEvent 16388
+[1726052934.827391][1565:1567] CHIP:BLE: no endpoint for unsub complete
+[1726052934.827822][1565:1565] CHIP:CTL: Shutting down the commissioner
+[1726052934.827922][1565:1565] CHIP:CTL: Shutting down the controller
+[1726052934.827934][1565:1565] CHIP:IN: Expiring all sessions for fabric 0x1!!
+[1726052934.827943][1565:1565] CHIP:IN: SecureSession[0x7f7c016be0]: MarkForEviction Type:2 LSID:59632
+[1726052934.827954][1565:1565] CHIP:SC: SecureSession[0x7f7c016be0, LSID:59632]: State change 'kActive' --> 'kPendingEviction'
+[1726052934.827963][1565:1565] CHIP:IN: SecureSession[0x7f7c016be0]: Released - Type:2 LSID:59632
+[1726052934.827974][1565:1565] CHIP:FP: Forgetting fabric 0x1
+[1726052934.827991][1565:1565] CHIP:TS: Pending Last Known Good Time: 2023-10-14T01:16:48
+[1726052934.828097][1565:1565] CHIP:TS: Previous Last Known Good Time: 2023-10-14T01:16:48
+[1726052934.828106][1565:1565] CHIP:TS: Reverted Last Known Good Time to previous value
+[1726052934.828135][1565:1565] CHIP:CTL: Shutting down the commissioner
+[1726052934.828173][1565:1565] CHIP:CTL: Shutting down the controller
+[1726052934.828182][1565:1565] CHIP:CTL: Shutting down the System State, this will teardown the CHIP Stack
+[1726052934.828306][1565:1565] CHIP:DMG: All ReadHandler-s are clean, clear GlobalDirtySet
+[1726052934.828362][1565:1565] CHIP:FP: Shutting down FabricTable
+[1726052934.828375][1565:1565] CHIP:TS: Pending Last Known Good Time: 2023-10-14T01:16:48
+[1726052934.828431][1565:1565] CHIP:TS: Previous Last Known Good Time: 2023-10-14T01:16:48
+[1726052934.828439][1565:1565] CHIP:TS: Reverted Last Known Good Time to previous value
+[1726052934.828596][1565:1565] CHIP:DL: writing settings to file (/tmp/chip_counters.ini-mvCrJw)
+[1726052934.828781][1565:1565] CHIP:DL: renamed tmp file to file (/tmp/chip_counters.ini)
+[1726052934.828805][1565:1565] CHIP:DL: NVS set: chip-counters/total-operational-hours = 0 (0x0)
+[1726052934.828823][1565:1565] CHIP:DL: Inet Layer shutdown
+[1726052934.828831][1565:1565] CHIP:DL: BLE shutdown
+[1726052934.830006][1565:1565] CHIP:DL: System Layer shutdown
+/ #
+/ # chip-tool onoff toggle 0x1 0x1
+[1726052966.149070][1885:1885] CHIP:DL: ChipLinuxStorage::Init: Using KVS config file: /tmp/chip_tool_kvs
+[1726052966.149900][1885:1885] CHIP:DL: ChipLinuxStorage::Init: Using KVS config file: /tmp/chip_kvs
+[1726052966.149942][1885:1885] CHIP:DL: ChipLinuxStorage::Init: Attempt to re-initialize with KVS config file: /tmp/chip_kvs
+[1726052966.150171][1885:1885] CHIP:DL: ChipLinuxStorage::Init: Using KVS config file: /tmp/chip_factory.ini
+[1726052966.150299][1885:1885] CHIP:DL: ChipLinuxStorage::Init: Using KVS config file: /tmp/chip_config.ini
+[1726052966.150389][1885:1885] CHIP:DL: ChipLinuxStorage::Init: Using KVS config file: /tmp/chip_counters.ini
+[1726052966.150554][1885:1885] CHIP:DL: writing settings to file (/tmp/chip_counters.ini-XsFylL)
+[1726052966.150727][1885:1885] CHIP:DL: renamed tmp file to file (/tmp/chip_counters.ini)
+[1726052966.150748][1885:1885] CHIP:DL: NVS set: chip-counters/reboot-count = 2 (0x2)
+[1726052966.151224][1885:1885] CHIP:DL: Got Ethernet interface: eth0
+[1726052966.151517][1885:1885] CHIP:DL: Found the primary Ethernet interface:eth0
+[1726052966.151903][1885:1885] CHIP:DL: Failed to get WiFi interface
+[1726052966.151919][1885:1885] CHIP:DL: Failed to reset WiFi statistic counts
+[1726052966.151958][1885:1885] CHIP:IN: UDP::Init bind&listen port=0
+[1726052966.152015][1885:1885] CHIP:IN: UDP::Init bound to port=41267
+[1726052966.152036][1885:1885] CHIP:IN: UDP::Init bind&listen port=0
+[1726052966.152075][1885:1885] CHIP:IN: UDP::Init bound to port=57490
+[1726052966.152087][1885:1885] CHIP:IN: BLEBase::Init - setting/overriding transport
+[1726052966.152098][1885:1885] CHIP:IN: TransportMgr initialized
+[1726052966.152127][1885:1885] CHIP:FP: Initializing FabricTable from persistent storage
+[1726052966.152220][1885:1885] CHIP:TS: Last Known Good Time: 2023-10-14T01:16:48
+[1726052966.152501][1885:1885] CHIP:FP: Fabric index 0x1 was retrieved from storage. Compressed FabricId 0x611094AAB132C301, FabricId 0x0000000000000001, NodeId 0x000000000001B669, VendorId 0xFFF1
+[1726052966.153152][1885:1885] CHIP:ZCL: Using ZAP configuration...
+[1726052966.155859][1885:1885] CHIP:CTL: System State Initialized...
+[1726052966.155944][1885:1885] CHIP:CTL: Setting attestation nonce to random value
+[1726052966.155986][1885:1885] CHIP:CTL: Setting CSR nonce to random value
+[1726052966.156020][1885:1885] CHIP:IN: UDP::Init bind&listen port=5550
+[1726052966.156058][1885:1885] CHIP:IN: UDP::Init bound to port=5550
+[1726052966.156071][1885:1885] CHIP:IN: UDP::Init bind&listen port=5550
+[1726052966.156104][1885:1885] CHIP:IN: UDP::Init bound to port=5550
+[1726052966.156117][1885:1885] CHIP:IN: TransportMgr initialized
+[1726052966.156291][1885:1888] CHIP:DL: CHIP task running
+[1726052966.156369][1885:1888] CHIP:DL: HandlePlatformSpecificBLEEvent 32786
+[1726052966.156616][1885:1888] CHIP:CTL: Setting attestation nonce to random value
+[1726052966.156685][1885:1888] CHIP:CTL: Setting CSR nonce to random value
+[1726052966.159529][1885:1888] CHIP:CTL: Generating NOC
+[1726052966.160085][1885:1888] CHIP:FP: Validating NOC chain
+[1726052966.161828][1885:1888] CHIP:FP: NOC chain validation successful
+[1726052966.162027][1885:1888] CHIP:FP: Updated fabric at index: 0x1, Node ID: 0x000000000001B669
+[1726052966.162049][1885:1888] CHIP:TS: Last Known Good Time: 2023-10-14T01:16:48
+[1726052966.162063][1885:1888] CHIP:TS: New proposed Last Known Good Time: 2021-01-01T00:00:00
+[1726052966.162075][1885:1888] CHIP:TS: Retaining current Last Known Good Time
+[1726052966.163171][1885:1888] CHIP:FP: Metadata for Fabric 0x1 persisted to storage.
+[1726052966.163534][1885:1888] CHIP:TS: Committing Last Known Good Time to storage: 2023-10-14T01:16:48
+[1726052966.163848][1885:1888] CHIP:CTL: Joined the fabric at index 1. Fabric ID is 0x0000000000000001 (Compressed Fabric ID: 611094AAB132C301)
+[1726052966.163876][1885:1888] CHIP:IN: UDP::Init bind&listen port=5550
+[1726052966.163941][1885:1888] CHIP:IN: UDP::Init bound to port=5550
+[1726052966.163953][1885:1888] CHIP:IN: UDP::Init bind&listen port=5550
+[1726052966.163990][1885:1888] CHIP:IN: UDP::Init bound to port=5550
+[1726052966.164002][1885:1888] CHIP:IN: TransportMgr initialized
+[1726052966.168171][1885:1888] CHIP:TOO: Sending command to node 0x1
+[1726052966.169179][1885:1888] CHIP:CSM: FindOrEstablishSession: PeerId = [1:0000000000000001]
+[1726052966.169255][1885:1888] CHIP:CSM: FindOrEstablishSession: No existing OperationalSessionSetup instance found
+[1726052966.169318][1885:1888] CHIP:DIS: OperationalSessionSetup[1:0000000000000001]: State change 1 --> 2
+[1726052966.225142][1885:1888] CHIP:DIS: UDP:[fe80::b6ed:d5ff:fe00:d4cd%wlan0]:5540: new best score: 7
+[1726052966.225545][1885:1888] CHIP:DIS: Lookup clearing interface for non LL address
+[1726052966.225602][1885:1888] CHIP:DIS: UDP:[2409:895b:3242:ddfc:b6ed:d5ff:fe00:d4cd%wlan0]:5540: new best score: 6
+[1726052966.225811][1885:1888] CHIP:DIS: Lookup clearing interface for non LL address
+[1726052966.225842][1885:1888] CHIP:DIS: UDP:172.20.10.4%wlan0:5540: new best score: 2
+[1726052966.225857][1885:1888] CHIP:DIS: Checking node lookup status after 56 ms
+[1726052966.225868][1885:1888] CHIP:DIS: Keeping DNSSD lookup active
+[1726052966.241392][1885:1888] CHIP:DIS: UDP:[fe80::b6ed:d5ff:fe00:d4cd%wlan0]:5540: new best score: 7
+[1726052966.241815][1885:1888] CHIP:DIS: Lookup clearing interface for non LL address
+[1726052966.241857][1885:1888] CHIP:DIS: UDP:[2409:895b:3242:ddfc:b6ed:d5ff:fe00:d4cd%wlan0]:5540: new best score: 6
+[1726052966.242227][1885:1888] CHIP:DIS: UDP:172.20.10.4%wlan0:5540: score has not improved: 2
+[1726052966.242243][1885:1888] CHIP:DIS: Checking node lookup status after 73 ms
+[1726052966.242255][1885:1888] CHIP:DIS: Keeping DNSSD lookup active
+[1726052966.369467][1885:1888] CHIP:DIS: Checking node lookup status after 200 ms
+[1726052966.369608][1885:1888] CHIP:DIS: OperationalSessionSetup[1:0000000000000001]: Updating device address to UDP:[fe80::b6ed:d5ff:fe00:d4cd%wlan0]:5540 while in state 2
+[1726052966.369628][1885:1888] CHIP:DIS: OperationalSessionSetup[1:0000000000000001]: State change 2 --> 3
+[1726052966.369717][1885:1888] CHIP:IN: SecureSession[0x7fa8005e10]: Allocated Type:2 LSID:10134
+[1726052966.369739][1885:1888] CHIP:SC: Initiating session on local FabricIndex 1 from 0x000000000001B669 -> 0x0000000000000001
+[1726052966.370403][1885:1888] CHIP:EM: <<< [E:57895i S:0 M:2248206] (U) Msg TX to 0:0000000000000000 [0000] [UDP:[fe80::b6ed:d5ff:fe00:d4cd%wlan0]:5540] --- Type 0000:30 (SecureChannel:CASE_Sigma1)
+[1726052966.370643][1885:1888] CHIP:SC: Sent Sigma1 msg
+[1726052966.370664][1885:1888] CHIP:DIS: OperationalSessionSetup[1:0000000000000001]: State change 3 --> 4
+[1726052966.433056][1885:1888] CHIP:EM: >>> [E:57895i S:0 M:226015796 (Ack:2248206)] (U) Msg RX from 0:0000000000000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)
+[1726052966.433094][1885:1888] CHIP:EM: Found matching exchange: 57895i, Delegate: 0x7fa8027488
+[1726052966.433120][1885:1888] CHIP:EM: Rxd Ack; Removing MessageCounter:2248206 from Retrans Table on exchange 57895i
+[1726052967.281083][1885:1888] CHIP:EM: >>> [E:57895i S:0 M:226015797 (Ack:2248206)] (U) Msg RX from 0:0000000000000000 [0000] --- Type 0000:31 (SecureChannel:CASE_Sigma2)
+[1726052967.281132][1885:1888] CHIP:EM: Found matching exchange: 57895i, Delegate: 0x7fa8027488
+[1726052967.281144][1885:1888] CHIP:EM: CHIP MessageCounter:2248206 not in RetransTable on exchange 57895i
+[1726052967.281166][1885:1888] CHIP:SC: Received Sigma2 msg
+[1726052967.281183][1885:1888] CHIP:SC: Peer assigned session session ID 8963
+[1726052967.284295][1885:1888] CHIP:SC: Sending Sigma3
+[1726052967.284673][1885:1888] CHIP:EM: <<< [E:57895i S:0 M:2248207 (Ack:226015797)] (U) Msg TX to 0:0000000000000000 [0000] [UDP:[fe80::b6ed:d5ff:fe00:d4cd%wlan0]:5540] --- Type 0000:32 (SecureChannel:CAS
+E_Sigma3)
+[1726052967.284961][1885:1888] CHIP:SC: Sent Sigma3 msg
+[1726052967.369035][1885:1888] CHIP:EM: >>> [E:57895i S:0 M:226015798 (Ack:2248207)] (U) Msg RX from 0:0000000000000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)
+[1726052967.369080][1885:1888] CHIP:EM: Found matching exchange: 57895i, Delegate: 0x7fa8027488
+[1726052967.369107][1885:1888] CHIP:EM: Rxd Ack; Removing MessageCounter:2248207 from Retrans Table on exchange 57895i
+[1726052968.693651][1885:1888] CHIP:EM: >>> [E:57895i S:0 M:226015799 (Ack:2248207)] (U) Msg RX from 0:0000000000000000 [0000] --- Type 0000:40 (SecureChannel:StatusReport)
+[1726052968.693701][1885:1888] CHIP:EM: Found matching exchange: 57895i, Delegate: 0x7fa8027488
+[1726052968.693720][1885:1888] CHIP:EM: CHIP MessageCounter:2248207 not in RetransTable on exchange 57895i
+[1726052968.693749][1885:1888] CHIP:SC: Success status report received. Session was established
+[1726052968.694563][1885:1888] CHIP:SC: SecureSession[0x7fa8005e10, LSID:10134]: State change 'kEstablishing' --> 'kActive'
+[1726052968.694592][1885:1888] CHIP:IN: SecureSession[0x7fa8005e10]: Activated - Type:2 LSID:10134
+[1726052968.694605][1885:1888] CHIP:IN: New secure session activated for device <0000000000000001, 1>, LSID:10134 PSID:8963!
+[1726052968.694622][1885:1888] CHIP:DIS: OperationalSessionSetup[1:0000000000000001]: State change 4 --> 5
+[1726052968.694692][1885:1888] CHIP:TOO: Sending cluster (0x00000006) command (0x00000002) on endpoint 1
+[1726052968.694723][1885:1888] CHIP:DMG: ICR moving to [AddingComm]
+[1726052968.694738][1885:1888] CHIP:DMG: ICR moving to [AddedComma]
+[1726052968.694842][1885:1888] CHIP:EM: <<< [E:57896i S:10134 M:165453151] (S) Msg TX to 1:0000000000000001 [C301] [UDP:[fe80::b6ed:d5ff:fe00:d4cd%wlan0]:5540] --- Type 0001:08 (IM:InvokeCommandRequest)
+[1726052968.695079][1885:1888] CHIP:DMG: ICR moving to [AwaitingRe]
+[1726052968.695179][1885:1888] CHIP:EM: <<< [E:57895i S:0 M:2248208 (Ack:226015799)] (U) Msg TX to 0:0000000000000000 [0000] [UDP:[fe80::b6ed:d5ff:fe00:d4cd%wlan0]:5540] --- Type 0000:10 (SecureChannel:Sta
+ndaloneAck)
+[1726052968.695287][1885:1888] CHIP:EM: Flushed pending ack for MessageCounter:226015799 on exchange 57895i
+[1726052968.821065][1885:1888] CHIP:EM: >>> [E:57896i S:10134 M:138206412 (Ack:165453151)] (S) Msg RX from 1:0000000000000001 [C301] --- Type 0001:09 (IM:InvokeCommandResponse)
+[1726052968.821111][1885:1888] CHIP:EM: Found matching exchange: 57896i, Delegate: 0x7fa801f758
+[1726052968.821129][1885:1888] CHIP:EM: Rxd Ack; Removing MessageCounter:165453151 from Retrans Table on exchange 57896i
+[1726052968.821144][1885:1888] CHIP:DMG: ICR moving to [ResponseRe]
+[1726052968.821180][1885:1888] CHIP:DMG: Received Command Response Status for Endpoint=1 Cluster=0x0000_0006 Command=0x0000_0002 Status=0x0
+[1726052968.821200][1885:1888] CHIP:DMG: ICR moving to [AwaitingDe]
+[1726052968.821333][1885:1888] CHIP:EM: <<< [E:57896i S:10134 M:165453152 (Ack:138206412)] (S) Msg TX to 1:0000000000000001 [C301] [UDP:[fe80::b6ed:d5ff:fe00:d4cd%wlan0]:5540] --- Type 0000:10 (SecureChann
+el:StandaloneAck)
+[1726052968.821491][1885:1888] CHIP:EM: Flushed pending ack for MessageCounter:138206412 on exchange 57896i
+[1726052968.821945][1885:1885] CHIP:CTL: Shutting down the commissioner
+[1726052968.822018][1885:1885] CHIP:CTL: Shutting down the controller
+[1726052968.822029][1885:1885] CHIP:IN: Expiring all sessions for fabric 0x1!!
+[1726052968.822038][1885:1885] CHIP:IN: SecureSession[0x7fa8005e10]: MarkForEviction Type:2 LSID:10134
+[1726052968.822048][1885:1885] CHIP:SC: SecureSession[0x7fa8005e10, LSID:10134]: State change 'kActive' --> 'kPendingEviction'
+[1726052968.822058][1885:1885] CHIP:IN: SecureSession[0x[1726052968.822058][1885:1885] CHIP:IN: SecureSession[0x7fa8005e10]: Released - Type:2 LSID:10134
+[1726052968.822069][1885:1885] CHIP:FP: Forgetting fabric 0x1
+[1726052968.822085][1885:1885] CHIP:TS: Pending Last Known Good Time: 2023-10-14T01:16:48
+[1726052968.822185][1885:1885] CHIP:TS: Previous Last Known Good Time: 2023-10-14T01:16:48
+[1726052968.822194][1885:1885] CHIP:TS: Reverted Last Known Good Time to previous value
+[1726052968.822222][1885:1885] CHIP:CTL: Shutting down the commissioner
+[1726052968.822259][1885:1885] CHIP:CTL: Shutting down the controller
+[1726052968.822268][1885:1885] CHIP:CTL: Shutting down the System State, this will teardown the CHIP Stack
+[1726052968.822381][1885:1885] CHIP:DMG: All ReadHandler-s are clean, clear GlobalDirtySet
+[1726052968.822424][1885:1885] CHIP:FP: Shutting down FabricTable
+[1726052968.822435][1885:1885] CHIP:TS: Pending Last Known Good Time: 2023-10-14T01:16:48
+[1726052968.822479][1885:1885] CHIP:TS: Previous Last Known Good Time: 2023-10-14T01:16:48
+[1726052968.822487][1885:1885] CHIP:TS: Reverted Last Known Good Time to previous value
+[1726052968.822599][1885:1885] CHIP:DL: writing settings to file (/tmp/chip_counters.ini-DjU6RI)
+[1726052968.822744][1885:1885] CHIP:DL: renamed tmp file to file (/tmp/chip_counters.ini)
+[1726052968.822765][1885:1885] CHIP:DL: NVS set: chip-counters/total-operational-hours = 0 (0x0)
+[1726052968.822784][1885:1885] CHIP:DL: Inet Layer shutdown
+[1726052968.822792][1885:1885] CHIP:DL: BLE shutdown
+[1726052968.822905][1885:1885] CHIP:DL: System Layer shutdown
+/ #
+/ # chip-tool onoff toggle 0x1 0x1
+[1726052972.928083][1927:1927] CHIP:DL: ChipLinuxStorage::Init: Using KVS config file: /tmp/chip_tool_kvs
+[1726052972.929091][1927:1927] CHIP:DL: ChipLinuxStorage::Init: Using KVS config file: /tmp/chip_kvs
+[1726052972.929138][1927:1927] CHIP:DL: ChipLinuxStorage::Init: Attempt to re-initialize with KVS config file: /tmp/chip_kvs
+[1726052972.929377][1927:1927] CHIP:DL: ChipLinuxStorage::Init: Using KVS config file: /tmp/chip_factory.ini
+[1726052972.929518][1927:1927] CHIP:DL: ChipLinuxStorage::Init: Using KVS config file: /tmp/chip_config.ini
+[1726052972.929572][1927:1927] CHIP:DL: ChipLinuxStorage::Init: Using KVS config file: /tmp/chip_counters.ini
+[1726052972.929742][1927:1927] CHIP:DL: writing settings to file (/tmp/chip_counters.ini-6gceHV)
+[1726052972.929906][1927:1927] CHIP:DL: renamed tmp file to file (/tmp/chip_counters.ini)
+[1726052972.929929][1927:1927] CHIP:DL: NVS set: chip-counters/reboot-count = 3 (0x3)
+[1726052972.930408][1927:1927] CHIP:DL: Got Ethernet interface: eth0
+[1726052972.930666][1927:1927] CHIP:DL: Found the primary Ethernet interface:eth0
+[1726052972.931036][1927:1927] CHIP:DL: Failed to get WiFi interface
+[1726052972.931051][1927:1927] CHIP:DL: Failed to reset WiFi statistic counts
+[1726052972.931089][1927:1927] CHIP:IN: UDP::Init bind&listen port=0
+[1726052972.931146][1927:1927] CHIP:IN: UDP::Init bound to port=59955
+[1726052972.931160][1927:1927] CHIP:IN: UDP::Init bind&listen port=0
+[1726052972.931197][1927:1927] CHIP:IN: UDP::Init bound to port=57997
+[1726052972.931209][1927:1927] CHIP:IN: BLEBase::Init - setting/overriding transport
+[1726052972.931219][1927:1927] CHIP:IN: TransportMgr initialized
+[1726052972.931236][1927:1927] CHIP:FP: Initializing FabricTable from persistent storage
+[1726052972.931320][1927:1927] CHIP:TS: Last Known Good Time: 2023-10-14T01:16:48
+[1726052972.931574][1927:1927] CHIP:FP: Fabric index 0x1 was retrieved from storage. Compressed FabricId 0x611094AAB132C301, FabricId 0x0000000000000001, NodeId 0x000000000001B669, VendorId 0xFFF1
+[1726052972.932174][1927:1927] CHIP:ZCL: Using ZAP configuration...
+[1726052972.934786][1927:1927] CHIP:CTL: System State Initialized...
+[1726052972.934877][1927:1927] CHIP:CTL: Setting attestation nonce to random value
+[1726052972.934920][1927:1927] CHIP:CTL: Setting CSR nonce to random value
+[1726052972.934953][1927:1927] CHIP:IN: UDP::Init bind&listen port=5550
+[1726052972.934987][1927:1927] CHIP:IN: UDP::Init bound to port=5550
+[1726052972.934999][1927:1927] CHIP:IN: UDP::Init bind&listen port=5550
+[1726052972.935031][1927:1927] CHIP:IN: UDP::Init bound to port=5550
+[1726052972.935043][1927:1927] CHIP:IN: TransportMgr initialized
+[1726052972.935219][1927:1929] CHIP:DL: CHIP task running
+[1726052972.935294][1927:1929] CHIP:DL: HandlePlatformSpecificBLEEvent 32786
+[1726052972.935520][1927:1929] CHIP:CTL: Setting attestation nonce to random value
+[1726052972.935600][1927:1929] CHIP:CTL: Setting CSR nonce to random value
+[1726052972.938816][1927:1929] CHIP:CTL: Generating NOC
+[1726052972.939417][1927:1929] CHIP:FP: Validating NOC chain
+[1726052972.941180][1927:1929] CHIP:FP: NOC chain validation successful
+[1726052972.941381][1927:1929] CHIP:FP: Updated fabric at index: 0x1, Node ID: 0x000000000001B669
+[1726052972.941404][1927:1929] CHIP:TS: Last Known Good Time: 2023-10-14T01:16:48
+[1726052972.941417][1927:1929] CHIP:TS: New proposed Last Known Good Time: 2021-01-01T00:00:00
+[1726052972.941428][1927:1929] CHIP:TS: Retaining current Last Known Good Time
+[1726052972.942509][1927:1929] CHIP:FP: Metadata for Fabric 0x1 persisted to storage.
+[1726052972.942864][1927:1929] CHIP:TS: Committing Last Known Good Time to storage: 2023-10-14T01:16:48
+[1726052972.943177][1927:1929] CHIP:CTL: Joined the fabric at index 1. Fabric ID is 0x0000000000000001 (Compressed Fabric ID: 611094AAB132C301)
+[1726052972.943199][1927:1929] CHIP:IN: UDP::Init bind&listen port=5550
+[1726052972.943262][1927:1929] CHIP:IN: UDP::Init bound to port=5550
+[1726052972.943281][1927:1929] CHIP:IN: UDP::Init bind&listen port=5550
+[1726052972.943317][1927:1929] CHIP:IN: UDP::Init bound to port=5550
+[1726052972.943330][1927:1929] CHIP:IN: TransportMgr initialized
+[1726052972.946808][1927:1929] CHIP:TOO: Sending command to node 0x1
+[1726052972.947217][1927:1929] CHIP:CSM: FindOrEstablishSession: PeerId = [1:0000000000000001]
+[1726052972.947242][1927:1929] CHIP:CSM: FindOrEstablishSession: No existing OperationalSessionSetup instance found
+[1726052972.947259][1927:1929] CHIP:DIS: OperationalSessionSetup[1:0000000000000001]: State change 1 --> 2
+[1726052972.997240][1927:1929] CHIP:DIS: UDP:[fe80::b6ed:d5ff:fe00:d4cd%wlan0]:5540: new best score: 7
+[1726052972.997647][1927:1929] CHIP:DIS: Lookup clearing interface for non LL address
+[1726052972.997701][1927:1929] CHIP:DIS: UDP:[2409:895b:3242:ddfc:b6ed:d5ff:fe00:d4cd%wlan0]:5540: new best score: 6
+[1726052972.997905][1927:1929] CHIP:DIS: Lookup clearing interface for non LL address
+[1726052972.997935][1927:1929] CHIP:DIS: UDP:172.20.10.4%wlan0:5540: new best score: 2
+[1726052972.997949][1927:1929] CHIP:DIS: Checking node lookup status after 51 ms
+[1726052972.997960][1927:1929] CHIP:DIS: Keeping DNSSD lookup active
+[1726052972.998223][1927:1929] CHIP:DIS: UDP:[fe80::b6ed:d5ff:fe00:d4cd%wlan0]:5540: new best score: 7
+[1726052972.998613][1927:1929] CHIP:DIS: Lookup clearing interface for non LL address
+[1726052972.998650][1927:1929] CHIP:DIS: UDP:[2409:895b:3242:ddfc:b6ed:d5ff:fe00:d4cd%wlan0]:5540: new best score: 6
+[1726052972.999023][1927:1929] CHIP:DIS: UDP:172.20.10.4%wlan0:5540: score has not improved: 2
+[1726052972.999039][1927:1929] CHIP:DIS: Checking node lookup status after 52 ms
+[1726052972.999051][1927:1929] CHIP:DIS: Keeping DNSSD lookup active
+[1726052973.147276][1927:1929] CHIP:DIS: Checking node lookup status after 200 ms
+[1726052973.147384][1927:1929] CHIP:DIS: OperationalSessionSetup[1:0000000000000001]: Updating device address to UDP:[fe80::b6ed:d5ff:fe00:d4cd%wlan0]:5540 while in state 2
+[1726052973.147400][1927:1929] CHIP:DIS: OperationalSessionSetup[1:0000000000000001]: State change 2 --> 3
+[1726052973.147486][1927:1929] CHIP:IN: SecureSession[0x7fa4005e10]: Allocated Type:2 LSID:29816
+[1726052973.147509][1927:1929] CHIP:SC: Initiating session on local FabricIndex 1 from 0x000000000001B669 -> 0x0000000000000001
+[1726052973.148203][1927:1929] CHIP:EM: <<< [E:22550i S:0 M:264452270] (U) Msg TX to 0:0000000000000000 [0000] [UDP:[fe80::b6ed:d5ff:fe00:d4cd%wlan0]:5540] --- Type 0000:30 (SecureChannel:CASE_Sigma1)
+[1726052973.148562][1927:1929] CHIP:SC: Sent Sigma1 msg
+[1726052973.148624][1927:1929] CHIP:DIS: OperationalSessionSetup[1:0000000000000001]: State change 3 --> 4
+[1726052973.197091][1927:1929] CHIP:EM: >>> [E:22550i S:0 M:226015800 (Ack:264452270)] (U) Msg RX from 0:0000000000000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)
+[1726052973.197144][1927:1929] CHIP:EM: Found matching exchange: 22550i, Delegate: 0x7fa4027488
+[1726052973.197162][1927:1929] CHIP:EM: Rxd Ack; Removing MessageCounter:264452270 from Retrans Table on exchange 22550i
+[1726052974.029065][1927:1929] CHIP:EM: >>> [E:22550i S:0 M:226015801 (Ack:264452270)] (U) Msg RX from 0:0000000000000000 [0000] --- Type 0000:31 (SecureChannel:CASE_Sigma2)
+[1726052974.029114][1927:1929] CHIP:EM: Found matching exchange: 22550i, Delegate: 0x7fa4027488
+[1726052974.029126][1927:1929] CHIP:EM: CHIP MessageCounter:264452270 not in RetransTable on exchange 22550i
+[1726052974.029147][1927:1929] CHIP:SC: Received Sigma2 msg
+[1726052974.029164][1927:1929] CHIP:SC: Peer assigned session session ID 8964
+[1726052974.032278][1927:1929] CHIP:SC: Sending Sigma3
+[1726052974.032652][1927:1929] CHIP:EM: <<< [E:22550i S:0 M:264452271 (Ack:226015801)] (U) Msg TX to 0:0000000000000000 [0000] [UDP:[fe80::b6ed:d5ff:fe00:d4cd%wlan0]:5540] --- Type 0000:32 (SecureChannel:C
+ASE_Sigma3)
+[1726052974.032937][1927:1929] CHIP:SC: Sent Sigma3 msg
+[1726052974.117044][1927:1929] CHIP:EM: >>> [E:22550i S:0 M:226015802 (Ack:264452271)] (U) Msg RX from 0:0000000000000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)
+[1726052974.117200][1927:1929] CHIP:EM: Found matching exchange: 22550i, Delegate: 0x7fa4027488
+[1726052974.117234][1927:1929] CHIP:EM: Rxd Ack; Removing MessageCounter:264452271 from Retrans Table on exchange 22550i
+[1726052975.197097][1927:1929] CHIP:EM: >>> [E:22550i S:0 M:226015803 (Ack:264452271)] (U) Msg RX from 0:0000000000000000 [0000] --- Type 0000:40 (SecureChannel:StatusReport)
+[1726052975.197149][1927:1929] CHIP:EM: Found matching exchange: 22550i, Delegate: 0x7fa4027488
+[1726052975.197161][1927:1929] CHIP:EM: CHIP MessageCounter:264452271 not in RetransTable on exchange 22550i
+[1726052975.197183][1927:1929] CHIP:SC: Success status report received. Session was established
+[1726052975.198006][1927:1929] CHIP:SC: SecureSession[0x7fa4005e10, LSID:29816]: State change 'kEstablishing' --> 'kActive'
+[1726052975.198034][1927:1929] CHIP:IN: SecureSession[0x7fa4005e10]: Activated - Type:2 LSID:29816
+[1726052975.198043][1927:1929] CHIP:IN: New secure session activated for device <0000000000000001, 1>, LSID:29816 PSID:8964!
+[1726052975.198057][1927:1929] CHIP:DIS: OperationalSessionSetup[1:0000000000000001]: State change 4 --> 5
+[1726052975.198113][1927:1929] CHIP:TOO: Sending cluster (0x00000006) command (0x00000002) on endpoint 1
+[1726052975.198143][1927:1929] CHIP:DMG: ICR moving to [AddingComm]
+[1726052975.198154][1927:1929] CHIP:DMG: ICR moving to [AddedComma]
+[1726052975.198265][1927:1929] CHIP:EM: <<< [E:22551i S:29816 M:57764909] (S) Msg TX to 1:0000000000000001 [C301] [UDP:[fe80::b6ed:d5ff:fe00:d4cd%wlan0]:5540] --- Type 0001:08 (IM:InvokeCommandRequest)
+[1726052975.198699][1927:1929] CHIP:DMG: ICR moving to [AwaitingRe]
+[1726052975.198876][1927:1929] CHIP:EM: <<< [E:22550i S:0 M:264452272 (Ack:226015803)] (U) Msg TX to 0:0000000000000000 [0000] [UDP:[fe80::b6ed:d5ff:fe00:d4cd%wlan0]:5540] --- Type 0000:10 (SecureChannel:S
+tandaloneAck)
+[1726052975.199168][1927:1929] CHIP:EM: Flushed pending ack for MessageCounter:226015803 on exchange 22550i
+[1726052975.269089][1927:1929] CHIP:EM: >>> [E:22551i S:29816 M:193252867 (Ack:57764909)] (S) Msg RX from 1:0000000000000001 [C301] --- Type 0001:09 (IM:InvokeCommandResponse)
+[1726052975.269142][1927:1929] CHIP:EM: Found matching exchange: 22551i, Delegate: 0x7fa401f758
+[1726052975.269161][1927:1929] CHIP:EM: Rxd Ack; Removing MessageCounter:57764909 from Retrans Table on exchange 22551i
+[1726052975.269175][1927:1929] CHIP:DMG: ICR moving to [ResponseRe]
+[1726052975.269212][1927:1929] CHIP:DMG: Received Command Response Status for Endpoint=1 Cluster=0x0000_0006 Command=0x0000_0002 Status=0x0
+[1726052975.269258][1927:1929] CHIP:DMG: ICR moving to [AwaitingDe]
+[1726052975.269395][1927:1929] CHIP:EM: <<< [E:22551i S:29816 M:57764910 (Ack:193252867)] (S) Msg TX to 1:0000000000000001 [C301] [UDP:[fe80::b6ed:d5ff:fe00:d4cd%wlan0]:5540] --- Type 0000:10 (SecureChanne
+l:StandaloneAck)
+[1726052975.269821][1927:1929] CHIP:EM: Flushed pending ack for MessageCounter:193252867 on exchange 22551i
+[1726052975.270372][1927:1927] CHIP:CTL: Shutting down the commissioner
+[1726052975.270443][1927:1927] CHIP:CTL: Shutting down the controller
+[1726052975.270453][1927:1927] CHIP:IN: Expiring all sessions for fabric 0x1!!
+[1726052975.270462][1927:1927] CHIP:IN: SecureSession[0x7fa4005e10]: MarkForEviction Type:2 LSID:29816
+[1726052975.270472][1927:1927] CHIP:SC: SecureSession[0x7fa4005e10, LSID:29816]: State change 'kActive' --> 'kPendingEviction'
+[1726052975.270482][1927:1927] CHIP:IN: SecureSession[0x7fa4005e10]: Released - Type:2 LSID:29816
+[1726052975.270492][1927:1927] CHIP:FP: Forgetting fabric 0x1
+[1726052975.270508][1927:1927] CHIP:TS: Pending Last Known Good Time: 2023-10-14T01:16:48
+[1726052975.270613][1927:1927] CHIP:TS: Previous Last Known Good Time: 2023-10-14T01:16:48
+[1726052975.270622][1927:1927] CHIP:TS: Reverted Last Known Good Time to previous value
+[1726052975.270648][1927:1927] CHIP:CTL: Shutting down the commissioner
+[1726052975.270682][1927:1927] CHIP:CTL: Shutting down the controller
+[1726052975.270690][1927:1927] CHIP:CTL: Shutting down the System State, this will teardown the CHIP Stack
+[1726052975.270805][1927:1927] CHIP:DMG: All ReadHandler-s are clean, clear GlobalDirtySet
+[1726052975.270850][1927:1927] CHIP:FP: Shutting down FabricTable
+[1726052975.270861][1927:1927] CHIP:TS: Pending Last Known Good Time: 2023-10-14T01:16:48
+[1726052975.270903][1927:1927] CHIP:TS: Previous Last Known Good Time: 2023-10-14T01:16:48
+[1726052975.270911][1927:1927] CHIP:TS: Reverted Last Known Good Time to previous value
+[1726052975.271024][1927:1927] CHIP:DL: writing settings to file (/tmp/chip_counters.ini-QKubBW)
+[1726052975.271170][1927:1927] CHIP:DL: renamed tmp file to file (/tmp/chip_counters.ini)
+[1726052975.271191][1927:1927] CHIP:DL: NVS set: chip-counters/total-operational-hours = 0 (0x0)
+[1726052975.271208][1927:1927] CHIP:DL: Inet Layer shutdown
+[1726052975.271215][1927:1927] CHIP:DL: BLE shutdown
+[1726052975.271337][1927:1927] CHIP:DL: System Layer shutdown
+/ #

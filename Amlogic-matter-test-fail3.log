@@ -1,0 +1,573 @@
+/ # rm -rf /tmp/chip_* && chip-tool pairing ble-wifi 0x1 "lensgms" "lensgms@2023
+.." 81732706 1450
+[479.454001][3880:3880] CHIP:DL: ChipLinuxStorage::Init: Using KVS config file: /tmp/chip_tool_kvs
+[479.454139][3880:3880] CHIP:DL: writing settings to file (/tmp/chip_tool_kvs-vmHr0y)
+[479.454201][3880:3880] CHIP:DL: renamed tmp file to file (/tmp/chip_tool_kvs)
+[479.454974][3880:3880] CHIP:DL: ChipLinuxStorage::Init: Using KVS config file: /tmp/chip_kvs
+[479.455009][3880:3880] CHIP:DL: ChipLinuxStorage::Init: Attempt to re-initialize with KVS config file: /tmp/chip_kvs
+[479.455240][3880:3880] CHIP:DL: ChipLinuxStorage::Init: Using KVS config file: /tmp/chip_factory.ini
+[479.455346][3880:3880] CHIP:DL: writing settings to file (/tmp/chip_factory.ini-OuDSQz)
+[479.455434][3880:3880] CHIP:DL: renamed tmp file to file (/tmp/chip_factory.ini)
+[479.455483][3880:3880] CHIP:DL: ChipLinuxStorage::Init: Using KVS config file: /tmp/chip_config.ini
+[479.455529][3880:3880] CHIP:DL: writing settings to file (/tmp/chip_config.ini-VDyiez)
+[479.455575][3880:3880] CHIP:DL: renamed tmp file to file (/tmp/chip_config.ini)
+[479.455612][3880:3880] CHIP:DL: ChipLinuxStorage::Init: Using KVS config file: /tmp/chip_counters.ini
+[479.455654][3880:3880] CHIP:DL: writing settings to file (/tmp/chip_counters.ini-yeEZRz)
+[479.455704][3880:3880] CHIP:DL: renamed tmp file to file (/tmp/chip_counters.ini)
+[479.455810][3880:3880] CHIP:DL: writing settings to file (/tmp/chip_factory.ini-Fnw7Sz)
+[479.455931][3880:3880] CHIP:DL: renamed tmp file to file (/tmp/chip_factory.ini)
+[479.455952][3880:3880] CHIP:DL: NVS set: chip-factory/unique-id = "9E9F103C5B0934C9"
+[479.455997][3880:3880] CHIP:DL: writing settings to file (/tmp/chip_factory.ini-ZDThPy)
+[479.456129][3880:3880] CHIP:DL: renamed tmp file to file (/tmp/chip_factory.ini)
+[479.456151][3880:3880] CHIP:DL: NVS set: chip-factory/vendor-id = 65521 (0xFFF1)
+[479.456191][3880:3880] CHIP:DL: writing settings to file (/tmp/chip_factory.ini-4yQeAA)
+[479.456263][3880:3880] CHIP:DL: renamed tmp file to file (/tmp/chip_factory.ini)
+[479.456286][3880:3880] CHIP:DL: NVS set: chip-factory/product-id = 32769 (0x8001)
+[479.456318][3880:3880] CHIP:DL: writing settings to file (/tmp/chip_counters.ini-39cAwC)
+[479.456381][3880:3880] CHIP:DL: renamed tmp file to file (/tmp/chip_counters.ini)
+[479.456402][3880:3880] CHIP:DL: NVS set: chip-counters/reboot-count = 1 (0x1)
+[479.456446][3880:3880] CHIP:DL: writing settings to file (/tmp/chip_counters.ini-0H2EDA)
+[479.456515][3880:3880] CHIP:DL: renamed tmp file to file (/tmp/chip_counters.ini)
+[479.456536][3880:3880] CHIP:DL: NVS set: chip-counters/total-operational-hours = 0 (0x0)
+[479.456571][3880:3880] CHIP:DL: writing settings to file (/tmp/chip_counters.ini-Zft2QC)
+[479.456640][3880:3880] CHIP:DL: renamed tmp file to file (/tmp/chip_counters.ini)
+[479.456661][3880:3880] CHIP:DL: NVS set: chip-counters/boot-reason = 0 (0x0)
+[479.456694][3880:3880] CHIP:DL: writing settings to file (/tmp/chip_config.ini-0bDFbB)
+[479.456755][3880:3880] CHIP:DL: renamed tmp file to file (/tmp/chip_config.ini)
+[479.456775][3880:3880] CHIP:DL: NVS set: chip-config/regulatory-location = 0 (0x0)
+[479.456809][3880:3880] CHIP:DL: writing settings to file (/tmp/chip_config.ini-0KfzBy)
+[479.456876][3880:3880] CHIP:DL: renamed tmp file to file (/tmp/chip_config.ini)
+[479.456897][3880:3880] CHIP:DL: NVS set: chip-config/location-capability = 2 (0x2)
+[479.457374][3880:3880] CHIP:DL: Got Ethernet interface: eth0
+[479.457664][3880:3880] CHIP:DL: Found the primary Ethernet interface:eth0
+[479.458071][3880:3880] CHIP:DL: Failed to get WiFi interface
+[479.458092][3880:3880] CHIP:DL: Failed to reset WiFi statistic counts
+[479.458144][3880:3880] CHIP:IN: UDP::Init bind&listen port=0
+[479.458205][3880:3880] CHIP:IN: UDP::Init bound to port=55379
+[479.458218][3880:3880] CHIP:IN: UDP::Init bind&listen port=0
+[479.458254][3880:3880] CHIP:IN: UDP::Init bound to port=37288
+[479.458266][3880:3880] CHIP:IN: BLEBase::Init - setting/overriding transport
+[479.458273][3880:3880] CHIP:IN: TransportMgr initialized
+[479.458309][3880:3880] CHIP:FP: Initializing FabricTable from persistent storage
+[479.458339][3880:3880] CHIP:TS: Last Known Good Time: [unknown]
+[479.458356][3880:3880] CHIP:TS: Setting Last Known Good Time to firmware build time 2023-10-14T01:16:48
+[479.458866][3880:3880] CHIP:ZCL: Using ZAP configuration...
+[479.461943][3880:3880] CHIP:CTL: System State Initialized...
+[479.462033][3880:3880] CHIP:CTL: Setting attestation nonce to random value
+[479.462079][3880:3880] CHIP:CTL: Setting CSR nonce to random value
+[479.462116][3880:3880] CHIP:IN: UDP::Init bind&listen port=5550
+[479.462157][3880:3880] CHIP:IN: UDP::Init bound to port=5550
+[479.462170][3880:3880] CHIP:IN: UDP::Init bind&listen port=5550
+[479.462202][3880:3880] CHIP:IN: UDP::Init bound to port=5550
+[479.462214][3880:3880] CHIP:IN: TransportMgr initialized
+[479.462637][3880:3882] CHIP:DL: CHIP task running
+[479.462716][3880:3882] CHIP:DL: HandlePlatformSpecificBLEEvent 32786
+[479.462959][3880:3882] CHIP:CTL: Setting attestation nonce to random value
+[479.463027][3880:3882] CHIP:CTL: Setting CSR nonce to random value
+[479.463091][3880:3882] CHIP:CTL: Couldn't get ExampleOpCredsCAKey from storage: src/controller/ExamplePersistentStorage.cpp:106: CHIP Error 0x000000A0: Value not f
+ound in the persisted storage
+[479.465733][3880:3882] CHIP:CTL: Couldn't get ExampleOpCredsICAKey from storage: src/controller/ExamplePersistentStorage.cpp:106: CHIP Error 0x000000A0: Value not
+found in the persisted storage
+[479.466532][3880:3882] CHIP:CTL: Generating RCAC
+[479.467046][3880:3882] CHIP:CTL: Generating ICAC
+[479.467451][3880:3882] CHIP:CTL: Generating NOC
+[479.467852][3880:3882] CHIP:FP: Validating NOC chain
+[479.469673][3880:3882] CHIP:FP: NOC chain validation successful
+[479.469872][3880:3882] CHIP:FP: Added new fabric at index: 0x1
+[479.469890][3880:3882] CHIP:FP: Assigned compressed fabric ID: 0x0D5588612503EE99, node ID: 0x000000000001B669
+[479.469908][3880:3882] CHIP:TS: Last Known Good Time: 2023-10-14T01:16:48
+[479.469921][3880:3882] CHIP:TS: New proposed Last Known Good Time: 2021-01-01T00:00:00
+[479.469932][3880:3882] CHIP:TS: Retaining current Last Known Good Time
+[479.470355][3880:3882] CHIP:FP: Metadata for Fabric 0x1 persisted to storage.
+[479.470680][3880:3882] CHIP:TS: Committing Last Known Good Time to storage: 2023-10-14T01:16:48
+[479.471026][3880:3882] CHIP:CTL: Joined the fabric at index 1. Fabric ID is 0x0000000000000001 (Compressed Fabric ID: 0D5588612503EE99)
+[479.471049][3880:3882] CHIP:IN: UDP::Init bind&listen port=5550
+[479.471111][3880:3882] CHIP:IN: UDP::Init bound to port=5550
+[479.471123][3880:3882] CHIP:IN: UDP::Init bind&listen port=5550
+[479.471157][3880:3882] CHIP:IN: UDP::Init bound to port=5550
+[479.471168][3880:3882] CHIP:IN: TransportMgr initialized
+[479.478017][3880:3882] CHIP:CTL: Setting wifi credentials from parameters
+[479.478057][3880:3882] CHIP:CTL: Setting attestation nonce to random value
+[479.478086][3880:3882] CHIP:CTL: Setting CSR nonce to random value
+[479.478108][3880:3882] CHIP:CTL: Checking ICD registration parameters
+[479.478120][3880:3882] CHIP:CTL: Commission called for node ID 0x0000000000000001
+[479.490395][3880:3881] CHIP:BLE: BLE removing known devices
+[479.491646][3880:3881] CHIP:BLE: BLE initiating scan
+[479.498805][3880:3882] CHIP:BLE: ChipDeviceScanner has started scanning!
+[479.511928][3880:3881] CHIP:BLE: Device 35:73:B1:05:55:92 does not look like a CHIP device.
+[479.514773][3880:3881] CHIP:BLE: Device 59:BB:CE:6F:A6:3D does not look like a CHIP device.
+[479.515572][3880:3881] CHIP:BLE: Device 3B:E3:0E:81:D3:60 does not look like a CHIP device.
+[479.519719][3880:3881] CHIP:BLE: Device 48:F3:F3:60:74:40 does not look like a CHIP device.
+[479.521348][3880:3881] CHIP:BLE: Device 5E:13:B0:A4:13:86 does not look like a CHIP device.
+[479.524739][3880:3881] CHIP:BLE: Device 44:2F:A6:BA:56:D6 does not look like a CHIP device.
+[479.531859][3880:3881] CHIP:BLE: Device CB:AB:5A:D8:B8:52 does not look like a CHIP device.
+[479.535354][3880:3881] CHIP:BLE: Device 5D:C6:46:2D:CC:2A does not look like a CHIP device.
+[479.537395][3880:3881] CHIP:BLE: Device 2B:B6:4A:15:66:0E does not look like a CHIP device.
+[479.540790][3880:3881] CHIP:BLE: Device E5:A6:C9:32:D2:A4 does not look like a CHIP device.
+[479.541741][3880:3881] CHIP:BLE: Device 23:13:F6:97:45:6D does not look like a CHIP device.
+[479.547221][3880:3881] CHIP:BLE: Device 64:DF:47:F3:8C:60 does not look like a CHIP device.
+[479.557321][3880:3881] CHIP:BLE: Device C4:AC:53:D2:70:1E does not look like a CHIP device.
+[479.558390][3880:3881] CHIP:BLE: Device 3D:11:4F:97:1E:48 does not look like a CHIP device.
+[479.569417][3880:3881] CHIP:BLE: Device 38:F9:F5:12:3A:2D does not look like a CHIP device.
+[479.578960][3880:3881] CHIP:BLE: Device 7B:DC:8F:A7:65:22 does not look like a CHIP device.
+[479.580788][3880:3881] CHIP:BLE: Device 54:65:C0:A4:22:07 does not look like a CHIP device.
+[479.589689][3880:3881] CHIP:BLE: Device 77:F1:4A:7A:74:B1 does not look like a CHIP device.
+[479.602979][3880:3881] CHIP:BLE: Device 4D:2E:75:A2:B8:0A does not look like a CHIP device.
+[479.604799][3880:3881] CHIP:BLE: Device 01:F5:D8:7B:A2:C6 does not look like a CHIP device.
+[479.621313][3880:3881] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[479.623383][3880:3881] CHIP:BLE: Device 72:D2:7A:BD:4E:B2 does not look like a CHIP device.
+[479.624443][3880:3881] CHIP:BLE: Device 4D:81:5C:BA:E3:44 does not look like a CHIP device.
+[479.636564][3880:3881] CHIP:BLE: Device 3B:F5:64:05:20:6A does not look like a CHIP device.
+[479.640965][3880:3881] CHIP:BLE: Device 73:BE:E5:69:97:E5 does not look like a CHIP device.
+[479.647079][3880:3881] CHIP:BLE: Device 48:C5:F9:1B:B2:8B does not look like a CHIP device.
+[479.678083][3880:3881] CHIP:BLE: Device 1C:55:C1:C6:E6:37 does not look like a CHIP device.
+[479.701952][3880:3881] CHIP:BLE: Device 75:B9:1D:A4:58:62 does not look like a CHIP device.
+[479.703225][3880:3881] CHIP:BLE: Device 21:D5:D0:D3:93:8B does not look like a CHIP device.
+[479.707270][3880:3881] CHIP:BLE: Device EA:46:86:80:55:7B does not look like a CHIP device.
+[479.710414][3880:3881] CHIP:BLE: Device 4B:C6:F2:0E:44:6A does not look like a CHIP device.
+[479.712228][3880:3881] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[479.733882][3880:3881] CHIP:BLE: Device 48:11:4E:4E:F9:67 does not look like a CHIP device.
+[479.748490][3880:3881] CHIP:BLE: Device 38:68:65:49:0E:FE does not look like a CHIP device.
+[479.749921][3880:3881] CHIP:BLE: Device 60:96:79:F4:72:CC does not look like a CHIP device.
+[479.767222][3880:3881] CHIP:BLE: Device 6D:41:58:C6:76:14 does not look like a CHIP device.
+[479.768733][3880:3881] CHIP:BLE: Device 79:2D:EA:36:AE:FB does not look like a CHIP device.
+[479.775737][3880:3881] CHIP:BLE: Device C1:E4:5E:A1:72:90 does not look like a CHIP device.
+[479.779980][3880:3881] CHIP:BLE: Device FD:A4:DB:C2:9C:46 does not look like a CHIP device.
+[479.799069][3880:3881] CHIP:BLE: Device 75:45:5A:59:09:51 does not look like a CHIP device.
+[479.815762][3880:3881] CHIP:BLE: Device C4:D7:38:BF:8F:07 does not look like a CHIP device.
+[479.822176][3880:3881] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[479.837354][3880:3881] CHIP:BLE: Device 70:5E:A5:E4:52:9E does not look like a CHIP device.
+[479.853586][3880:3881] CHIP:BLE: Device 77:F1:4A:7A:74:B1 does not look like a CHIP device.
+[479.857173][3880:3881] CHIP:BLE: Device 4D:2E:75:A2:B8:0A does not look like a CHIP device.
+[479.882075][3880:3881] CHIP:BLE: Device 07:9F:9E:0F:BF:A8 does not look like a CHIP device.
+[479.899127][3880:3881] CHIP:BLE: Device 4E:A2:C7:18:80:6C does not look like a CHIP device.
+[479.904478][3880:3881] CHIP:BLE: Device 4D:81:5C:BA:E3:44 does not look like a CHIP device.
+[479.908439][3880:3881] CHIP:BLE: Device 75:FE:55:FB:BA:90 does not look like a CHIP device.
+[479.930322][3880:3881] CHIP:BLE: Device 73:BE:E5:69:97:E5 does not look like a CHIP device.
+[479.930472][3880:3881] CHIP:BLE: Device C4:D7:38:BF:8F:07 does not look like a CHIP device.
+[479.969462][3880:3881] CHIP:BLE: Device 42:B1:CA:5D:03:AC does not look like a CHIP device.
+[479.972240][3880:3881] CHIP:BLE: Device 72:1B:19:E2:45:A1 does not look like a CHIP device.
+[479.983628][3880:3881] CHIP:BLE: Device 7B:3A:E6:A8:C3:00 does not look like a CHIP device.
+[479.984080][3880:3881] CHIP:BLE: Device 4B:C6:F2:0E:44:6A does not look like a CHIP device.
+[480.003156][3880:3881] CHIP:BLE: Device 38:68:65:49:0E:FE does not look like a CHIP device.
+[480.027681][3880:3881] CHIP:BLE: Device 41:8C:2E:ED:A6:E1 does not look like a CHIP device.
+[480.038319][3880:3881] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[480.054213][3880:3881] CHIP:BLE: Device 54:CC:4F:D5:B5:48 does not look like a CHIP device.
+[480.060506][3880:3881] CHIP:BLE: Device 5F:0A:D6:47:03:59 does not look like a CHIP device.
+[480.061870][3880:3881] CHIP:BLE: Device 2C:B3:01:4C:B9:BB does not look like a CHIP device.
+[480.063183][3880:3881] CHIP:BLE: Device 7F:77:02:3D:E5:25 does not look like a CHIP device.
+[480.066390][3880:3881] CHIP:BLE: Device C4:D7:38:BF:8F:07 does not look like a CHIP device.
+[480.066903][3880:3881] CHIP:BLE: Device 75:45:5A:59:09:51 does not look like a CHIP device.
+[480.069276][3880:3881] CHIP:BLE: Device 5E:57:88:53:6B:44 does not look like a CHIP device.
+[480.072784][3880:3881] CHIP:BLE: Device 41:9E:19:FA:C1:97 does not look like a CHIP device.
+[480.094962][3880:3881] CHIP:BLE: Device 54:8C:46:67:C5:33 does not look like a CHIP device.
+[480.095226][3880:3881] CHIP:BLE: Device 64:DF:47:F3:8C:60 does not look like a CHIP device.
+[480.105888][3880:3881] CHIP:BLE: Device 70:5E:A5:E4:52:9E does not look like a CHIP device.
+[480.116966][3880:3881] CHIP:BLE: Device 46:E3:A7:00:7A:0B does not look like a CHIP device.
+[480.121262][3880:3881] CHIP:BLE: Device 40:10:95:F8:3A:A8 does not look like a CHIP device.
+[480.134075][3880:3881] CHIP:BLE: Device 4D:2E:75:A2:B8:0A does not look like a CHIP device.
+[480.162077][3880:3881] CHIP:BLE: Device 33:B1:1A:CB:A2:C2 does not look like a CHIP device.
+[480.191822][3880:3881] CHIP:BLE: Device 73:BE:E5:69:97:E5 does not look like a CHIP device.
+[480.195047][3880:3881] CHIP:BLE: Device C1:BE:62:54:8B:EA does not look like a CHIP device.
+[480.198349][3880:3881] CHIP:BLE: Device 07:9F:9E:0F:BF:A8 does not look like a CHIP device.
+[480.222008][3880:3881] CHIP:BLE: Device 47:50:20:2E:D3:E5 does not look like a CHIP device.
+[480.229336][3880:3881] CHIP:BLE: Device 75:3F:23:F2:E3:F7 does not look like a CHIP device.
+[480.236366][3880:3881] CHIP:BLE: Device 75:B9:1D:A4:58:62 does not look like a CHIP device.
+[480.238924][3880:3881] CHIP:BLE: Device 5F:0F:5B:D2:72:BE does not look like a CHIP device.
+[480.239238][3880:3881] CHIP:BLE: Device 72:1B:19:E2:45:A1 does not look like a CHIP device.
+[480.247029][3880:3881] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[480.273015][3880:3881] CHIP:BLE: Device 63:9A:F1:4F:F0:20 does not look like a CHIP device.
+[480.273568][3880:3881] CHIP:BLE: Device 38:68:65:49:0E:FE does not look like a CHIP device.
+[480.296874][3880:3881] CHIP:BLE: Device 6D:41:58:C6:76:14 does not look like a CHIP device.
+[480.297012][3880:3881] CHIP:BLE: Device 41:8C:2E:ED:A6:E1 does not look like a CHIP device.
+[480.314742][3880:3881] CHIP:BLE: Device C4:D7:38:BF:8F:07 does not look like a CHIP device.
+[480.320741][3880:3881] CHIP:BLE: Device 54:CC:4F:D5:B5:48 does not look like a CHIP device.
+[480.323046][3880:3881] CHIP:BLE: Device C9:94:9F:22:6F:29 does not look like a CHIP device.
+[480.328410][3880:3881] CHIP:BLE: Device 2C:B3:01:4C:B9:BB does not look like a CHIP device.
+[480.331116][3880:3881] CHIP:BLE: Device 43:38:25:54:FA:96 does not look like a CHIP device.
+[480.338467][3880:3881] CHIP:BLE: Device 5E:57:88:53:6B:44 does not look like a CHIP device.
+[480.339093][3880:3881] CHIP:BLE: Device 75:45:5A:59:09:51 does not look like a CHIP device.
+[480.349856][3880:3881] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[480.350040][3880:3881] CHIP:BLE: Device 33:B1:1A:CB:A2:C2 does not look like a CHIP device.
+[480.352117][3880:3881] CHIP:BLE: Device 54:8C:46:67:C5:33 does not look like a CHIP device.
+[480.359026][3880:3881] CHIP:BLE: Device 54:D2:41:BF:21:7A does not look like a CHIP device.
+[480.370244][3880:3881] CHIP:BLE: Device 64:DF:47:F3:8C:60 does not look like a CHIP device.
+[480.383029][3880:3881] CHIP:BLE: Device 70:5E:A5:E4:52:9E does not look like a CHIP device.
+[480.385779][3880:3881] CHIP:BLE: Device E7:F9:3C:48:7C:7F does not look like a CHIP device.
+[480.393821][3880:3881] CHIP:BLE: Device 63:9A:F1:4F:F0:20 does not look like a CHIP device.
+[480.402049][3880:3881] CHIP:BLE: Device 46:E3:A7:00:7A:0B does not look like a CHIP device.
+[480.402685][3880:3881] CHIP:BLE: Device 40:10:95:F8:3A:A8 does not look like a CHIP device.
+[480.407255][3880:3881] CHIP:BLE: Device 07:9F:9E:0F:BF:A8 does not look like a CHIP device.
+[480.411326][3880:3881] CHIP:BLE: Device 4D:2E:75:A2:B8:0A does not look like a CHIP device.
+[480.425770][3880:3881] CHIP:BLE: Device 5F:0A:D6:47:03:59 does not look like a CHIP device.
+[480.429359][3880:3881] CHIP:BLE: Device 32:1E:58:3C:6C:45 does not look like a CHIP device.
+[480.429609][3880:3881] CHIP:BLE: Device 7F:77:02:3D:E5:25 does not look like a CHIP device.
+[480.437640][3880:3881] CHIP:BLE: Device 58:DD:5D:9B:97:06 does not look like a CHIP device.
+[480.439233][3880:3881] CHIP:BLE: Device 4A:A6:07:0A:52:1E does not look like a CHIP device.
+[480.443466][3880:3881] CHIP:BLE: Device DA:0A:81:27:3F:10 does not look like a CHIP device.
+[480.450371][3880:3881] CHIP:BLE: Device C4:D7:38:BF:8F:07 does not look like a CHIP device.
+[480.452232][3880:3881] CHIP:BLE: Device 2C:B3:01:4C:B9:BB does not look like a CHIP device.
+[480.452811][3880:3881] CHIP:BLE: Device 75:FE:55:FB:BA:90 does not look like a CHIP device.
+[480.456437][3880:3881] CHIP:BLE: Device 4D:81:5C:BA:E3:44 does not look like a CHIP device.
+[480.457915][3880:3881] CHIP:BLE: Device 7F:7A:0F:F7:CB:AE does not look like a CHIP device.
+[480.475342][3880:3881] CHIP:BLE: Device 73:BE:E5:69:97:E5 does not look like a CHIP device.
+[480.476732][3880:3881] CHIP:BLE: Device 39:30:ED:E7:CB:FF does not look like a CHIP device.
+[480.493398][3880:3881] CHIP:BLE: Device 7E:D8:4D:3B:AF:37 does not look like a CHIP device.
+[480.502392][3880:3881] CHIP:BLE: Device DB:6C:C3:96:38:9D does not look like a CHIP device.
+[480.505738][3880:3881] CHIP:BLE: Device 63:9A:F1:4F:F0:20 does not look like a CHIP device.
+[480.508327][3880:3881] CHIP:BLE: Device DA:05:52:51:B7:59 does not look like a CHIP device.
+[480.511023][3880:3881] CHIP:BLE: Device 5F:0F:5B:D2:72:BE does not look like a CHIP device.
+[480.519578][3880:3881] CHIP:BLE: Device 72:1B:19:E2:45:A1 does not look like a CHIP device.
+[480.522055][3880:3881] CHIP:BLE: Device 4B:C6:F2:0E:44:6A does not look like a CHIP device.
+[480.525934][3880:3881] CHIP:BLE: Device 7B:3A:E6:A8:C3:00 does not look like a CHIP device.
+[480.533710][3880:3881] CHIP:BLE: Device 33:B1:1A:CB:A2:C2 does not look like a CHIP device.
+[480.553617][3880:3881] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[480.580632][3880:3881] CHIP:BLE: Device 2C:B3:01:4C:B9:BB does not look like a CHIP device.
+[480.603705][3880:3881] CHIP:BLE: Device 75:B9:1D:A4:58:62 does not look like a CHIP device.
+[480.605467][3880:3881] CHIP:BLE: Device 43:38:25:54:FA:96 does not look like a CHIP device.
+[480.611454][3880:3881] CHIP:BLE: Device 5F:0A:D6:47:03:59 does not look like a CHIP device.
+[480.619506][3880:3881] CHIP:BLE: Device 5E:57:88:53:6B:44 does not look like a CHIP device.
+[480.623965][3880:3881] CHIP:BLE: Device 75:45:5A:59:09:51 does not look like a CHIP device.
+[480.624445][3880:3881] CHIP:BLE: Device 41:9E:19:FA:C1:97 does not look like a CHIP device.
+[480.639205][3880:3881] CHIP:BLE: Device 54:8C:46:67:C5:33 does not look like a CHIP device.
+[480.643182][3880:3881] CHIP:BLE: Device E7:93:FF:18:AF:6A does not look like a CHIP device.
+[480.651137][3880:3881] CHIP:BLE: Device 70:5E:A5:E4:52:9E does not look like a CHIP device.
+[480.688878][3880:3881] CHIP:BLE: Device 30:1A:BA:38:C2:34 does not look like a CHIP device.
+[480.689228][3880:3881] CHIP:BLE: Device 40:10:95:F8:3A:A8 does not look like a CHIP device.
+[480.689952][3880:3881] CHIP:BLE: Device 4D:2E:75:A2:B8:0A does not look like a CHIP device.
+[480.701936][3880:3881] CHIP:BLE: Device 58:DD:5D:9B:97:06 does not look like a CHIP device.
+[480.712772][3880:3881] CHIP:BLE: Device 2C:B3:01:4C:B9:BB does not look like a CHIP device.
+[480.728655][3880:3881] CHIP:BLE: Device C4:D7:38:BF:8F:07 does not look like a CHIP device.
+[480.760193][3880:3881] CHIP:BLE: Device 73:BE:E5:69:97:E5 does not look like a CHIP device.
+[480.762088][3880:3881] CHIP:BLE: Device C3:07:83:89:47:38 does not look like a CHIP device.
+[480.777561][3880:3881] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[480.785244][3880:3881] CHIP:BLE: Device 75:B9:1D:A4:58:62 does not look like a CHIP device.
+[480.786051][3880:3881] CHIP:BLE: Device 5F:0F:5B:D2:72:BE does not look like a CHIP device.
+[480.792607][3880:3881] CHIP:BLE: Device 5F:0A:D6:47:03:59 does not look like a CHIP device.
+[480.793211][3880:3881] CHIP:BLE: Device 72:1B:19:E2:45:A1 does not look like a CHIP device.
+[480.831150][3880:3881] CHIP:BLE: Device 4B:C6:F2:0E:44:6A does not look like a CHIP device.
+[480.831301][3880:3881] CHIP:BLE: Device 07:9F:9E:0F:BF:A8 does not look like a CHIP device.
+[480.845563][3880:3881] CHIP:BLE: Device 32:1E:58:3C:6C:45 does not look like a CHIP device.
+[480.854737][3880:3881] CHIP:BLE: Device 60:96:79:F4:72:CC does not look like a CHIP device.
+[480.861787][3880:3881] CHIP:BLE: Device 41:8C:2E:ED:A6:E1 does not look like a CHIP device.
+[480.864271][3880:3881] CHIP:BLE: Device C1:FC:80:AD:22:68 does not look like a CHIP device.
+[480.866776][3880:3881] CHIP:BLE: Device 63:9A:F1:4F:F0:20 does not look like a CHIP device.
+[480.869854][3880:3881] CHIP:BLE: Device 54:CC:4F:D5:B5:48 does not look like a CHIP device.
+[480.903657][3880:3881] CHIP:BLE: Device 43:38:25:54:FA:96 does not look like a CHIP device.
+[480.904171][3880:3881] CHIP:BLE: Device 33:B1:1A:CB:A2:C2 does not look like a CHIP device.
+[480.924748][3880:3881] CHIP:BLE: Device 7C:4A:2A:BE:37:74 does not look like a CHIP device.
+[480.927132][3880:3881] CHIP:BLE: Device 79:24:57:23:FD:12 does not look like a CHIP device.
+[480.946940][3880:3881] CHIP:BLE: Device 32:1E:58:3C:6C:45 does not look like a CHIP device.
+[480.953914][3880:3881] CHIP:BLE: Device 40:10:95:F8:3A:A8 does not look like a CHIP device.
+[480.960878][3880:3881] CHIP:BLE: Device 4D:2E:75:A2:B8:0A does not look like a CHIP device.
+[480.971790][3880:3881] CHIP:BLE: Device 75:B9:1D:A4:58:62 does not look like a CHIP device.
+[480.974901][3880:3881] CHIP:BLE: Device 5F:0A:D6:47:03:59 does not look like a CHIP device.
+[480.975388][3880:3881] CHIP:BLE: Device 58:DD:5D:9B:97:06 does not look like a CHIP device.
+[480.977878][3880:3881] CHIP:BLE: Device 63:9A:F1:4F:F0:20 does not look like a CHIP device.
+[480.982304][3880:3881] CHIP:BLE: Device C4:D7:38:BF:8F:07 does not look like a CHIP device.
+[480.982870][3880:3881] CHIP:BLE: Device 7F:77:02:3D:E5:25 does not look like a CHIP device.
+[481.002524][3880:3881] CHIP:BLE: Device 73:BE:E5:69:97:E5 does not look like a CHIP device.
+[481.003024][3880:3881] CHIP:BLE: Device 75:FE:55:FB:BA:90 does not look like a CHIP device.
+[481.061685][3880:3881] CHIP:BLE: Device 72:1B:19:E2:45:A1 does not look like a CHIP device.
+[481.093000][3880:3881] CHIP:BLE: Device 4B:C6:F2:0E:44:6A does not look like a CHIP device.
+[481.116597][3880:3881] CHIP:BLE: Device 63:9A:F1:4F:F0:20 does not look like a CHIP device.
+[481.117728][3880:3881] CHIP:BLE: Device C4:D7:38:BF:8F:07 does not look like a CHIP device.
+[481.123917][3880:3881] CHIP:BLE: Device 60:96:79:F4:72:CC does not look like a CHIP device.
+[481.128196][3880:3881] CHIP:BLE: Device 41:8C:2E:ED:A6:E1 does not look like a CHIP device.
+[481.146625][3880:3881] CHIP:BLE: Device 54:CC:4F:D5:B5:48 does not look like a CHIP device.
+[481.153841][3880:3881] CHIP:BLE: Device 75:B9:1D:A4:58:62 does not look like a CHIP device.
+[481.158105][3880:3881] CHIP:BLE: Device 5E:57:88:53:6B:44 does not look like a CHIP device.
+[481.158858][3880:3881] CHIP:BLE: Device 7D:23:3D:E9:54:C8 does not look like a CHIP device.
+[481.160095][3880:3881] CHIP:BLE: Device 43:38:25:54:FA:96 does not look like a CHIP device.
+[481.170936][3880:3881] CHIP:BLE: Device 75:45:5A:59:09:51 does not look like a CHIP device.
+[481.182026][3880:3881] CHIP:BLE: Device 7D:19:77:31:CE:D8 does not look like a CHIP device.
+[481.189406][3880:3881] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[481.189598][3880:3881] CHIP:BLE: Device 64:DF:47:F3:8C:60 does not look like a CHIP device.
+[481.228739][3880:3881] CHIP:BLE: Device 70:5E:A5:E4:52:9E does not look like a CHIP device.
+[481.228887][3880:3881] CHIP:BLE: Device 40:10:95:F8:3A:A8 does not look like a CHIP device.
+[481.241136][3880:3881] CHIP:BLE: Device 4D:2E:75:A2:B8:0A does not look like a CHIP device.
+[481.265922][3880:3881] CHIP:BLE: Device 58:DD:5D:9B:97:06 does not look like a CHIP device.
+[481.268111][3880:3881] CHIP:BLE: Device 32:1E:58:3C:6C:45 does not look like a CHIP device.
+[481.275894][3880:3881] CHIP:BLE: Device 33:B1:1A:CB:A2:C2 does not look like a CHIP device.
+[481.278094][3880:3881] CHIP:BLE: Device 72:D2:7A:BD:4E:B2 does not look like a CHIP device.
+[481.310266][3880:3881] CHIP:BLE: Device 4D:81:5C:BA:E3:44 does not look like a CHIP device.
+[481.339038][3880:3881] CHIP:BLE: Device 75:3F:23:F2:E3:F7 does not look like a CHIP device.
+[481.339517][3880:3881] CHIP:BLE: Device 7B:DC:8F:A7:65:22 does not look like a CHIP device.
+[481.349021][3880:3881] CHIP:BLE: Device 38:68:65:49:0E:FE does not look like a CHIP device.
+[481.355391][3880:3881] CHIP:BLE: Device 4B:C6:F2:0E:44:6A does not look like a CHIP device.
+[481.373536][3880:3881] CHIP:BLE: Device 7B:3A:E6:A8:C3:00 does not look like a CHIP device.
+[481.374345][3880:3881] CHIP:BLE: Device 32:1E:58:3C:6C:45 does not look like a CHIP device.
+[481.387930][3880:3881] CHIP:BLE: Device EE:2B:29:41:2D:2C does not look like a CHIP device.
+[481.395554][3880:3881] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[481.402345][3880:3881] CHIP:BLE: Device 40:07:07:80:1A:CF does not look like a CHIP device.
+[481.402967][3880:3881] CHIP:BLE: Device 60:96:79:F4:72:CC does not look like a CHIP device.
+[481.408934][3880:3881] CHIP:BLE: Device 41:8C:2E:ED:A6:E1 does not look like a CHIP device.
+[481.429493][3880:3881] CHIP:BLE: Device 5E:57:88:53:6B:44 does not look like a CHIP device.
+[481.433159][3880:3881] CHIP:BLE: Device 43:38:25:54:FA:96 does not look like a CHIP device.
+[481.437541][3880:3881] CHIP:BLE: Device D5:40:30:01:9D:5E does not look like a CHIP device.
+[481.448439][3880:3881] CHIP:BLE: Device 75:45:5A:59:09:51 does not look like a CHIP device.
+[481.463783][3880:3881] CHIP:BLE: Device 54:8C:46:67:C5:33 does not look like a CHIP device.
+[481.464509][3880:3881] CHIP:BLE: Device 70:5E:A5:E4:52:9E does not look like a CHIP device.
+[481.480368][3880:3881] CHIP:BLE: Device 7C:4A:2A:BE:37:74 does not look like a CHIP device.
+[481.497063][3880:3881] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[481.512633][3880:3881] CHIP:BLE: Device 40:10:95:F8:3A:A8 does not look like a CHIP device.
+[481.520885][3880:3881] CHIP:BLE: Device 75:B9:1D:A4:58:62 does not look like a CHIP device.
+[481.521472][3880:3881] CHIP:BLE: Device 4D:2E:75:A2:B8:0A does not look like a CHIP device.
+[481.524389][3880:3881] CHIP:BLE: Device 5F:0A:D6:47:03:59 does not look like a CHIP device.
+[481.534027][3880:3881] CHIP:BLE: Device 65:03:C7:78:4A:23 does not look like a CHIP device.
+[481.534854][3880:3881] CHIP:BLE: Device 39:30:ED:E7:CB:FF does not look like a CHIP device.
+[481.542673][3880:3881] CHIP:BLE: Device 58:DD:5D:9B:97:06 does not look like a CHIP device.
+[481.553799][3880:3881] CHIP:BLE: Device 73:BE:E5:69:97:E5 does not look like a CHIP device.
+[481.559989][3880:3881] CHIP:BLE: Device 75:FE:55:FB:BA:90 does not look like a CHIP device.
+[481.563701][3880:3881] CHIP:BLE: Device 7F:7A:0F:F7:CB:AE does not look like a CHIP device.
+[481.585619][3880:3881] CHIP:BLE: Device 4D:81:5C:BA:E3:44 does not look like a CHIP device.
+[481.585823][3880:3881] CHIP:BLE: Device 32:1E:58:3C:6C:45 does not look like a CHIP device.
+[481.602100][3880:3881] CHIP:BLE: New device scanned: 40:32:81:3D:75:D5
+[481.602921][3880:3881] CHIP:BLE: Device discriminator match. Attempting to connect.
+[481.607299][3880:3881] CHIP:BLE: ChipDeviceScanner has stopped scanning!
+[481.793024][3880:3881] CHIP:DL: ConnectDevice complete
+[481.793098][3880:3881] CHIP:BLE: New device connected: 40:32:81:3D:75:D5
+[482.735285][3880:3881] CHIP:DL: Char /org/bluez/hci0/dev_40_32_81_3D_75_D5/service0010 on service /org/bluez/hci0/dev_40_32_81_3D_75_D5/service0010
+[482.735366][3880:3881] CHIP:DL: Char /org/bluez/hci0/dev_40_32_81_3D_75_D5/service0010 on service /org/bluez/hci0/dev_40_32_81_3D_75_D5/service0010
+[482.735432][3880:3881] CHIP:DL: Char /org/bluez/hci0/dev_40_32_81_3D_75_D5/service0008 on service /org/bluez/hci0/dev_40_32_81_3D_75_D5/service0010
+[482.735459][3880:3881] CHIP:DL: Char /org/bluez/hci0/dev_40_32_81_3D_75_D5/service0008 on service /org/bluez/hci0/dev_40_32_81_3D_75_D5/service0010
+[482.735484][3880:3881] CHIP:DL: Char /org/bluez/hci0/dev_40_32_81_3D_75_D5/service0010 on service /org/bluez/hci0/dev_40_32_81_3D_75_D5/service0010
+[482.735647][3880:3881] CHIP:DL: New BLE connection: conn=0x7f740770c0 device=40:32:81:3D:75:D5 path=/org/bluez/hci0/dev_40_32_81_3D_75_D5
+[482.735765][3880:3882] CHIP:DL: HandlePlatformSpecificBLEEvent 16385
+[482.735798][3880:3882] CHIP:DIS: Closing all BLE connections
+[482.735863][3880:3882] CHIP:IN: BleConnectionComplete: endPoint 0x5574e0c2a0
+[482.736523][3880:3882] CHIP:IN: SecureSession[0x7f7c004020]: Allocated Type:1 LSID:25579
+[482.736588][3880:3882] CHIP:SC: Assigned local session key ID 25579
+[482.736674][3880:3882] CHIP:EM: <<< [E:61588i S:0 M:57369391] (U) Msg TX to 0:0000000000000000 [0000] [BLE] --- Type 0000:20 (SecureChannel:PBKDFParamRequest)
+[482.736718][3880:3882] CHIP:IN: Message appended to BLE send queue
+[482.736735][3880:3882] CHIP:SC: Sent PBKDF param request
+[483.038140][3880:3882] CHIP:DL: HandlePlatformSpecificBLEEvent 16387
+[483.126216][3880:3882] CHIP:DL: HandlePlatformSpecificBLEEvent 16388
+[483.126306][3880:3882] CHIP:BLE: subscribe complete, ep = 0x5574e0c2a0
+[483.127051][3880:3881] CHIP:DL: Indication received, conn = 0x7f740770c0
+[483.127269][3880:3882] CHIP:DL: HandlePlatformSpecificBLEEvent 16389
+[483.127322][3880:3882] CHIP:BLE: peripheral chose BTP version 4; central expected between 4 and 4
+[483.127355][3880:3882] CHIP:BLE: using BTP fragment sizes rx 244 / tx 244.
+[483.127384][3880:3882] CHIP:BLE: local and remote recv window size = 5
+[483.129275][3880:3882] CHIP:IN: BLE EndPoint 0x5574e0c2a0 Connection Complete
+[483.197520][3880:3882] CHIP:DL: HandlePlatformSpecificBLEEvent 16387
+[483.202528][3880:3881] CHIP:DL: Indication received, conn = 0x7f740770c0
+[483.202897][3880:3882] CHIP:DL: HandlePlatformSpecificBLEEvent 16389
+[483.202981][3880:3882] CHIP:EM: >>> [E:61588i S:0 M:255711823] (U) Msg RX from 0:0000000000000000 [0000] --- Type 0000:21 (SecureChannel:PBKDFParamResponse)
+[483.203012][3880:3882] CHIP:EM: Found matching exchange: 61588i, Delegate: 0x7f7c0277a0
+[483.203040][3880:3882] CHIP:SC: Received PBKDF param response
+[483.203069][3880:3882] CHIP:SC: Peer assigned session ID 6054
+[483.221135][3880:3882] CHIP:EM: <<< [E:61588i S:0 M:57369392] (U) Msg TX to 0:0000000000000000 [0000] [BLE] --- Type 0000:22 (SecureChannel:PASE_Pake1)
+[483.221841][3880:3882] CHIP:SC: Sent spake2p msg1
+[483.277849][3880:3882] CHIP:DL: HandlePlatformSpecificBLEEvent 16387
+[484.603047][3880:3881] CHIP:DL: Indication received, conn = 0x7f740770c0
+[484.603229][3880:3882] CHIP:DL: HandlePlatformSpecificBLEEvent 16389
+[484.603287][3880:3882] CHIP:EM: >>> [E:61588i S:0 M:255711824] (U) Msg RX from 0:0000000000000000 [0000] --- Type 0000:23 (SecureChannel:PASE_Pake2)
+[484.603304][3880:3882] CHIP:EM: Found matching exchange: 61588i, Delegate: 0x7f7c0277a0
+[484.603321][3880:3882] CHIP:SC: Received spake2p msg2
+[484.604640][3880:3882] CHIP:EM: <<< [E:61588i S:0 M:57369393] (U) Msg TX to 0:0000000000000000 [0000] [BLE] --- Type 0000:24 (SecureChannel:PASE_Pake3)
+[484.605439][3880:3882] CHIP:SC: Sent spake2p msg3
+[484.678181][3880:3882] CHIP:DL: HandlePlatformSpecificBLEEvent 16387
+[484.681359][3880:3881] CHIP:DL: Indication received, conn = 0x7f740770c0
+[484.681794][3880:3882] CHIP:DL: HandlePlatformSpecificBLEEvent 16389
+[484.681925][3880:3882] CHIP:EM: >>> [E:61588i S:0 M:255711825] (U) Msg RX from 0:0000000000000000 [0000] --- Type 0000:40 (SecureChannel:StatusReport)
+[484.681980][3880:3882] CHIP:EM: Found matching exchange: 61588i, Delegate: 0x7f7c0277a0
+[484.682119][3880:3882] CHIP:SC: SecureSession[0x7f7c004020, LSID:25579]: State change 'kEstablishing' --> 'kActive'
+[484.682159][3880:3882] CHIP:IN: SecureSession[0x7f7c004020]: Activated - Type:1 LSID:25579
+[484.682190][3880:3882] CHIP:IN: New secure session activated for device <FFFFFFFB00000000, 0>, LSID:25579 PSID:6054!
+[484.682229][3880:3882] CHIP:CTL: Remote device completed SPAKE2+ handshake
+[484.682256][3880:3882] CHIP:TOO: Pairing Success
+[484.682280][3880:3882] CHIP:TOO: PASE establishment successful
+[484.682310][3880:3882] CHIP:CTL: Commissioning stage next step: 'SecurePairing' -> 'ReadCommissioningInfo'
+[484.682342][3880:3882] CHIP:CTL: Performing next commissioning step 'ReadCommissioningInfo'
+[484.682369][3880:3882] CHIP:CTL: Sending read request for commissioning information
+[484.682405][3880:3882] CHIP:DMG: SendReadRequest ReadClient[0x7f7c020f60]: Sending Read Request
+[484.682597][3880:3882] CHIP:EM: <<< [E:61589i S:25579 M:12389719] (S) Msg TX to 0:FFFFFFFB00000000 [0000] [BLE] --- Type 0001:02 (IM:ReadRequest)
+[484.684270][3880:3882] CHIP:DMG: MoveToState ReadClient[0x7f7c020f60]: Moving to [AwaitingIn]
+[484.838535][3880:3882] CHIP:DL: HandlePlatformSpecificBLEEvent 16387
+[484.964620][3880:3881] CHIP:DL: Indication received, conn = 0x7f740770c0
+[484.965818][3880:3882] CHIP:DL: HandlePlatformSpecificBLEEvent 16389
+[485.040749][3880:3881] CHIP:DL: Indication received, conn = 0x7f740770c0
+[485.041075][3880:3882] CHIP:DL: HandlePlatformSpecificBLEEvent 16389
+[485.041218][3880:3882] CHIP:EM: >>> [E:61589i S:25579 M:26214247] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:05 (IM:ReportData)
+[485.041260][3880:3882] CHIP:EM: Found matching exchange: 61589i, Delegate: 0x7f7c020f70
+[485.041969][3880:3882] CHIP:CTL: Successfully finished commissioning step 'ReadCommissioningInfo'
+[485.042080][3880:3882] CHIP:CTL: Commissioning stage next step: 'ReadCommissioningInfo' -> 'ReadCommissioningInfo2'
+[485.042112][3880:3882] CHIP:CTL: Performing next commissioning step 'ReadCommissioningInfo2'
+[485.042141][3880:3882] CHIP:DMG: SendReadRequest ReadClient[0x7f7c020f60]: Sending Read Request
+[485.042258][3880:3882] CHIP:EM: <<< [E:61590i S:25579 M:12389720] (S) Msg TX to 0:FFFFFFFB00000000 [0000] [BLE] --- Type 0001:02 (IM:ReadRequest)
+[485.043362][3880:3882] CHIP:DMG: MoveToState ReadClient[0x7f7c020f60]: Moving to [AwaitingIn]
+[485.158414][3880:3882] CHIP:DL: HandlePlatformSpecificBLEEvent 16387
+[485.165765][3880:3881] CHIP:DL: Indication received, conn = 0x7f740770c0
+[485.166521][3880:3882] CHIP:DL: HandlePlatformSpecificBLEEvent 16389
+[485.166806][3880:3882] CHIP:EM: >>> [E:61590i S:25579 M:26214248] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:05 (IM:ReportData)
+[485.166864][3880:3882] CHIP:EM: Found matching exchange: 61590i, Delegate: 0x7f7c020f70
+[485.167386][3880:3882] CHIP:CTL: ----- NetworkCommissioning Features: has WiFi. endpointid = 0
+[485.167456][3880:3882] CHIP:SVR: OnReadCommissioningInfo - vendorId=0x1410 productId=0x03E9
+[485.167509][3880:3882] CHIP:CTL: Successfully finished commissioning step 'ReadCommissioningInfo2'
+[485.167554][3880:3882] CHIP:CTL: Commissioning stage next step: 'ReadCommissioningInfo2' -> 'ArmFailSafe'
+[485.167601][3880:3882] CHIP:CTL: Performing next commissioning step 'ArmFailSafe'
+[485.167645][3880:3882] CHIP:CTL: Arming failsafe (60 seconds)
+[485.167714][3880:3882] CHIP:DMG: ICR moving to [AddingComm]
+[485.167798][3880:3882] CHIP:DMG: ICR moving to [AddedComma]
+[485.167918][3880:3882] CHIP:EM: <<< [E:61591i S:25579 M:12389721] (S) Msg TX to 0:FFFFFFFB00000000 [0000] [BLE] --- Type 0001:08 (IM:InvokeCommandRequest)
+[485.168991][3880:3882] CHIP:DMG: ICR moving to [AwaitingRe]
+[485.238193][3880:3882] CHIP:DL: HandlePlatformSpecificBLEEvent 16387
+[485.244576][3880:3881] CHIP:DL: Indication received, conn = 0x7f740770c0
+[485.245871][3880:3882] CHIP:DL: HandlePlatformSpecificBLEEvent 16389
+[485.246279][3880:3882] CHIP:EM: >>> [E:61591i S:25579 M:26214249] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:09 (IM:InvokeCommandResponse)
+[485.246522][3880:3882] CHIP:EM: Found matching exchange: 61591i, Delegate: 0x7f7c01e348
+[485.246732][3880:3882] CHIP:DMG: ICR moving to [ResponseRe]
+[485.247416][3880:3882] CHIP:DMG: Received Command Response Data, Endpoint=0 Cluster=0x0000_0030 Command=0x0000_0001
+[485.247695][3880:3882] CHIP:CTL: Received ArmFailSafe response errorCode=0
+[485.247732][3880:3882] CHIP:CTL: Successfully finished commissioning step 'ArmFailSafe'
+[485.247757][3880:3882] CHIP:CTL: Commissioning stage next step: 'ArmFailSafe' -> 'ConfigRegulatory'
+[485.247835][3880:3882] CHIP:CTL: Performing next commissioning step 'ConfigRegulatory'
+[485.247900][3880:3882] CHIP:CTL: Setting Regulatory Config
+[485.247960][3880:3882] CHIP:CTL: Device does not support configurable regulatory location
+[485.248084][3880:3882] CHIP:DMG: ICR moving to [AddingComm]
+[485.248158][3880:3882] CHIP:DMG: ICR moving to [AddedComma]
+[485.248294][3880:3882] CHIP:EM: <<< [E:61592i S:25579 M:12389722] (S) Msg TX to 0:FFFFFFFB00000000 [0000] [BLE] --- Type 0001:08 (IM:InvokeCommandRequest)
+[485.249825][3880:3882] CHIP:DMG: ICR moving to [AwaitingRe]
+[485.250056][3880:3882] CHIP:DMG: ICR moving to [AwaitingDe]
+[485.363743][3880:3882] CHIP:DL: HandlePlatformSpecificBLEEvent 16387
+[485.398858][3880:3881] CHIP:DL: Indication received, conn = 0x7f740770c0
+[485.399399][3880:3882] CHIP:DL: HandlePlatformSpecificBLEEvent 16389
+[485.399541][3880:3882] CHIP:EM: >>> [E:61592i S:25579 M:26214250] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:09 (IM:InvokeCommandResponse)
+[485.399588][3880:3882] CHIP:EM: Found matching exchange: 61592i, Delegate: 0x7f7c02e548
+[485.399629][3880:3882] CHIP:DMG: ICR moving to [ResponseRe]
+[485.399696][3880:3882] CHIP:DMG: Received Command Response Data, Endpoint=0 Cluster=0x0000_0030 Command=0x0000_0003
+[485.399737][3880:3882] CHIP:CTL: Received SetRegulatoryConfig response errorCode=0
+[485.399773][3880:3882] CHIP:CTL: Successfully finished commissioning step 'ConfigRegulatory'
+[485.399806][3880:3882] CHIP:CTL: Commissioning stage next step: 'ConfigRegulatory' -> 'SendPAICertificateRequest'
+[485.399841][3880:3882] CHIP:CTL: Performing next commissioning step 'SendPAICertificateRequest'
+[485.399871][3880:3882] CHIP:CTL: Sending request for PAI certificate
+[485.399901][3880:3882] CHIP:CTL: Sending Certificate Chain request to 0x7f7c027750 device
+[485.399953][3880:3882] CHIP:DMG: ICR moving to [AddingComm]
+[485.399988][3880:3882] CHIP:DMG: ICR moving to [AddedComma]
+[485.400115][3880:3882] CHIP:EM: <<< [E:61593i S:25579 M:12389723] (S) Msg TX to 0:FFFFFFFB00000000 [0000] [BLE] --- Type 0001:08 (IM:InvokeCommandRequest)
+[485.400954][3880:3882] CHIP:DMG: ICR moving to [AwaitingRe]
+[485.401054][3880:3882] CHIP:DMG: ICR moving to [AwaitingDe]
+[485.477489][3880:3882] CHIP:DL: HandlePlatformSpecificBLEEvent 16387
+[485.522895][3880:3881] CHIP:DL: Indication received, conn = 0x7f740770c0
+[485.523585][3880:3882] CHIP:DL: HandlePlatformSpecificBLEEvent 16389
+[485.647925][3880:3881] CHIP:DL: Indication received, conn = 0x7f740770c0
+[485.648688][3880:3882] CHIP:DL: HandlePlatformSpecificBLEEvent 16389
+[485.721336][3880:3881] CHIP:DL: Indication received, conn = 0x7f740770c0
+[485.721843][3880:3882] CHIP:DL: HandlePlatformSpecificBLEEvent 16389
+[485.722001][3880:3882] CHIP:EM: >>> [E:61593i S:25579 M:26214251] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:09 (IM:InvokeCommandResponse)
+[485.722074][3880:3882] CHIP:EM: Found matching exchange: 61593i, Delegate: 0x7f7c01e348
+[485.722139][3880:3882] CHIP:DMG: ICR moving to [ResponseRe]
+[485.722253][3880:3882] CHIP:DMG: Received Command Response Data, Endpoint=0 Cluster=0x0000_003E Command=0x0000_0003
+[485.722358][3880:3882] CHIP:CTL: Received certificate chain from the device
+[485.722407][3880:3882] CHIP:CTL: Successfully finished commissioning step 'SendPAICertificateRequest'
+[485.722455][3880:3882] CHIP:CTL: Commissioning stage next step: 'SendPAICertificateRequest' -> 'SendDACCertificateRequest'
+[485.722503][3880:3882] CHIP:CTL: Performing next commissioning step 'SendDACCertificateRequest'
+[485.722544][3880:3882] CHIP:CTL: Sending request for DAC certificate
+[485.722647][3880:3882] CHIP:CTL: Sending Certificate Chain request to 0x7f7c027750 device
+[485.722952][3880:3882] CHIP:DMG: ICR moving to [AddingComm]
+[485.723039][3880:3882] CHIP:DMG: ICR moving to [AddedComma]
+[485.723144][3880:3882] CHIP:EM: <<< [E:61594i S:25579 M:12389724] (S) Msg TX to 0:FFFFFFFB00000000 [0000] [BLE] --- Type 0001:08 (IM:InvokeCommandRequest)
+[485.724117][3880:3882] CHIP:DMG: ICR moving to [AwaitingRe]
+[485.724282][3880:3882] CHIP:DMG: ICR moving to [AwaitingDe]
+[485.880863][3880:3882] CHIP:DL: HandlePlatformSpecificBLEEvent 16387
+[485.922680][3880:3881] CHIP:DL: Indication received, conn = 0x7f740770c0
+[485.923116][3880:3882] CHIP:DL: HandlePlatformSpecificBLEEvent 16389
+[486.039053][3880:3881] CHIP:DL: Indication received, conn = 0x7f740770c0
+[486.039287][3880:3882] CHIP:DL: HandlePlatformSpecificBLEEvent 16389
+[486.120387][3880:3881] CHIP:DL: Indication received, conn = 0x7f740770c0
+[486.120509][3880:3882] CHIP:DL: HandlePlatformSpecificBLEEvent 16389
+[486.120720][3880:3882] CHIP:EM: >>> [E:61594i S:25579 M:26214252] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:09 (IM:InvokeCommandResponse)
+[486.120758][3880:3882] CHIP:EM: Found matching exchange: 61594i, Delegate: 0x7f7c02e548
+[486.120791][3880:3882] CHIP:DMG: ICR moving to [ResponseRe]
+[486.120844][3880:3882] CHIP:DMG: Received Command Response Data, Endpoint=0 Cluster=0x0000_003E Command=0x0000_0003
+[486.120874][3880:3882] CHIP:CTL: Received certificate chain from the device
+[486.120900][3880:3882] CHIP:CTL: Successfully finished commissioning step 'SendDACCertificateRequest'
+[486.120926][3880:3882] CHIP:CTL: Commissioning stage next step: 'SendDACCertificateRequest' -> 'SendAttestationRequest'
+[486.120950][3880:3882] CHIP:CTL: Performing next commissioning step 'SendAttestationRequest'
+[486.120972][3880:3882] CHIP:CTL: Sending Attestation Request to the device.
+[486.120995][3880:3882] CHIP:CTL: Sending Attestation request to 0x7f7c027750 device
+[486.121035][3880:3882] CHIP:DMG: ICR moving to [AddingComm]
+[486.121060][3880:3882] CHIP:DMG: ICR moving to [AddedComma]
+[486.121116][3880:3882] CHIP:EM: <<< [E:61595i S:25579 M:12389725] (S) Msg TX to 0:FFFFFFFB00000000 [0000] [BLE] --- Type 0001:08 (IM:InvokeCommandRequest)
+[486.121749][3880:3882] CHIP:DMG: ICR moving to [AwaitingRe]
+[486.121794][3880:3882] CHIP:CTL: Sent Attestation request, waiting for the Attestation Information
+[486.121833][3880:3882] CHIP:DMG: ICR moving to [AwaitingDe]
+[486.199109][3880:3882] CHIP:DL: HandlePlatformSpecificBLEEvent 16387
+[486.563292][3880:3881] CHIP:DL: Indication received, conn = 0x7f740770c0
+[486.563724][3880:3882] CHIP:DL: HandlePlatformSpecificBLEEvent 16389
+[486.686324][3880:3881] CHIP:DL: Indication received, conn = 0x7f740770c0
+[486.687159][3880:3882] CHIP:DL: HandlePlatformSpecificBLEEvent 16389
+[486.687413][3880:3882] CHIP:EM: >>> [E:61595i S:25579 M:26214253] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:09 (IM:InvokeCommandResponse)
+[486.687523][3880:3882] CHIP:EM: Found matching exchange: 61595i, Delegate: 0x7f7c01e348
+[486.687619][3880:3882] CHIP:DMG: ICR moving to [ResponseRe]
+[486.687815][3880:3882] CHIP:DMG: Received Command Response Data, Endpoint=0 Cluster=0x0000_003E Command=0x0000_0001
+[486.687909][3880:3882] CHIP:CTL: Received Attestation Information from the device
+[486.687973][3880:3882] CHIP:CTL: Successfully finished commissioning step 'SendAttestationRequest'
+[486.688115][3880:3882] CHIP:CTL: AutoCommissioner setting attestationElements buffer size 278/278
+[486.688266][3880:3882] CHIP:CTL: Commissioning stage next step: 'SendAttestationRequest' -> 'AttestationVerification'
+[486.688339][3880:3882] CHIP:CTL: Performing next commissioning step 'AttestationVerification'
+[486.688396][3880:3882] CHIP:CTL: Verifying attestation
+[486.695567][3880:3882] CHIP:CTL: Failed in verifying 'Attestation Information' command received from the device: err 101. Look at AttestationVerificationResult enu
+m to understand the errors
+[486.695652][3880:3882] CHIP:CTL: Error on commissioning step 'AttestationVerification': 'src/controller/CHIPDeviceController.cpp:1145: CHIP Error 0x000000AC: Inter
+nal error'
+[486.695686][3880:3882] CHIP:CTL: Going from commissioning step 'AttestationVerification' with lastErr = 'src/controller/CHIPDeviceController.cpp:1145: CHIP Error 0
+x000000AC: Internal error' -> 'Cleanup'
+[486.695725][3880:3882] CHIP:CTL: Performing next commissioning step 'Cleanup' with completion status = 'src/controller/CHIPDeviceController.cpp:1145: CHIP Error 0x
+000000AC: Internal error'
+[486.695751][3880:3882] CHIP:CTL: Disarming failsafe on device 0x7f7c027750
+[486.695805][3880:3882] CHIP:DMG: ICR moving to [AddingComm]
+[486.695860][3880:3882] CHIP:DMG: ICR moving to [AddedComma]
+[486.695967][3880:3882] CHIP:EM: <<< [E:61596i S:25579 M:12389726] (S) Msg TX to 0:FFFFFFFB00000000 [0000] [BLE] --- Type 0001:08 (IM:InvokeCommandRequest)
+[486.696736][3880:3882] CHIP:DMG: ICR moving to [AwaitingRe]
+[486.696808][3880:3882] CHIP:DMG: ICR moving to [AwaitingDe]
+[486.839630][3880:3882] CHIP:DL: HandlePlatformSpecificBLEEvent 16387
+[486.846191][3880:3881] CHIP:DL: Indication received, conn = 0x7f740770c0
+[486.846948][3880:3882] CHIP:DL: HandlePlatformSpecificBLEEvent 16389
+[486.847250][3880:3882] CHIP:EM: >>> [E:61596i S:25579 M:26214254] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:09 (IM:InvokeCommandResponse)
+[486.847372][3880:3882] CHIP:EM: Found matching exchange: 61596i, Delegate: 0x7f7c02e548
+[486.847478][3880:3882] CHIP:DMG: ICR moving to [ResponseRe]
+[486.847636][3880:3882] CHIP:DMG: Received Command Response Data, Endpoint=0 Cluster=0x0000_0030 Command=0x0000_0001
+[486.847743][3880:3882] CHIP:CTL: Failsafe disarmed
+[486.847832][3880:3882] CHIP:CTL: Successfully finished commissioning step 'Cleanup'
+[486.847922][3880:3882] CHIP:DIS: Closing all BLE connections
+[486.848062][3880:3882] CHIP:IN: Clearing BLE pending packets.
+[486.849472][3880:3882] CHIP:BLE: Auto-closing end point's BLE connection.
+[486.849589][3880:3882] CHIP:DL: Closing BLE GATT connection (con 0x7f740770c0)
+[486.849808][3880:3881] CHIP:DL: BluezDisconnect peer=40:32:81:3D:75:D5
+[489.522050][3880:3881] CHIP:DL: Bluez disconnected
+[489.522114][3880:3881] CHIP:DL: Bluez notify CHIPoBluez connection disconnected
+[489.522730][3880:3882] CHIP:IN: SecureSession[0x7f7c004020]: MarkForEviction Type:1 LSID:25579
+[489.522773][3880:3882] CHIP:SC: SecureSession[0x7f7c004020, LSID:25579]: State change 'kActive' --> 'kPendingEviction'
+[489.522883][3880:3882] CHIP:CTL: Commissioning complete for node ID 0x0000000000000001: src/controller/CHIPDeviceController.cpp:1145: CHIP Error 0x000000AC: Intern
+al error
+[489.522911][3880:3882] CHIP:TOO: Device commissioning Failure: src/controller/CHIPDeviceController.cpp:1145: CHIP Error 0x000000AC: Internal error
+[489.522985][3880:3882] CHIP:DMG: ICR moving to [AwaitingDe]
+[489.523014][3880:3882] CHIP:IN: SecureSession[0x7f7c004020]: Released - Type:1 LSID:25579
+[489.523040][3880:3882] CHIP:DL: Long dispatch time: 2677 ms, for event type 16389
+[489.523059][3880:3882] CHIP:DL: HandlePlatformSpecificBLEEvent 16388
+[489.523075][3880:3882] CHIP:BLE: no endpoint for unsub complete
+[489.523910][3880:3880] CHIP:CTL: Shutting down the commissioner
+[489.524096][3880:3880] CHIP:CTL: Shutting down the controller
+[489.524119][3880:3880] CHIP:IN: Expiring all sessions for fabric 0x1!!
+[489.524135][3880:3880] CHIP:FP: Forgetting fabric 0x1
+[489.524161][3880:3880] CHIP:TS: Pending Last Known Good Time: 2023-10-14T01:16:48
+[489.524316][3880:3880] CHIP:TS: Previous Last Known Good Time: 2023-10-14T01:16:48
+[489.524334][3880:3880] CHIP:TS: Reverted Last Known Good Time to previous value
+[489.524379][3880:3880] CHIP:CTL: Shutting down the commissioner
+[489.524452][3880:3880] CHIP:CTL: Shutting down the controller
+[489.524467][3880:3880] CHIP:CTL: Shutting down the System State, this will teardown the CHIP Stack
+[489.524699][3880:3880] CHIP:DMG: All ReadHandler-s are clean, clear GlobalDirtySet
+[489.524775][3880:3880] CHIP:FP: Shutting down FabricTable
+[489.524801][3880:3880] CHIP:TS: Pending Last Known Good Time: 2023-10-14T01:16:48
+[489.524902][3880:3880] CHIP:TS: Previous Last Known Good Time: 2023-10-14T01:16:48
+[489.524929][3880:3880] CHIP:TS: Reverted Last Known Good Time to previous value
+[489.525134][3880:3880] CHIP:DL: writing settings to file (/tmp/chip_counters.ini-ussgJC)
+[489.525406][3880:3880] CHIP:DL: renamed tmp file to file (/tmp/chip_counters.ini)
+[489.525444][3880:3880] CHIP:DL: NVS set: chip-counters/total-operational-hours = 0 (0x0)
+[489.525473][3880:3880] CHIP:DL: Inet Layer shutdown
+[489.525488][3880:3880] CHIP:DL: BLE shutdown
+[489.531826][3880:3880] CHIP:DL: System Layer shutdown
+[489.533468][3880:3880] CHIP:TOO: Run command failure: src/controller/CHIPDeviceController.cpp:1145: CHIP Error 0x000000AC: Internal error
+/ #

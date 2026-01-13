@@ -1,0 +1,1882 @@
+=~=~=~=~=~=~=~=~=~=~=~= MobaXterm log 2024.09.10 14:57:17 =~=~=~=~=~=~=~=~=~=~=~=
+
+C:\Users\huide\Desktop>adb
+C:\Users\huide\Desktop>adb shell
+/ #
+/ # hciconfig -a
+
+hci0:   Type: Primary  Bus: UART
+        BD Address: 40:80:E1:2B:5B:1D  ACL MTU: 1021:8  SCO MTU: 120:10
+        UP RUNNING PSCAN ISCAN
+        RX bytes:781 acl:0 sco:0 events:52 errors:0
+        TX bytes:1823 acl:0 sco:0 commands:52 errors:0
+        Features: 0xff 0xff 0x85 0xfa 0xdb 0xfd 0x7b 0x87
+        Packet type: DM1 DM3 DM5 DH1 DH3 DH5 HV1 HV2 HV3
+        Link policy: RSWITCH HOLD SNIFF PARK
+        Link mode: SLAVE ACCEPT
+        Name: 'AmlSpeaker-d37b'
+        Class: 0x240408
+        Service Classes: Rendering, Audio
+        Device Class: Audio/Video, Hands-free
+        HCI Version: 5.0 (0x9)  Revision: 0x6106
+        LMP Version: 5.0 (0x9)  Subversion: 0x6106
+        Manufacturer: internal use (65535)
+
+/ #
+/ # rm -rf /tmp/chip_* && chip-tool pairing ble-wifi 0x1 "lens008" "lens008@1234
+.." 17594029 1488 --paa-trust-store-path /etc/matter_credentials/paa-root-certs/
+[41.106233][1042:1042] CHIP:DL: ChipLinuxStorage::Init: Using KVS config file: /tmp/chip_tool_kvs
+[41.106432][1042:1042] CHIP:DL: writing settings to file (/tmp/chip_tool_kvs-mOZHYY)
+[41.106518][1042:1042] CHIP:DL: renamed tmp file to file (/tmp/chip_tool_kvs)
+[41.107365][1042:1042] CHIP:DL: ChipLinuxStorage::Init: Using KVS config file: /tmp/chip_kvs
+[41.107396][1042:1042] CHIP:DL: ChipLinuxStorage::Init: Attempt to re-initialize with KVS config file: /tmp/chip_kvs
+[41.109869][1042:1042] CHIP:DL: ChipLinuxStorage::Init: Using KVS config file: /tmp/chip_factory.ini
+[41.110033][1042:1042] CHIP:DL: writing settings to file (/tmp/chip_factory.ini-GjNMr0)
+[41.110116][1042:1042] CHIP:DL: renamed tmp file to file (/tmp/chip_factory.ini)
+[41.110165][1042:1042] CHIP:DL: ChipLinuxStorage::Init: Using KVS config file: /tmp/chip_config.ini
+[41.110212][1042:1042] CHIP:DL: writing settings to file (/tmp/chip_config.ini-buqq2Y)
+[41.110249][1042:1042] CHIP:DL: renamed tmp file to file (/tmp/chip_config.ini)
+[41.110280][1042:1042] CHIP:DL: ChipLinuxStorage::Init: Using KVS config file: /tmp/chip_counters.ini
+[41.110319][1042:1042] CHIP:DL: writing settings to file (/tmp/chip_counters.ini-y5C0J0)
+[41.110374][1042:1042] CHIP:DL: renamed tmp file to file (/tmp/chip_counters.ini)
+[41.110475][1042:1042] CHIP:DL: writing settings to file (/tmp/chip_factory.ini-RRzXMZ)
+[41.110611][1042:1042] CHIP:DL: renamed tmp file to file (/tmp/chip_factory.ini)
+[41.110633][1042:1042] CHIP:DL: NVS set: chip-factory/unique-id = "D6EF4470891D696B"
+[41.110682][1042:1042] CHIP:DL: writing settings to file (/tmp/chip_factory.ini-APdVSX)
+[41.110761][1042:1042] CHIP:DL: renamed tmp file to file (/tmp/chip_factory.ini)
+[41.110776][1042:1042] CHIP:DL: NVS set: chip-factory/vendor-id = 65521 (0xFFF1)
+[41.110806][1042:1042] CHIP:DL: writing settings to file (/tmp/chip_factory.ini-R302p1)
+[41.110869][1042:1042] CHIP:DL: renamed tmp file to file (/tmp/chip_factory.ini)
+[41.110883][1042:1042] CHIP:DL: NVS set: chip-factory/product-id = 32769 (0x8001)
+[41.110923][1042:1042] CHIP:DL: writing settings to file (/tmp/chip_counters.ini-ISWy8Z)
+[41.110980][1042:1042] CHIP:DL: renamed tmp file to file (/tmp/chip_counters.ini)
+[41.111000][1042:1042] CHIP:DL: NVS set: chip-counters/reboot-count = 1 (0x1)
+[41.111033][1042:1042] CHIP:DL: writing settings to file (/tmp/chip_counters.ini-bdH4QY)
+[41.111107][1042:1042] CHIP:DL: renamed tmp file to file (/tmp/chip_counters.ini)
+[41.111126][1042:1042] CHIP:DL: NVS set: chip-counters/total-operational-hours = 0 (0x0)
+[41.111157][1042:1042] CHIP:DL: writing settings to file (/tmp/chip_counters.ini-7Bi2p1)
+[41.111220][1042:1042] CHIP:DL: renamed tmp file to file (/tmp/chip_counters.ini)
+[41.111234][1042:1042] CHIP:DL: NVS set: chip-counters/boot-reason = 0 (0x0)
+[41.111263][1042:1042] CHIP:DL: writing settings to file (/tmp/chip_config.ini-Tc6Ur0)
+[41.111316][1042:1042] CHIP:DL: renamed tmp file to file (/tmp/chip_config.ini)
+[41.111330][1042:1042] CHIP:DL: NVS set: chip-config/regulatory-location = 0 (0x0)
+[41.111380][1042:1042] CHIP:DL: writing settings to file (/tmp/chip_config.ini-uhfanX)
+[41.111440][1042:1042] CHIP:DL: renamed tmp file to file (/tmp/chip_config.ini)
+[41.111455][1042:1042] CHIP:DL: NVS set: chip-config/location-capability = 2 (0x2)
+[41.111916][1042:1042] CHIP:DL: Got Ethernet interface: eth0
+[41.112250][1042:1042] CHIP:DL: Found the primary Ethernet interface:eth0
+[41.112658][1042:1042] CHIP:DL: Failed to get WiFi interface
+[41.112679][1042:1042] CHIP:DL: Failed to reset WiFi statistic counts
+[41.112731][1042:1042] CHIP:IN: UDP::Init bind&listen port=0
+[41.112792][1042:1042] CHIP:IN: UDP::Init bound to port=49576
+[41.112805][1042:1042] CHIP:IN: UDP::Init bind&listen port=0
+[41.112843][1042:1042] CHIP:IN: UDP::Init bound to port=38431
+[41.112855][1042:1042] CHIP:IN: BLEBase::Init - setting/overriding transport
+[41.112866][1042:1042] CHIP:IN: TransportMgr initialized
+[41.112881][1042:1042] CHIP:FP: Initializing FabricTable from persistent storage
+[41.112903][1042:1042] CHIP:TS: Last Known Good Time: [unknown]
+[41.112919][1042:1042] CHIP:TS: Setting Last Known Good Time to firmware build time 2023-10-14T01:16:48
+[41.113401][1042:1042] CHIP:ZCL: Using ZAP configuration...
+[41.116495][1042:1042] CHIP:CTL: System State Initialized...
+[41.153506][1042:1042] CHIP:CTL: Setting attestation nonce to random value
+[41.153590][1042:1042] CHIP:CTL: Setting CSR nonce to random value
+[41.153634][1042:1042] CHIP:IN: UDP::Init bind&listen port=5550
+[41.153707][1042:1042] CHIP:IN: UDP::Init bound to port=5550
+[41.153720][1042:1042] CHIP:IN: UDP::Init bind&listen port=5550
+[41.153754][1042:1042] CHIP:IN: UDP::Init bound to port=5550
+[41.153776][1042:1042] CHIP:IN: TransportMgr initialized
+[41.154213][1042:1044] CHIP:DL: CHIP task running
+[41.154291][1042:1044] CHIP:DL: HandlePlatformSpecificBLEEvent 32786
+[41.154525][1042:1044] CHIP:CTL: Setting attestation nonce to random value
+[41.154594][1042:1044] CHIP:CTL: Setting CSR nonce to random value
+[41.154652][1042:1044] CHIP:CTL: Couldn't get ExampleOpCredsCAKey from storage: src/controller/ExamplePersistentStorage.cpp:106: CHIP Error 0x000000A0: Value not fo
+und in the persisted storage
+[41.155325][1042:1044] CHIP:CTL: Couldn't get ExampleOpCredsICAKey from storage: src/controller/ExamplePersistentStorage.cpp:106: CHIP Error 0x000000A0: Value not f
+ound in the persisted storage
+[41.156232][1042:1044] CHIP:CTL: Generating RCAC
+[41.156769][1042:1044] CHIP:CTL: Generating ICAC
+[41.157233][1042:1044] CHIP:CTL: Generating NOC
+[41.157627][1042:1044] CHIP:FP: Validating NOC chain
+[41.159362][1042:1044] CHIP:FP: NOC chain validation successful
+[41.159562][1042:1044] CHIP:FP: Added new fabric at index: 0x1
+[41.159583][1042:1044] CHIP:FP: Assigned compressed fabric ID: 0x7C546B918423008A, node ID: 0x000000000001B669
+[41.159601][1042:1044] CHIP:TS: Last Known Good Time: 2023-10-14T01:16:48
+[41.159614][1042:1044] CHIP:TS: New proposed Last Known Good Time: 2021-01-01T00:00:00
+[41.159624][1042:1044] CHIP:TS: Retaining current Last Known Good Time
+[41.160075][1042:1044] CHIP:FP: Metadata for Fabric 0x1 persisted to storage.
+[41.160408][1042:1044] CHIP:TS: Committing Last Known Good Time to storage: 2023-10-14T01:16:48
+[41.160751][1042:1044] CHIP:CTL: Joined the fabric at index 1. Fabric ID is 0x0000000000000001 (Compressed Fabric ID: 7C546B918423008A)
+[41.160774][1042:1044] CHIP:IN: UDP::Init bind&listen port=5550
+[41.160846][1042:1044] CHIP:IN: UDP::Init bound to port=5550
+[41.160860][1042:1044] CHIP:IN: UDP::Init bind&listen port=5550
+[41.160897][1042:1044] CHIP:IN: UDP::Init bound to port=5550
+[41.160905][1042:1044] CHIP:IN: TransportMgr initialized
+[41.167324][1042:1044] CHIP:CTL: Setting wifi credentials from parameters
+[41.167370][1042:1044] CHIP:CTL: Setting attestation nonce to random value
+[41.167402][1042:1044] CHIP:CTL: Setting CSR nonce to random value
+[41.167423][1042:1044] CHIP:CTL: Checking ICD registration parameters
+[41.167434][1042:1044] CHIP:CTL: Commission called for node ID 0x0000000000000001
+[41.179433][1042:1043] CHIP:BLE: BLE removing known devices
+[41.181002][1042:1043] CHIP:BLE: BLE initiating scan
+[41.589368][1042:1044] CHIP:BLE: ChipDeviceScanner has started scanning!
+[41.589422][1042:1044] CHIP:DL: Long dispatch time: 422 ms, for event type 3
+[41.604726][1042:1043] CHIP:BLE: Device 4C:FD:59:5D:BB:62 does not look like a CHIP device.
+[41.610963][1042:1043] CHIP:BLE: Device 38:F9:F5:12:3A:2D does not look like a CHIP device.
+[41.615218][1042:1043] CHIP:BLE: Device 63:25:31:2F:E2:1B does not look like a CHIP device.
+[41.616670][1042:1043] CHIP:BLE: Device 3A:FD:31:EA:9D:8B does not look like a CHIP device.
+[41.621115][1042:1043] CHIP:BLE: Device 45:55:28:90:B8:00 does not look like a CHIP device.
+[41.629586][1042:1043] CHIP:BLE: Device 45:AC:2F:EF:D4:11 does not look like a CHIP device.
+[41.632404][1042:1043] CHIP:BLE: Device 7F:8A:C2:26:AF:34 does not look like a CHIP device.
+[41.637304][1042:1043] CHIP:BLE: Device 48:F3:F3:60:E3:13 does not look like a CHIP device.
+[41.649443][1042:1043] CHIP:BLE: Device 27:73:D3:29:E0:55 does not look like a CHIP device.
+[41.653060][1042:1043] CHIP:BLE: Device 5C:2E:8A:49:F6:F8 does not look like a CHIP device.
+[41.656809][1042:1043] CHIP:BLE: Device 24:86:87:61:0B:A0 does not look like a CHIP device.
+[41.657080][1042:1043] CHIP:BLE: Device 38:F9:F5:12:3A:2D does not look like a CHIP device.
+[41.662528][1042:1043] CHIP:BLE: Device 41:42:69:C7:38:FB does not look like a CHIP device.
+[41.675483][1042:1043] CHIP:BLE: Device 4F:A3:B8:6C:C5:8F does not look like a CHIP device.
+[41.680621][1042:1043] CHIP:BLE: Device 57:E0:17:0C:73:55 does not look like a CHIP device.
+[41.687160][1042:1043] CHIP:BLE: Device 49:E3:13:74:DA:6A does not look like a CHIP device.
+[41.695395][1042:1043] CHIP:BLE: Device F0:FA:C7:E9:B9:13 does not look like a CHIP device.
+[41.702123][1042:1043] CHIP:BLE: Device 22:57:FB:A5:6C:15 does not look like a CHIP device.
+[41.723419][1042:1043] CHIP:BLE: Device 7F:EC:67:78:33:F2 does not look like a CHIP device.
+[41.724420][1042:1043] CHIP:BLE: Device 71:FE:EC:13:7F:A8 does not look like a CHIP device.
+[41.737190][1042:1043] CHIP:BLE: Device 78:E8:03:4E:26:56 does not look like a CHIP device.
+[41.750190][1042:1043] CHIP:BLE: Device E8:EE:CC:2F:C8:46 does not look like a CHIP device.
+[41.758419][1042:1043] CHIP:BLE: Device 78:E8:03:4E:26:56 does not look like a CHIP device.
+[41.787527][1042:1043] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[41.790128][1042:1043] CHIP:BLE: Device 62:D3:CA:AE:94:EF does not look like a CHIP device.
+[41.793936][1042:1043] CHIP:BLE: Device 21:73:C5:A7:39:39 does not look like a CHIP device.
+[41.815836][1042:1043] CHIP:BLE: Device 66:2F:14:3A:7D:74 does not look like a CHIP device.
+[41.837488][1042:1043] CHIP:BLE: Device 48:D1:BA:21:33:FB does not look like a CHIP device.
+[41.838651][1042:1043] CHIP:BLE: Device 3B:BC:F9:86:D2:33 does not look like a CHIP device.
+[41.842814][1042:1043] CHIP:BLE: Device 5A:05:67:37:CA:E5 does not look like a CHIP device.
+[41.851060][1042:1043] CHIP:BLE: Device E8:10:DA:91:4D:11 does not look like a CHIP device.
+[41.858764][1042:1043] CHIP:BLE: Device 5A:35:AD:AC:1D:9C does not look like a CHIP device.
+[41.880118][1042:1043] CHIP:BLE: Device 7B:28:C5:8F:A1:62 does not look like a CHIP device.
+[41.900061][1042:1043] CHIP:BLE: Device 4C:FD:59:5D:BB:62 does not look like a CHIP device.
+[41.900297][1042:1043] CHIP:BLE: Device F0:FA:C7:E9:B9:13 does not look like a CHIP device.
+[41.908838][1042:1043] CHIP:BLE: Device 09:C1:D3:6D:32:5D does not look like a CHIP device.
+[41.910684][1042:1043] CHIP:BLE: Device E8:EE:CC:2F:C8:46 does not look like a CHIP device.
+[41.929092][1042:1043] CHIP:BLE: Device 05:23:46:62:56:49 does not look like a CHIP device.
+[41.964315][1042:1043] CHIP:BLE: Device 4E:0C:28:69:B9:C7 does not look like a CHIP device.
+[41.987759][1042:1043] CHIP:BLE: Device 78:E8:03:4E:26:56 does not look like a CHIP device.
+[42.008897][1042:1043] CHIP:BLE: Device 7F:48:9B:6E:9F:7A does not look like a CHIP device.
+[42.009061][1042:1043] CHIP:BLE: Device F0:FA:C7:E9:B9:13 does not look like a CHIP device.
+[42.016521][1042:1043] CHIP:BLE: Device 51:F2:83:DE:18:25 does not look like a CHIP device.
+[42.028756][1042:1043] CHIP:BLE: Device EA:1C:E3:0C:52:58 does not look like a CHIP device.
+[42.053058][1042:1043] CHIP:BLE: Device 5A:24:43:18:98:9E does not look like a CHIP device.
+[42.058260][1042:1043] CHIP:BLE: Device 5F:C6:64:E6:D4:0E does not look like a CHIP device.
+[42.065815][1042:1043] CHIP:BLE: Device 5E:33:32:DB:DE:04 does not look like a CHIP device.
+[42.066973][1042:1043] CHIP:BLE: Device 5C:B0:C9:A8:4C:34 does not look like a CHIP device.
+[42.073535][1042:1043] CHIP:BLE: Device 44:DA:0C:F2:6B:24 does not look like a CHIP device.
+[42.087221][1042:1043] CHIP:BLE: Device 66:2F:14:3A:7D:74 does not look like a CHIP device.
+[42.098596][1042:1043] CHIP:BLE: Device 71:40:57:F2:A6:1D does not look like a CHIP device.
+[42.107006][1042:1043] CHIP:BLE: Device F0:FA:C7:E9:B9:13 does not look like a CHIP device.
+[42.109062][1042:1043] CHIP:BLE: Device 70:93:13:C8:A7:C2 does not look like a CHIP device.
+[42.112395][1042:1043] CHIP:BLE: Device 21:47:E2:3E:EF:4A does not look like a CHIP device.
+[42.117947][1042:1043] CHIP:BLE: Device 4D:F8:CD:A4:CD:75 does not look like a CHIP device.
+[42.119209][1042:1043] CHIP:BLE: Device 66:5C:CF:2A:D7:4E does not look like a CHIP device.
+[42.150357][1042:1043] CHIP:BLE: Device 77:10:01:11:D6:6A does not look like a CHIP device.
+[42.154134][1042:1043] CHIP:BLE: Device 4C:FD:59:5D:BB:62 does not look like a CHIP device.
+[42.155771][1042:1043] CHIP:BLE: Device 64:E5:65:5F:3B:BF does not look like a CHIP device.
+[42.169823][1042:1043] CHIP:BLE: Device 58:3A:4D:D7:6F:F7 does not look like a CHIP device.
+[42.175682][1042:1043] CHIP:BLE: Device E2:3F:DE:50:04:41 does not look like a CHIP device.
+[42.187116][1042:1043] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[42.189145][1042:1043] CHIP:BLE: Device 6D:39:DF:EA:B4:50 does not look like a CHIP device.
+[42.199536][1042:1043] CHIP:BLE: Device 78:0D:B2:0F:B9:0B does not look like a CHIP device.
+[42.207541][1042:1043] CHIP:BLE: Device F0:FA:C7:E9:B9:13 does not look like a CHIP device.
+[42.254240][1042:1043] CHIP:BLE: Device EE:2B:29:41:2D:2C does not look like a CHIP device.
+[42.255163][1042:1043] CHIP:BLE: Device 78:E8:03:4E:26:56 does not look like a CHIP device.
+[42.261733][1042:1043] CHIP:BLE: Device 41:9A:32:46:3A:86 does not look like a CHIP device.
+[42.266206][1042:1043] CHIP:BLE: Device D8:F6:9E:74:79:B9 does not look like a CHIP device.
+[42.281695][1042:1043] CHIP:BLE: Device 7F:48:9B:6E:9F:7A does not look like a CHIP device.
+[42.282576][1042:1043] CHIP:BLE: Device 51:F2:83:DE:18:25 does not look like a CHIP device.
+[42.304808][1042:1043] CHIP:BLE: Device 62:DA:29:F0:D2:9F does not look like a CHIP device.
+[42.305382][1042:1043] CHIP:BLE: Device 21:47:E2:3E:EF:4A does not look like a CHIP device.
+[42.310121][1042:1043] CHIP:BLE: Device 71:FE:EC:13:7F:A8 does not look like a CHIP device.
+[42.313803][1042:1043] CHIP:BLE: Device 66:5C:CF:2A:D7:4E does not look like a CHIP device.
+[42.355810][1042:1043] CHIP:BLE: Device 66:2F:14:3A:7D:74 does not look like a CHIP device.
+[42.366043][1042:1043] CHIP:BLE: Device 71:40:57:F2:A6:1D does not look like a CHIP device.
+[42.383837][1042:1043] CHIP:BLE: Device 48:D1:BA:21:33:FB does not look like a CHIP device.
+[42.386968][1042:1043] CHIP:BLE: Device CF:0B:07:46:A5:9E does not look like a CHIP device.
+[42.393726][1042:1043] CHIP:BLE: Device 5A:05:67:37:CA:E5 does not look like a CHIP device.
+[42.397588][1042:1043] CHIP:BLE: Device 60:0E:A0:42:EA:1E does not look like a CHIP device.
+[42.411776][1042:1043] CHIP:BLE: Device D1:81:3C:39:DE:22 does not look like a CHIP device.
+[42.421812][1042:1043] CHIP:BLE: Device F0:FA:C7:E9:B9:13 does not look like a CHIP device.
+[42.434134][1042:1043] CHIP:BLE: Device 4C:FD:59:5D:BB:62 does not look like a CHIP device.
+[42.437115][1042:1043] CHIP:BLE: Device F9:0E:48:BC:9D:46 does not look like a CHIP device.
+[42.481234][1042:1043] CHIP:BLE: Device 78:0D:B2:0F:B9:0B does not look like a CHIP device.
+[42.486792][1042:1043] CHIP:BLE: Device 7F:ED:D4:4F:CD:33 does not look like a CHIP device.
+[42.490526][1042:1043] CHIP:BLE: Device 21:47:E2:3E:EF:4A does not look like a CHIP device.
+[42.502263][1042:1043] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[42.507056][1042:1043] CHIP:BLE: Device 4E:0C:28:69:B9:C7 does not look like a CHIP device.
+[42.508037][1042:1043] CHIP:BLE: Device 6D:39:DF:EA:B4:50 does not look like a CHIP device.
+[42.544506][1042:1043] CHIP:BLE: Device 50:71:A9:FE:D1:EA does not look like a CHIP device.
+[42.550700][1042:1043] CHIP:BLE: Device F6:A6:41:0F:0A:29 does not look like a CHIP device.
+[42.555067][1042:1043] CHIP:BLE: Device 7F:48:9B:6E:9F:7A does not look like a CHIP device.
+[42.572394][1042:1043] CHIP:BLE: Device 51:F2:83:DE:18:25 does not look like a CHIP device.
+[42.572757][1042:1043] CHIP:BLE: Device E8:EE:CC:2F:C8:46 does not look like a CHIP device.
+[42.576083][1042:1043] CHIP:BLE: Device 62:DA:29:F0:D2:9F does not look like a CHIP device.
+[42.585332][1042:1043] CHIP:BLE: Device 52:19:3C:72:FA:95 does not look like a CHIP device.
+[42.594040][1042:1043] CHIP:BLE: Device 2E:26:F4:E8:39:EF does not look like a CHIP device.
+[42.602445][1042:1043] CHIP:BLE: Device 71:FE:EC:13:7F:A8 does not look like a CHIP device.
+[42.615176][1042:1043] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[42.616082][1042:1043] CHIP:BLE: Device 6D:39:DF:EA:B4:50 does not look like a CHIP device.
+[42.627923][1042:1043] CHIP:BLE: Device F0:FA:C7:E9:B9:13 does not look like a CHIP device.
+[42.629653][1042:1043] CHIP:BLE: Device 66:2F:14:3A:7D:74 does not look like a CHIP device.
+[42.638784][1042:1043] CHIP:BLE: Device 71:40:57:F2:A6:1D does not look like a CHIP device.
+[42.672912][1042:1043] CHIP:BLE: Device D6:C8:83:02:6D:CF does not look like a CHIP device.
+[42.676105][1042:1043] CHIP:BLE: Device 21:47:E2:3E:EF:4A does not look like a CHIP device.
+[42.685047][1042:1043] CHIP:BLE: Device 77:10:01:11:D6:6A does not look like a CHIP device.
+[42.686013][1042:1043] CHIP:BLE: Device 66:5C:CF:2A:D7:4E does not look like a CHIP device.
+[42.699232][1042:1043] CHIP:BLE: Device 75:55:65:28:9A:39 does not look like a CHIP device.
+[42.699668][1042:1043] CHIP:BLE: Device 2E:26:F4:E8:39:EF does not look like a CHIP device.
+[42.701174][1042:1043] CHIP:BLE: Device 64:E5:65:5F:3B:BF does not look like a CHIP device.
+[42.709834][1042:1043] CHIP:BLE: Device 4C:FD:59:5D:BB:62 does not look like a CHIP device.
+[42.712713][1042:1043] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[42.728623][1042:1043] CHIP:BLE: Device 52:7A:99:42:6D:DB does not look like a CHIP device.
+[42.734524][1042:1043] CHIP:BLE: Device EE:2B:29:41:2D:2C does not look like a CHIP device.
+[42.737960][1042:1043] CHIP:BLE: Device F0:FA:C7:E9:B9:13 does not look like a CHIP device.
+[42.748618][1042:1043] CHIP:BLE: Device 78:0D:B2:0F:B9:0B does not look like a CHIP device.
+[42.758656][1042:1043] CHIP:BLE: Device 7F:ED:D4:4F:CD:33 does not look like a CHIP device.
+[42.783958][1042:1043] CHIP:BLE: Device 5F:C6:64:E6:D4:0E does not look like a CHIP device.
+[42.786151][1042:1043] CHIP:BLE: Device 02:C1:DA:56:3A:E4 does not look like a CHIP device.
+[42.786518][1042:1043] CHIP:BLE: Device 4E:0C:28:69:B9:C7 does not look like a CHIP device.
+[42.789496][1042:1043] CHIP:BLE: Device 49:E3:13:74:DA:6A does not look like a CHIP device.
+[42.810045][1042:1043] CHIP:BLE: Device FE:2D:37:A4:F9:65 does not look like a CHIP device.
+[42.824053][1042:1043] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[42.832747][1042:1043] CHIP:BLE: Device 7F:48:9B:6E:9F:7A does not look like a CHIP device.
+[42.834361][1042:1043] CHIP:BLE: Device 66:75:A4:20:4F:79 does not look like a CHIP device.
+[42.844519][1042:1043] CHIP:BLE: Device 51:F2:83:DE:18:25 does not look like a CHIP device.
+[42.844699][1042:1043] CHIP:BLE: Device F0:FA:C7:E9:B9:13 does not look like a CHIP device.
+[42.848951][1042:1043] CHIP:BLE: Device F5:5B:43:44:8F:80 does not look like a CHIP device.
+[42.879936][1042:1043] CHIP:BLE: Device 62:DA:29:F0:D2:9F does not look like a CHIP device.
+[42.881293][1042:1043] CHIP:BLE: Device 68:64:36:EF:55:C0 does not look like a CHIP device.
+[42.899006][1042:1043] CHIP:BLE: Device 66:2F:14:3A:7D:74 does not look like a CHIP device.
+[42.906575][1042:1043] CHIP:BLE: Device E8:EE:CC:2F:C8:46 does not look like a CHIP device.
+[42.938684][1042:1043] CHIP:BLE: Device 71:40:57:F2:A6:1D does not look like a CHIP device.
+[42.945925][1042:1043] CHIP:BLE: Device 4D:F8:CD:A4:CD:75 does not look like a CHIP device.
+[42.948315][1042:1043] CHIP:BLE: Device 5A:05:67:37:CA:E5 does not look like a CHIP device.
+[42.973963][1042:1043] CHIP:BLE: Device F7:61:63:61:76:87 does not look like a CHIP device.
+[42.974436][1042:1043] CHIP:BLE: Device 64:E5:65:5F:3B:BF does not look like a CHIP device.
+[42.979521][1042:1043] CHIP:BLE: Device ED:4F:CE:CB:89:E6 does not look like a CHIP device.
+[42.986898][1042:1043] CHIP:BLE: Device F7:61:63:61:76:87 does not look like a CHIP device.
+[43.031729][1042:1043] CHIP:BLE: Device 4C:FD:59:5D:BB:62 does not look like a CHIP device.
+[43.053809][1042:1043] CHIP:BLE: Device 6D:39:DF:EA:B4:50 does not look like a CHIP device.
+[43.054320][1042:1043] CHIP:BLE: Device F0:FA:C7:E9:B9:13 does not look like a CHIP device.
+[43.056761][1042:1043] CHIP:BLE: Device 66:5C:CF:2A:D7:4E does not look like a CHIP device.
+[43.065947][1042:1043] CHIP:BLE: Device 49:E3:13:74:DA:6A does not look like a CHIP device.
+[43.102637][1042:1043] CHIP:BLE: Device 50:71:A9:FE:D1:EA does not look like a CHIP device.
+[43.114949][1042:1043] CHIP:BLE: Device 51:F2:83:DE:18:25 does not look like a CHIP device.
+[43.129247][1042:1043] CHIP:BLE: Device 62:DA:29:F0:D2:9F does not look like a CHIP device.
+[43.136476][1042:1043] CHIP:BLE: Device 6D:39:DF:EA:B4:50 does not look like a CHIP device.
+[43.147030][1042:1043] CHIP:BLE: Device 5E:33:32:DB:DE:04 does not look like a CHIP device.
+[43.160201][1042:1043] CHIP:BLE: Device F0:FA:C7:E9:B9:13 does not look like a CHIP device.
+[43.160513][1042:1043] CHIP:BLE: Device 5C:B0:C9:A8:4C:34 does not look like a CHIP device.
+[43.169254][1042:1043] CHIP:BLE: Device 66:2F:14:3A:7D:74 does not look like a CHIP device.
+[43.213847][1042:1043] CHIP:BLE: Device 71:40:57:F2:A6:1D does not look like a CHIP device.
+[43.219171][1042:1043] CHIP:BLE: Device 42:E0:8C:13:99:D6 does not look like a CHIP device.
+[43.221136][1042:1043] CHIP:BLE: Device 21:47:E2:3E:EF:4A does not look like a CHIP device.
+[43.225319][1042:1043] CHIP:BLE: Device 77:10:01:11:D6:6A does not look like a CHIP device.
+[43.225791][1042:1043] CHIP:BLE: Device 5A:05:67:37:CA:E5 does not look like a CHIP device.
+[43.235088][1042:1043] CHIP:BLE: Device EE:2B:29:41:2D:2C does not look like a CHIP device.
+[43.247962][1042:1043] CHIP:BLE: Device 6D:39:DF:EA:B4:50 does not look like a CHIP device.
+[43.248962][1042:1043] CHIP:BLE: Device 64:E5:65:5F:3B:BF does not look like a CHIP device.
+[43.252767][1042:1043] CHIP:BLE: Device 7B:28:C5:8F:A1:62 does not look like a CHIP device.
+[43.264595][1042:1043] CHIP:BLE: Device 54:52:84:2A:A0:27 does not look like a CHIP device.
+[43.264865][1042:1043] CHIP:BLE: Device F0:FA:C7:E9:B9:13 does not look like a CHIP device.
+[43.297437][1042:1043] CHIP:BLE: Device 52:7A:99:42:6D:DB does not look like a CHIP device.
+[43.323722][1042:1043] CHIP:BLE: Device 78:0D:B2:0F:B9:0B does not look like a CHIP device.
+[43.326228][1042:1043] CHIP:BLE: Device DD:ED:F2:FD:8A:C1 does not look like a CHIP device.
+[43.331700][1042:1043] CHIP:BLE: Device 2E:26:F4:E8:39:EF does not look like a CHIP device.
+[43.346482][1042:1043] CHIP:BLE: Device 4E:0C:28:69:B9:C7 does not look like a CHIP device.
+[43.347065][1042:1043] CHIP:BLE: Device 49:E3:13:74:DA:6A does not look like a CHIP device.
+[43.364431][1042:1043] CHIP:BLE: Device F7:61:63:61:76:87 does not look like a CHIP device.
+[43.364590][1042:1043] CHIP:BLE: Device F0:FA:C7:E9:B9:13 does not look like a CHIP device.
+[43.393395][1042:1043] CHIP:BLE: Device 02:C1:DA:56:3A:E4 does not look like a CHIP device.
+[43.396272][1042:1043] CHIP:BLE: Device 51:F2:83:DE:18:25 does not look like a CHIP device.
+[43.415981][1042:1043] CHIP:BLE: Device 62:DA:29:F0:D2:9F does not look like a CHIP device.
+[43.441025][1042:1043] CHIP:BLE: Device D3:64:60:49:01:D4 does not look like a CHIP device.
+[43.442774][1042:1043] CHIP:BLE: Device 79:FA:29:08:F4:30 does not look like a CHIP device.
+[43.443015][1042:1043] CHIP:BLE: Device 68:64:36:EF:55:C0 does not look like a CHIP device.
+[43.444260][1042:1043] CHIP:BLE: Device 75:BA:77:AC:77:80 does not look like a CHIP device.
+[43.448572][1042:1043] CHIP:BLE: Device 66:2F:14:3A:7D:74 does not look like a CHIP device.
+[43.454352][1042:1043] CHIP:BLE: Device 6D:39:DF:EA:B4:50 does not look like a CHIP device.
+[43.474952][1042:1043] CHIP:BLE: Device 71:40:57:F2:A6:1D does not look like a CHIP device.
+[43.475181][1042:1043] CHIP:BLE: Device 50:71:A9:FE:D1:EA does not look like a CHIP device.
+[43.502098][1042:1043] CHIP:BLE: Device 48:D1:BA:21:33:FB does not look like a CHIP device.
+[43.503099][1042:1043] CHIP:BLE: Device 71:FE:EC:13:7F:A8 does not look like a CHIP device.
+[43.521006][1042:1043] CHIP:BLE: Device 7F:9F:5C:FF:AB:FA does not look like a CHIP device.
+[43.525211][1042:1043] CHIP:BLE: Device F7:61:63:61:76:87 does not look like a CHIP device.
+[43.526748][1042:1043] CHIP:BLE: Device 60:0E:A0:42:EA:1E does not look like a CHIP device.
+[43.527359][1042:1043] CHIP:BLE: Device 7B:28:C5:8F:A1:62 does not look like a CHIP device.
+[43.541372][1042:1043] CHIP:BLE: Device 4C:FD:59:5D:BB:62 does not look like a CHIP device.
+[43.550826][1042:1043] CHIP:BLE: Device 52:7A:99:42:6D:DB does not look like a CHIP device.
+[43.554190][1042:1043] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[43.563316][1042:1043] CHIP:BLE: Device E8:EE:CC:2F:C8:46 does not look like a CHIP device.
+[43.573206][1042:1043] CHIP:BLE: Device F0:FA:C7:E9:B9:13 does not look like a CHIP device.
+[43.594851][1042:1043] CHIP:BLE: Device 78:0D:B2:0F:B9:0B does not look like a CHIP device.
+[43.595204][1042:1043] CHIP:BLE: Device 21:47:E2:3E:EF:4A does not look like a CHIP device.
+[43.605674][1042:1043] CHIP:BLE: Device 5F:C6:64:E6:D4:0E does not look like a CHIP device.
+[43.620908][1042:1043] CHIP:BLE: Device 49:E3:13:74:DA:6A does not look like a CHIP device.
+[43.632681][1042:1043] CHIP:BLE: Device 6C:7A:DA:97:F8:57 does not look like a CHIP device.
+[43.640036][1042:1043] CHIP:BLE: Device 7F:48:9B:6E:9F:7A does not look like a CHIP device.
+[43.671712][1042:1043] CHIP:BLE: Device 51:F2:83:DE:18:25 does not look like a CHIP device.
+[43.685052][1042:1043] CHIP:BLE: Device 62:DA:29:F0:D2:9F does not look like a CHIP device.
+[43.686454][1042:1043] CHIP:BLE: Device F0:FA:C7:E9:B9:13 does not look like a CHIP device.
+[43.711865][1042:1043] CHIP:BLE: Device 66:2F:14:3A:7D:74 does not look like a CHIP device.
+[43.737128][1042:1043] CHIP:BLE: Device 71:40:57:F2:A6:1D does not look like a CHIP device.
+[43.741679][1042:1043] CHIP:BLE: Device EE:2B:29:41:2D:2C does not look like a CHIP device.
+[43.754307][1042:1043] CHIP:BLE: Device 4D:F8:CD:A4:CD:75 does not look like a CHIP device.
+[43.759897][1042:1043] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[43.763702][1042:1043] CHIP:BLE: Device 77:10:01:11:D6:6A does not look like a CHIP device.
+[43.765639][1042:1043] CHIP:BLE: Device 6D:39:DF:EA:B4:50 does not look like a CHIP device.
+[43.768230][1042:1043] CHIP:BLE: Device 5A:05:67:37:CA:E5 does not look like a CHIP device.
+[43.786391][1042:1043] CHIP:BLE: Device ED:3B:5B:89:0A:BA does not look like a CHIP device.
+[43.796516][1042:1043] CHIP:BLE: Device F0:FA:C7:E9:B9:13 does not look like a CHIP device.
+[43.797303][1042:1043] CHIP:BLE: Device 66:5C:CF:2A:D7:4E does not look like a CHIP device.
+[43.803543][1042:1043] CHIP:BLE: Device 64:E5:65:5F:3B:BF does not look like a CHIP device.
+[43.805519][1042:1043] CHIP:BLE: Device 4C:FD:59:5D:BB:62 does not look like a CHIP device.
+[43.807660][1042:1043] CHIP:BLE: Device 54:52:84:2A:A0:27 does not look like a CHIP device.
+[43.812562][1042:1043] CHIP:BLE: Device 7D:C7:74:0C:4E:0A does not look like a CHIP device.
+[43.827584][1042:1043] CHIP:BLE: Device 52:7A:99:42:6D:DB does not look like a CHIP device.
+[43.836603][1042:1043] CHIP:BLE: Device F7:61:63:61:76:87 does not look like a CHIP device.
+[43.838247][1042:1043] CHIP:BLE: Device E7:15:EC:DD:1B:D7 does not look like a CHIP device.
+[43.849179][1042:1043] CHIP:BLE: Device 78:0D:B2:0F:B9:0B does not look like a CHIP device.
+[43.851775][1042:1043] CHIP:BLE: Device 50:71:A9:FE:D1:EA does not look like a CHIP device.
+[43.852684][1042:1043] CHIP:BLE: Device 2E:26:F4:E8:39:EF does not look like a CHIP device.
+[43.884295][1042:1043] CHIP:BLE: Device 6D:39:DF:EA:B4:50 does not look like a CHIP device.
+[43.887091][1042:1043] CHIP:BLE: Device 79:D5:5B:1C:BA:5D does not look like a CHIP device.
+[43.896049][1042:1043] CHIP:BLE: Device E8:EE:CC:2F:C8:46 does not look like a CHIP device.
+[43.912449][1042:1043] CHIP:BLE: Device 7F:48:9B:6E:9F:7A does not look like a CHIP device.
+[43.950031][1042:1043] CHIP:BLE: Device 51:F2:83:DE:18:25 does not look like a CHIP device.
+[43.957673][1042:1043] CHIP:BLE: Device 62:DA:29:F0:D2:9F does not look like a CHIP device.
+[43.964962][1042:1043] CHIP:BLE: Device 21:47:E2:3E:EF:4A does not look like a CHIP device.
+[43.973960][1042:1043] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[43.974868][1042:1043] CHIP:BLE: Device 66:5C:CF:2A:D7:4E does not look like a CHIP device.
+[43.975247][1042:1043] CHIP:BLE: Device 7B:28:C5:8F:A1:62 does not look like a CHIP device.
+[43.982492][1042:1043] CHIP:BLE: Device 66:2F:14:3A:7D:74 does not look like a CHIP device.
+[44.002642][1042:1043] CHIP:BLE: Device F0:FA:C7:E9:B9:13 does not look like a CHIP device.
+[44.003279][1042:1043] CHIP:BLE: Device 02:C1:DA:56:3A:E4 does not look like a CHIP device.
+[44.029228][1042:1043] CHIP:BLE: Device 68:64:36:EF:55:C0 does not look like a CHIP device.
+[44.031726][1042:1043] CHIP:BLE: Device EA:1C:E3:0C:52:58 does not look like a CHIP device.
+[44.042089][1042:1043] CHIP:BLE: Device 50:71:A9:FE:D1:EA does not look like a CHIP device.
+[44.049708][1042:1043] CHIP:BLE: Device 5A:05:67:37:CA:E5 does not look like a CHIP device.
+[44.054619][1042:1043] CHIP:BLE: Device E0:AD:A1:C6:29:7A does not look like a CHIP device.
+[44.062982][1042:1043] CHIP:BLE: Device 2E:26:F4:E8:39:EF does not look like a CHIP device.
+[44.072647][1042:1043] CHIP:BLE: Device 7F:9F:5C:FF:AB:FA does not look like a CHIP device.
+[44.073477][1042:1043] CHIP:BLE: Device 64:E5:65:5F:3B:BF does not look like a CHIP device.
+[44.089567][1042:1043] CHIP:BLE: Device 4C:FD:59:5D:BB:62 does not look like a CHIP device.
+[44.101554][1042:1043] CHIP:BLE: Device 52:7A:99:42:6D:DB does not look like a CHIP device.
+[44.125706][1042:1043] CHIP:BLE: Device 5C:A8:7C:47:8B:E5 does not look like a CHIP device.
+[44.129151][1042:1043] CHIP:BLE: Device 4A:3D:BD:04:15:51 does not look like a CHIP device.
+[44.162560][1042:1043] CHIP:BLE: Device 79:FA:29:08:F4:30 does not look like a CHIP device.
+[44.163028][1042:1043] CHIP:BLE: Device 66:5C:CF:2A:D7:4E does not look like a CHIP device.
+[44.167574][1042:1043] CHIP:BLE: Device 2E:26:F4:E8:39:EF does not look like a CHIP device.
+[44.171165][1042:1043] CHIP:BLE: Device 49:E3:13:74:DA:6A does not look like a CHIP device.
+[44.177204][1042:1043] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[44.177538][1042:1043] CHIP:BLE: Device E2:3F:DE:50:04:41 does not look like a CHIP device.
+[44.180986][1042:1043] CHIP:BLE: Device 6D:39:DF:EA:B4:50 does not look like a CHIP device.
+[44.215993][1042:1043] CHIP:BLE: Device F0:FA:C7:E9:B9:13 does not look like a CHIP device.
+[44.224432][1042:1043] CHIP:BLE: Device 51:F2:83:DE:18:25 does not look like a CHIP device.
+[44.232480][1042:1043] CHIP:BLE: Device 62:DA:29:F0:D2:9F does not look like a CHIP device.
+[44.232939][1042:1043] CHIP:BLE: Device 50:71:A9:FE:D1:EA does not look like a CHIP device.
+[44.236452][1042:1043] CHIP:BLE: Device 5E:33:32:DB:DE:04 does not look like a CHIP device.
+[44.260241][1042:1043] CHIP:BLE: Device EE:2B:29:41:2D:2C does not look like a CHIP device.
+[44.261764][1042:1043] CHIP:BLE: Device 66:2F:14:3A:7D:74 does not look like a CHIP device.
+[44.262726][1042:1043] CHIP:BLE: Device 5C:B0:C9:A8:4C:34 does not look like a CHIP device.
+[44.264128][1042:1043] CHIP:BLE: Device 41:9A:32:46:3A:86 does not look like a CHIP device.
+[44.272974][1042:1043] CHIP:BLE: Device 71:40:57:F2:A6:1D does not look like a CHIP device.
+[44.283860][1042:1043] CHIP:BLE: Device 6D:39:DF:EA:B4:50 does not look like a CHIP device.
+[44.290357][1042:1043] CHIP:BLE: Device 44:DA:0C:F2:6B:24 does not look like a CHIP device.
+[44.297911][1042:1043] CHIP:BLE: Device 42:E0:8C:13:99:D6 does not look like a CHIP device.
+[44.299096][1042:1043] CHIP:BLE: Device 4D:F8:CD:A4:CD:75 does not look like a CHIP device.
+[44.310765][1042:1043] CHIP:BLE: Device 78:E8:03:4E:26:56 does not look like a CHIP device.
+[44.327108][1042:1043] CHIP:BLE: Device 48:D1:BA:21:33:FB does not look like a CHIP device.
+[44.327712][1042:1043] CHIP:BLE: Device 5A:05:67:37:CA:E5 does not look like a CHIP device.
+[44.331745][1042:1043] CHIP:BLE: Device 21:47:E2:3E:EF:4A does not look like a CHIP device.
+[44.353853][1042:1043] CHIP:BLE: Device 66:5C:CF:2A:D7:4E does not look like a CHIP device.
+[44.354568][1042:1043] CHIP:BLE: Device 64:E5:65:5F:3B:BF does not look like a CHIP device.
+[44.360438][1042:1043] CHIP:BLE: Device 4C:FD:59:5D:BB:62 does not look like a CHIP device.
+[44.365889][1042:1043] CHIP:BLE: Device 54:52:84:2A:A0:27 does not look like a CHIP device.
+[44.389194][1042:1043] CHIP:BLE: Device 52:7A:99:42:6D:DB does not look like a CHIP device.
+[44.390244][1042:1043] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[44.390416][1042:1043] CHIP:BLE: Device 6D:39:DF:EA:B4:50 does not look like a CHIP device.
+[44.391665][1042:1043] CHIP:BLE: Device CF:0B:07:46:A5:9E does not look like a CHIP device.
+[44.429345][1042:1043] CHIP:BLE: Device F0:FA:C7:E9:B9:13 does not look like a CHIP device.
+[44.493958][1042:1043] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[44.502249][1042:1043] CHIP:BLE: Device 6D:39:DF:EA:B4:50 does not look like a CHIP device.
+[44.510173][1042:1043] CHIP:BLE: Device 51:F2:83:DE:18:25 does not look like a CHIP device.
+[44.512860][1042:1043] CHIP:BLE: Device 62:DA:29:F0:D2:9F does not look like a CHIP device.
+[44.527901][1042:1043] CHIP:BLE: Device 66:2F:14:3A:7D:74 does not look like a CHIP device.
+[44.541684][1042:1043] CHIP:BLE: Device 66:5C:CF:2A:D7:4E does not look like a CHIP device.
+[44.546400][1042:1043] CHIP:BLE: Device 71:40:57:F2:A6:1D does not look like a CHIP device.
+[44.552903][1042:1043] CHIP:BLE: Device F6:A6:41:0F:0A:29 does not look like a CHIP device.
+[44.575677][1042:1043] CHIP:BLE: Device 42:E0:8C:13:99:D6 does not look like a CHIP device.
+[44.576116][1042:1043] CHIP:BLE: Device 4D:F8:CD:A4:CD:75 does not look like a CHIP device.
+[44.583390][1042:1043] CHIP:BLE: Device 2E:26:F4:E8:39:EF does not look like a CHIP device.
+[44.597388][1042:1043] CHIP:BLE: Device 48:D1:BA:21:33:FB does not look like a CHIP device.
+[44.599104][1042:1043] CHIP:BLE: Device 5A:05:67:37:CA:E5 does not look like a CHIP device.
+[44.611057][1042:1043] CHIP:BLE: Device 5F:C6:64:E6:D4:0E does not look like a CHIP device.
+[44.621373][1042:1043] CHIP:BLE: Device 60:0E:A0:42:EA:1E does not look like a CHIP device.
+[44.622190][1042:1043] CHIP:BLE: Device 64:E5:65:5F:3B:BF does not look like a CHIP device.
+[44.641793][1042:1043] CHIP:BLE: Device F0:FA:C7:E9:B9:13 does not look like a CHIP device.
+[44.643674][1042:1043] CHIP:BLE: Device 52:7A:99:42:6D:DB does not look like a CHIP device.
+[44.683780][1042:1043] CHIP:BLE: Device 78:0D:B2:0F:B9:0B does not look like a CHIP device.
+[44.722873][1042:1043] CHIP:BLE: Device 49:E3:13:74:DA:6A does not look like a CHIP device.
+[44.729374][1042:1043] CHIP:BLE: Device 66:5C:CF:2A:D7:4E does not look like a CHIP device.
+[44.732559][1042:1043] CHIP:BLE: Device 7F:48:9B:6E:9F:7A does not look like a CHIP device.
+[44.746326][1042:1043] CHIP:BLE: Device 6C:7A:DA:97:F8:57 does not look like a CHIP device.
+[44.747043][1042:1043] CHIP:BLE: Device F0:FA:C7:E9:B9:13 does not look like a CHIP device.
+[44.771092][1042:1043] CHIP:BLE: Device 56:9B:43:BD:C1:75 does not look like a CHIP device.
+[44.779440][1042:1043] CHIP:BLE: Device 62:DA:29:F0:D2:9F does not look like a CHIP device.
+[44.787875][1042:1043] CHIP:BLE: Device 2E:26:F4:E8:39:EF does not look like a CHIP device.
+[44.798385][1042:1043] CHIP:BLE: Device 66:2F:14:3A:7D:74 does not look like a CHIP device.
+[44.803638][1042:1043] CHIP:BLE: Device 7B:28:C5:8F:A1:62 does not look like a CHIP device.
+[44.808228][1042:1043] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[44.811080][1042:1043] CHIP:BLE: Device 6D:39:DF:EA:B4:50 does not look like a CHIP device.
+[44.813596][1042:1043] CHIP:BLE: Device 5C:B0:C9:A8:4C:34 does not look like a CHIP device.
+[44.837878][1042:1043] CHIP:BLE: Device 71:40:57:F2:A6:1D does not look like a CHIP device.
+[44.840076][1042:1043] CHIP:BLE: Device 44:DA:0C:F2:6B:24 does not look like a CHIP device.
+[44.841183][1042:1043] CHIP:BLE: Device 66:75:A4:20:4F:79 does not look like a CHIP device.
+[44.855088][1042:1043] CHIP:BLE: Device 4D:F8:CD:A4:CD:75 does not look like a CHIP device.
+[44.857572][1042:1043] CHIP:BLE: Device F0:FA:C7:E9:B9:13 does not look like a CHIP device.
+[44.869880][1042:1043] CHIP:BLE: Device 5A:05:67:37:CA:E5 does not look like a CHIP device.
+[44.883740][1042:1043] CHIP:BLE: Device 21:47:E2:3E:EF:4A does not look like a CHIP device.
+[44.911274][1042:1043] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[44.916744][1042:1043] CHIP:BLE: Device 54:52:84:2A:A0:27 does not look like a CHIP device.
+[44.930253][1042:1043] CHIP:BLE: Device 45:40:7F:BC:B1:E6 does not look like a CHIP device.
+[44.940453][1042:1043] CHIP:BLE: Device 75:55:65:28:9A:39 does not look like a CHIP device.
+[44.944923][1042:1043] CHIP:BLE: Device EA:4D:76:F8:2E:C5 does not look like a CHIP device.
+[44.960782][1042:1043] CHIP:BLE: Device F0:FA:C7:E9:B9:13 does not look like a CHIP device.
+[44.977168][1042:1043] CHIP:BLE: Device ED:4F:CE:CB:89:E6 does not look like a CHIP device.
+[44.994726][1042:1043] CHIP:BLE: Device 6C:7A:DA:97:F8:57 does not look like a CHIP device.
+[44.996620][1042:1043] CHIP:BLE: Device 49:E3:13:74:DA:6A does not look like a CHIP device.
+[45.024963][1042:1043] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[45.028175][1042:1043] CHIP:BLE: Device 5B:69:40:5E:9F:6C does not look like a CHIP device.
+[45.032539][1042:1043] CHIP:BLE: Device E8:EE:CC:2F:C8:46 does not look like a CHIP device.
+[45.054886][1042:1043] CHIP:BLE: Device 51:F2:83:DE:18:25 does not look like a CHIP device.
+[45.055204][1042:1043] CHIP:BLE: Device 62:DA:29:F0:D2:9F does not look like a CHIP device.
+[45.057890][1042:1043] CHIP:BLE: Device 5F:C6:64:E6:D4:0E does not look like a CHIP device.
+[45.062909][1042:1043] CHIP:BLE: Device F0:FA:C7:E9:B9:13 does not look like a CHIP device.
+[45.068371][1042:1043] CHIP:BLE: Device 21:47:E2:3E:EF:4A does not look like a CHIP device.
+[45.089731][1042:1043] CHIP:BLE: Device 7B:28:C5:8F:A1:62 does not look like a CHIP device.
+[45.108815][1042:1043] CHIP:BLE: Device 71:40:57:F2:A6:1D does not look like a CHIP device.
+[45.109904][1042:1043] CHIP:BLE: Device 2E:26:F4:E8:39:EF does not look like a CHIP device.
+[45.120953][1042:1043] CHIP:BLE: Device 6D:39:DF:EA:B4:50 does not look like a CHIP device.
+[45.121225][1042:1043] CHIP:BLE: Device 4D:F8:CD:A4:CD:75 does not look like a CHIP device.
+[45.124424][1042:1043] CHIP:BLE: Device 75:55:65:28:9A:39 does not look like a CHIP device.
+[45.126940][1042:1043] CHIP:BLE: Device 6C:75:30:88:C4:50 does not look like a CHIP device.
+[45.131825][1042:1043] CHIP:BLE: Device 70:93:13:C8:A7:C2 does not look like a CHIP device.
+[45.132256][1042:1043] CHIP:BLE: Device 6C:7A:DA:97:F8:57 does not look like a CHIP device.
+[45.144410][1042:1043] CHIP:BLE: Device 5A:05:67:37:CA:E5 does not look like a CHIP device.
+[45.172231][1042:1043] CHIP:BLE: Device 60:0E:A0:42:EA:1E does not look like a CHIP device.
+[45.173657][1042:1043] CHIP:BLE: Device F0:FA:C7:E9:B9:13 does not look like a CHIP device.
+[45.176509][1042:1043] CHIP:BLE: Device 5A:35:AD:AC:1D:9C does not look like a CHIP device.
+[45.178537][1042:1043] CHIP:BLE: Device 64:E5:65:5F:3B:BF does not look like a CHIP device.
+[45.193204][1042:1043] CHIP:BLE: Device 5C:A8:7C:47:8B:E5 does not look like a CHIP device.
+[45.195271][1042:1043] CHIP:BLE: Device 52:7A:99:42:6D:DB does not look like a CHIP device.
+[45.200430][1042:1043] CHIP:BLE: Device E8:EE:CC:2F:C8:46 does not look like a CHIP device.
+[45.218961][1042:1043] CHIP:BLE: Device 6D:39:DF:EA:B4:50 does not look like a CHIP device.
+[45.233991][1042:1043] CHIP:BLE: Device 7F:ED:D4:4F:CD:33 does not look like a CHIP device.
+[45.235573][1042:1043] CHIP:BLE: Device 78:0D:B2:0F:B9:0B does not look like a CHIP device.
+[45.246108][1042:1043] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[45.259146][1042:1043] CHIP:BLE: Device EE:2B:29:41:2D:2C does not look like a CHIP device.
+[45.259439][1042:1043] CHIP:BLE: Device 21:47:E2:3E:EF:4A does not look like a CHIP device.
+[45.272256][1042:1043] CHIP:BLE: Device ED:7F:42:0A:C3:CD does not look like a CHIP device.
+[45.277807][1042:1043] CHIP:BLE: Device F0:FA:C7:E9:B9:13 does not look like a CHIP device.
+[45.279893][1042:1043] CHIP:BLE: Device 66:5C:CF:2A:D7:4E does not look like a CHIP device.
+[45.305671][1042:1043] CHIP:BLE: Device 75:55:65:28:9A:39 does not look like a CHIP device.
+[45.321090][1042:1043] CHIP:BLE: Device 6D:39:DF:EA:B4:50 does not look like a CHIP device.
+[45.322973][1042:1043] CHIP:BLE: Device DD:ED:F2:FD:8A:C1 does not look like a CHIP device.
+[45.328434][1042:1043] CHIP:BLE: Device 51:F2:83:DE:18:25 does not look like a CHIP device.
+[45.343536][1042:1043] CHIP:BLE: Device 66:2F:14:3A:7D:74 does not look like a CHIP device.
+[45.351204][1042:1043] CHIP:BLE: Device 78:E8:03:4E:26:56 does not look like a CHIP device.
+[45.359862][1042:1043] CHIP:BLE: Device 71:40:57:F2:A6:1D does not look like a CHIP device.
+[45.369024][1042:1043] CHIP:BLE: Device E8:EE:CC:2F:C8:46 does not look like a CHIP device.
+[45.381226][1042:1043] CHIP:BLE: Device 6A:B3:0F:75:B3:76 does not look like a CHIP device.
+[45.381528][1042:1043] CHIP:BLE: Device F0:FA:C7:E9:B9:13 does not look like a CHIP device.
+[45.391473][1042:1043] CHIP:BLE: Device 42:E0:8C:13:99:D6 does not look like a CHIP device.
+[45.418356][1042:1043] CHIP:BLE: Device 77:10:01:11:D6:6A does not look like a CHIP device.
+[45.422824][1042:1043] CHIP:BLE: Device D3:64:60:49:01:D4 does not look like a CHIP device.
+[45.423628][1042:1043] CHIP:BLE: Device 5A:05:67:37:CA:E5 does not look like a CHIP device.
+[45.440821][1042:1043] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[45.443698][1042:1043] CHIP:BLE: Device 75:BA:77:AC:77:80 does not look like a CHIP device.
+[45.448479][1042:1043] CHIP:BLE: Device 58:3A:4D:D7:6F:F7 does not look like a CHIP device.
+[45.466497][1042:1043] CHIP:BLE: Device 4C:FD:59:5D:BB:62 does not look like a CHIP device.
+[45.472457][1042:1043] CHIP:BLE: Device 54:52:84:2A:A0:27 does not look like a CHIP device.
+[45.484983][1042:1043] CHIP:BLE: Device 52:7A:99:42:6D:DB does not look like a CHIP device.
+[45.485219][1042:1043] CHIP:BLE: Device F0:FA:C7:E9:B9:13 does not look like a CHIP device.
+[45.529346][1042:1043] CHIP:BLE: Device 75:55:65:28:9A:39 does not look like a CHIP device.
+[45.530722][1042:1043] CHIP:BLE: Device 2E:26:F4:E8:39:EF does not look like a CHIP device.
+[45.541083][1042:1043] CHIP:BLE: Device 5F:C6:64:E6:D4:0E does not look like a CHIP device.
+[45.590588][1042:1043] CHIP:BLE: Device F0:FA:C7:E9:B9:13 does not look like a CHIP device.
+[45.603821][1042:1043] CHIP:BLE: Device 51:F2:83:DE:18:25 does not look like a CHIP device.
+[45.611123][1042:1043] CHIP:BLE: Device 66:2F:14:3A:7D:74 does not look like a CHIP device.
+[45.645358][1042:1043] CHIP:BLE: Device 71:40:57:F2:A6:1D does not look like a CHIP device.
+[45.649236][1042:1043] CHIP:BLE: Device 42:E0:8C:13:99:D6 does not look like a CHIP device.
+[45.649852][1042:1043] CHIP:BLE: Device 66:5C:CF:2A:D7:4E does not look like a CHIP device.
+[45.674010][1042:1043] CHIP:BLE: Device 5F:C6:64:E6:D4:0E does not look like a CHIP device.
+[45.675728][1042:1043] CHIP:BLE: Device 75:55:65:28:9A:39 does not look like a CHIP device.
+[45.690992][1042:1043] CHIP:BLE: Device F0:FA:C7:E9:B9:13 does not look like a CHIP device.
+[45.695277][1042:1043] CHIP:BLE: Device E8:EE:CC:2F:C8:46 does not look like a CHIP device.
+[45.697591][1042:1043] CHIP:BLE: Device 5A:05:67:37:CA:E5 does not look like a CHIP device.
+[45.723035][1042:1043] CHIP:BLE: Device 64:E5:65:5F:3B:BF does not look like a CHIP device.
+[45.746198][1042:1043] CHIP:BLE: Device 6D:39:DF:EA:B4:50 does not look like a CHIP device.
+[45.753206][1042:1043] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[45.784319][1042:1043] CHIP:BLE: Device 52:7A:99:42:6D:DB does not look like a CHIP device.
+[45.787061][1042:1043] CHIP:BLE: Device 78:0D:B2:0F:B9:0B does not look like a CHIP device.
+[45.789657][1042:1043] CHIP:BLE: Device 13:38:62:56:18:C6 does not look like a CHIP device.
+[45.797823][1042:1043] CHIP:BLE: Device F0:FA:C7:E9:B9:13 does not look like a CHIP device.
+[45.809170][1042:1043] CHIP:BLE: Device 49:E3:13:74:DA:6A does not look like a CHIP device.
+[45.837631][1042:1043] CHIP:BLE: Device 66:5C:CF:2A:D7:4E does not look like a CHIP device.
+[45.843797][1042:1043] CHIP:BLE: Device E7:15:EC:DD:1B:D7 does not look like a CHIP device.
+[45.863240][1042:1043] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[45.865867][1042:1043] CHIP:BLE: Device E8:EE:CC:2F:C8:46 does not look like a CHIP device.
+[45.876519][1042:1043] CHIP:BLE: Device 51:F2:83:DE:18:25 does not look like a CHIP device.
+[45.890221][1042:1043] CHIP:BLE: Device 66:2F:14:3A:7D:74 does not look like a CHIP device.
+[45.891146][1042:1043] CHIP:BLE: Device 79:D5:5B:1C:BA:5D does not look like a CHIP device.
+[45.909268][1042:1043] CHIP:BLE: Device F0:FA:C7:E9:B9:13 does not look like a CHIP device.
+[45.909632][1042:1043] CHIP:BLE: Device 71:40:57:F2:A6:1D does not look like a CHIP device.
+[45.916306][1042:1043] CHIP:BLE: Device 5C:B0:C9:A8:4C:34 does not look like a CHIP device.
+[45.930279][1042:1043] CHIP:BLE: Device 42:E0:8C:13:99:D6 does not look like a CHIP device.
+[45.938835][1042:1043] CHIP:BLE: Device 77:10:01:11:D6:6A does not look like a CHIP device.
+[45.939975][1042:1043] CHIP:BLE: Device 6D:39:DF:EA:B4:50 does not look like a CHIP device.
+[45.953016][1042:1043] CHIP:BLE: Device 6C:7A:DA:97:F8:57 does not look like a CHIP device.
+[45.973180][1042:1043] CHIP:BLE: Device 4D:F8:CD:A4:CD:75 does not look like a CHIP device.
+[45.974079][1042:1043] CHIP:BLE: Device 5A:05:67:37:CA:E5 does not look like a CHIP device.
+[45.999512][1042:1043] CHIP:BLE: Device 7F:9F:5C:FF:AB:FA does not look like a CHIP device.
+[46.013623][1042:1043] CHIP:BLE: Device 4C:FD:59:5D:BB:62 does not look like a CHIP device.
+[46.015523][1042:1043] CHIP:BLE: Device F0:FA:C7:E9:B9:13 does not look like a CHIP device.
+[46.021980][1042:1043] CHIP:BLE: Device 54:52:84:2A:A0:27 does not look like a CHIP device.
+[46.022434][1042:1043] CHIP:BLE: Device 66:5C:CF:2A:D7:4E does not look like a CHIP device.
+[46.028084][1042:1043] CHIP:BLE: Device 52:7A:99:42:6D:DB does not look like a CHIP device.
+[46.028701][1042:1043] CHIP:BLE: Device 5C:A8:7C:47:8B:E5 does not look like a CHIP device.
+[46.040429][1042:1043] CHIP:BLE: Device 6D:39:DF:EA:B4:50 does not look like a CHIP device.
+[46.052821][1042:1043] CHIP:BLE: Device E0:AD:A1:C6:29:7A does not look like a CHIP device.
+[46.080945][1042:1043] CHIP:BLE: Device 49:E3:13:74:DA:6A does not look like a CHIP device.
+[46.092799][1042:1043] CHIP:BLE: Device 4E:0C:28:69:B9:C7 does not look like a CHIP device.
+[46.093599][1042:1043] CHIP:BLE: Device 7F:48:9B:6E:9F:7A does not look like a CHIP device.
+[46.095697][1042:1043] CHIP:BLE: Device 6C:7A:DA:97:F8:57 does not look like a CHIP device.
+[46.097164][1042:1043] CHIP:BLE: Device 50:71:A9:FE:D1:EA does not look like a CHIP device.
+[46.115299][1042:1043] CHIP:BLE: Device F0:FA:C7:E9:B9:13 does not look like a CHIP device.
+[46.126975][1042:1043] CHIP:BLE: Device 30:1A:BA:38:C2:34 does not look like a CHIP device.
+[46.131950][1042:1043] CHIP:BLE: Device 02:C1:DA:56:3A:E4 does not look like a CHIP device.
+[46.158739][1042:1043] CHIP:BLE: Device 51:F2:83:DE:18:25 does not look like a CHIP device.
+[46.159476][1042:1043] CHIP:BLE: Device 66:2F:14:3A:7D:74 does not look like a CHIP device.
+[46.164917][1042:1043] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[46.165139][1042:1043] CHIP:BLE: Device 62:DA:29:F0:D2:9F does not look like a CHIP device.
+[46.178403][1042:1043] CHIP:BLE: Device 71:40:57:F2:A6:1D does not look like a CHIP device.
+[46.183641][1042:1043] CHIP:BLE: Device E2:3F:DE:50:04:41 does not look like a CHIP device.
+[46.231720][1042:1043] CHIP:BLE: Device 75:55:65:28:9A:39 does not look like a CHIP device.
+[46.232570][1042:1043] CHIP:BLE: Device 4D:F8:CD:A4:CD:75 does not look like a CHIP device.
+[46.239858][1042:1043] CHIP:BLE: Device 48:D1:BA:21:33:FB does not look like a CHIP device.
+[46.244768][1042:1043] CHIP:BLE: Device 70:93:13:C8:A7:C2 does not look like a CHIP device.
+[46.244990][1042:1043] CHIP:BLE: Device 5A:05:67:37:CA:E5 does not look like a CHIP device.
+[46.268827][1042:1043] CHIP:BLE: Device EE:2B:29:41:2D:2C does not look like a CHIP device.
+[46.269977][1042:1043] CHIP:BLE: Device 5F:C6:64:E6:D4:0E does not look like a CHIP device.
+[46.270227][1042:1043] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[46.271805][1042:1043] CHIP:BLE: Device 2E:26:F4:E8:39:EF does not look like a CHIP device.
+[46.274218][1042:1043] CHIP:BLE: Device D8:F6:9E:74:79:B9 does not look like a CHIP device.
+[46.328888][1042:1043] CHIP:BLE: Device 4C:FD:59:5D:BB:62 does not look like a CHIP device.
+[46.330827][1042:1043] CHIP:BLE: Device F0:FA:C7:E9:B9:13 does not look like a CHIP device.
+[46.353452][1042:1043] CHIP:BLE: Device 49:E3:13:74:DA:6A does not look like a CHIP device.
+[46.362596][1042:1043] CHIP:BLE: Device 7F:48:9B:6E:9F:7A does not look like a CHIP device.
+[46.371330][1042:1043] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[46.372849][1042:1043] CHIP:BLE: Device 78:E8:03:4E:26:56 does not look like a CHIP device.
+[46.374460][1042:1043] CHIP:BLE: Device 2E:26:F4:E8:39:EF does not look like a CHIP device.
+[46.382902][1042:1043] CHIP:BLE: Device 5F:C6:64:E6:D4:0E does not look like a CHIP device.
+[46.389205][1042:1043] CHIP:BLE: Device 66:5C:CF:2A:D7:4E does not look like a CHIP device.
+[46.398968][1042:1043] CHIP:BLE: Device CF:0B:07:46:A5:9E does not look like a CHIP device.
+[46.409030][1042:1043] CHIP:BLE: Device 30:1A:BA:38:C2:34 does not look like a CHIP device.
+[46.413179][1042:1043] CHIP:BLE: Device 4E:81:37:92:70:C5 does not look like a CHIP device.
+[46.413887][1042:1043] CHIP:BLE: Device 75:55:65:28:9A:39 does not look like a CHIP device.
+[46.429621][1042:1043] CHIP:BLE: Device F0:FA:C7:E9:B9:13 does not look like a CHIP device.
+[46.430458][1042:1043] CHIP:BLE: Device 51:F2:83:DE:18:25 does not look like a CHIP device.
+[46.431416][1042:1043] CHIP:BLE: Device 66:2F:14:3A:7D:74 does not look like a CHIP device.
+[46.437205][1042:1043] CHIP:BLE: Device 02:C1:DA:56:3A:E4 does not look like a CHIP device.
+[46.443457][1042:1043] CHIP:BLE: Device 62:DA:29:F0:D2:9F does not look like a CHIP device.
+[46.444161][1042:1043] CHIP:BLE: Device F9:0E:48:BC:9D:46 does not look like a CHIP device.
+[46.447858][1042:1043] CHIP:BLE: Device 71:40:57:F2:A6:1D does not look like a CHIP device.
+[46.459762][1042:1043] CHIP:BLE: Device 5C:B0:C9:A8:4C:34 does not look like a CHIP device.
+[46.460512][1042:1043] CHIP:BLE: Device 79:FA:29:08:F4:30 does not look like a CHIP device.
+[46.482627][1042:1043] CHIP:BLE: Device 2E:26:F4:E8:39:EF does not look like a CHIP device.
+[46.522794][1042:1043] CHIP:BLE: Device 5A:05:67:37:CA:E5 does not look like a CHIP device.
+[46.525031][1042:1043] CHIP:BLE: Device E8:EE:CC:2F:C8:46 does not look like a CHIP device.
+[46.533132][1042:1043] CHIP:BLE: Device F0:FA:C7:E9:B9:13 does not look like a CHIP device.
+[46.580249][1042:1043] CHIP:BLE: Device 52:7A:99:42:6D:DB does not look like a CHIP device.
+[46.588561][1042:1043] CHIP:BLE: Device 2E:26:F4:E8:39:EF does not look like a CHIP device.
+[46.593671][1042:1043] CHIP:BLE: Device 5F:C6:64:E6:D4:0E does not look like a CHIP device.
+[46.597975][1042:1043] CHIP:BLE: Device 52:19:3C:72:FA:95 does not look like a CHIP device.
+[46.616888][1042:1043] CHIP:BLE: Device 75:55:65:28:9A:39 does not look like a CHIP device.
+[46.617052][1042:1043] CHIP:BLE: Device 13:38:62:56:18:C6 does not look like a CHIP device.
+[46.624788][1042:1043] CHIP:BLE: Device 6C:7A:DA:97:F8:57 does not look like a CHIP device.
+[46.635243][1042:1043] CHIP:BLE: Device F0:FA:C7:E9:B9:13 does not look like a CHIP device.
+[46.643298][1042:1043] CHIP:BLE: Device 71:FE:EC:13:7F:A8 does not look like a CHIP device.
+[46.662564][1042:1043] CHIP:BLE: Device 6D:8F:B3:5D:2E:D8 does not look like a CHIP device.
+[46.665953][1042:1043] CHIP:BLE: Device 6D:39:DF:EA:B4:50 does not look like a CHIP device.
+[46.698970][1042:1043] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[46.701594][1042:1043] CHIP:BLE: Device 66:2F:14:3A:7D:74 does not look like a CHIP device.
+[46.710906][1042:1043] CHIP:BLE: Device DD:E0:54:03:C3:73 does not look like a CHIP device.
+[46.711902][1042:1043] CHIP:BLE: Device E8:EE:CC:2F:C8:46 does not look like a CHIP device.
+[46.715519][1042:1043] CHIP:BLE: Device D6:C8:83:02:6D:CF does not look like a CHIP device.
+[46.720504][1042:1043] CHIP:BLE: Device 71:40:57:F2:A6:1D does not look like a CHIP device.
+[46.747896][1042:1043] CHIP:BLE: Device 62:DA:29:F0:D2:9F does not look like a CHIP device.
+[46.748764][1042:1043] CHIP:BLE: Device 21:47:E2:3E:EF:4A does not look like a CHIP device.
+[46.763397][1042:1043] CHIP:BLE: Device EE:2B:29:41:2D:2C does not look like a CHIP device.
+[46.763664][1042:1043] CHIP:BLE: Device 6C:7A:DA:97:F8:57 does not look like a CHIP device.
+[46.765466][1042:1043] CHIP:BLE: Device 66:5C:CF:2A:D7:4E does not look like a CHIP device.
+[46.779874][1042:1043] CHIP:BLE: Device 4D:F8:CD:A4:CD:75 does not look like a CHIP device.
+[46.792435][1042:1043] CHIP:BLE: Device 75:55:65:28:9A:39 does not look like a CHIP device.
+[46.805110][1042:1043] CHIP:BLE: Device 5A:05:67:37:CA:E5 does not look like a CHIP device.
+[46.807613][1042:1043] CHIP:BLE: Device 2E:26:F4:E8:39:EF does not look like a CHIP device.
+[46.818081][1042:1043] CHIP:BLE: Device FE:2D:37:A4:F9:65 does not look like a CHIP device.
+[46.821568][1042:1043] CHIP:BLE: Device 64:E5:65:5F:3B:BF does not look like a CHIP device.
+[46.829068][1042:1043] CHIP:BLE: Device 4C:FD:59:5D:BB:62 does not look like a CHIP device.
+[46.836314][1042:1043] CHIP:BLE: Device 5F:C6:64:E6:D4:0E does not look like a CHIP device.
+[46.858550][1042:1043] CHIP:BLE: Device 5A:35:AD:AC:1D:9C does not look like a CHIP device.
+[46.859972][1042:1043] CHIP:BLE: Device 52:7A:99:42:6D:DB does not look like a CHIP device.
+[46.868095][1042:1043] CHIP:BLE: Device F5:5B:43:44:8F:80 does not look like a CHIP device.
+[46.871055][1042:1043] CHIP:BLE: Device E8:EE:CC:2F:C8:46 does not look like a CHIP device.
+[46.893129][1042:1043] CHIP:BLE: Device 6D:39:DF:EA:B4:50 does not look like a CHIP device.
+[46.897591][1042:1043] CHIP:BLE: Device 6C:7A:DA:97:F8:57 does not look like a CHIP device.
+[46.899575][1042:1043] CHIP:BLE: Device ED:3B:5B:89:0A:BA does not look like a CHIP device.
+[46.901765][1042:1043] CHIP:BLE: Device 78:E8:03:4E:26:56 does not look like a CHIP device.
+[46.906496][1042:1043] CHIP:BLE: Device 7F:48:9B:6E:9F:7A does not look like a CHIP device.
+[46.908113][1042:1043] CHIP:BLE: Device 49:E3:13:74:DA:6A does not look like a CHIP device.
+[46.926038][1042:1043] CHIP:BLE: Device 45:40:7F:BC:B1:E6 does not look like a CHIP device.
+[46.936727][1042:1043] CHIP:BLE: Device 7F:98:ED:C2:8C:0C does not look like a CHIP device.
+[46.939749][1042:1043] CHIP:BLE: Device 21:47:E2:3E:EF:4A does not look like a CHIP device.
+[46.945294][1042:1043] CHIP:BLE: Device F0:FA:C7:E9:B9:13 does not look like a CHIP device.
+[46.946689][1042:1043] CHIP:BLE: Device E4:00:CF:C2:BC:E8 does not look like a CHIP device.
+[46.954224][1042:1043] CHIP:BLE: Device 42:E0:8C:13:99:D6 does not look like a CHIP device.
+[46.954930][1042:1043] CHIP:BLE: Device 66:5C:CF:2A:D7:4E does not look like a CHIP device.
+[46.971597][1042:1043] CHIP:BLE: Device 66:2F:14:3A:7D:74 does not look like a CHIP device.
+[46.977820][1042:1043] CHIP:BLE: Device 75:55:65:28:9A:39 does not look like a CHIP device.
+[46.978738][1042:1043] CHIP:BLE: Device 51:F2:83:DE:18:25 does not look like a CHIP device.
+[46.986669][1042:1043] CHIP:BLE: Device ED:4F:CE:CB:89:E6 does not look like a CHIP device.
+[46.995692][1042:1043] CHIP:BLE: Device 62:DA:29:F0:D2:9F does not look like a CHIP device.
+[47.011317][1042:1043] CHIP:BLE: Device 2E:26:F4:E8:39:EF does not look like a CHIP device.
+[47.021760][1042:1043] CHIP:BLE: Device 6A:B3:0F:75:B3:76 does not look like a CHIP device.
+[47.044691][1042:1043] CHIP:BLE: Device 6C:7A:DA:97:F8:57 does not look like a CHIP device.
+[47.045136][1042:1043] CHIP:BLE: Device 44:DA:0C:F2:6B:24 does not look like a CHIP device.
+[47.051591][1042:1043] CHIP:BLE: Device 4D:F8:CD:A4:CD:75 does not look like a CHIP device.
+[47.073210][1042:1043] CHIP:BLE: Device 5A:05:67:37:CA:E5 does not look like a CHIP device.
+[47.088737][1042:1043] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[47.098461][1042:1043] CHIP:BLE: Device 4C:FD:59:5D:BB:62 does not look like a CHIP device.
+[47.099342][1042:1043] CHIP:BLE: Device 64:E5:65:5F:3B:BF does not look like a CHIP device.
+[47.111712][1042:1043] CHIP:BLE: Device 2E:26:F4:E8:39:EF does not look like a CHIP device.
+[47.117588][1042:1043] CHIP:BLE: Device 58:3A:4D:D7:6F:F7 does not look like a CHIP device.
+[47.126927][1042:1043] CHIP:BLE: Device 54:52:84:2A:A0:27 does not look like a CHIP device.
+[47.127132][1042:1043] CHIP:BLE: Device 21:47:E2:3E:EF:4A does not look like a CHIP device.
+[47.131298][1042:1043] CHIP:BLE: Device 5C:A8:7C:47:8B:E5 does not look like a CHIP device.
+[47.145235][1042:1043] CHIP:BLE: Device 66:5C:CF:2A:D7:4E does not look like a CHIP device.
+[47.157717][1042:1043] CHIP:BLE: Device 7B:28:C5:8F:A1:62 does not look like a CHIP device.
+[47.161602][1042:1043] CHIP:BLE: Device 6C:7A:DA:97:F8:57 does not look like a CHIP device.
+[47.170632][1042:1043] CHIP:BLE: Device 75:55:65:28:9A:39 does not look like a CHIP device.
+[47.173412][1042:1043] CHIP:BLE: Device EA:FD:FE:14:7F:93 does not look like a CHIP device.
+[47.175007][1042:1043] CHIP:BLE: Device 78:0D:B2:0F:B9:0B does not look like a CHIP device.
+[47.181241][1042:1043] CHIP:BLE: Device 49:E3:13:74:DA:6A does not look like a CHIP device.
+[47.183577][1042:1043] CHIP:BLE: Device 4E:0C:28:69:B9:C7 does not look like a CHIP device.
+[47.190626][1042:1043] CHIP:BLE: Device 6D:39:DF:EA:B4:50 does not look like a CHIP device.
+[47.218492][1042:1043] CHIP:BLE: Device 5F:C6:64:E6:D4:0E does not look like a CHIP device.
+[47.221701][1042:1043] CHIP:BLE: Device 2E:26:F4:E8:39:EF does not look like a CHIP device.
+[47.242966][1042:1043] CHIP:BLE: Device E1:33:88:43:CD:63 does not look like a CHIP device.
+[47.257312][1042:1043] CHIP:BLE: Device F0:FA:C7:E9:B9:13 does not look like a CHIP device.
+[47.258531][1042:1043] CHIP:BLE: Device 51:F2:83:DE:18:25 does not look like a CHIP device.
+[47.262567][1042:1043] CHIP:BLE: Device 71:40:57:F2:A6:1D does not look like a CHIP device.
+[47.267016][1042:1043] CHIP:BLE: Device 62:DA:29:F0:D2:9F does not look like a CHIP device.
+[47.281276][1042:1043] CHIP:BLE: Device 6D:AA:FB:AD:8D:99 does not look like a CHIP device.
+[47.290417][1042:1043] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[47.308880][1042:1043] CHIP:BLE: Device 5C:B0:C9:A8:4C:34 does not look like a CHIP device.
+[47.309205][1042:1043] CHIP:BLE: Device 21:47:E2:3E:EF:4A does not look like a CHIP device.
+[47.324476][1042:1043] CHIP:BLE: Device DD:ED:F2:FD:8A:C1 does not look like a CHIP device.
+[47.324878][1042:1043] CHIP:BLE: Device 4D:F8:CD:A4:CD:75 does not look like a CHIP device.
+[47.337589][1042:1043] CHIP:BLE: Device 48:D1:BA:21:33:FB does not look like a CHIP device.
+[47.338832][1042:1043] CHIP:BLE: Device 66:5C:CF:2A:D7:4E does not look like a CHIP device.
+[47.346560][1042:1043] CHIP:BLE: Device 5A:05:67:37:CA:E5 does not look like a CHIP device.
+[47.359227][1042:1043] CHIP:BLE: Device F0:FA:C7:E9:B9:13 does not look like a CHIP device.
+[47.366595][1042:1043] CHIP:BLE: Device E8:EE:CC:2F:C8:46 does not look like a CHIP device.
+[47.384796][1042:1043] CHIP:BLE: Device 5A:35:AD:AC:1D:9C does not look like a CHIP device.
+[47.393615][1042:1043] CHIP:BLE: Device 6D:39:DF:EA:B4:50 does not look like a CHIP device.
+[47.415633][1042:1043] CHIP:BLE: Device 78:E8:03:4E:26:56 does not look like a CHIP device.
+[47.447897][1042:1043] CHIP:BLE: Device D3:64:60:49:01:D4 does not look like a CHIP device.
+[47.449004][1042:1043] CHIP:BLE: Device 78:0D:B2:0F:B9:0B does not look like a CHIP device.
+[47.496256][1042:1043] CHIP:BLE: Device 42:E0:8C:13:99:D6 does not look like a CHIP device.
+[47.497004][1042:1043] CHIP:BLE: Device 5E:33:32:DB:DE:04 does not look like a CHIP device.
+[47.524727][1042:1043] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[47.526934][1042:1043] CHIP:BLE: Device 66:5C:CF:2A:D7:4E does not look like a CHIP device.
+[47.534415][1042:1043] CHIP:BLE: Device 51:F2:83:DE:18:25 does not look like a CHIP device.
+[47.536648][1042:1043] CHIP:BLE: Device 13:38:62:56:18:C6 does not look like a CHIP device.
+[47.542502][1042:1043] CHIP:BLE: Device 62:DA:29:F0:D2:9F does not look like a CHIP device.
+[47.563872][1042:1043] CHIP:BLE: Device 30:1A:BA:38:C2:34 does not look like a CHIP device.
+[47.571945][1042:1043] CHIP:BLE: Device 6C:7A:DA:97:F8:57 does not look like a CHIP device.
+[47.574042][1042:1043] CHIP:BLE: Device F0:FA:C7:E9:B9:13 does not look like a CHIP device.
+[47.575398][1042:1043] CHIP:BLE: Device C4:AC:53:D2:70:1E does not look like a CHIP device.
+[47.583259][1042:1043] CHIP:BLE: Device 5C:B0:C9:A8:4C:34 does not look like a CHIP device.
+[47.588256][1042:1043] CHIP:BLE: Device 50:71:A9:FE:D1:EA does not look like a CHIP device.
+[47.590410][1042:1043] CHIP:BLE: Device 5F:C6:64:E6:D4:0E does not look like a CHIP device.
+[47.593928][1042:1043] CHIP:BLE: Device 44:DA:0C:F2:6B:24 does not look like a CHIP device.
+[47.596143][1042:1043] CHIP:BLE: Device 4D:F8:CD:A4:CD:75 does not look like a CHIP device.
+[47.601894][1042:1043] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[47.603012][1042:1043] CHIP:BLE: Device 6D:39:DF:EA:B4:50 does not look like a CHIP device.
+[47.618735][1042:1043] CHIP:BLE: Device 70:93:13:C8:A7:C2 does not look like a CHIP device.
+[47.619279][1042:1043] CHIP:BLE: Device 5A:05:67:37:CA:E5 does not look like a CHIP device.
+[47.625133][1042:1043] CHIP:BLE: Device 68:64:36:EF:55:C0 does not look like a CHIP device.
+[47.691280][1042:1043] CHIP:BLE: Device 7F:9F:5C:FF:AB:FA does not look like a CHIP device.
+[47.695440][1042:1043] CHIP:BLE: Device 6C:7A:DA:97:F8:57 does not look like a CHIP device.
+[47.697156][1042:1043] CHIP:BLE: Device E8:EE:CC:2F:C8:46 does not look like a CHIP device.
+[47.705077][1042:1043] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[47.708144][1042:1043] CHIP:BLE: Device 7B:28:C5:8F:A1:62 does not look like a CHIP device.
+[47.710319][1042:1043] CHIP:BLE: Device 79:FA:29:08:F4:30 does not look like a CHIP device.
+[47.712729][1042:1043] CHIP:BLE: Device 66:5C:CF:2A:D7:4E does not look like a CHIP device.
+[47.716198][1042:1043] CHIP:BLE: Device 75:55:65:28:9A:39 does not look like a CHIP device.
+[47.719739][1042:1043] CHIP:BLE: Device 78:0D:B2:0F:B9:0B does not look like a CHIP device.
+[47.723163][1042:1043] CHIP:BLE: Device 7F:48:9B:6E:9F:7A does not look like a CHIP device.
+[47.740255][1042:1043] CHIP:BLE: Device 4E:0C:28:69:B9:C7 does not look like a CHIP device.
+[47.744908][1042:1043] CHIP:BLE: Device 77:10:01:11:D6:6A does not look like a CHIP device.
+[47.745623][1042:1043] CHIP:BLE: Device 2E:26:F4:E8:39:EF does not look like a CHIP device.
+[47.747847][1042:1043] CHIP:BLE: Device 71:FE:EC:13:7F:A8 does not look like a CHIP device.
+[47.764910][1042:1043] CHIP:BLE: Device EE:2B:29:41:2D:2C does not look like a CHIP device.
+[47.774433][1042:1043] CHIP:BLE: Device F0:FA:C7:E9:B9:13 does not look like a CHIP device.
+[47.787645][1042:1043] CHIP:BLE: Device 66:2F:14:3A:7D:74 does not look like a CHIP device.
+[47.801514][1042:1043] CHIP:BLE: Device 71:40:57:F2:A6:1D does not look like a CHIP device.
+[47.827161][1042:1043] CHIP:BLE: Device 62:DA:29:F0:D2:9F does not look like a CHIP device.
+[47.847946][1042:1043] CHIP:BLE: Device 2E:26:F4:E8:39:EF does not look like a CHIP device.
+[47.853932][1042:1043] CHIP:BLE: Device E7:15:EC:DD:1B:D7 does not look like a CHIP device.
+[47.857198][1042:1043] CHIP:BLE: Device E8:EE:CC:2F:C8:46 does not look like a CHIP device.
+[47.873558][1042:1043] CHIP:BLE: Device 44:DA:0C:F2:6B:24 does not look like a CHIP device.
+[47.874297][1042:1043] CHIP:BLE: Device 4D:F8:CD:A4:CD:75 does not look like a CHIP device.
+[47.882450][1042:1043] CHIP:BLE: Device F0:FA:C7:E9:B9:13 does not look like a CHIP device.
+[47.891807][1042:1043] CHIP:BLE: Device 5A:05:67:37:CA:E5 does not look like a CHIP device.
+[47.893189][1042:1043] CHIP:BLE: Device 66:5C:CF:2A:D7:4E does not look like a CHIP device.
+[47.900946][1042:1043] CHIP:BLE: Device 75:55:65:28:9A:39 does not look like a CHIP device.
+[47.903229][1042:1043] CHIP:BLE: Device CB:F4:DC:E3:C4:7F does not look like a CHIP device.
+[47.915992][1042:1043] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[47.919572][1042:1043] CHIP:BLE: Device C4:AC:53:D2:70:1E does not look like a CHIP device.
+[47.923572][1042:1043] CHIP:BLE: Device 7F:9F:5C:FF:AB:FA does not look like a CHIP device.
+[47.924557][1042:1043] CHIP:BLE: Device 5A:35:AD:AC:1D:9C does not look like a CHIP device.
+[47.936299][1042:1043] CHIP:BLE: Device 78:E8:03:4E:26:56 does not look like a CHIP device.
+[47.951790][1042:1043] CHIP:BLE: Device 5C:A8:7C:47:8B:E5 does not look like a CHIP device.
+[47.953815][1042:1043] CHIP:BLE: Device 2E:26:F4:E8:39:EF does not look like a CHIP device.
+[47.975416][1042:1043] CHIP:BLE: Device 02:C1:DA:56:3A:E4 does not look like a CHIP device.
+[47.986982][1042:1043] CHIP:BLE: Device F0:FA:C7:E9:B9:13 does not look like a CHIP device.
+[47.993123][1042:1043] CHIP:BLE: Device 7F:48:9B:6E:9F:7A does not look like a CHIP device.
+[47.994760][1042:1043] CHIP:BLE: Device 78:0D:B2:0F:B9:0B does not look like a CHIP device.
+[48.010163][1042:1043] CHIP:BLE: Device 77:10:01:11:D6:6A does not look like a CHIP device.
+[48.011313][1042:1043] CHIP:BLE: Device 49:E3:13:74:DA:6A does not look like a CHIP device.
+[48.038630][1042:1043] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[48.039297][1042:1043] CHIP:BLE: Device EA:1C:E3:0C:52:58 does not look like a CHIP device.
+[48.053077][1042:1043] CHIP:BLE: Device 2E:26:F4:E8:39:EF does not look like a CHIP device.
+[48.056060][1042:1043] CHIP:BLE: Device E0:AD:A1:C6:29:7A does not look like a CHIP device.
+[48.060096][1042:1043] CHIP:BLE: Device 21:47:E2:3E:EF:4A does not look like a CHIP device.
+[48.064375][1042:1043] CHIP:BLE: Device 5A:24:43:18:98:9E does not look like a CHIP device.
+[48.079157][1042:1043] CHIP:BLE: Device 71:40:57:F2:A6:1D does not look like a CHIP device.
+[48.079923][1042:1043] CHIP:BLE: Device 66:5C:CF:2A:D7:4E does not look like a CHIP device.
+[48.082098][1042:1043] CHIP:BLE: Device 5F:C6:64:E6:D4:0E does not look like a CHIP device.
+[48.091431][1042:1043] CHIP:BLE: Device 75:55:65:28:9A:39 does not look like a CHIP device.
+[48.097853][1042:1043] CHIP:BLE: Device F0:FA:C7:E9:B9:13 does not look like a CHIP device.
+[48.100368][1042:1043] CHIP:BLE: Device CB:7D:18:75:D7:1D does not look like a CHIP device.
+[48.107080][1042:1043] CHIP:BLE: Device 62:DA:29:F0:D2:9F does not look like a CHIP device.
+[48.123207][1042:1043] CHIP:BLE: Device 6D:39:DF:EA:B4:50 does not look like a CHIP device.
+[48.124765][1042:1043] CHIP:BLE: Device 4A:3D:BD:04:15:51 does not look like a CHIP device.
+[48.147564][1042:1043] CHIP:BLE: Device C6:06:C2:68:13:1D does not look like a CHIP device.
+[48.160361][1042:1043] CHIP:BLE: Device 48:D1:BA:21:33:FB does not look like a CHIP device.
+[48.161132][1042:1043] CHIP:BLE: Device 50:71:A9:FE:D1:EA does not look like a CHIP device.
+[48.168845][1042:1043] CHIP:BLE: Device 5A:05:67:37:CA:E5 does not look like a CHIP device.
+[48.188382][1042:1043] CHIP:BLE: Device E2:3F:DE:50:04:41 does not look like a CHIP device.
+[48.229668][1042:1043] CHIP:BLE: Device 64:E5:65:5F:3B:BF does not look like a CHIP device.
+[48.229810][1042:1043] CHIP:BLE: Device 54:52:84:2A:A0:27 does not look like a CHIP device.
+[48.231814][1042:1043] CHIP:BLE: Device 52:7A:99:42:6D:DB does not look like a CHIP device.
+[48.232366][1042:1043] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[48.238312][1042:1043] CHIP:BLE: Device 6C:7A:DA:97:F8:57 does not look like a CHIP device.
+[48.250667][1042:1043] CHIP:BLE: Device 21:47:E2:3E:EF:4A does not look like a CHIP device.
+[48.269832][1042:1043] CHIP:BLE: Device 7B:EE:65:E5:58:D8 does not look like a CHIP device.
+[48.270592][1042:1043] CHIP:BLE: Device 2E:26:F4:E8:39:EF does not look like a CHIP device.
+[48.273063][1042:1043] CHIP:BLE: Device 78:0D:B2:0F:B9:0B does not look like a CHIP device.
+[48.273997][1042:1043] CHIP:BLE: Device 41:9A:32:46:3A:86 does not look like a CHIP device.
+[48.277741][1042:1043] CHIP:BLE: Device D8:F6:9E:74:79:B9 does not look like a CHIP device.
+[48.289036][1042:1043] CHIP:BLE: Device 42:E0:8C:13:99:D6 does not look like a CHIP device.
+[48.289402][1042:1043] CHIP:BLE: Device 49:E3:13:74:DA:6A does not look like a CHIP device.
+[48.306635][1042:1043] CHIP:BLE: Device F0:FA:C7:E9:B9:13 does not look like a CHIP device.
+[48.316376][1042:1043] CHIP:BLE: Device 61:33:C0:10:B0:DE does not look like a CHIP device.
+[48.321238][1042:1043] CHIP:BLE: Device 6D:39:DF:EA:B4:50 does not look like a CHIP device.
+[48.332524][1042:1043] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[48.333599][1042:1043] CHIP:BLE: Device 66:2F:14:3A:7D:74 does not look like a CHIP device.
+[48.335613][1042:1043] CHIP:BLE: Device C4:AC:53:D2:70:1E does not look like a CHIP device.
+[48.341923][1042:1043] CHIP:BLE: Device 71:40:57:F2:A6:1D does not look like a CHIP device.
+[48.345698][1042:1043] CHIP:BLE: Device 51:F2:83:DE:18:25 does not look like a CHIP device.
+[48.368987][1042:1043] CHIP:BLE: Device 2E:26:F4:E8:39:EF does not look like a CHIP device.
+[48.377128][1042:1043] CHIP:BLE: Device 62:DA:29:F0:D2:9F does not look like a CHIP device.
+[48.403098][1042:1043] CHIP:BLE: Device CF:0B:07:46:A5:9E does not look like a CHIP device.
+[48.416977][1042:1043] CHIP:BLE: Device 30:1A:BA:38:C2:34 does not look like a CHIP device.
+[48.418304][1042:1043] CHIP:BLE: Device 5F:C6:64:E6:D4:0E does not look like a CHIP device.
+[48.425389][1042:1043] CHIP:BLE: Device D1:81:3C:39:DE:22 does not look like a CHIP device.
+[48.432118][1042:1043] CHIP:BLE: Device 6D:39:DF:EA:B4:50 does not look like a CHIP device.
+[48.438965][1042:1043] CHIP:BLE: Device 48:D1:BA:21:33:FB does not look like a CHIP device.
+[48.439422][1042:1043] CHIP:BLE: Device 21:47:E2:3E:EF:4A does not look like a CHIP device.
+[48.444480][1042:1043] CHIP:BLE: Device 78:E8:03:4E:26:56 does not look like a CHIP device.
+[48.460747][1042:1043] CHIP:BLE: Device 64:E5:65:5F:3B:BF does not look like a CHIP device.
+[48.474469][1042:1043] CHIP:BLE: Device 4C:FD:59:5D:BB:62 does not look like a CHIP device.
+[48.474849][1042:1043] CHIP:BLE: Device 2E:26:F4:E8:39:EF does not look like a CHIP device.
+[48.497821][1042:1043] CHIP:BLE: Device 52:7A:99:42:6D:DB does not look like a CHIP device.
+[48.499396][1042:1043] CHIP:BLE: Device 5C:A8:7C:47:8B:E5 does not look like a CHIP device.
+[48.517050][1042:1043] CHIP:BLE: Device F0:FA:C7:E9:B9:13 does not look like a CHIP device.
+[48.527052][1042:1043] CHIP:BLE: Device 68:64:36:EF:55:C0 does not look like a CHIP device.
+[48.538100][1042:1043] CHIP:BLE: Device 7B:28:C5:8F:A1:62 does not look like a CHIP device.
+[48.540207][1042:1043] CHIP:BLE: Device 7F:48:9B:6E:9F:7A does not look like a CHIP device.
+[48.541898][1042:1043] CHIP:BLE: Device 78:0D:B2:0F:B9:0B does not look like a CHIP device.
+[48.546912][1042:1043] CHIP:BLE: Device 4E:0C:28:69:B9:C7 does not look like a CHIP device.
+[48.561918][1042:1043] CHIP:BLE: Device 42:E0:8C:13:99:D6 does not look like a CHIP device.
+[48.562247][1042:1043] CHIP:BLE: Device F6:A6:41:0F:0A:29 does not look like a CHIP device.
+[48.646157][1042:1043] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[48.648487][1042:1043] CHIP:BLE: Device 66:5C:CF:2A:D7:4E does not look like a CHIP device.
+[48.649098][1042:1043] CHIP:BLE: Device 62:DA:29:F0:D2:9F does not look like a CHIP device.
+[48.653639][1042:1043] CHIP:BLE: Device 5F:C6:64:E6:D4:0E does not look like a CHIP device.
+[48.655293][1042:1043] CHIP:BLE: Device 6C:7A:DA:97:F8:57 does not look like a CHIP device.
+[48.660499][1042:1043] CHIP:BLE: Device 6D:8F:B3:5D:2E:D8 does not look like a CHIP device.
+[48.684983][1042:1043] CHIP:BLE: Device 6A:B3:0F:75:B3:76 does not look like a CHIP device.
+[48.695939][1042:1043] CHIP:BLE: Device 44:DA:0C:F2:6B:24 does not look like a CHIP device.
+[48.700392][1042:1043] CHIP:BLE: Device 78:E8:03:4E:26:56 does not look like a CHIP device.
+[48.707662][1042:1043] CHIP:BLE: Device 4D:F8:CD:A4:CD:75 does not look like a CHIP device.
+[48.708448][1042:1043] CHIP:BLE: Device DD:E0:54:03:C3:73 does not look like a CHIP device.
+[48.716227][1042:1043] CHIP:BLE: Device D6:C8:83:02:6D:CF does not look like a CHIP device.
+[48.719102][1042:1043] CHIP:BLE: Device 5A:05:67:37:CA:E5 does not look like a CHIP device.
+[48.736288][1042:1043] CHIP:BLE: Device 4C:FD:59:5D:BB:62 does not look like a CHIP device.
+[48.738800][1042:1043] CHIP:BLE: Device 64:E5:65:5F:3B:BF does not look like a CHIP device.
+[48.742570][1042:1043] CHIP:BLE: Device 79:FA:29:08:F4:30 does not look like a CHIP device.
+[48.750663][1042:1043] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[48.769765][1042:1043] CHIP:BLE: Device 5A:35:AD:AC:1D:9C does not look like a CHIP device.
+[48.791325][1042:1043] CHIP:BLE: Device 5F:C6:64:E6:D4:0E does not look like a CHIP device.
+[48.793754][1042:1043] CHIP:BLE: Device 2E:26:F4:E8:39:EF does not look like a CHIP device.
+[48.805668][1042:1043] CHIP:BLE: Device 21:47:E2:3E:EF:4A does not look like a CHIP device.
+[48.810482][1042:1043] CHIP:BLE: Device 7F:48:9B:6E:9F:7A does not look like a CHIP device.
+[48.820311][1042:1043] CHIP:BLE: Device 4E:0C:28:69:B9:C7 does not look like a CHIP device.
+[48.836274][1042:1043] CHIP:BLE: Device 77:10:01:11:D6:6A does not look like a CHIP device.
+[48.837432][1042:1043] CHIP:BLE: Device 49:E3:13:74:DA:6A does not look like a CHIP device.
+[48.844067][1042:1043] CHIP:BLE: Device 75:55:65:28:9A:39 does not look like a CHIP device.
+[48.844344][1042:1043] CHIP:BLE: Device E8:EE:CC:2F:C8:46 does not look like a CHIP device.
+[48.872994][1042:1043] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[48.873597][1042:1043] CHIP:BLE: Device 66:2F:14:3A:7D:74 does not look like a CHIP device.
+[48.889466][1042:1043] CHIP:BLE: Device 5F:C6:64:E6:D4:0E does not look like a CHIP device.
+[48.890641][1042:1043] CHIP:BLE: Device 71:40:57:F2:A6:1D does not look like a CHIP device.
+[48.895474][1042:1043] CHIP:BLE: Device 2E:26:F4:E8:39:EF does not look like a CHIP device.
+[48.897890][1042:1043] CHIP:BLE: Device 51:F2:83:DE:18:25 does not look like a CHIP device.
+[48.898571][1042:1043] CHIP:BLE: Device 02:C1:DA:56:3A:E4 does not look like a CHIP device.
+[48.921663][1042:1043] CHIP:BLE: Device 62:DA:29:F0:D2:9F does not look like a CHIP device.
+[48.925264][1042:1043] CHIP:BLE: Device E4:00:CF:C2:BC:E8 does not look like a CHIP device.
+[48.935275][1042:1043] CHIP:BLE: Device 45:40:7F:BC:B1:E6 does not look like a CHIP device.
+[48.943179][1042:1043] CHIP:BLE: Device F0:FA:C7:E9:B9:13 does not look like a CHIP device.
+[48.943422][1042:1043] CHIP:BLE: Device 7F:98:ED:C2:8C:0C does not look like a CHIP device.
+[48.953521][1042:1043] CHIP:BLE: Device EA:4D:76:F8:2E:C5 does not look like a CHIP device.
+[48.957673][1042:1043] CHIP:BLE: Device 79:FA:29:08:F4:30 does not look like a CHIP device.
+[48.959614][1042:1043] CHIP:BLE: Device 78:E8:03:4E:26:56 does not look like a CHIP device.
+[48.990078][1042:1043] CHIP:BLE: Device 5C:B0:C9:A8:4C:34 does not look like a CHIP device.
+[48.990473][1042:1043] CHIP:BLE: Device ED:4F:CE:CB:89:E6 does not look like a CHIP device.
+[48.992262][1042:1043] CHIP:BLE: Device 5A:05:67:37:CA:E5 does not look like a CHIP device.
+[48.997051][1042:1043] CHIP:BLE: Device 21:47:E2:3E:EF:4A does not look like a CHIP device.
+[49.008648][1042:1043] CHIP:BLE: Device 64:E5:65:5F:3B:BF does not look like a CHIP device.
+[49.014597][1042:1043] CHIP:BLE: Device 5F:C6:64:E6:D4:0E does not look like a CHIP device.
+[49.017733][1042:1043] CHIP:BLE: Device 66:5C:CF:2A:D7:4E does not look like a CHIP device.
+[49.029979][1042:1043] CHIP:BLE: Device 5A:35:AD:AC:1D:9C does not look like a CHIP device.
+[49.036298][1042:1043] CHIP:BLE: Device 7F:9F:5C:FF:AB:FA does not look like a CHIP device.
+[49.048618][1042:1043] CHIP:BLE: Device F0:FA:C7:E9:B9:13 does not look like a CHIP device.
+[49.062552][1042:1043] CHIP:BLE: Device 52:7A:99:42:6D:DB does not look like a CHIP device.
+[49.063097][1042:1043] CHIP:BLE: Device 79:FA:29:08:F4:30 does not look like a CHIP device.
+[49.069829][1042:1043] CHIP:BLE: Device 6C:7A:DA:97:F8:57 does not look like a CHIP device.
+[49.073240][1042:1043] CHIP:BLE: Device 41:04:F5:B5:2D:59 does not look like a CHIP device.
+[49.084308][1042:1043] CHIP:BLE: Device 7F:48:9B:6E:9F:7A does not look like a CHIP device.
+[49.099903][1042:1043] CHIP:BLE: Device 4E:0C:28:69:B9:C7 does not look like a CHIP device.
+[49.103336][1042:1043] CHIP:BLE: Device 78:0D:B2:0F:B9:0B does not look like a CHIP device.
+[49.105549][1042:1043] CHIP:BLE: Device 2E:26:F4:E8:39:EF does not look like a CHIP device.
+[49.147173][1042:1043] CHIP:BLE: Device 77:10:01:11:D6:6A does not look like a CHIP device.
+[49.149704][1042:1043] CHIP:BLE: Device 66:2F:14:3A:7D:74 does not look like a CHIP device.
+[49.153825][1042:1043] CHIP:BLE: Device F0:FA:C7:E9:B9:13 does not look like a CHIP device.
+[49.161325][1042:1043] CHIP:BLE: Device 79:FA:29:08:F4:30 does not look like a CHIP device.
+[49.188173][1042:1043] CHIP:BLE: Device 21:47:E2:3E:EF:4A does not look like a CHIP device.
+[49.201769][1042:1043] CHIP:BLE: Device 66:5C:CF:2A:D7:4E does not look like a CHIP device.
+[49.207668][1042:1043] CHIP:BLE: Device 6C:7A:DA:97:F8:57 does not look like a CHIP device.
+[49.211509][1042:1043] CHIP:BLE: Device 2E:26:F4:E8:39:EF does not look like a CHIP device.
+[49.240683][1042:1043] CHIP:BLE: Device 6A:B3:0F:75:B3:76 does not look like a CHIP device.
+[49.241496][1042:1043] CHIP:BLE: Device E1:33:88:43:CD:63 does not look like a CHIP device.
+[49.248649][1042:1043] CHIP:BLE: Device 44:DA:0C:F2:6B:24 does not look like a CHIP device.
+[49.264226][1042:1043] CHIP:BLE: Device 5F:C6:64:E6:D4:0E does not look like a CHIP device.
+[49.265091][1042:1043] CHIP:BLE: Device F0:FA:C7:E9:B9:13 does not look like a CHIP device.
+[49.286833][1042:1043] CHIP:BLE: Device 50:71:A9:FE:D1:EA does not look like a CHIP device.
+[49.289307][1042:1043] CHIP:BLE: Device 64:E5:65:5F:3B:BF does not look like a CHIP device.
+[49.311834][1042:1043] CHIP:BLE: Device 4C:FD:59:5D:BB:62 does not look like a CHIP device.
+[49.313450][1042:1043] CHIP:BLE: Device 7F:9F:5C:FF:AB:FA does not look like a CHIP device.
+[49.318814][1042:1043] CHIP:BLE: Device 54:52:84:2A:A0:27 does not look like a CHIP device.
+[49.319474][1042:1043] CHIP:BLE: Device 2E:26:F4:E8:39:EF does not look like a CHIP device.
+[49.335701][1042:1043] CHIP:BLE: Device 5C:A8:7C:47:8B:E5 does not look like a CHIP device.
+[49.336380][1042:1043] CHIP:BLE: Device 58:3A:4D:D7:6F:F7 does not look like a CHIP device.
+[49.343545][1042:1043] CHIP:BLE: Device E8:EE:CC:2F:C8:46 does not look like a CHIP device.
+[49.366846][1042:1043] CHIP:BLE: Device 6C:7A:DA:97:F8:57 does not look like a CHIP device.
+[49.374648][1042:1043] CHIP:BLE: Device 5F:C6:64:E6:D4:0E does not look like a CHIP device.
+[49.374888][1042:1043] CHIP:BLE: Device 4E:0C:28:69:B9:C7 does not look like a CHIP device.
+[49.378978][1042:1043] CHIP:BLE: Device 21:47:E2:3E:EF:4A does not look like a CHIP device.
+[49.383188][1042:1043] CHIP:BLE: Device 78:0D:B2:0F:B9:0B does not look like a CHIP device.
+[49.389849][1042:1043] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[49.390994][1042:1043] CHIP:BLE: Device 66:5C:CF:2A:D7:4E does not look like a CHIP device.
+[49.393011][1042:1043] CHIP:BLE: Device 49:E3:13:74:DA:6A does not look like a CHIP device.
+[49.419787][1042:1043] CHIP:BLE: Device 7B:28:C5:8F:A1:62 does not look like a CHIP device.
+[49.420606][1042:1043] CHIP:BLE: Device 66:2F:14:3A:7D:74 does not look like a CHIP device.
+[49.421775][1042:1043] CHIP:BLE: Device 2E:26:F4:E8:39:EF does not look like a CHIP device.
+[49.446190][1042:1043] CHIP:BLE: Device 71:40:57:F2:A6:1D does not look like a CHIP device.
+[49.447314][1042:1043] CHIP:BLE: Device 51:F2:83:DE:18:25 does not look like a CHIP device.
+[49.448654][1042:1043] CHIP:BLE: Device 75:BA:77:AC:77:80 does not look like a CHIP device.
+[49.462380][1042:1043] CHIP:BLE: Device 79:FA:29:08:F4:30 does not look like a CHIP device.
+[49.468527][1042:1043] CHIP:BLE: Device 50:71:A9:FE:D1:EA does not look like a CHIP device.
+[49.478485][1042:1043] CHIP:BLE: Device 62:DA:29:F0:D2:9F does not look like a CHIP device.
+[49.479248][1042:1043] CHIP:BLE: Device 6C:7A:DA:97:F8:57 does not look like a CHIP device.
+[49.494977][1042:1043] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[49.503207][1042:1043] CHIP:BLE: Device 02:C1:DA:56:3A:E4 does not look like a CHIP device.
+[49.511964][1042:1043] CHIP:BLE: Device 6A:B3:0F:75:B3:76 does not look like a CHIP device.
+[49.551604][1042:1043] CHIP:BLE: Device 5A:05:67:37:CA:E5 does not look like a CHIP device.
+[49.560582][1042:1043] CHIP:BLE: Device 64:E5:65:5F:3B:BF does not look like a CHIP device.
+[49.564055][1042:1043] CHIP:BLE: Device 60:0E:A0:42:EA:1E does not look like a CHIP device.
+[49.565514][1042:1043] CHIP:BLE: Device 21:47:E2:3E:EF:4A does not look like a CHIP device.
+[49.576631][1042:1043] CHIP:BLE: Device 4C:FD:59:5D:BB:62 does not look like a CHIP device.
+[49.578243][1042:1043] CHIP:BLE: Device F0:FA:C7:E9:B9:13 does not look like a CHIP device.
+[49.590769][1042:1043] CHIP:BLE: Device 7F:9F:5C:FF:AB:FA does not look like a CHIP device.
+[49.620264][1042:1043] CHIP:BLE: Device 52:7A:99:42:6D:DB does not look like a CHIP device.
+[49.626936][1042:1043] CHIP:BLE: Device 6C:7A:DA:97:F8:57 does not look like a CHIP device.
+[49.634833][1042:1043] CHIP:BLE: Device 7F:48:9B:6E:9F:7A does not look like a CHIP device.
+[49.636220][1042:1043] CHIP:BLE: Device 2E:26:F4:E8:39:EF does not look like a CHIP device.
+[49.647214][1042:1043] CHIP:BLE: Device 42:E0:8C:13:99:D6 does not look like a CHIP device.
+[49.650299][1042:1043] CHIP:BLE: Device 77:10:01:11:D6:6A does not look like a CHIP device.
+[49.655118][1042:1043] CHIP:BLE: Device 4E:0C:28:69:B9:C7 does not look like a CHIP device.
+[49.656164][1042:1043] CHIP:BLE: Device 78:0D:B2:0F:B9:0B does not look like a CHIP device.
+[49.659723][1042:1043] CHIP:BLE: Device 50:71:A9:FE:D1:EA does not look like a CHIP device.
+[49.663773][1042:1043] CHIP:BLE: Device 49:E3:13:74:DA:6A does not look like a CHIP device.
+[49.679522][1042:1043] CHIP:BLE: Device F0:FA:C7:E9:B9:13 does not look like a CHIP device.
+[49.679752][1042:1043] CHIP:BLE: Device E8:EE:CC:2F:C8:46 does not look like a CHIP device.
+[49.686055][1042:1043] CHIP:BLE: Device 79:FA:29:08:F4:30 does not look like a CHIP device.
+[49.700279][1042:1043] CHIP:BLE: Device 66:2F:14:3A:7D:74 does not look like a CHIP device.
+[49.702482][1042:1043] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[49.703413][1042:1043] CHIP:BLE: Device 71:40:57:F2:A6:1D does not look like a CHIP device.
+[49.711118][1042:1043] CHIP:BLE: Device DF:F4:D1:92:C0:D5 does not look like a CHIP device.
+[49.727444][1042:1043] CHIP:BLE: Device 5F:C6:64:E6:D4:0E does not look like a CHIP device.
+[49.735628][1042:1043] CHIP:BLE: Device 2E:26:F4:E8:39:EF does not look like a CHIP device.
+[49.754322][1042:1043] CHIP:BLE: Device 62:DA:29:F0:D2:9F does not look like a CHIP device.
+[49.756951][1042:1043] CHIP:BLE: Device 66:5C:CF:2A:D7:4E does not look like a CHIP device.
+[49.777438][1042:1043] CHIP:BLE: Device 6C:7A:DA:97:F8:57 does not look like a CHIP device.
+[49.784524][1042:1043] CHIP:BLE: Device EE:2B:29:41:2D:2C does not look like a CHIP device.
+[49.789817][1042:1043] CHIP:BLE: Device F0:FA:C7:E9:B9:13 does not look like a CHIP device.
+[49.790777][1042:1043] CHIP:BLE: Device 6A:B3:0F:75:B3:76 does not look like a CHIP device.
+[49.791923][1042:1043] CHIP:BLE: Device 79:FA:29:08:F4:30 does not look like a CHIP device.
+[49.800098][1042:1043] CHIP:BLE: Device 4D:F8:CD:A4:CD:75 does not look like a CHIP device.
+[49.810438][1042:1043] CHIP:BLE: Device 02:C1:DA:56:3A:E4 does not look like a CHIP device.
+[49.822456][1042:1043] CHIP:BLE: Device 5A:05:67:37:CA:E5 does not look like a CHIP device.
+[49.836183][1042:1043] CHIP:BLE: Device 64:E5:65:5F:3B:BF does not look like a CHIP device.
+[49.839904][1042:1043] CHIP:BLE: Device 2E:26:F4:E8:39:EF does not look like a CHIP device.
+[49.849005][1042:1043] CHIP:BLE: Device 4C:FD:59:5D:BB:62 does not look like a CHIP device.
+[49.849924][1042:1043] CHIP:BLE: Device 5F:C6:64:E6:D4:0E does not look like a CHIP device.
+[49.868364][1042:1043] CHIP:BLE: Device 54:52:84:2A:A0:27 does not look like a CHIP device.
+[49.871314][1042:1043] CHIP:BLE: Device 52:7A:99:42:6D:DB does not look like a CHIP device.
+[49.880310][1042:1043] CHIP:BLE: Device 6D:39:DF:EA:B4:50 does not look like a CHIP device.
+[49.891192][1042:1043] CHIP:BLE: Device 58:3A:4D:D7:6F:F7 does not look like a CHIP device.
+[49.893152][1042:1043] CHIP:BLE: Device 79:FA:29:08:F4:30 does not look like a CHIP device.
+[49.898840][1042:1043] CHIP:BLE: Device F0:FA:C7:E9:B9:13 does not look like a CHIP device.
+[49.899551][1042:1043] CHIP:BLE: Device 79:D5:5B:1C:BA:5D does not look like a CHIP device.
+[49.900134][1042:1043] CHIP:BLE: Device 7F:48:9B:6E:9F:7A does not look like a CHIP device.
+[49.921705][1042:1043] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[49.933274][1042:1043] CHIP:BLE: Device 4E:0C:28:69:B9:C7 does not look like a CHIP device.
+[49.933661][1042:1043] CHIP:BLE: Device 78:0D:B2:0F:B9:0B does not look like a CHIP device.
+[49.937579][1042:1043] CHIP:BLE: Device 21:47:E2:3E:EF:4A does not look like a CHIP device.
+[49.939512][1042:1043] CHIP:BLE: Device 49:E3:13:74:DA:6A does not look like a CHIP device.
+[49.961569][1042:1043] CHIP:BLE: Device 66:2F:14:3A:7D:74 does not look like a CHIP device.
+[49.975040][1042:1043] CHIP:BLE: Device 71:40:57:F2:A6:1D does not look like a CHIP device.
+[49.989952][1042:1043] CHIP:BLE: Device 79:FA:29:08:F4:30 does not look like a CHIP device.
+[50.001134][1042:1043] CHIP:BLE: Device F0:FA:C7:E9:B9:13 does not look like a CHIP device.
+[50.004294][1042:1043] CHIP:BLE: Device 42:F3:42:E6:DF:7D does not look like a CHIP device.
+[50.015686][1042:1043] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[50.022133][1042:1043] CHIP:BLE: Device 62:DA:29:F0:D2:9F does not look like a CHIP device.
+[50.026192][1042:1043] CHIP:BLE: Device 68:64:36:EF:55:C0 does not look like a CHIP device.
+[50.029208][1042:1043] CHIP:BLE: Device 50:71:A9:FE:D1:EA does not look like a CHIP device.
+[50.065209][1042:1043] CHIP:BLE: Device E0:AD:A1:C6:29:7A does not look like a CHIP device.
+[50.071594][1042:1043] CHIP:BLE: Device 4D:F8:CD:A4:CD:75 does not look like a CHIP device.
+[50.090038][1042:1043] CHIP:BLE: Device 6D:39:DF:EA:B4:50 does not look like a CHIP device.
+[50.099570][1042:1043] CHIP:BLE: Device 5F:C6:64:E6:D4:0E does not look like a CHIP device.
+[50.100356][1042:1043] CHIP:BLE: Device 79:FA:29:08:F4:30 does not look like a CHIP device.
+[50.103989][1042:1043] CHIP:BLE: Device F0:FA:C7:E9:B9:13 does not look like a CHIP device.
+[50.106480][1042:1043] CHIP:BLE: Device 48:D1:BA:21:33:FB does not look like a CHIP device.
+[50.107648][1042:1043] CHIP:BLE: Device 5A:05:67:37:CA:E5 does not look like a CHIP device.
+[50.108956][1042:1043] CHIP:BLE: Device CB:7D:18:75:D7:1D does not look like a CHIP device.
+[50.112270][1042:1043] CHIP:BLE: Device 64:E5:65:5F:3B:BF does not look like a CHIP device.
+[50.123146][1042:1043] CHIP:BLE: Device 4C:FD:59:5D:BB:62 does not look like a CHIP device.
+[50.127525][1042:1043] CHIP:BLE: Device 5A:35:AD:AC:1D:9C does not look like a CHIP device.
+[50.128370][1042:1043] CHIP:BLE: Device 66:5C:CF:2A:D7:4E does not look like a CHIP device.
+[50.144826][1042:1043] CHIP:BLE: Device 7F:9F:5C:FF:AB:FA does not look like a CHIP device.
+[50.164082][1042:1043] CHIP:BLE: Device 6C:7A:DA:97:F8:57 does not look like a CHIP device.
+[50.212337][1042:1043] CHIP:BLE: Device 7F:48:9B:6E:9F:7A does not look like a CHIP device.
+[50.214560][1042:1043] CHIP:BLE: Device F0:FA:C7:E9:B9:13 does not look like a CHIP device.
+[50.215435][1042:1043] CHIP:BLE: Device 5F:C6:64:E6:D4:0E does not look like a CHIP device.
+[50.221216][1042:1043] CHIP:BLE: Device 78:0D:B2:0F:B9:0B does not look like a CHIP device.
+[50.222120][1042:1043] CHIP:BLE: Device 50:71:A9:FE:D1:EA does not look like a CHIP device.
+[50.235221][1042:1043] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[50.236529][1042:1043] CHIP:BLE: Device 66:2F:14:3A:7D:74 does not look like a CHIP device.
+[50.247243][1042:1043] CHIP:BLE: Device 71:40:57:F2:A6:1D does not look like a CHIP device.
+[50.257385][1042:1043] CHIP:BLE: Device 2E:26:F4:E8:39:EF does not look like a CHIP device.
+[50.271927][1042:1043] CHIP:BLE: Device 51:F2:83:DE:18:25 does not look like a CHIP device.
+[50.279119][1042:1043] CHIP:BLE: Device 41:9A:32:46:3A:86 does not look like a CHIP device.
+[50.280090][1042:1043] CHIP:BLE: Device D8:F6:9E:74:79:B9 does not look like a CHIP device.
+[50.293858][1042:1043] CHIP:BLE: Device 62:DA:29:F0:D2:9F does not look like a CHIP device.
+[50.296184][1042:1043] CHIP:BLE: Device 6C:7A:DA:97:F8:57 does not look like a CHIP device.
+[50.311336][1042:1043] CHIP:BLE: Device F0:FA:C7:E9:B9:13 does not look like a CHIP device.
+[50.312326][1042:1043] CHIP:BLE: Device 79:FA:29:08:F4:30 does not look like a CHIP device.
+[50.315627][1042:1043] CHIP:BLE: Device 66:5C:CF:2A:D7:4E does not look like a CHIP device.
+[50.347248][1042:1043] CHIP:BLE: Device 4D:F8:CD:A4:CD:75 does not look like a CHIP device.
+[50.363674][1042:1043] CHIP:BLE: Device 2E:26:F4:E8:39:EF does not look like a CHIP device.
+[50.379085][1042:1043] CHIP:BLE: Device 5A:05:67:37:CA:E5 does not look like a CHIP device.
+[50.402610][1042:1043] CHIP:BLE: Device 60:0E:A0:42:EA:1E does not look like a CHIP device.
+[50.410817][1042:1043] CHIP:BLE: Device 6D:39:DF:EA:B4:50 does not look like a CHIP device.
+[50.412434][1042:1043] CHIP:BLE: Device F0:FA:C7:E9:B9:13 does not look like a CHIP device.
+[50.432468][1042:1043] CHIP:BLE: Device 52:7A:99:42:6D:DB does not look like a CHIP device.
+[50.433050][1042:1043] CHIP:BLE: Device 58:3A:4D:D7:6F:F7 does not look like a CHIP device.
+[50.434903][1042:1043] CHIP:BLE: Device 6C:7A:DA:97:F8:57 does not look like a CHIP device.
+[50.442265][1042:1043] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[50.451160][1042:1043] CHIP:BLE: Device 7F:48:9B:6E:9F:7A does not look like a CHIP device.
+[50.460244][1042:1043] CHIP:BLE: Device 42:E0:8C:13:99:D6 does not look like a CHIP device.
+[50.468430][1042:1043] CHIP:BLE: Device 77:10:01:11:D6:6A does not look like a CHIP device.
+[50.468905][1042:1043] CHIP:BLE: Device 4E:0C:28:69:B9:C7 does not look like a CHIP device.
+[50.481024][1042:1043] CHIP:BLE: Device 49:E3:13:74:DA:6A does not look like a CHIP device.
+[50.493751][1042:1043] CHIP:BLE: Device 21:47:E2:3E:EF:4A does not look like a CHIP device.
+[50.503408][1042:1043] CHIP:BLE: Device 7B:28:C5:8F:A1:62 does not look like a CHIP device.
+[50.504102][1042:1043] CHIP:BLE: Device 66:5C:CF:2A:D7:4E does not look like a CHIP device.
+[50.506469][1042:1043] CHIP:BLE: Device E8:EE:CC:2F:C8:46 does not look like a CHIP device.
+[50.508861][1042:1043] CHIP:BLE: Device 71:FE:EC:13:7F:A8 does not look like a CHIP device.
+[50.520660][1042:1043] CHIP:BLE: Device 78:E8:03:4E:26:56 does not look like a CHIP device.
+[50.558822][1042:1043] CHIP:BLE: Device 51:F2:83:DE:18:25 does not look like a CHIP device.
+[50.562022][1042:1043] CHIP:BLE: Device 5F:C6:64:E6:D4:0E does not look like a CHIP device.
+[50.563901][1042:1043] CHIP:BLE: Device 62:DA:29:F0:D2:9F does not look like a CHIP device.
+[50.572630][1042:1043] CHIP:BLE: Device 6C:7A:DA:97:F8:57 does not look like a CHIP device.
+[50.593549][1042:1043] CHIP:BLE: Device 50:71:A9:FE:D1:EA does not look like a CHIP device.
+[50.599801][1042:1043] CHIP:BLE: Device 52:19:3C:72:FA:95 does not look like a CHIP device.
+[50.607990][1042:1043] CHIP:BLE: Device F0:FA:C7:E9:B9:13 does not look like a CHIP device.
+[50.615145][1042:1043] CHIP:BLE: Device 6D:39:DF:EA:B4:50 does not look like a CHIP device.
+[50.615377][1042:1043] CHIP:BLE: Device 6A:B3:0F:75:B3:76 does not look like a CHIP device.
+[50.621354][1042:1043] CHIP:BLE: Device 4D:F8:CD:A4:CD:75 does not look like a CHIP device.
+[50.654145][1042:1043] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[50.656163][1042:1043] CHIP:BLE: Device 5A:05:67:37:CA:E5 does not look like a CHIP device.
+[50.664660][1042:1043] CHIP:BLE: Device 64:E5:65:5F:3B:BF does not look like a CHIP device.
+[50.681693][1042:1043] CHIP:BLE: Device 4C:FD:59:5D:BB:62 does not look like a CHIP device.
+[50.682070][1042:1043] CHIP:BLE: Device 21:47:E2:3E:EF:4A does not look like a CHIP device.
+[50.684661][1042:1043] CHIP:BLE: Device 5A:35:AD:AC:1D:9C does not look like a CHIP device.
+[50.684856][1042:1043] CHIP:BLE: Device 2E:26:F4:E8:39:EF does not look like a CHIP device.
+[50.694436][1042:1043] CHIP:BLE: Device 52:7A:99:42:6D:DB does not look like a CHIP device.
+[50.700941][1042:1043] CHIP:BLE: Device 7F:9F:5C:FF:AB:FA does not look like a CHIP device.
+[50.708653][1042:1043] CHIP:BLE: Device 58:3A:4D:D7:6F:F7 does not look like a CHIP device.
+[50.710404][1042:1043] CHIP:BLE: Device 6C:7A:DA:97:F8:57 does not look like a CHIP device.
+[50.717867][1042:1043] CHIP:BLE: Device F0:FA:C7:E9:B9:13 does not look like a CHIP device.
+[50.718745][1042:1043] CHIP:BLE: Device 7F:48:9B:6E:9F:7A does not look like a CHIP device.
+[50.719562][1042:1043] CHIP:BLE: Device D6:C8:83:02:6D:CF does not look like a CHIP device.
+[50.732613][1042:1043] CHIP:BLE: Device 42:E0:8C:13:99:D6 does not look like a CHIP device.
+[50.735903][1042:1043] CHIP:BLE: Device 77:10:01:11:D6:6A does not look like a CHIP device.
+[50.752536][1042:1043] CHIP:BLE: Device 4E:0C:28:69:B9:C7 does not look like a CHIP device.
+[50.757217][1042:1043] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[50.769681][1042:1043] CHIP:BLE: Device 78:E8:03:4E:26:56 does not look like a CHIP device.
+[50.777114][1042:1043] CHIP:BLE: Device 66:2F:14:3A:7D:74 does not look like a CHIP device.
+[50.779933][1042:1043] CHIP:BLE: Device 50:71:A9:FE:D1:EA does not look like a CHIP device.
+[50.791771][1042:1043] CHIP:BLE: Device EE:2B:29:41:2D:2C does not look like a CHIP device.
+[50.793294][1042:1043] CHIP:BLE: Device 71:40:57:F2:A6:1D does not look like a CHIP device.
+[50.793464][1042:1043] CHIP:BLE: Device 2E:26:F4:E8:39:EF does not look like a CHIP device.
+[50.820796][1042:1043] CHIP:BLE: Device F0:FA:C7:E9:B9:13 does not look like a CHIP device.
+[50.827376][1042:1043] CHIP:BLE: Device 51:F2:83:DE:18:25 does not look like a CHIP device.
+[50.837037][1042:1043] CHIP:BLE: Device 62:DA:29:F0:D2:9F does not look like a CHIP device.
+[50.841797][1042:1043] CHIP:BLE: Device E8:EE:CC:2F:C8:46 does not look like a CHIP device.
+[50.846424][1042:1043] CHIP:BLE: Device 6C:7A:DA:97:F8:57 does not look like a CHIP device.
+[50.861540][1042:1043] CHIP:BLE: Device 22:22:1A:D6:24:A3 does not look like a CHIP device.
+[50.863400][1042:1043] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[50.866910][1042:1043] CHIP:BLE: Device 66:75:A4:20:4F:79 does not look like a CHIP device.
+[50.867766][1042:1043] CHIP:BLE: Device 66:5C:CF:2A:D7:4E does not look like a CHIP device.
+[50.870031][1042:1043] CHIP:BLE: Device 21:47:E2:3E:EF:4A does not look like a CHIP device.
+[50.873045][1042:1043] CHIP:BLE: Device F5:5B:43:44:8F:80 does not look like a CHIP device.
+[50.923701][1042:1043] CHIP:BLE: Device 5F:C6:64:E6:D4:0E does not look like a CHIP device.
+[50.932159][1042:1043] CHIP:BLE: Device 68:64:36:EF:55:C0 does not look like a CHIP device.
+[50.933852][1042:1043] CHIP:BLE: Device F0:FA:C7:E9:B9:13 does not look like a CHIP device.
+[50.938099][1042:1043] CHIP:BLE: Device 60:0E:A0:42:EA:1E does not look like a CHIP device.
+[50.940254][1042:1043] CHIP:BLE: Device 64:E5:65:5F:3B:BF does not look like a CHIP device.
+[50.941913][1042:1043] CHIP:BLE: Device 45:40:7F:BC:B1:E6 does not look like a CHIP device.
+[50.958318][1042:1043] CHIP:BLE: Device 4C:FD:59:5D:BB:62 does not look like a CHIP device.
+[50.958762][1042:1043] CHIP:BLE: Device 5A:35:AD:AC:1D:9C does not look like a CHIP device.
+[50.969935][1042:1043] CHIP:BLE: Device 54:52:84:2A:A0:27 does not look like a CHIP device.
+[50.980389][1042:1043] CHIP:BLE: Device 7F:9F:5C:FF:AB:FA does not look like a CHIP device.
+[50.981081][1042:1043] CHIP:BLE: Device 6C:7A:DA:97:F8:57 does not look like a CHIP device.
+[51.016777][1042:1043] CHIP:BLE: Device 58:3A:4D:D7:6F:F7 does not look like a CHIP device.
+[51.016923][1042:1043] CHIP:BLE: Device 4E:0C:28:69:B9:C7 does not look like a CHIP device.
+[51.029192][1042:1043] CHIP:BLE: Device 78:0D:B2:0F:B9:0B does not look like a CHIP device.
+[51.041872][1042:1043] CHIP:BLE: Device F0:FA:C7:E9:B9:13 does not look like a CHIP device.
+[51.044935][1042:1043] CHIP:BLE: Device 6D:39:DF:EA:B4:50 does not look like a CHIP device.
+[51.050534][1042:1043] CHIP:BLE: Device 5F:C6:64:E6:D4:0E does not look like a CHIP device.
+[51.052211][1042:1043] CHIP:BLE: Device 66:2F:14:3A:7D:74 does not look like a CHIP device.
+[51.054832][1042:1043] CHIP:BLE: Device 66:5C:CF:2A:D7:4E does not look like a CHIP device.
+[51.068172][1042:1043] CHIP:BLE: Device 71:40:57:F2:A6:1D does not look like a CHIP device.
+[51.073304][1042:1043] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[51.073532][1042:1043] CHIP:BLE: Device 41:04:F5:B5:2D:59 does not look like a CHIP device.
+[51.105744][1042:1043] CHIP:BLE: Device 51:F2:83:DE:18:25 does not look like a CHIP device.
+[51.111081][1042:1043] CHIP:BLE: Device 62:DA:29:F0:D2:9F does not look like a CHIP device.
+[51.115002][1042:1043] CHIP:BLE: Device 6C:7A:DA:97:F8:57 does not look like a CHIP device.
+[51.158684][1042:1043] CHIP:BLE: Device 6D:39:DF:EA:B4:50 does not look like a CHIP device.
+[51.159938][1042:1043] CHIP:BLE: Device 50:71:A9:FE:D1:EA does not look like a CHIP device.
+[51.169509][1042:1043] CHIP:BLE: Device E8:EE:CC:2F:C8:46 does not look like a CHIP device.
+[51.182002][1042:1043] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[51.191449][1042:1043] CHIP:BLE: Device 6D:AA:FB:AD:8D:99 does not look like a CHIP device.
+[51.205422][1042:1043] CHIP:BLE: Device 48:D1:BA:21:33:FB does not look like a CHIP device.
+[51.205833][1042:1043] CHIP:BLE: Device 5A:05:67:37:CA:E5 does not look like a CHIP device.
+[51.238598][1042:1043] CHIP:BLE: Device 4C:FD:59:5D:BB:62 does not look like a CHIP device.
+[51.239773][1042:1043] CHIP:BLE: Device 52:7A:99:42:6D:DB does not look like a CHIP device.
+[51.241401][1042:1043] CHIP:BLE: Device E1:33:88:43:CD:63 does not look like a CHIP device.
+[51.243525][1042:1043] CHIP:BLE: Device 66:5C:CF:2A:D7:4E does not look like a CHIP device.
+[51.259536][1042:1043] CHIP:BLE: Device 53:86:00:04:B4:29 does not look like a CHIP device.
+[51.260137][1042:1043] CHIP:BLE: Device 7F:48:9B:6E:9F:7A does not look like a CHIP device.
+[51.276593][1042:1043] CHIP:BLE: Device 77:10:01:11:D6:6A does not look like a CHIP device.
+[51.280571][1042:1043] CHIP:BLE: Device 5F:C6:64:E6:D4:0E does not look like a CHIP device.
+[51.281358][1042:1043] CHIP:BLE: Device 78:E8:03:4E:26:56 does not look like a CHIP device.
+[51.291747][1042:1043] CHIP:BLE: Device ED:7F:42:0A:C3:CD does not look like a CHIP device.
+[51.292752][1042:1043] CHIP:BLE: Device 5E:33:32:DB:DE:04 does not look like a CHIP device.
+[51.318730][1042:1043] CHIP:BLE: Device 78:0D:B2:0F:B9:0B does not look like a CHIP device.
+[51.319739][1042:1043] CHIP:BLE: Device 66:2F:14:3A:7D:74 does not look like a CHIP device.
+[51.333290][1042:1043] CHIP:BLE: Device 71:FE:EC:13:7F:A8 does not look like a CHIP device.
+[51.338917][1042:1043] CHIP:BLE: Device 71:40:57:F2:A6:1D does not look like a CHIP device.
+[51.347128][1042:1043] CHIP:BLE: Device 50:71:A9:FE:D1:EA does not look like a CHIP device.
+[51.348978][1042:1043] CHIP:BLE: Device 79:FA:29:08:F4:30 does not look like a CHIP device.
+[51.355424][1042:1043] CHIP:BLE: Device 6D:39:DF:EA:B4:50 does not look like a CHIP device.
+[51.377191][1042:1043] CHIP:BLE: Device 51:F2:83:DE:18:25 does not look like a CHIP device.
+[51.378620][1042:1043] CHIP:BLE: Device 6D:AA:FB:AD:8D:99 does not look like a CHIP device.
+[51.384278][1042:1043] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[51.387941][1042:1043] CHIP:BLE: Device 62:DA:29:F0:D2:9F does not look like a CHIP device.
+[51.388937][1042:1043] CHIP:BLE: Device 6C:7A:DA:97:F8:57 does not look like a CHIP device.
+[51.400487][1042:1043] CHIP:BLE: Device 5F:C6:64:E6:D4:0E does not look like a CHIP device.
+[51.415893][1042:1043] CHIP:BLE: Device 2E:26:F4:E8:39:EF does not look like a CHIP device.
+[51.426748][1042:1043] CHIP:BLE: Device 66:5C:CF:2A:D7:4E does not look like a CHIP device.
+[51.440182][1042:1043] CHIP:BLE: Device 4D:F8:CD:A4:CD:75 does not look like a CHIP device.
+[51.451754][1042:1043] CHIP:BLE: Device 75:BA:77:AC:77:80 does not look like a CHIP device.
+[51.460988][1042:1043] CHIP:BLE: Device F0:FA:C7:E9:B9:13 does not look like a CHIP device.
+[51.480740][1042:1043] CHIP:BLE: Device 5A:05:67:37:CA:E5 does not look like a CHIP device.
+[51.484768][1042:1043] CHIP:BLE: Device C1:A7:FB:DD:75:0C does not look like a CHIP device.
+[51.487874][1042:1043] CHIP:BLE: Device 60:0E:A0:42:EA:1E does not look like a CHIP device.
+[51.491727][1042:1043] CHIP:BLE: Device 64:E5:65:5F:3B:BF does not look like a CHIP device.
+[51.510613][1042:1043] CHIP:BLE: Device C8:BF:4C:B5:26:90 does not look like a CHIP device.
+[51.536831][1042:1043] CHIP:BLE: Device 52:7A:99:42:6D:DB does not look like a CHIP device.
+[51.538529][1042:1043] CHIP:BLE: Device 50:71:A9:FE:D1:EA does not look like a CHIP device.
+[51.540341][1042:1043] CHIP:BLE: Device 78:E8:03:4E:26:56 does not look like a CHIP device.
+[51.550789][1042:1043] CHIP:BLE: Device 42:E0:8C:13:99:D6 does not look like a CHIP device.
+[51.569384][1042:1043] CHIP:BLE: Device 5C:A8:7C:47:8B:E5 does not look like a CHIP device.
+[51.569707][1042:1043] CHIP:BLE: Device F0:FA:C7:E9:B9:13 does not look like a CHIP device.
+[51.574669][1042:1043] CHIP:BLE: Device 78:0D:B2:0F:B9:0B does not look like a CHIP device.
+[51.575475][1042:1043] CHIP:BLE: Device 49:E3:13:74:DA:6A does not look like a CHIP device.
+[51.591614][1042:1043] CHIP:BLE: Device 66:2F:14:3A:7D:74 does not look like a CHIP device.
+[51.610291][1042:1043] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[51.610525][1042:1043] CHIP:BLE: Device 71:40:57:F2:A6:1D does not look like a CHIP device.
+[51.644331][1042:1043] CHIP:BLE: Device 5F:C6:64:E6:D4:0E does not look like a CHIP device.
+[51.646357][1042:1043] CHIP:BLE: Device 51:F2:83:DE:18:25 does not look like a CHIP device.
+[51.659325][1042:1043] CHIP:BLE: Device E8:EE:CC:2F:C8:46 does not look like a CHIP device.
+[51.700102][1042:1043] CHIP:BLE: Device 7F:ED:D4:4F:CD:33 does not look like a CHIP device.
+[51.707357][1042:1043] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[51.711319][1042:1043] CHIP:BLE: Device DF:F4:D1:92:C0:D5 does not look like a CHIP device.
+[51.755900][1042:1043] CHIP:BLE: Device 5A:05:67:37:CA:E5 does not look like a CHIP device.
+[51.765135][1042:1043] CHIP:BLE: Device 64:E5:65:5F:3B:BF does not look like a CHIP device.
+[51.775543][1042:1043] CHIP:BLE: Device 6D:39:DF:EA:B4:50 does not look like a CHIP device.
+[51.791666][1042:1043] CHIP:BLE: Device 4C:FD:59:5D:BB:62 does not look like a CHIP device.
+[51.798060][1042:1043] CHIP:BLE: Device EE:2B:29:41:2D:2C does not look like a CHIP device.
+[51.799591][1042:1043] CHIP:BLE: Device 66:5C:CF:2A:D7:4E does not look like a CHIP device.
+[51.801457][1042:1043] CHIP:BLE: Device 78:E8:03:4E:26:56 does not look like a CHIP device.
+[51.808936][1042:1043] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[51.810575][1042:1043] CHIP:BLE: Device 21:47:E2:3E:EF:4A does not look like a CHIP device.
+[51.816064][1042:1043] CHIP:BLE: Device 69:AD:7B:C2:F8:9F does not look like a CHIP device.
+[51.825069][1042:1043] CHIP:BLE: Device 58:3A:4D:D7:6F:F7 does not look like a CHIP device.
+[51.830147][1042:1043] CHIP:BLE: Device 68:64:36:EF:55:C0 does not look like a CHIP device.
+[51.831007][1042:1043] CHIP:BLE: Device E8:EE:CC:2F:C8:46 does not look like a CHIP device.
+[51.842260][1042:1043] CHIP:BLE: Device 5E:33:32:DB:DE:04 does not look like a CHIP device.
+[51.850934][1042:1043] CHIP:BLE: Device 78:0D:B2:0F:B9:0B does not look like a CHIP device.
+[51.855135][1042:1043] CHIP:BLE: Device 49:E3:13:74:DA:6A does not look like a CHIP device.
+[51.861350][1042:1043] CHIP:BLE: Device 66:2F:14:3A:7D:74 does not look like a CHIP device.
+[51.881678][1042:1043] CHIP:BLE: Device 6D:39:DF:EA:B4:50 does not look like a CHIP device.
+[51.883114][1042:1043] CHIP:BLE: Device F0:FA:C7:E9:B9:13 does not look like a CHIP device.
+[51.884838][1042:1043] CHIP:BLE: Device 71:40:57:F2:A6:1D does not look like a CHIP device.
+[51.887166][1042:1043] CHIP:BLE: Device 5F:C6:64:E6:D4:0E does not look like a CHIP device.
+[51.915045][1042:1043] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[51.916153][1042:1043] CHIP:BLE: Device CB:F4:DC:E3:C4:7F does not look like a CHIP device.
+[51.918896][1042:1043] CHIP:BLE: Device 51:F2:83:DE:18:25 does not look like a CHIP device.
+[52.608598][1042:1043] CHIP:BLE: Device 52:7A:99:42:6D:DB does not look like a CHIP device.
+[52.609008][1042:1043] CHIP:BLE: Device 6D:39:DF:EA:B4:50 does not look like a CHIP device.
+[52.614956][1042:1043] CHIP:BLE: Device F0:FA:C7:E9:B9:13 does not look like a CHIP device.
+[52.619993][1042:1043] CHIP:BLE: Device 7F:48:9B:6E:9F:7A does not look like a CHIP device.
+[52.622853][1042:1043] CHIP:BLE: Device 24:86:87:61:0B:A0 does not look like a CHIP device.
+[52.631268][1042:1043] CHIP:BLE: Device 42:E0:8C:13:99:D6 does not look like a CHIP device.
+[52.645081][1042:1043] CHIP:BLE: Device 77:10:01:11:D6:6A does not look like a CHIP device.
+[52.647854][1042:1043] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[52.650189][1042:1043] CHIP:BLE: Device 58:3A:4D:D7:6F:F7 does not look like a CHIP device.
+[52.652126][1042:1043] CHIP:BLE: Device 5E:33:32:DB:DE:04 does not look like a CHIP device.
+[52.653845][1042:1043] CHIP:BLE: Device 45:55:28:90:B8:00 does not look like a CHIP device.
+[52.657828][1042:1043] CHIP:BLE: Device E8:EE:CC:2F:C8:46 does not look like a CHIP device.
+[52.664568][1042:1043] CHIP:BLE: Device 6D:8F:B3:5D:2E:D8 does not look like a CHIP device.
+[52.667836][1042:1043] CHIP:BLE: Device 21:73:C5:A7:39:39 does not look like a CHIP device.
+[52.668974][1042:1043] CHIP:BLE: Device 27:73:D3:29:E0:55 does not look like a CHIP device.
+[52.671557][1042:1043] CHIP:BLE: Device 4F:A3:B8:6C:C5:8F does not look like a CHIP device.
+[52.674102][1042:1043] CHIP:BLE: Device 66:2F:14:3A:7D:74 does not look like a CHIP device.
+[52.677218][1042:1043] CHIP:BLE: Device 4E:0C:28:69:B9:C7 does not look like a CHIP device.
+[52.688233][1042:1043] CHIP:BLE: Device 3B:BC:F9:86:D2:33 does not look like a CHIP device.
+[52.696180][1042:1043] CHIP:BLE: Device 71:40:57:F2:A6:1D does not look like a CHIP device.
+[52.703218][1042:1043] CHIP:BLE: Device 48:F3:F3:60:E3:13 does not look like a CHIP device.
+[52.722771][1042:1043] CHIP:BLE: Device D6:C8:83:02:6D:CF does not look like a CHIP device.
+[52.724363][1042:1043] CHIP:BLE: Device 66:5C:CF:2A:D7:4E does not look like a CHIP device.
+[52.735600][1042:1043] CHIP:BLE: Device 78:E8:03:4E:26:56 does not look like a CHIP device.
+[52.742418][1042:1043] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[52.743945][1042:1043] CHIP:BLE: Device 21:47:E2:3E:EF:4A does not look like a CHIP device.
+[52.768571][1042:1043] CHIP:BLE: Device 05:23:46:62:56:49 does not look like a CHIP device.
+[52.787095][1042:1043] CHIP:BLE: Device 63:25:31:2F:E2:1B does not look like a CHIP device.
+[52.789497][1042:1043] CHIP:BLE: Device 7F:8A:C2:26:AF:34 does not look like a CHIP device.
+[52.805644][1042:1043] CHIP:BLE: Device EE:2B:29:41:2D:2C does not look like a CHIP device.
+[52.832278][1042:1043] CHIP:BLE: Device 70:93:13:C8:A7:C2 does not look like a CHIP device.
+[52.835474][1042:1043] CHIP:BLE: Device 4D:F8:CD:A4:CD:75 does not look like a CHIP device.
+[52.852833][1042:1043] CHIP:BLE: Device 5A:05:67:37:CA:E5 does not look like a CHIP device.
+[52.854729][1042:1043] CHIP:BLE: Device 02:C1:DA:56:3A:E4 does not look like a CHIP device.
+[52.868182][1042:1043] CHIP:BLE: Device 48:F3:F3:60:E3:13 does not look like a CHIP device.
+[52.870908][1042:1043] CHIP:BLE: Device 66:75:A4:20:4F:79 does not look like a CHIP device.
+[52.876713][1042:1043] CHIP:BLE: Device 45:AC:2F:EF:D4:11 does not look like a CHIP device.
+[52.878842][1042:1043] CHIP:BLE: Device 2E:26:F4:E8:39:EF does not look like a CHIP device.
+[52.882551][1042:1043] CHIP:BLE: Device F5:5B:43:44:8F:80 does not look like a CHIP device.
+[52.890104][1042:1043] CHIP:BLE: Device 7F:48:9B:6E:9F:7A does not look like a CHIP device.
+[52.929461][1042:1043] CHIP:BLE: Device 5E:33:32:DB:DE:04 does not look like a CHIP device.
+[52.931918][1042:1043] CHIP:BLE: Device E4:00:CF:C2:BC:E8 does not look like a CHIP device.
+[52.947352][1042:1043] CHIP:BLE: Device 5C:A8:7C:47:8B:E5 does not look like a CHIP device.
+[52.947858][1042:1043] CHIP:BLE: Device 66:2F:14:3A:7D:74 does not look like a CHIP device.
+[52.959921][1042:1043] CHIP:BLE: Device 78:0D:B2:0F:B9:0B does not look like a CHIP device.
+[52.962283][1042:1043] CHIP:BLE: Device 4E:0C:28:69:B9:C7 does not look like a CHIP device.
+[52.980770][1042:1043] CHIP:BLE: Device 71:40:57:F2:A6:1D does not look like a CHIP device.
+[52.981921][1042:1043] CHIP:BLE: Device 2E:26:F4:E8:39:EF does not look like a CHIP device.
+[53.030863][1042:1043] CHIP:BLE: Device 5C:2E:8A:49:F6:F8 does not look like a CHIP device.
+[53.031603][1042:1043] CHIP:BLE: Device 22:57:FB:A5:6C:15 does not look like a CHIP device.
+[53.038017][1042:1043] CHIP:BLE: Device 6C:7A:DA:97:F8:57 does not look like a CHIP device.
+[53.052172][1042:1043] CHIP:BLE: Device 48:F3:F3:60:E3:13 does not look like a CHIP device.
+[53.057175][1042:1043] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[53.057703][1042:1043] CHIP:BLE: Device 38:F9:F5:12:3A:2D does not look like a CHIP device.
+[53.060345][1042:1043] CHIP:BLE: Device 41:42:69:C7:38:FB does not look like a CHIP device.
+[53.076916][1042:1043] CHIP:BLE: Device 6A:B3:0F:75:B3:76 does not look like a CHIP device.
+[53.077139][1042:1043] CHIP:BLE: Device 41:04:F5:B5:2D:59 does not look like a CHIP device.
+[53.079438][1042:1043] CHIP:BLE: Device 78:E8:03:4E:26:56 does not look like a CHIP device.
+[53.082588][1042:1043] CHIP:BLE: Device 3A:FD:31:EA:9D:8B does not look like a CHIP device.
+[53.093435][1042:1043] CHIP:BLE: Device 5C:2E:8A:49:F6:F8 does not look like a CHIP device.
+[53.094333][1042:1043] CHIP:BLE: Device 3A:FD:31:EA:9D:8B does not look like a CHIP device.
+[53.113795][1042:1043] CHIP:BLE: Device 4D:F8:CD:A4:CD:75 does not look like a CHIP device.
+[53.114358][1042:1043] CHIP:BLE: Device 79:FA:29:08:F4:30 does not look like a CHIP device.
+[53.132342][1042:1043] CHIP:BLE: Device 48:D1:BA:21:33:FB does not look like a CHIP device.
+[53.132681][1042:1043] CHIP:BLE: Device 41:42:69:C7:38:FB does not look like a CHIP device.
+[53.135230][1042:1043] CHIP:BLE: Device 22:57:FB:A5:6C:15 does not look like a CHIP device.
+[53.140838][1042:1043] CHIP:BLE: Device 64:E5:65:5F:3B:BF does not look like a CHIP device.
+[53.154221][1042:1043] CHIP:BLE: Device 4C:FD:59:5D:BB:62 does not look like a CHIP device.
+[53.165237][1042:1043] CHIP:BLE: Device 45:AC:2F:EF:D4:11 does not look like a CHIP device.
+[53.165855][1042:1043] CHIP:BLE: Device 7F:48:9B:6E:9F:7A does not look like a CHIP device.
+[53.175885][1042:1043] CHIP:BLE: Device 54:52:84:2A:A0:27 does not look like a CHIP device.
+[53.186008][1042:1043] CHIP:BLE: Device 5C:2E:8A:49:F6:F8 does not look like a CHIP device.
+[53.190301][1042:1043] CHIP:BLE: Device 2E:26:F4:E8:39:EF does not look like a CHIP device.
+[53.201962][1042:1043] CHIP:BLE: Device 5E:33:32:DB:DE:04 does not look like a CHIP device.
+[53.215306][1042:1043] CHIP:BLE: Device 48:F3:F3:60:E3:13 does not look like a CHIP device.
+[53.215728][1042:1043] CHIP:BLE: Device 66:2F:14:3A:7D:74 does not look like a CHIP device.
+[53.219462][1042:1043] CHIP:BLE: Device 49:E3:13:74:DA:6A does not look like a CHIP device.
+[53.233979][1042:1043] CHIP:BLE: Device 78:0D:B2:0F:B9:0B does not look like a CHIP device.
+[53.235038][1042:1043] CHIP:BLE: Device 22:57:FB:A5:6C:15 does not look like a CHIP device.
+[53.244458][1042:1043] CHIP:BLE: Device 71:40:57:F2:A6:1D does not look like a CHIP device.
+[53.244872][1042:1043] CHIP:BLE: Device E1:33:88:43:CD:63 does not look like a CHIP device.
+[53.303666][1042:1043] CHIP:BLE: Device 30:1A:BA:38:C2:34 does not look like a CHIP device.
+[53.304634][1042:1043] CHIP:BLE: Device 13:38:62:56:18:C6 does not look like a CHIP device.
+[53.306452][1042:1043] CHIP:BLE: Device ED:7F:42:0A:C3:CD does not look like a CHIP device.
+[53.307630][1042:1043] CHIP:BLE: Device 2E:26:F4:E8:39:EF does not look like a CHIP device.
+[53.332738][1042:1043] CHIP:BLE: Device 79:FA:29:08:F4:30 does not look like a CHIP device.
+[53.354552][1042:1043] CHIP:BLE: Device 70:93:13:C8:A7:C2 does not look like a CHIP device.
+[53.372229][1042:1043] CHIP:BLE: Device 48:F3:F3:60:E3:13 does not look like a CHIP device.
+[53.385349][1042:1043] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[53.386851][1042:1043] CHIP:BLE: Device 4D:F8:CD:A4:CD:75 does not look like a CHIP device.
+[53.389929][1042:1043] CHIP:BLE: Device 50:71:A9:FE:D1:EA does not look like a CHIP device.
+[53.418177][1042:1043] CHIP:BLE: Device 60:0E:A0:42:EA:1E does not look like a CHIP device.
+[53.419421][1042:1043] CHIP:BLE: Device 64:E5:65:5F:3B:BF does not look like a CHIP device.
+[53.421173][1042:1043] CHIP:BLE: Device 4C:FD:59:5D:BB:62 does not look like a CHIP device.
+[53.432245][1042:1043] CHIP:BLE: Device 71:FE:EC:13:7F:A8 does not look like a CHIP device.
+[53.433401][1042:1043] CHIP:BLE: Device 41:42:69:C7:38:FB does not look like a CHIP device.
+[53.449008][1042:1043] CHIP:BLE: Device 22:57:FB:A5:6C:15 does not look like a CHIP device.
+[53.457553][1042:1043] CHIP:BLE: Device 5F:C6:64:E6:D4:0E does not look like a CHIP device.
+[53.459213][1042:1043] CHIP:BLE: Device 3A:FD:31:EA:9D:8B does not look like a CHIP device.
+[53.477319][1042:1043] CHIP:BLE: Device 5E:33:32:DB:DE:04 does not look like a CHIP device.
+[53.487649][1042:1043] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[53.489517][1042:1043] CHIP:BLE: Device C1:A7:FB:DD:75:0C does not look like a CHIP device.
+[53.490497][1042:1043] CHIP:BLE: Device 66:2F:14:3A:7D:74 does not look like a CHIP device.
+[53.491960][1042:1043] CHIP:BLE: Device 49:E3:13:74:DA:6A does not look like a CHIP device.
+[53.496184][1042:1043] CHIP:BLE: Device 7B:EE:65:E5:58:D8 does not look like a CHIP device.
+[53.503939][1042:1043] CHIP:BLE: Device 2E:26:F4:E8:39:EF does not look like a CHIP device.
+[53.511053][1042:1043] CHIP:BLE: Device 71:40:57:F2:A6:1D does not look like a CHIP device.
+[53.534695][1042:1043] CHIP:BLE: Device 79:FA:29:08:F4:30 does not look like a CHIP device.
+[53.554491][1042:1043] CHIP:BLE: Device 30:1A:BA:38:C2:34 does not look like a CHIP device.
+[53.555645][1042:1043] CHIP:BLE: Device 22:57:FB:A5:6C:15 does not look like a CHIP device.
+[53.571669][1042:1043] CHIP:BLE: Device 6C:7A:DA:97:F8:57 does not look like a CHIP device.
+[53.572206][1042:1043] CHIP:BLE: Device 51:F2:83:DE:18:25 does not look like a CHIP device.
+[53.582580][1042:1043] CHIP:BLE: Device 5F:C6:64:E6:D4:0E does not look like a CHIP device.
+[53.584943][1042:1043] CHIP:BLE: Device 78:E8:03:4E:26:56 does not look like a CHIP device.
+[53.601429][1042:1043] CHIP:BLE: Device CC:D9:90:1B:AF:DE does not look like a CHIP device.
+[53.601644][1042:1043] CHIP:BLE: Device 62:DA:29:F0:D2:9F does not look like a CHIP device.
+[53.610622][1042:1043] CHIP:BLE: Device 5C:2E:8A:49:F6:F8 does not look like a CHIP device.
+[53.611130][1042:1043] CHIP:BLE: Device 6D:AA:FB:AD:8D:99 does not look like a CHIP device.
+[53.639611][1042:1043] CHIP:BLE: Device 3A:FD:31:EA:9D:8B does not look like a CHIP device.
+[53.655394][1042:1043] CHIP:BLE: Device CC:D9:90:1B:AF:DE does not look like a CHIP device.
+[53.657424][1042:1043] CHIP:BLE: Device 4D:F8:CD:A4:CD:75 does not look like a CHIP device.
+[53.658472][1042:1043] CHIP:BLE: Device 22:57:FB:A5:6C:15 does not look like a CHIP device.
+[53.680077][1042:1043] CHIP:BLE: Device CC:D9:90:1B:AF:DE does not look like a CHIP device.
+[53.681770][1042:1043] CHIP:BLE: Device 5A:05:67:37:CA:E5 does not look like a CHIP device.
+[53.691360][1042:1043] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[53.692394][1042:1043] CHIP:BLE: Device 4C:FD:59:5D:BB:62 does not look like a CHIP device.
+[53.700594][1042:1043] CHIP:BLE: Device CC:D9:90:1B:AF:DE does not look like a CHIP device.
+[53.703608][1042:1043] CHIP:BLE: Device 71:FE:EC:13:7F:A8 does not look like a CHIP device.
+[53.704933][1042:1043] CHIP:BLE: Device 5C:2E:8A:49:F6:F8 does not look like a CHIP device.
+[53.717775][1042:1043] CHIP:BLE: Device 45:AC:2F:EF:D4:11 does not look like a CHIP device.
+[53.719836][1042:1043] CHIP:BLE: Device 75:55:65:28:9A:39 does not look like a CHIP device.
+[53.729636][1042:1043] CHIP:BLE: Device CC:D9:90:1B:AF:DE does not look like a CHIP device.
+[53.730410][1042:1043] CHIP:BLE: Device 54:52:84:2A:A0:27 does not look like a CHIP device.
+[53.735353][1042:1043] CHIP:BLE: Device 79:FA:29:08:F4:30 does not look like a CHIP device.
+[53.748750][1042:1043] CHIP:BLE: Device CC:D9:90:1B:AF:DE does not look like a CHIP device.
+[53.748954][1042:1043] CHIP:BLE: Device 41:42:69:C7:38:FB does not look like a CHIP device.
+[53.759592][1042:1043] CHIP:BLE: Device 66:2F:14:3A:7D:74 does not look like a CHIP device.
+[53.774579][1042:1043] CHIP:BLE: Device CC:D9:90:1B:AF:DE does not look like a CHIP device.
+[53.774757][1042:1043] CHIP:BLE: Device 78:0D:B2:0F:B9:0B does not look like a CHIP device.
+[53.794078][1042:1043] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[53.808417][1042:1043] CHIP:BLE: Device CC:D9:90:1B:AF:DE does not look like a CHIP device.
+[53.814778][1042:1043] CHIP:BLE: Device EE:2B:29:41:2D:2C does not look like a CHIP device.
+[53.817285][1042:1043] CHIP:BLE: Device 5C:2E:8A:49:F6:F8 does not look like a CHIP device.
+[53.819056][1042:1043] CHIP:BLE: Device 5F:C6:64:E6:D4:0E does not look like a CHIP device.
+[53.819406][1042:1043] CHIP:BLE: Device 41:42:69:C7:38:FB does not look like a CHIP device.
+[53.820378][1042:1043] CHIP:BLE: Device 2E:26:F4:E8:39:EF does not look like a CHIP device.
+[53.835932][1042:1043] CHIP:BLE: Device CC:D9:90:1B:AF:DE does not look like a CHIP device.
+[53.845261][1042:1043] CHIP:BLE: Device 78:E8:03:4E:26:56 does not look like a CHIP device.
+[53.855112][1042:1043] CHIP:BLE: Device 51:F2:83:DE:18:25 does not look like a CHIP device.
+[53.855312][1042:1043] CHIP:BLE: Device 41:42:69:C7:38:FB does not look like a CHIP device.
+[53.862473][1042:1043] CHIP:BLE: Device 22:57:FB:A5:6C:15 does not look like a CHIP device.
+[53.888226][1042:1043] CHIP:BLE: Device CC:D9:90:1B:AF:DE does not look like a CHIP device.
+[53.891789][1042:1043] CHIP:BLE: Device 48:F3:F3:60:E3:13 does not look like a CHIP device.
+[53.893959][1042:1043] CHIP:BLE: Device 41:42:69:C7:38:FB does not look like a CHIP device.
+[53.900366][1042:1043] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[53.913018][1042:1043] CHIP:BLE: Device CC:D9:90:1B:AF:DE does not look like a CHIP device.
+[53.914609][1042:1043] CHIP:BLE: Device 79:D5:5B:1C:BA:5D does not look like a CHIP device.
+[53.920510][1042:1043] CHIP:BLE: Device 5C:2E:8A:49:F6:F8 does not look like a CHIP device.
+[53.921593][1042:1043] CHIP:BLE: Device 2E:26:F4:E8:39:EF does not look like a CHIP device.
+[53.930577][1042:1043] CHIP:BLE: Device 41:42:69:C7:38:FB does not look like a CHIP device.
+[53.952962][1042:1043] CHIP:BLE: Device 48:D1:BA:21:33:FB does not look like a CHIP device.
+[53.955506][1042:1043] CHIP:BLE: Device CC:D9:90:1B:AF:DE does not look like a CHIP device.
+[53.957533][1042:1043] CHIP:BLE: Device 5A:05:67:37:CA:E5 does not look like a CHIP device.
+[53.959343][1042:1043] CHIP:BLE: Device 64:E5:65:5F:3B:BF does not look like a CHIP device.
+[53.963898][1042:1043] CHIP:BLE: Device 4C:FD:59:5D:BB:62 does not look like a CHIP device.
+[53.967293][1042:1043] CHIP:BLE: Device 5A:35:AD:AC:1D:9C does not look like a CHIP device.
+[53.974112][1042:1043] CHIP:BLE: Device 52:7A:99:42:6D:DB does not look like a CHIP device.
+[53.978264][1042:1043] CHIP:BLE: Device 7F:48:9B:6E:9F:7A does not look like a CHIP device.
+[54.010380][1042:1043] CHIP:BLE: Device 45:AC:2F:EF:D4:11 does not look like a CHIP device.
+[54.012590][1042:1043] CHIP:BLE: Device 3A:FD:31:EA:9D:8B does not look like a CHIP device.
+[54.013394][1042:1043] CHIP:BLE: Device 42:F3:42:E6:DF:7D does not look like a CHIP device.
+[54.025449][1042:1043] CHIP:BLE: Device 2E:26:F4:E8:39:EF does not look like a CHIP device.
+[54.028488][1042:1043] CHIP:BLE: Device 13:38:62:56:18:C6 does not look like a CHIP device.
+[54.037079][1042:1043] CHIP:BLE: Device 41:42:69:C7:38:FB does not look like a CHIP device.
+[54.040944][1042:1043] CHIP:BLE: Device 49:E3:13:74:DA:6A does not look like a CHIP device.
+[54.058461][1042:1043] CHIP:BLE: Device 71:40:57:F2:A6:1D does not look like a CHIP device.
+[54.061640][1042:1043] CHIP:BLE: Device CC:D9:90:1B:AF:DE does not look like a CHIP device.
+[54.063327][1042:1043] CHIP:BLE: Device 7B:28:C5:8F:A1:62 does not look like a CHIP device.
+[54.074556][1042:1043] CHIP:BLE: Device E0:AD:A1:C6:29:7A does not look like a CHIP device.
+[54.097614][1042:1043] CHIP:BLE: Device CC:D9:90:1B:AF:DE does not look like a CHIP device.
+[54.098671][1042:1043] CHIP:BLE: Device 78:E8:03:4E:26:56 does not look like a CHIP device.
+[54.109597][1042:1043] CHIP:BLE: Device CC:D9:90:1B:AF:DE does not look like a CHIP device.
+[54.117462][1042:1043] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[54.118218][1042:1043] CHIP:BLE: Device 41:42:69:C7:38:FB does not look like a CHIP device.
+[54.125811][1042:1043] CHIP:BLE: Device 51:F2:83:DE:18:25 does not look like a CHIP device.
+[54.127968][1042:1043] CHIP:BLE: Device 13:38:62:56:18:C6 does not look like a CHIP device.
+[54.155237][1042:1043] CHIP:BLE: Device 62:DA:29:F0:D2:9F does not look like a CHIP device.
+[54.160327][1042:1043] CHIP:BLE: Device 6D:AA:FB:AD:8D:99 does not look like a CHIP device.
+[54.172614][1042:1043] CHIP:BLE: Device 5F:C6:64:E6:D4:0E does not look like a CHIP device.
+[54.217844][1042:1043] CHIP:BLE: Device CC:D9:90:1B:AF:DE does not look like a CHIP device.
+[54.217979][1042:1043] CHIP:BLE: Device 41:42:69:C7:38:FB does not look like a CHIP device.
+[54.221707][1042:1043] CHIP:BLE: Device 48:D1:BA:21:33:FB does not look like a CHIP device.
+[54.231219][1042:1043] CHIP:BLE: Device 5A:05:67:37:CA:E5 does not look like a CHIP device.
+[54.239678][1042:1043] CHIP:BLE: Device CC:D9:90:1B:AF:DE does not look like a CHIP device.
+[54.240555][1042:1043] CHIP:BLE: Device 13:38:62:56:18:C6 does not look like a CHIP device.
+[54.250987][1042:1043] CHIP:BLE: Device 41:42:69:C7:38:FB does not look like a CHIP device.
+[54.257086][1042:1043] CHIP:BLE: Device CC:D9:90:1B:AF:DE does not look like a CHIP device.
+[54.257467][1042:1043] CHIP:BLE: Device 45:AC:2F:EF:D4:11 does not look like a CHIP device.
+[54.270882][1042:1043] CHIP:BLE: Device 75:55:65:28:9A:39 does not look like a CHIP device.
+[54.281243][1042:1043] CHIP:BLE: Device 54:52:84:2A:A0:27 does not look like a CHIP device.
+[54.281473][1042:1043] CHIP:BLE: Device 22:57:FB:A5:6C:15 does not look like a CHIP device.
+[54.298050][1042:1043] CHIP:BLE: Device D8:F6:9E:74:79:B9 does not look like a CHIP device.
+[54.303488][1042:1043] CHIP:BLE: Device 71:FE:EC:13:7F:A8 does not look like a CHIP device.
+[54.305125][1042:1043] CHIP:BLE: Device 66:2F:14:3A:7D:74 does not look like a CHIP device.
+[54.314434][1042:1043] CHIP:BLE: Device CC:D9:90:1B:AF:DE does not look like a CHIP device.
+[54.318172][1042:1043] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[54.321375][1042:1043] CHIP:BLE: Device 51:78:35:28:6C:47 does not look like a CHIP device.
+[54.334971][1042:1043] CHIP:BLE: Device 78:0D:B2:0F:B9:0B does not look like a CHIP device.
+[54.335369][1042:1043] CHIP:BLE: Device 2E:26:F4:E8:39:EF does not look like a CHIP device.
+[54.356448][1042:1043] CHIP:BLE: Device 5C:2E:8A:49:F6:F8 does not look like a CHIP device.
+[54.363006][1042:1043] CHIP:BLE: Device 41:42:69:C7:38:FB does not look like a CHIP device.
+[54.388504][1042:1043] CHIP:BLE: Device CC:D9:90:1B:AF:DE does not look like a CHIP device.
+[54.389359][1042:1043] CHIP:BLE: Device 22:57:FB:A5:6C:15 does not look like a CHIP device.
+[54.398044][1042:1043] CHIP:BLE: Device CC:D9:90:1B:AF:DE does not look like a CHIP device.
+[54.398458][1042:1043] CHIP:BLE: Device 51:F2:83:DE:18:25 does not look like a CHIP device.
+[54.416772][1042:1043] CHIP:BLE: Device CF:0B:07:46:A5:9E does not look like a CHIP device.
+[54.419245][1042:1043] CHIP:BLE: Device 5F:C6:64:E6:D4:0E does not look like a CHIP device.
+[54.429303][1042:1043] CHIP:BLE: Device 41:42:69:C7:38:FB does not look like a CHIP device.
+[54.433470][1042:1043] CHIP:BLE: Device D1:81:3C:39:DE:22 does not look like a CHIP device.
+[54.443520][1042:1043] CHIP:BLE: Device 2E:26:F4:E8:39:EF does not look like a CHIP device.
+[54.466015][1042:1043] CHIP:BLE: Device CC:D9:90:1B:AF:DE does not look like a CHIP device.
+[54.467687][1042:1043] CHIP:BLE: Device 41:42:69:C7:38:FB does not look like a CHIP device.
+[54.476627][1042:1043] CHIP:BLE: Device CC:D9:90:1B:AF:DE does not look like a CHIP device.
+[54.476754][1042:1043] CHIP:BLE: Device 4D:F8:CD:A4:CD:75 does not look like a CHIP device.
+[54.489781][1042:1043] CHIP:BLE: Device 22:57:FB:A5:6C:15 does not look like a CHIP device.
+[54.495203][1042:1043] CHIP:BLE: Device CC:D9:90:1B:AF:DE does not look like a CHIP device.
+[54.500683][1042:1043] CHIP:BLE: Device 48:D1:BA:21:33:FB does not look like a CHIP device.
+[54.501252][1042:1043] CHIP:BLE: Device 41:42:69:C7:38:FB does not look like a CHIP device.
+[54.507533][1042:1043] CHIP:BLE: Device 5A:05:67:37:CA:E5 does not look like a CHIP device.
+[54.510033][1042:1043] CHIP:BLE: Device 4C:FD:59:5D:BB:62 does not look like a CHIP device.
+[54.520896][1042:1043] CHIP:BLE: Device 6C:7A:DA:97:F8:57 does not look like a CHIP device.
+[54.524788][1042:1043] CHIP:BLE: Device 5A:35:AD:AC:1D:9C does not look like a CHIP device.
+[54.526805][1042:1043] CHIP:BLE: Device 7F:48:9B:6E:9F:7A does not look like a CHIP device.
+[54.530984][1042:1043] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[54.540729][1042:1043] CHIP:BLE: Device 45:AC:2F:EF:D4:11 does not look like a CHIP device.
+[54.548381][1042:1043] CHIP:BLE: Device CC:D9:90:1B:AF:DE does not look like a CHIP device.
+[54.549767][1042:1043] CHIP:BLE: Device 2E:26:F4:E8:39:EF does not look like a CHIP device.
+[54.574370][1042:1043] CHIP:BLE: Device 41:42:69:C7:38:FB does not look like a CHIP device.
+[54.577247][1042:1043] CHIP:BLE: Device 66:2F:14:3A:7D:74 does not look like a CHIP device.
+[54.593715][1042:1043] CHIP:BLE: Device 22:57:FB:A5:6C:15 does not look like a CHIP device.
+[54.599530][1042:1043] CHIP:BLE: Device 78:0D:B2:0F:B9:0B does not look like a CHIP device.
+[54.602368][1042:1043] CHIP:BLE: Device CC:D9:90:1B:AF:DE does not look like a CHIP device.
+[54.604646][1042:1043] CHIP:BLE: Device 71:FE:EC:13:7F:A8 does not look like a CHIP device.
+[54.605321][1042:1043] CHIP:BLE: Device 7B:28:C5:8F:A1:62 does not look like a CHIP device.
+[54.645667][1042:1043] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[54.674093][1042:1043] CHIP:BLE: Device 6C:7A:DA:97:F8:57 does not look like a CHIP device.
+[54.677819][1042:1043] CHIP:BLE: Device 5C:2E:8A:49:F6:F8 does not look like a CHIP device.
+[54.678499][1042:1043] CHIP:BLE: Device 51:F2:83:DE:18:25 does not look like a CHIP device.
+[54.693046][1042:1043] CHIP:BLE: Device 77:10:01:11:D6:6A does not look like a CHIP device.
+[54.703599][1042:1043] CHIP:BLE: Device CC:D9:90:1B:AF:DE does not look like a CHIP device.
+[54.714829][1042:1043] CHIP:BLE: Device 62:DA:29:F0:D2:9F does not look like a CHIP device.
+[54.715534][1042:1043] CHIP:BLE: Device 6A:B3:0F:75:B3:76 does not look like a CHIP device.
+[54.743153][1042:1043] CHIP:BLE: Device CC:D9:90:1B:AF:DE does not look like a CHIP device.
+[54.750841][1042:1043] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[54.754528][1042:1043] CHIP:BLE: Device CC:D9:90:1B:AF:DE does not look like a CHIP device.
+[54.755619][1042:1043] CHIP:BLE: Device 41:42:69:C7:38:FB does not look like a CHIP device.
+[54.757607][1042:1043] CHIP:BLE: Device 4D:F8:CD:A4:CD:75 does not look like a CHIP device.
+[54.774914][1042:1043] CHIP:BLE: Device 48:D1:BA:21:33:FB does not look like a CHIP device.
+[54.779761][1042:1043] CHIP:BLE: Device 5F:C6:64:E6:D4:0E does not look like a CHIP device.
+[54.782602][1042:1043] CHIP:BLE: Device CC:D9:90:1B:AF:DE does not look like a CHIP device.
+[54.789329][1042:1043] CHIP:BLE: Device 4C:FD:59:5D:BB:62 does not look like a CHIP device.
+[54.794131][1042:1043] CHIP:BLE: Device 64:E5:65:5F:3B:BF does not look like a CHIP device.
+[54.794608][1042:1043] CHIP:BLE: Device 7F:48:9B:6E:9F:7A does not look like a CHIP device.
+[54.807847][1042:1043] CHIP:BLE: Device CC:D9:90:1B:AF:DE does not look like a CHIP device.
+[54.810167][1042:1043] CHIP:BLE: Device 52:7A:99:42:6D:DB does not look like a CHIP device.
+[54.812150][1042:1043] CHIP:BLE: Device 45:AC:2F:EF:D4:11 does not look like a CHIP device.
+[54.813275][1042:1043] CHIP:BLE: Device 22:57:FB:A5:6C:15 does not look like a CHIP device.
+[54.819187][1042:1043] CHIP:BLE: Device EE:2B:29:41:2D:2C does not look like a CHIP device.
+[54.823518][1042:1043] CHIP:BLE: Device 54:52:84:2A:A0:27 does not look like a CHIP device.
+[54.827050][1042:1043] CHIP:BLE: Device 41:42:69:C7:38:FB does not look like a CHIP device.
+[54.846269][1042:1043] CHIP:BLE: Device CC:D9:90:1B:AF:DE does not look like a CHIP device.
+[54.846551][1042:1043] CHIP:BLE: Device 66:2F:14:3A:7D:74 does not look like a CHIP device.
+[54.851755][1042:1043] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[54.857659][1042:1043] CHIP:BLE: Device CC:D9:90:1B:AF:DE does not look like a CHIP device.
+[54.859270][1042:1043] CHIP:BLE: Device 49:E3:13:74:DA:6A does not look like a CHIP device.
+[54.860358][1042:1043] CHIP:BLE: Device 48:F3:F3:60:E3:13 does not look like a CHIP device.
+[54.867056][1042:1043] CHIP:BLE: Device 2E:26:F4:E8:39:EF does not look like a CHIP device.
+[54.881693][1042:1043] CHIP:BLE: Device 78:0D:B2:0F:B9:0B does not look like a CHIP device.
+[54.887310][1042:1043] CHIP:BLE: Device CC:D9:90:1B:AF:DE does not look like a CHIP device.
+[54.887911][1042:1043] CHIP:BLE: Device 79:FA:29:08:F4:30 does not look like a CHIP device.
+[54.889963][1042:1043] CHIP:BLE: Device F5:5B:43:44:8F:80 does not look like a CHIP device.
+[54.898412][1042:1043] CHIP:BLE: Device 5F:C6:64:E6:D4:0E does not look like a CHIP device.
+[54.899313][1042:1043] CHIP:BLE: Device 41:42:69:C7:38:FB does not look like a CHIP device.
+[54.933451][1042:1043] CHIP:BLE: Device 71:FE:EC:13:7F:A8 does not look like a CHIP device.
+[54.949937][1042:1043] CHIP:BLE: Device CC:D9:90:1B:AF:DE does not look like a CHIP device.
+[54.955404][1042:1043] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[54.956709][1042:1043] CHIP:BLE: Device 45:40:7F:BC:B1:E6 does not look like a CHIP device.
+[54.957238][1042:1043] CHIP:BLE: Device 51:F2:83:DE:18:25 does not look like a CHIP device.
+[54.964875][1042:1043] CHIP:BLE: Device CC:D9:90:1B:AF:DE does not look like a CHIP device.
+[54.965334][1042:1043] CHIP:BLE: Device 77:10:01:11:D6:6A does not look like a CHIP device.
+[54.969901][1042:1043] CHIP:BLE: Device 2E:26:F4:E8:39:EF does not look like a CHIP device.
+[54.978873][1042:1043] CHIP:BLE: Device 30:1A:BA:38:C2:34 does not look like a CHIP device.
+[54.981083][1042:1043] CHIP:BLE: Device CC:D9:90:1B:AF:DE does not look like a CHIP device.
+[54.991386][1042:1043] CHIP:BLE: Device 62:DA:29:F0:D2:9F does not look like a CHIP device.
+[54.991964][1042:1043] CHIP:BLE: Device 5C:2E:8A:49:F6:F8 does not look like a CHIP device.
+[55.003029][1042:1043] CHIP:BLE: Device ED:4F:CE:CB:89:E6 does not look like a CHIP device.
+[55.023107][1042:1043] CHIP:BLE: Device 5F:C6:64:E6:D4:0E does not look like a CHIP device.
+[55.023913][1042:1043] CHIP:BLE: Device 22:57:FB:A5:6C:15 does not look like a CHIP device.
+[55.036176][1042:1043] CHIP:BLE: Device CC:D9:90:1B:AF:DE does not look like a CHIP device.
+[55.038723][1042:1043] CHIP:BLE: Device 4D:F8:CD:A4:CD:75 does not look like a CHIP device.
+[55.039506][1042:1043] CHIP:BLE: Device 41:42:69:C7:38:FB does not look like a CHIP device.
+[55.044404][1042:1043] CHIP:BLE: Device C8:BF:4C:B5:26:90 does not look like a CHIP device.
+[55.044926][1042:1043] CHIP:BLE: Device 5B:69:40:5E:9F:6C does not look like a CHIP device.
+[55.053115][1042:1043] CHIP:BLE: Device CC:D9:90:1B:AF:DE does not look like a CHIP device.
+[55.059225][1042:1043] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[55.061422][1042:1043] CHIP:BLE: Device 5A:05:67:37:CA:E5 does not look like a CHIP device.
+[55.066042][1042:1043] CHIP:BLE: Device 64:E5:65:5F:3B:BF does not look like a CHIP device.
+[55.066950][1042:1043] CHIP:BLE: Device 5A:35:AD:AC:1D:9C does not look like a CHIP device.
+[55.067388][1042:1043] CHIP:BLE: Device 3A:FD:31:EA:9D:8B does not look like a CHIP device.
+[55.068503][1042:1043] CHIP:BLE: Device 50:71:A9:FE:D1:EA does not look like a CHIP device.
+[55.072495][1042:1043] CHIP:BLE: Device 41:42:69:C7:38:FB does not look like a CHIP device.
+[55.079373][1042:1043] CHIP:BLE: Device 41:04:F5:B5:2D:59 does not look like a CHIP device.
+[55.084097][1042:1043] CHIP:BLE: Device 52:7A:99:42:6D:DB does not look like a CHIP device.
+[55.098326][1042:1043] CHIP:BLE: Device 6D:AA:FB:AD:8D:99 does not look like a CHIP device.
+[55.107143][1042:1043] CHIP:BLE: Device 5E:33:32:DB:DE:04 does not look like a CHIP device.
+[55.108501][1042:1043] CHIP:BLE: Device 79:FA:29:08:F4:30 does not look like a CHIP device.
+[55.116917][1042:1043] CHIP:BLE: Device CC:D9:90:1B:AF:DE does not look like a CHIP device.
+[55.118535][1042:1043] CHIP:BLE: Device 66:2F:14:3A:7D:74 does not look like a CHIP device.
+[55.131496][1042:1043] CHIP:BLE: Device 49:E3:13:74:DA:6A does not look like a CHIP device.
+[55.134397][1042:1043] CHIP:BLE: Device 09:C1:D3:6D:32:5D does not look like a CHIP device.
+[55.152935][1042:1043] CHIP:BLE: Device 78:0D:B2:0F:B9:0B does not look like a CHIP device.
+[55.172634][1042:1043] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[55.173200][1042:1043] CHIP:BLE: Device 4E:0C:28:69:B9:C7 does not look like a CHIP device.
+[55.186560][1042:1043] CHIP:BLE: Device CC:D9:90:1B:AF:DE does not look like a CHIP device.
+[55.187054][1042:1043] CHIP:BLE: Device 41:42:69:C7:38:FB does not look like a CHIP device.
+[55.189631][1042:1043] CHIP:BLE: Device 48:F3:F3:60:E3:13 does not look like a CHIP device.
+[55.200914][1042:1043] CHIP:BLE: Device 71:FE:EC:13:7F:A8 does not look like a CHIP device.
+[55.207144][1042:1043] CHIP:BLE: Device 5C:2E:8A:49:F6:F8 does not look like a CHIP device.
+[55.221232][1042:1043] CHIP:BLE: Device CC:D9:90:1B:AF:DE does not look like a CHIP device.
+[55.221475][1042:1043] CHIP:BLE: Device 41:42:69:C7:38:FB does not look like a CHIP device.
+[55.235145][1042:1043] CHIP:BLE: Device CC:D9:90:1B:AF:DE does not look like a CHIP device.
+[55.235947][1042:1043] CHIP:BLE: Device 09:C1:D3:6D:32:5D does not look like a CHIP device.
+[55.249711][1042:1043] CHIP:BLE: Device 3A:FD:31:EA:9D:8B does not look like a CHIP device.
+[55.266306][1042:1043] CHIP:BLE: Device 6A:B3:0F:75:B3:76 does not look like a CHIP device.
+[55.284804][1042:1043] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[55.315772][1042:1043] CHIP:BLE: Device CC:D9:90:1B:AF:DE does not look like a CHIP device.
+[55.325337][1042:1043] CHIP:BLE: Device EE:2B:29:41:2D:2C does not look like a CHIP device.
+[55.328307][1042:1043] CHIP:BLE: Device 41:42:69:C7:38:FB does not look like a CHIP device.
+[55.337576][1042:1043] CHIP:BLE: Device CC:D9:90:1B:AF:DE does not look like a CHIP device.
+[55.342214][1042:1043] CHIP:BLE: Device 64:E5:65:5F:3B:BF does not look like a CHIP device.
+[55.342456][1042:1043] CHIP:BLE: Device 7F:48:9B:6E:9F:7A does not look like a CHIP device.
+[55.346533][1042:1043] CHIP:BLE: Device 22:57:FB:A5:6C:15 does not look like a CHIP device.
+[55.358059][1042:1043] CHIP:BLE: Device 45:AC:2F:EF:D4:11 does not look like a CHIP device.
+[55.360317][1042:1043] CHIP:BLE: Device 41:42:69:C7:38:FB does not look like a CHIP device.
+[55.367818][1042:1043] CHIP:BLE: Device CC:D9:90:1B:AF:DE does not look like a CHIP device.
+[55.369080][1042:1043] CHIP:BLE: Device 5F:C6:64:E6:D4:0E does not look like a CHIP device.
+[55.376505][1042:1043] CHIP:BLE: Device 54:52:84:2A:A0:27 does not look like a CHIP device.
+[55.388427][1042:1043] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[55.389438][1042:1043] CHIP:BLE: Device 2E:26:F4:E8:39:EF does not look like a CHIP device.
+[55.406111][1042:1043] CHIP:BLE: Device 49:E3:13:74:DA:6A does not look like a CHIP device.
+[55.415545][1042:1043] CHIP:BLE: Device 71:40:57:F2:A6:1D does not look like a CHIP device.
+[55.424603][1042:1043] CHIP:BLE: Device CC:D9:90:1B:AF:DE does not look like a CHIP device.
+[55.427609][1042:1043] CHIP:BLE: Device 78:0D:B2:0F:B9:0B does not look like a CHIP device.
+[55.429113][1042:1043] CHIP:BLE: Device 41:42:69:C7:38:FB does not look like a CHIP device.
+[55.443998][1042:1043] CHIP:BLE: Device D3:64:60:49:01:D4 does not look like a CHIP device.
+[55.445775][1042:1043] CHIP:BLE: Device 09:C1:D3:6D:32:5D does not look like a CHIP device.
+[55.446547][1042:1043] CHIP:BLE: Device 50:71:A9:FE:D1:EA does not look like a CHIP device.
+[55.447408][1042:1043] CHIP:BLE: Device 4E:0C:28:69:B9:C7 does not look like a CHIP device.
+[55.449546][1042:1043] CHIP:BLE: Device 22:57:FB:A5:6C:15 does not look like a CHIP device.
+[55.482383][1042:1043] CHIP:BLE: Device CC:D9:90:1B:AF:DE does not look like a CHIP device.
+[55.493230][1042:1043] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[55.493466][1042:1043] CHIP:BLE: Device 5F:C6:64:E6:D4:0E does not look like a CHIP device.
+[55.517823][1042:1043] CHIP:BLE: Device 71:FE:EC:13:7F:A8 does not look like a CHIP device.
+[55.518074][1042:1043] CHIP:BLE: Device 48:F3:F3:60:E3:13 does not look like a CHIP device.
+[55.525874][1042:1043] CHIP:BLE: Device 5C:2E:8A:49:F6:F8 does not look like a CHIP device.
+[55.531228][1042:1043] CHIP:BLE: Device 62:DA:29:F0:D2:9F does not look like a CHIP device.
+[55.545174][1042:1043] CHIP:BLE: Device 30:1A:BA:38:C2:34 does not look like a CHIP device.
+[55.545323][1042:1043] CHIP:BLE: Device CC:D9:90:1B:AF:DE does not look like a CHIP device.
+[55.546016][1042:1043] CHIP:BLE: Device 09:C1:D3:6D:32:5D does not look like a CHIP device.
+[55.549791][1042:1043] CHIP:BLE: Device 22:57:FB:A5:6C:15 does not look like a CHIP device.
+[55.570397][1042:1043] CHIP:BLE: Device 44:DA:0C:F2:6B:24 does not look like a CHIP device.
+[55.583220][1042:1043] CHIP:BLE: Device CC:D9:90:1B:AF:DE does not look like a CHIP device.
+[55.584241][1042:1043] CHIP:BLE: Device 41:42:69:C7:38:FB does not look like a CHIP device.
+[55.585172][1042:1043] CHIP:BLE: Device 75:55:65:28:9A:39 does not look like a CHIP device.
+[55.586565][1042:1043] CHIP:BLE: Device 4D:F8:CD:A4:CD:75 does not look like a CHIP device.
+[55.593914][1042:1043] CHIP:BLE: Device CC:D9:90:1B:AF:DE does not look like a CHIP device.
+[55.594712][1042:1043] CHIP:BLE: Device 2E:26:F4:E8:39:EF does not look like a CHIP device.
+[55.601100][1042:1043] CHIP:BLE: Device 48:D1:BA:21:33:FB does not look like a CHIP device.
+[55.603235][1042:1043] CHIP:BLE: Device 60:0E:A0:42:EA:1E does not look like a CHIP device.
+[55.603988][1042:1043] CHIP:BLE: Device 13:38:62:56:18:C6 does not look like a CHIP device.
+[55.604926][1042:1043] CHIP:BLE: Device 4C:FD:59:5D:BB:62 does not look like a CHIP device.
+[55.617679][1042:1043] CHIP:BLE: Device CC:D9:90:1B:AF:DE does not look like a CHIP device.
+[55.617850][1042:1043] CHIP:BLE: Device 3A:FD:31:EA:9D:8B does not look like a CHIP device.
+[55.620409][1042:1043] CHIP:BLE: Device 41:42:69:C7:38:FB does not look like a CHIP device.
+[55.622283][1042:1043] CHIP:BLE: Device 5A:35:AD:AC:1D:9C does not look like a CHIP device.
+[55.623686][1042:1043] CHIP:BLE: Device 78:E8:03:4E:26:56 does not look like a CHIP device.
+[55.626176][1042:1043] CHIP:BLE: Device 45:AC:2F:EF:D4:11 does not look like a CHIP device.
+[55.631859][1042:1043] CHIP:BLE: Device 5C:2E:8A:49:F6:F8 does not look like a CHIP device.
+[55.633179][1042:1043] CHIP:BLE: Device 38:F9:F5:12:3A:2D does not look like a CHIP device.
+[55.652380][1042:1043] CHIP:BLE: Device 09:C1:D3:6D:32:5D does not look like a CHIP device.
+[55.656937][1042:1043] CHIP:BLE: Device 66:2F:14:3A:7D:74 does not look like a CHIP device.
+[55.678310][1042:1043] CHIP:BLE: Device CC:D9:90:1B:AF:DE does not look like a CHIP device.
+[55.679924][1042:1043] CHIP:BLE: Device 49:E3:13:74:DA:6A does not look like a CHIP device.
+[55.691901][1042:1043] CHIP:BLE: Device 71:40:57:F2:A6:1D does not look like a CHIP device.
+[55.702709][1042:1043] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[55.703997][1042:1043] CHIP:BLE: Device 7B:28:C5:8F:A1:62 does not look like a CHIP device.
+[55.716983][1042:1043] CHIP:BLE: Device CC:D9:90:1B:AF:DE does not look like a CHIP device.
+[55.717633][1042:1043] CHIP:BLE: Device DF:F4:D1:92:C0:D5 does not look like a CHIP device.
+[55.737554][1042:1043] CHIP:BLE: Device 5C:2E:8A:49:F6:F8 does not look like a CHIP device.
+[55.737781][1042:1043] CHIP:BLE: Device 5F:C6:64:E6:D4:0E does not look like a CHIP device.
+[55.774673][1042:1043] CHIP:BLE: Device CC:D9:90:1B:AF:DE does not look like a CHIP device.
+[55.775374][1042:1043] CHIP:BLE: Device 75:55:65:28:9A:39 does not look like a CHIP device.
+[55.781677][1042:1043] CHIP:BLE: Device 42:E0:8C:13:99:D6 does not look like a CHIP device.
+[55.786604][1042:1043] CHIP:BLE: Device 51:F2:83:DE:18:25 does not look like a CHIP device.
+[55.798691][1042:1043] CHIP:BLE: Device CC:D9:90:1B:AF:DE does not look like a CHIP device.
+[55.811633][1042:1043] CHIP:BLE: Device 90:F6:44:8B:F7:92 does not look like a CHIP device.
+[55.815405][1042:1043] CHIP:BLE: Device 62:DA:29:F0:D2:9F does not look like a CHIP device.
+[55.817597][1042:1043] CHIP:BLE: Device 50:71:A9:FE:D1:EA does not look like a CHIP device.
+[55.846098][1042:1043] CHIP:BLE: Device CC:D9:90:1B:AF:DE does not look like a CHIP device.
+[55.850813][1042:1043] CHIP:BLE: Device 5C:2E:8A:49:F6:F8 does not look like a CHIP device.
+[55.857704][1042:1043] CHIP:BLE: Device 48:F3:F3:60:E3:13 does not look like a CHIP device.
+[55.859567][1042:1043] CHIP:BLE: Device 4D:F8:CD:A4:CD:75 does not look like a CHIP device.
+[55.860269][1042:1043] CHIP:BLE: Device 5F:C6:64:E6:D4:0E does not look like a CHIP device.
+[55.870322][1042:1043] CHIP:BLE: Device 48:D1:BA:21:33:FB does not look like a CHIP device.
+[55.884664][1042:1043] CHIP:BLE: Device 6C:7A:DA:97:F8:57 does not look like a CHIP device.
+[55.885603][1042:1043] CHIP:BLE: Device 78:E8:03:4E:26:56 does not look like a CHIP device.
+[55.888055][1042:1043] CHIP:BLE: Device 64:E5:65:5F:3B:BF does not look like a CHIP device.
+[55.888408][1042:1043] CHIP:BLE: Device 41:42:69:C7:38:FB does not look like a CHIP device.
+[55.891143][1042:1043] CHIP:BLE: Device 5A:05:67:37:CA:E5 does not look like a CHIP device.
+[55.895202][1042:1043] CHIP:BLE: Device 45:AC:2F:EF:D4:11 does not look like a CHIP device.
+[55.898909][1042:1043] CHIP:BLE: Device CC:D9:90:1B:AF:DE does not look like a CHIP device.
+[55.899549][1042:1043] CHIP:BLE: Device 68:64:36:EF:55:C0 does not look like a CHIP device.
+[55.914301][1042:1043] CHIP:BLE: Device CB:F4:DC:E3:C4:7F does not look like a CHIP device.
+[55.917769][1042:1043] CHIP:BLE: Device 5E:33:32:DB:DE:04 does not look like a CHIP device.
+[55.918002][1042:1043] CHIP:BLE: Device 79:D5:5B:1C:BA:5D does not look like a CHIP device.
+[55.930434][1042:1043] CHIP:BLE: Device CC:D9:90:1B:AF:DE does not look like a CHIP device.
+[55.930855][1042:1043] CHIP:BLE: Device 66:2F:14:3A:7D:74 does not look like a CHIP device.
+[55.932148][1042:1043] CHIP:BLE: Device 79:FA:29:08:F4:30 does not look like a CHIP device.
+[55.952462][1042:1043] CHIP:BLE: Device CC:D9:90:1B:AF:DE does not look like a CHIP device.
+[55.953273][1042:1043] CHIP:BLE: Device 5C:2E:8A:49:F6:F8 does not look like a CHIP device.
+[55.960766][1042:1043] CHIP:BLE: Device 75:55:65:28:9A:39 does not look like a CHIP device.
+[55.961086][1042:1043] CHIP:BLE: Device 41:42:69:C7:38:FB does not look like a CHIP device.
+[55.972200][1042:1043] CHIP:BLE: Device 78:0D:B2:0F:B9:0B does not look like a CHIP device.
+[55.984503][1042:1043] CHIP:BLE: Device CC:D9:90:1B:AF:DE does not look like a CHIP device.
+[55.986511][1042:1043] CHIP:BLE: Device 3A:FD:31:EA:9D:8B does not look like a CHIP device.
+[55.987599][1042:1043] CHIP:BLE: Device 5C:A8:7C:47:8B:E5 does not look like a CHIP device.
+[56.005056][1042:1043] CHIP:BLE: New device scanned: 48:A6:3A:BE:6F:D2
+[56.005125][1042:1043] CHIP:BLE: Device discriminator match. Attempting to connect.
+[56.009709][1042:1043] CHIP:BLE: ChipDeviceScanner has stopped scanning!
+[56.173488][1042:1043] CHIP:DL: ConnectDevice complete
+[56.173542][1042:1043] CHIP:BLE: New device connected: 48:A6:3A:BE:6F:D2
+[56.988506][1042:1043] CHIP:DL: Char /org/bluez/hci0/dev_48_A6_3A_BE_6F_D2/service0010 on service /org/bluez/hci0/dev_48_A6_3A_BE_6F_D2/service0010
+[56.989155][1042:1043] CHIP:DL: Char /org/bluez/hci0/dev_48_A6_3A_BE_6F_D2/service0010 on service /org/bluez/hci0/dev_48_A6_3A_BE_6F_D2/service0010
+[56.989231][1042:1043] CHIP:DL: Char /org/bluez/hci0/dev_48_A6_3A_BE_6F_D2/service0010 on service /org/bluez/hci0/dev_48_A6_3A_BE_6F_D2/service0010
+[56.993878][1042:1043] CHIP:DL: New BLE connection: conn=0x7f800ace50 device=48:A6:3A:BE:6F:D2 path=/org/bluez/hci0/dev_48_A6_3A_BE_6F_D2
+[56.994283][1042:1044] CHIP:DL: HandlePlatformSpecificBLEEvent 16385
+[56.994320][1042:1044] CHIP:DIS: Closing all BLE connections
+[56.994371][1042:1044] CHIP:IN: BleConnectionComplete: endPoint 0x55708592a0
+[56.995196][1042:1044] CHIP:IN: SecureSession[0x7f8c0118f0]: Allocated Type:1 LSID:34412
+[56.995257][1042:1044] CHIP:SC: Assigned local session key ID 34412
+[56.995340][1042:1044] CHIP:EM: <<< [E:57269i S:0 M:120018347] (U) Msg TX to 0:0000000000000000 [0000] [BLE] --- Type 0000:20 (SecureChannel:PBKDFParamRequest)
+[56.995372][1042:1044] CHIP:IN: Message appended to BLE send queue
+[56.995388][1042:1044] CHIP:SC: Sent PBKDF param request
+[57.379442][1042:1044] CHIP:DL: HandlePlatformSpecificBLEEvent 16387
+[57.502085][1042:1044] CHIP:DL: HandlePlatformSpecificBLEEvent 16388
+[57.502133][1042:1044] CHIP:BLE: subscribe complete, ep = 0x55708592a0
+[57.502452][1042:1043] CHIP:DL: Indication received, conn = 0x7f800ace50
+[57.502531][1042:1044] CHIP:DL: HandlePlatformSpecificBLEEvent 16389
+[57.502547][1042:1044] CHIP:BLE: peripheral chose BTP version 4; central expected between 4 and 4
+[57.502557][1042:1044] CHIP:BLE: using BTP fragment sizes rx 244 / tx 244.
+[57.502564][1042:1044] CHIP:BLE: local and remote recv window size = 5
+[57.503043][1042:1044] CHIP:IN: BLE EndPoint 0x55708592a0 Connection Complete
+[57.577643][1042:1044] CHIP:DL: HandlePlatformSpecificBLEEvent 16387
+[57.588388][1042:1043] CHIP:DL: Indication received, conn = 0x7f800ace50
+[57.589282][1042:1044] CHIP:DL: HandlePlatformSpecificBLEEvent 16389
+[57.589383][1042:1044] CHIP:EM: >>> [E:57269i S:0 M:91972997] (U) Msg RX from 0:0000000000000000 [0000] --- Type 0000:21 (SecureChannel:PBKDFParamResponse)
+[57.589413][1042:1044] CHIP:EM: Found matching exchange: 57269i, Delegate: 0x7f8c00fcc0
+[57.589442][1042:1044] CHIP:SC: Received PBKDF param response
+[57.589470][1042:1044] CHIP:SC: Peer assigned session ID 53039
+[57.598367][1042:1044] CHIP:EM: <<< [E:57269i S:0 M:120018348] (U) Msg TX to 0:0000000000000000 [0000] [BLE] --- Type 0000:22 (SecureChannel:PASE_Pake1)
+[57.599256][1042:1044] CHIP:SC: Sent spake2p msg1
+[57.698197][1042:1044] CHIP:DL: HandlePlatformSpecificBLEEvent 16387
+[58.991847][1042:1043] CHIP:DL: Indication received, conn = 0x7f800ace50
+[58.992340][1042:1044] CHIP:DL: HandlePlatformSpecificBLEEvent 16389
+[58.992556][1042:1044] CHIP:EM: >>> [E:57269i S:0 M:91972998] (U) Msg RX from 0:0000000000000000 [0000] --- Type 0000:23 (SecureChannel:PASE_Pake2)
+[58.992699][1042:1044] CHIP:EM: Found matching exchange: 57269i, Delegate: 0x7f8c00fcc0
+[58.992802][1042:1044] CHIP:SC: Received spake2p msg2
+[58.999456][1042:1044] CHIP:EM: <<< [E:57269i S:0 M:120018349] (U) Msg TX to 0:0000000000000000 [0000] [BLE] --- Type 0000:24 (SecureChannel:PASE_Pake3)
+[59.000139][1042:1044] CHIP:SC: Sent spake2p msg3
+[59.058799][1042:1044] CHIP:DL: HandlePlatformSpecificBLEEvent 16387
+[59.062031][1042:1043] CHIP:DL: Indication received, conn = 0x7f800ace50
+[59.062538][1042:1044] CHIP:DL: HandlePlatformSpecificBLEEvent 16389
+[59.062727][1042:1044] CHIP:EM: >>> [E:57269i S:0 M:91972999] (U) Msg RX from 0:0000000000000000 [0000] --- Type 0000:40 (SecureChannel:StatusReport)
+[59.062815][1042:1044] CHIP:EM: Found matching exchange: 57269i, Delegate: 0x7f8c00fcc0
+[59.062971][1042:1044] CHIP:SC: SecureSession[0x7f8c0118f0, LSID:34412]: State change 'kEstablishing' --> 'kActive'
+[59.063046][1042:1044] CHIP:IN: SecureSession[0x7f8c0118f0]: Activated - Type:1 LSID:34412
+[59.063113][1042:1044] CHIP:IN: New secure session activated for device <FFFFFFFB00000000, 0>, LSID:34412 PSID:53039!
+[59.063186][1042:1044] CHIP:CTL: Remote device completed SPAKE2+ handshake
+[59.063250][1042:1044] CHIP:TOO: Pairing Success
+[59.063309][1042:1044] CHIP:TOO: PASE establishment successful
+[59.063374][1042:1044] CHIP:CTL: Commissioning stage next step: 'SecurePairing' -> 'ReadCommissioningInfo'
+[59.063509][1042:1044] CHIP:CTL: Performing next commissioning step 'ReadCommissioningInfo'
+[59.063577][1042:1044] CHIP:CTL: Sending read request for commissioning information
+[59.063648][1042:1044] CHIP:DMG: SendReadRequest ReadClient[0x7f8c009720]: Sending Read Request
+[59.063851][1042:1044] CHIP:EM: <<< [E:57270i S:34412 M:33902248] (S) Msg TX to 0:FFFFFFFB00000000 [0000] [BLE] --- Type 0001:02 (IM:ReadRequest)
+[59.064973][1042:1044] CHIP:DMG: MoveToState ReadClient[0x7f8c009720]: Moving to [AwaitingIn]
+[59.182360][1042:1044] CHIP:DL: HandlePlatformSpecificBLEEvent 16387
+[59.222351][1042:1043] CHIP:DL: Indication received, conn = 0x7f800ace50
+[59.222694][1042:1044] CHIP:DL: HandlePlatformSpecificBLEEvent 16389
+[59.299855][1042:1043] CHIP:DL: Indication received, conn = 0x7f800ace50
+[59.300188][1042:1044] CHIP:DL: HandlePlatformSpecificBLEEvent 16389
+[59.300288][1042:1044] CHIP:EM: >>> [E:57270i S:34412 M:61641359] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:05 (IM:ReportData)
+[59.300322][1042:1044] CHIP:EM: Found matching exchange: 57270i, Delegate: 0x7f8c009730
+[59.300582][1042:1044] CHIP:CTL: Successfully finished commissioning step 'ReadCommissioningInfo'
+[59.300609][1042:1044] CHIP:CTL: Commissioning stage next step: 'ReadCommissioningInfo' -> 'ReadCommissioningInfo2'
+[59.300635][1042:1044] CHIP:CTL: Performing next commissioning step 'ReadCommissioningInfo2'
+[59.300661][1042:1044] CHIP:DMG: SendReadRequest ReadClient[0x7f8c009720]: Sending Read Request
+[59.300727][1042:1044] CHIP:EM: <<< [E:57271i S:34412 M:33902249] (S) Msg TX to 0:FFFFFFFB00000000 [0000] [BLE] --- Type 0001:02 (IM:ReadRequest)
+[59.301517][1042:1044] CHIP:DMG: MoveToState ReadClient[0x7f8c009720]: Moving to [AwaitingIn]
+[59.420411][1042:1044] CHIP:DL: HandlePlatformSpecificBLEEvent 16387
+[59.426006][1042:1043] CHIP:DL: Indication received, conn = 0x7f800ace50
+[59.426701][1042:1044] CHIP:DL: HandlePlatformSpecificBLEEvent 16389
+[59.426926][1042:1044] CHIP:EM: >>> [E:57271i S:34412 M:61641360] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:05 (IM:ReportData)
+[59.427042][1042:1044] CHIP:EM: Found matching exchange: 57271i, Delegate: 0x7f8c009730
+[59.437930][1042:1044] CHIP:CTL: ----- NetworkCommissioning Features: has WiFi. endpointid = 0
+[59.438034][1042:1044] CHIP:SVR: OnReadCommissioningInfo - vendorId=0x1410 productId=0x03E9
+[59.438084][1042:1044] CHIP:CTL: Successfully finished commissioning step 'ReadCommissioningInfo2'
+[59.438111][1042:1044] CHIP:CTL: Commissioning stage next step: 'ReadCommissioningInfo2' -> 'ArmFailSafe'
+[59.438153][1042:1044] CHIP:CTL: Performing next commissioning step 'ArmFailSafe'
+[59.438191][1042:1044] CHIP:CTL: Arming failsafe (60 seconds)
+[59.438256][1042:1044] CHIP:DMG: ICR moving to [AddingComm]
+[59.442152][1042:1044] CHIP:DMG: ICR moving to [AddedComma]
+[59.442319][1042:1044] CHIP:EM: <<< [E:57272i S:34412 M:33902250] (S) Msg TX to 0:FFFFFFFB00000000 [0000] [BLE] --- Type 0001:08 (IM:InvokeCommandRequest)
+[59.443315][1042:1044] CHIP:DMG: ICR moving to [AwaitingRe]
+[59.499611][1042:1044] CHIP:DL: HandlePlatformSpecificBLEEvent 16387
+[59.502627][1042:1043] CHIP:DL: Indication received, conn = 0x7f800ace50
+[59.503015][1042:1044] CHIP:DL: HandlePlatformSpecificBLEEvent 16389
+[59.503242][1042:1044] CHIP:EM: >>> [E:57272i S:34412 M:61641361] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:09 (IM:InvokeCommandResponse)
+[59.503333][1042:1044] CHIP:EM: Found matching exchange: 57272i, Delegate: 0x7f8c006ba8
+[59.503412][1042:1044] CHIP:DMG: ICR moving to [ResponseRe]
+[59.503534][1042:1044] CHIP:DMG: Received Command Response Data, Endpoint=0 Cluster=0x0000_0030 Command=0x0000_0001
+[59.503615][1042:1044] CHIP:CTL: Received ArmFailSafe response errorCode=0
+[59.503687][1042:1044] CHIP:CTL: Successfully finished commissioning step 'ArmFailSafe'
+[59.503751][1042:1044] CHIP:CTL: Commissioning stage next step: 'ArmFailSafe' -> 'ConfigRegulatory'
+[59.503819][1042:1044] CHIP:CTL: Performing next commissioning step 'ConfigRegulatory'
+[59.503882][1042:1044] CHIP:CTL: Setting Regulatory Config
+[59.503942][1042:1044] CHIP:CTL: Device does not support configurable regulatory location
+[59.504125][1042:1044] CHIP:DMG: ICR moving to [AddingComm]
+[59.504175][1042:1044] CHIP:DMG: ICR moving to [AddedComma]
+[59.504272][1042:1044] CHIP:EM: <<< [E:57273i S:34412 M:33902251] (S) Msg TX to 0:FFFFFFFB00000000 [0000] [BLE] --- Type 0001:08 (IM:InvokeCommandRequest)
+[59.505048][1042:1044] CHIP:DMG: ICR moving to [AwaitingRe]
+[59.505132][1042:1044] CHIP:DMG: ICR moving to [AwaitingDe]
+[59.580113][1042:1044] CHIP:DL: HandlePlatformSpecificBLEEvent 16387
+[59.583144][1042:1043] CHIP:DL: Indication received, conn = 0x7f800ace50
+[59.583807][1042:1044] CHIP:DL: HandlePlatformSpecificBLEEvent 16389
+[59.584087][1042:1044] CHIP:EM: >>> [E:57273i S:34412 M:61641362] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:09 (IM:InvokeCommandResponse)
+[59.584213][1042:1044] CHIP:EM: Found matching exchange: 57273i, Delegate: 0x7f8c016e38
+[59.584326][1042:1044] CHIP:DMG: ICR moving to [ResponseRe]
+[59.584485][1042:1044] CHIP:DMG: Received Command Response Data, Endpoint=0 Cluster=0x0000_0030 Command=0x0000_0003
+[59.584591][1042:1044] CHIP:CTL: Received SetRegulatoryConfig response errorCode=0
+[59.584683][1042:1044] CHIP:CTL: Successfully finished commissioning step 'ConfigRegulatory'
+[59.584769][1042:1044] CHIP:CTL: Commissioning stage next step: 'ConfigRegulatory' -> 'SendPAICertificateRequest'
+[59.584856][1042:1044] CHIP:CTL: Performing next commissioning step 'SendPAICertificateRequest'
+[59.584904][1042:1044] CHIP:CTL: Sending request for PAI certificate
+[59.584932][1042:1044] CHIP:CTL: Sending Certificate Chain request to 0x7f8c00fc70 device
+[59.584994][1042:1044] CHIP:DMG: ICR moving to [AddingComm]
+[59.585029][1042:1044] CHIP:DMG: ICR moving to [AddedComma]
+[59.585130][1042:1044] CHIP:EM: <<< [E:57274i S:34412 M:33902252] (S) Msg TX to 0:FFFFFFFB00000000 [0000] [BLE] --- Type 0001:08 (IM:InvokeCommandRequest)
+[59.587053][1042:1044] CHIP:DMG: ICR moving to [AwaitingRe]
+[59.587184][1042:1044] CHIP:DMG: ICR moving to [AwaitingDe]
+[59.700736][1042:1044] CHIP:DL: HandlePlatformSpecificBLEEvent 16387
+[59.780252][1042:1043] CHIP:DL: Indication received, conn = 0x7f800ace50
+[59.780577][1042:1044] CHIP:DL: HandlePlatformSpecificBLEEvent 16389
+[60.026046][1042:1043] CHIP:DL: Indication received, conn = 0x7f800ace50
+[60.026368][1042:1044] CHIP:DL: HandlePlatformSpecificBLEEvent 16389
+[60.102430][1042:1043] CHIP:DL: Indication received, conn = 0x7f800ace50
+[60.102813][1042:1044] CHIP:DL: HandlePlatformSpecificBLEEvent 16389
+[60.102944][1042:1044] CHIP:EM: >>> [E:57274i S:34412 M:61641363] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:09 (IM:InvokeCommandResponse)
+[60.103000][1042:1044] CHIP:EM: Found matching exchange: 57274i, Delegate: 0x7f8c006ba8
+[60.103050][1042:1044] CHIP:DMG: ICR moving to [ResponseRe]
+[60.103150][1042:1044] CHIP:DMG: Received Command Response Data, Endpoint=0 Cluster=0x0000_003E Command=0x0000_0003
+[60.103280][1042:1044] CHIP:CTL: Received certificate chain from the device
+[60.103319][1042:1044] CHIP:CTL: Successfully finished commissioning step 'SendPAICertificateRequest'
+[60.103353][1042:1044] CHIP:CTL: Commissioning stage next step: 'SendPAICertificateRequest' -> 'SendDACCertificateRequest'
+[60.103387][1042:1044] CHIP:CTL: Performing next commissioning step 'SendDACCertificateRequest'
+[60.103415][1042:1044] CHIP:CTL: Sending request for DAC certificate
+[60.103440][1042:1044] CHIP:CTL: Sending Certificate Chain request to 0x7f8c00fc70 device
+[60.103499][1042:1044] CHIP:DMG: ICR moving to [AddingComm]
+[60.103538][1042:1044] CHIP:DMG: ICR moving to [AddedComma]
+[60.103962][1042:1044] CHIP:EM: <<< [E:57275i S:34412 M:33902253] (S) Msg TX to 0:FFFFFFFB00000000 [0000] [BLE] --- Type 0001:08 (IM:InvokeCommandRequest)
+[60.105151][1042:1044] CHIP:DMG: ICR moving to [AwaitingRe]
+[60.105274][1042:1044] CHIP:DMG: ICR moving to [AwaitingDe]
+[60.179177][1042:1044] CHIP:DL: HandlePlatformSpecificBLEEvent 16387
+[60.222970][1042:1043] CHIP:DL: Indication received, conn = 0x7f800ace50
+[60.223361][1042:1044] CHIP:DL: HandlePlatformSpecificBLEEvent 16389
+[60.346879][1042:1043] CHIP:DL: Indication received, conn = 0x7f800ace50
+[60.347218][1042:1044] CHIP:DL: HandlePlatformSpecificBLEEvent 16389
+[60.461362][1042:1043] CHIP:DL: Indication received, conn = 0x7f800ace50
+[60.461771][1042:1044] CHIP:DL: HandlePlatformSpecificBLEEvent 16389
+[60.461909][1042:1044] CHIP:EM: >>> [E:57275i S:34412 M:61641364] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:09 (IM:InvokeCommandResponse)
+[60.461967][1042:1044] CHIP:EM: Found matching exchange: 57275i, Delegate: 0x7f8c016e38
+[60.462016][1042:1044] CHIP:DMG: ICR moving to [ResponseRe]
+[60.462118][1042:1044] CHIP:DMG: Received Command Response Data, Endpoint=0 Cluster=0x0000_003E Command=0x0000_0003
+[60.462164][1042:1044] CHIP:CTL: Received certificate chain from the device
+[60.462199][1042:1044] CHIP:CTL: Successfully finished commissioning step 'SendDACCertificateRequest'
+[60.462231][1042:1044] CHIP:CTL: Commissioning stage next step: 'SendDACCertificateRequest' -> 'SendAttestationRequest'
+[60.462266][1042:1044] CHIP:CTL: Performing next commissioning step 'SendAttestationRequest'
+[60.462294][1042:1044] CHIP:CTL: Sending Attestation Request to the device.
+[60.462321][1042:1044] CHIP:CTL: Sending Attestation request to 0x7f8c00fc70 device
+[60.462380][1042:1044] CHIP:DMG: ICR moving to [AddingComm]
+[60.462417][1042:1044] CHIP:DMG: ICR moving to [AddedComma]
+[60.462512][1042:1044] CHIP:EM: <<< [E:57276i S:34412 M:33902254] (S) Msg TX to 0:FFFFFFFB00000000 [0000] [BLE] --- Type 0001:08 (IM:InvokeCommandRequest)
+[60.463724][1042:1044] CHIP:DMG: ICR moving to [AwaitingRe]
+[60.463790][1042:1044] CHIP:CTL: Sent Attestation request, waiting for the Attestation Information
+[60.463861][1042:1044] CHIP:DMG: ICR moving to [AwaitingDe]
+[60.539666][1042:1044] CHIP:DL: HandlePlatformSpecificBLEEvent 16387
+[60.863776][1042:1043] CHIP:DL: Indication received, conn = 0x7f800ace50
+[60.864063][1042:1044] CHIP:DL: HandlePlatformSpecificBLEEvent 16389
+[60.945390][1042:1043] CHIP:DL: Indication received, conn = 0x7f800ace50
+[60.945850][1042:1044] CHIP:DL: HandlePlatformSpecificBLEEvent 16389
+[60.945999][1042:1044] CHIP:EM: >>> [E:57276i S:34412 M:61641365] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:09 (IM:InvokeCommandResponse)
+[60.946057][1042:1044] CHIP:EM: Found matching exchange: 57276i, Delegate: 0x7f8c006ba8
+[60.946111][1042:1044] CHIP:DMG: ICR moving to [ResponseRe]
+[60.946215][1042:1044] CHIP:DMG: Received Command Response Data, Endpoint=0 Cluster=0x0000_003E Command=0x0000_0001
+[60.946264][1042:1044] CHIP:CTL: Received Attestation Information from the device
+[60.946299][1042:1044] CHIP:CTL: Successfully finished commissioning step 'SendAttestationRequest'
+[60.946329][1042:1044] CHIP:CTL: AutoCommissioner setting attestationElements buffer size 278/278
+[60.946409][1042:1044] CHIP:CTL: Commissioning stage next step: 'SendAttestationRequest' -> 'AttestationVerification'
+[60.946447][1042:1044] CHIP:CTL: Performing next commissioning step 'AttestationVerification'
+[60.946476][1042:1044] CHIP:CTL: Verifying attestation
+[60.970694][1042:1044] CHIP:CTL: Failed in verifying 'Attestation Information' command received from the device: err 300. Look at AttestationVerificationResult enum
+ to understand the errors
+[60.970775][1042:1044] CHIP:CTL: Error on commissioning step 'AttestationVerification': 'src/controller/CHIPDeviceController.cpp:1145: CHIP Error 0x000000AC: Intern
+al error'
+[60.970803][1042:1044] CHIP:CTL: Going from commissioning step 'AttestationVerification' with lastErr = 'src/controller/CHIPDeviceController.cpp:1145: CHIP Error 0x
+000000AC: Internal error' -> 'Cleanup'
+[60.970827][1042:1044] CHIP:CTL: Performing next commissioning step 'Cleanup' with completion status = 'src/controller/CHIPDeviceController.cpp:1145: CHIP Error 0x0
+00000AC: Internal error'
+[60.970853][1042:1044] CHIP:CTL: Disarming failsafe on device 0x7f8c00fc70
+[60.970904][1042:1044] CHIP:DMG: ICR moving to [AddingComm]
+[60.970929][1042:1044] CHIP:DMG: ICR moving to [AddedComma]
+[60.971031][1042:1044] CHIP:EM: <<< [E:57277i S:34412 M:33902255] (S) Msg TX to 0:FFFFFFFB00000000 [0000] [BLE] --- Type 0001:08 (IM:InvokeCommandRequest)
+[60.971687][1042:1044] CHIP:DMG: ICR moving to [AwaitingRe]
+[60.971752][1042:1044] CHIP:DMG: ICR moving to [AwaitingDe]
+[61.018454][1042:1044] CHIP:DL: HandlePlatformSpecificBLEEvent 16387
+[61.022024][1042:1043] CHIP:DL: Indication received, conn = 0x7f800ace50
+[61.022517][1042:1044] CHIP:DL: HandlePlatformSpecificBLEEvent 16389
+[61.022704][1042:1044] CHIP:EM: >>> [E:57277i S:34412 M:61641366] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:09 (IM:InvokeCommandResponse)
+[61.022777][1042:1044] CHIP:EM: Found matching exchange: 57277i, Delegate: 0x7f8c016e38
+[61.022841][1042:1044] CHIP:DMG: ICR moving to [ResponseRe]
+[61.022959][1042:1044] CHIP:DMG: Received Command Response Data, Endpoint=0 Cluster=0x0000_0030 Command=0x0000_0001
+[61.023025][1042:1044] CHIP:CTL: Failsafe disarmed
+[61.023075][1042:1044] CHIP:CTL: Successfully finished commissioning step 'Cleanup'
+[61.023125][1042:1044] CHIP:DIS: Closing all BLE connections
+[61.023169][1042:1044] CHIP:IN: Clearing BLE pending packets.
+[61.024275][1042:1044] CHIP:BLE: Auto-closing end point's BLE connection.
+[61.024348][1042:1044] CHIP:DL: Closing BLE GATT connection (con 0x7f800ace50)
+[61.024600][1042:1043] CHIP:DL: BluezDisconnect peer=48:A6:3A:BE:6F:D2
+[63.624186][1042:1044] CHIP:IN: SecureSession[0x7f8c0118f0]: MarkForEviction Type:1 LSID:34412
+[63.624283][1042:1044] CHIP:SC: SecureSession[0x7f8c0118f0, LSID:34412]: State change 'kActive' --> 'kPendingEviction'
+[63.624455][1042:1044] CHIP:CTL: Commissioning complete for node ID 0x0000000000000001: src/controller/CHIPDeviceController.cpp:1145: CHIP Error 0x000000AC: Interna
+l error
+[63.624508][1042:1044] CHIP:TOO: Device commissioning Failure: src/controller/CHIPDeviceController.cpp:1145: CHIP Error 0x000000AC: Internal error
+[63.624637][1042:1044] CHIP:DMG: ICR moving to [AwaitingDe]
+[63.624691][1042:1044] CHIP:IN: SecureSession[0x7f8c0118f0]: Released - Type:1 LSID:34412
+[63.624736][1042:1044] CHIP:DL: Long dispatch time: 2602 ms, for event type 16389
+[63.625499][1042:1042] CHIP:CTL: Shutting down the commissioner
+[63.625695][1042:1042] CHIP:CTL: Shutting down the controller
+[63.625734][1042:1042] CHIP:IN: Expiring all sessions for fabric 0x1!!
+[63.625764][1042:1042] CHIP:FP: Forgetting fabric 0x1
+[63.625809][1042:1042] CHIP:TS: Pending Last Known Good Time: 2023-10-14T01:16:48
+[63.626028][1042:1042] CHIP:TS: Previous Last Known Good Time: 2023-10-14T01:16:48
+[63.626062][1042:1042] CHIP:TS: Reverted Last Known Good Time to previous value
+[63.626138][1042:1042] CHIP:CTL: Shutting down the commissioner
+[63.626262][1042:1042] CHIP:CTL: Shutting down the controller
+[63.626295][1042:1042] CHIP:CTL: Shutting down the System State, this will teardown the CHIP Stack
+[63.626626][1042:1042] CHIP:DMG: All ReadHandler-s are clean, clear GlobalDirtySet
+[63.626745][1042:1042] CHIP:FP: Shutting down FabricTable
+[63.626827][1042:1042] CHIP:TS: Pending Last Known Good Time: 2023-10-14T01:16:48
+[63.627016][1042:1042] CHIP:TS: Previous Last Known Good Time: 2023-10-14T01:16:48
+[63.627064][1042:1042] CHIP:TS: Reverted Last Known Good Time to previous value
+[63.627408][1042:1042] CHIP:DL: writing settings to file (/tmp/chip_counters.ini-sfNwXY)
+[63.627635][1042:1043] CHIP:DL: Bluez disconnected
+[63.627679][1042:1043] CHIP:DL: Bluez notify CHIPoBluez connection disconnected
+[63.627902][1042:1042] CHIP:DL: renamed tmp file to file (/tmp/chip_counters.ini)
+[63.627978][1042:1042] CHIP:DL: NVS set: chip-counters/total-operational-hours = 0 (0x0)
+[63.628102][1042:1042] CHIP:DL: Inet Layer shutdown
+[63.628133][1042:1042] CHIP:DL: BLE shutdown
+[63.635944][1042:1042] CHIP:DL: System Layer shutdown
+[63.637608][1042:1042] CHIP:TOO: Run command failure: src/controller/CHIPDeviceController.cpp:1145: CHIP Error 0x000000AC: Internal error
+/ #

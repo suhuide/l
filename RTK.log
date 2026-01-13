@@ -1,0 +1,1015 @@
+eric@u24:~/Desktop$ cd ../rtk/nc/
+eric@u24:~/rtk/nc$ ls /dev/ttyA*
+/dev/ttyACM0
+eric@u24:~/rtk/nc$ ./nc
+INFO - Starting NTRIP client...
+ERROR - Failed to open serial port /dev/ttyACM0
+INFO - NTRIP client stopped
+eric@u24:~/rtk/nc$ systemctl stop gpsd
+Stopping 'gpsd.service', but its triggering units are still active:
+gpsd.socket
+eric@u24:~/rtk/nc$ ./nc
+INFO - Starting NTRIP client...
+ERROR - Failed to open serial port /dev/ttyACM0
+INFO - NTRIP client stopped
+eric@u24:~/rtk/nc$ ps aux | grep ttyACM0
+eric        3532  0.0  0.0  17812  2288 pts/0    S+   15:22   0:00 grep --color=auto ttyACM0
+eric@u24:~/rtk/nc$ kill -9 ttyACM0
+bash: kill: ttyACM0: arguments must be process or job IDs
+eric@u24:~/rtk/nc$ sudo ./nc
+[sudo] password for eric: 
+INFO - Starting NTRIP client...
+INFO - Connected to serial port /dev/ttyACM0 at 115200 baud
+INFO - NTRIP server response: ICY 200 OK
+INFO - Successfully connected to NTRIP server
+INFO - NTRIP client started successfully
+WARNING - No GGA data received from serial port (count: 10)
+DEBUG - Received GGA from serial: $GNGGA,072333.000,2233.025614,N,11358.848459,E,1,40,0.67,21.082,M,-2.408,M,,*5D
+INFO - Send $GNGGA,072333.000,2233.025614,N,11358.848459,E,1,40,0.67,21.082,M,-2.408,M,,*5D
+INFO - Received (73)bytes from server : 
+\xD3\x00\x13...
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 20)
+DEBUG - Received GGA from serial: $GNGGA,072334.000,2233.024727,N,11358.846155,E,5,40,0.65,17.558,M,-2.407,M,1.0,0680*72
+INFO - Send $GNGGA,072334.000,2233.024727,N,11358.846155,E,5,40,0.65,17.558,M,-2.407,M,1.0,0680*72
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 30)
+DEBUG - Received GGA from serial: $GNGGA,072335.000,2233.024549,N,11358.845820,E,5,39,0.67,19.465,M,-2.408,M,1.0,0680*73
+INFO - Send $GNGGA,072335.000,2233.024549,N,11358.845820,E,5,39,0.67,19.465,M,-2.408,M,1.0,0680*73
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 40)
+DEBUG - Received GGA from serial: $GNGGA,072336.000,2233.024717,N,11358.845733,E,5,39,0.68,19.686,M,-2.408,M,1.0,0680*74
+INFO - Send $GNGGA,072336.000,2233.024717,N,11358.845733,E,5,39,0.68,19.686,M,-2.408,M,1.0,0680*74
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+DEBUG - Received GGA from serial: $GNGGA,072337.000,2233.024836,N,11358.845749,E,5,40,0.68,19.275,M,-2.408,M,1.0,0680*72
+INFO - Send $GNGGA,072337.000,2233.024836,N,11358.845749,E,5,40,0.68,19.275,M,-2.408,M,1.0,0680*72
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 50)
+DEBUG - Received GGA from serial: $GNGGA,072338.000,2233.024824,N,11358.845770,E,5,40,0.64,18.708,M,-2.407,M,1.0,0680*79
+INFO - Send $GNGGA,072338.000,2233.024824,N,11358.845770,E,5,40,0.64,18.708,M,-2.407,M,1.0,0680*79
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 60)
+DEBUG - Received GGA from serial: $GNGGA,072339.000,2233.024814,N,11358.845768,E,5,40,0.65,18.799,M,-2.407,M,1.0,0680*7B
+INFO - Send $GNGGA,072339.000,2233.024814,N,11358.845768,E,5,40,0.65,18.799,M,-2.407,M,1.0,0680*7B
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 70)
+DEBUG - Received GGA from serial: $GNGGA,072340.000,2233.024780,N,11358.845766,E,5,40,0.62,19.084,M,-2.408,M,1.0,0680*7B
+INFO - Send $GNGGA,072340.000,2233.024780,N,11358.845766,E,5,40,0.62,19.084,M,-2.408,M,1.0,0680*7B
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+DEBUG - Received GGA from serial: $GNGGA,072341.000,2233.024739,N,11358.845765,E,5,40,0.71,19.414,M,-2.408,M,1.0,0680*74
+INFO - Send $GNGGA,072341.000,2233.024739,N,11358.845765,E,5,40,0.71,19.414,M,-2.408,M,1.0,0680*74
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 80)
+DEBUG - Received GGA from serial: $GNGGA,072342.000,2233.024714,N,11358.845769,E,5,40,0.70,19.608,M,-2.408,M,1.0,0680*7A
+INFO - Send $GNGGA,072342.000,2233.024714,N,11358.845769,E,5,40,0.70,19.608,M,-2.408,M,1.0,0680*7A
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 90)
+DEBUG - Received GGA from serial: $GNGGA,072343.000,2233.024688,N,11358.845761,E,5,39,0.67,19.815,M,-2.408,M,1.0,0680*7D
+INFO - Send $GNGGA,072343.000,2233.024688,N,11358.845761,E,5,39,0.67,19.815,M,-2.408,M,1.0,0680*7D
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 100)
+INFO - Received (73)bytes from server : 
+\xD3\x00\x13...
+DEBUG - Received GGA from serial: $GNGGA,072344.000,2233.024674,N,11358.845770,E,5,40,0.69,19.791,M,-2.407,M,1.0,0680*75
+INFO - Send $GNGGA,072344.000,2233.024674,N,11358.845770,E,5,40,0.69,19.791,M,-2.407,M,1.0,0680*75
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+DEBUG - Received GGA from serial: $GNGGA,072345.000,2233.024655,N,11358.845761,E,5,39,0.67,19.775,M,-2.408,M,1.0,0680*72
+INFO - Send $GNGGA,072345.000,2233.024655,N,11358.845761,E,5,39,0.67,19.775,M,-2.408,M,1.0,0680*72
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 110)
+DEBUG - Received GGA from serial: $GNGGA,072346.000,2233.024687,N,11358.845778,E,5,40,0.69,19.695,M,-2.408,M,1.0,0680*79
+INFO - Send $GNGGA,072346.000,2233.024687,N,11358.845778,E,5,40,0.69,19.695,M,-2.408,M,1.0,0680*79
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 120)
+DEBUG - Received GGA from serial: $GNGGA,072347.000,2233.024646,N,11358.845763,E,5,41,0.73,19.685,M,-2.408,M,1.0,0680*74
+INFO - Send $GNGGA,072347.000,2233.024646,N,11358.845763,E,5,41,0.73,19.685,M,-2.408,M,1.0,0680*74
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 130)
+DEBUG - Received GGA from serial: $GNGGA,072348.000,2233.024596,N,11358.845763,E,5,41,0.71,19.832,M,-2.408,M,1.0,0680*75
+INFO - Send $GNGGA,072348.000,2233.024596,N,11358.845763,E,5,41,0.71,19.832,M,-2.408,M,1.0,0680*75
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 140)
+DEBUG - Received GGA from serial: $GNGGA,072349.000,2233.024620,N,11358.845770,E,5,41,0.71,19.826,M,-2.408,M,1.0,0680*7D
+INFO - Send $GNGGA,072349.000,2233.024620,N,11358.845770,E,5,41,0.71,19.826,M,-2.408,M,1.0,0680*7D
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+DEBUG - Received GGA from serial: $GNGGA,072350.000,2233.024507,N,11358.845732,E,5,41,0.65,19.957,M,-2.408,M,1.0,0680*77
+INFO - Send $GNGGA,072350.000,2233.024507,N,11358.845732,E,5,41,0.65,19.957,M,-2.408,M,1.0,0680*77
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 150)
+DEBUG - Received GGA from serial: $GNGGA,072351.000,2233.024586,N,11358.845763,E,5,41,0.67,19.713,M,-2.408,M,1.0,0680*77
+INFO - Send $GNGGA,072351.000,2233.024586,N,11358.845763,E,5,41,0.67,19.713,M,-2.408,M,1.0,0680*77
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 160)
+DEBUG - Received GGA from serial: $GNGGA,072352.000,2233.024603,N,11358.845761,E,5,41,0.75,19.824,M,-2.408,M,1.0,0680*70
+INFO - Send $GNGGA,072352.000,2233.024603,N,11358.845761,E,5,41,0.75,19.824,M,-2.408,M,1.0,0680*70
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 170)
+DEBUG - Received GGA from serial: $GNGGA,072353.000,2233.024591,N,11358.845750,E,5,41,0.66,20.212,M,-2.407,M,1.0,0680*73
+INFO - Send $GNGGA,072353.000,2233.024591,N,11358.845750,E,5,41,0.66,20.212,M,-2.407,M,1.0,0680*73
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+DEBUG - Received GGA from serial: $GNGGA,072354.000,2233.024606,N,11358.845750,E,5,40,0.65,20.120,M,-2.408,M,1.0,0680*76
+INFO - Send $GNGGA,072354.000,2233.024606,N,11358.845750,E,5,40,0.65,20.120,M,-2.408,M,1.0,0680*76
+INFO - Received (1109)bytes from server : 
+\xD3\x00\x13...
+WARNING - No GGA data received from serial port (count: 180)
+DEBUG - Received GGA from serial: $GNGGA,072355.000,2233.024782,N,11358.845803,E,5,40,0.68,20.146,M,-2.408,M,1.0,0680*7E
+INFO - Send $GNGGA,072355.000,2233.024782,N,11358.845803,E,5,40,0.68,20.146,M,-2.408,M,1.0,0680*7E
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 190)
+DEBUG - Received GGA from serial: $GNGGA,072356.000,2233.024973,N,11358.845850,E,5,40,0.68,19.877,M,-2.408,M,1.0,0680*7A
+INFO - Send $GNGGA,072356.000,2233.024973,N,11358.845850,E,5,40,0.68,19.877,M,-2.408,M,1.0,0680*7A
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 200)
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+DEBUG - Received GGA from serial: $GNGGA,072357.000,2233.024933,N,11358.845834,E,5,39,0.74,20.031,M,-2.408,M,1.0,0680*7E
+INFO - Send $GNGGA,072357.000,2233.024933,N,11358.845834,E,5,39,0.74,20.031,M,-2.408,M,1.0,0680*7E
+DEBUG - Received GGA from serial: $GNGGA,072358.000,2233.024880,N,11358.845801,E,5,39,0.67,20.072,M,-2.408,M,1.0,0680*7B
+INFO - Send $GNGGA,072358.000,2233.024880,N,11358.845801,E,5,39,0.67,20.072,M,-2.408,M,1.0,0680*7B
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 210)
+DEBUG - Received GGA from serial: $GNGGA,072359.000,2233.024928,N,11358.845808,E,5,38,0.77,20.285,M,-2.407,M,1.0,0680*75
+INFO - Send $GNGGA,072359.000,2233.024928,N,11358.845808,E,5,38,0.77,20.285,M,-2.407,M,1.0,0680*75
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 220)
+DEBUG - Received GGA from serial: $GNGGA,072400.000,2233.024991,N,11358.845831,E,5,39,0.72,20.442,M,-2.408,M,1.0,0680*70
+INFO - Send $GNGGA,072400.000,2233.024991,N,11358.845831,E,5,39,0.72,20.442,M,-2.408,M,1.0,0680*70
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 230)
+DEBUG - Received GGA from serial: $GNGGA,072401.000,2233.025083,N,11358.845859,E,5,40,0.73,20.529,M,-2.408,M,1.0,0680*77
+INFO - Send $GNGGA,072401.000,2233.025083,N,11358.845859,E,5,40,0.73,20.529,M,-2.408,M,1.0,0680*77
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+DEBUG - Received GGA from serial: $GNGGA,072402.000,2233.025144,N,11358.845862,E,5,41,0.74,21.209,M,-2.407,M,1.0,0680*7B
+INFO - Send $GNGGA,072402.000,2233.025144,N,11358.845862,E,5,41,0.74,21.209,M,-2.407,M,1.0,0680*7B
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 240)
+DEBUG - Received GGA from serial: $GNGGA,072403.000,2233.025170,N,11358.845853,E,5,41,0.71,21.785,M,-2.408,M,1.0,0680*74
+INFO - Send $GNGGA,072403.000,2233.025170,N,11358.845853,E,5,41,0.71,21.785,M,-2.408,M,1.0,0680*74
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 250)
+DEBUG - Received GGA from serial: $GNGGA,072404.000,2233.025109,N,11358.845807,E,5,41,0.68,22.315,M,-2.408,M,1.0,0680*7A
+INFO - Send $GNGGA,072404.000,2233.025109,N,11358.845807,E,5,41,0.68,22.315,M,-2.408,M,1.0,0680*7A
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 260)
+INFO - Received (73)bytes from server : 
+\xD3\x00\x13...
+DEBUG - Received GGA from serial: $GNGGA,072405.000,2233.025046,N,11358.845757,E,5,41,0.70,22.145,M,-2.408,M,1.0,0680*75
+INFO - Send $GNGGA,072405.000,2233.025046,N,11358.845757,E,5,41,0.70,22.145,M,-2.408,M,1.0,0680*75
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 270)
+DEBUG - Received GGA from serial: $GNGGA,072406.000,2233.025021,N,11358.845741,E,5,43,0.71,22.375,M,-2.408,M,1.0,0680*72
+INFO - Send $GNGGA,072406.000,2233.025021,N,11358.845741,E,5,43,0.71,22.375,M,-2.408,M,1.0,0680*72
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+DEBUG - Received GGA from serial: $GNGGA,072407.000,2233.024995,N,11358.845743,E,5,42,0.76,22.556,M,-2.407,M,1.0,0680*78
+INFO - Send $GNGGA,072407.000,2233.024995,N,11358.845743,E,5,42,0.76,22.556,M,-2.407,M,1.0,0680*78
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 280)
+DEBUG - Received GGA from serial: $GNGGA,072408.000,2233.025025,N,11358.845741,E,5,41,0.75,22.831,M,-2.408,M,1.0,0680*75
+INFO - Send $GNGGA,072408.000,2233.025025,N,11358.845741,E,5,41,0.75,22.831,M,-2.408,M,1.0,0680*75
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 290)
+DEBUG - Received GGA from serial: $GNGGA,072409.000,2233.024984,N,11358.845725,E,5,42,0.73,23.290,M,-2.408,M,1.0,0680*70
+INFO - Send $GNGGA,072409.000,2233.024984,N,11358.845725,E,5,42,0.73,23.290,M,-2.408,M,1.0,0680*70
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 300)
+DEBUG - Received GGA from serial: $GNGGA,072410.000,2233.024898,N,11358.845665,E,5,41,0.71,23.832,M,-2.408,M,1.0,0680*72
+INFO - Send $GNGGA,072410.000,2233.024898,N,11358.845665,E,5,41,0.71,23.832,M,-2.408,M,1.0,0680*72
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+DEBUG - Received GGA from serial: $GNGGA,072411.000,2233.024858,N,11358.845631,E,5,41,0.80,24.083,M,-2.408,M,1.0,0680*75
+INFO - Send $GNGGA,072411.000,2233.024858,N,11358.845631,E,5,41,0.80,24.083,M,-2.408,M,1.0,0680*75
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 310)
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+DEBUG - Received GGA from serial: $GNGGA,072412.000,2233.024892,N,11358.845629,E,5,41,0.77,24.400,M,-2.408,M,1.0,0680*7E
+INFO - Send $GNGGA,072412.000,2233.024892,N,11358.845629,E,5,41,0.77,24.400,M,-2.408,M,1.0,0680*7E
+WARNING - No GGA data received from serial port (count: 320)
+DEBUG - Received GGA from serial: $GNGGA,072413.000,2233.024912,N,11358.845619,E,5,42,0.70,24.817,M,-2.408,M,1.0,0680*7B
+INFO - Send $GNGGA,072413.000,2233.024912,N,11358.845619,E,5,42,0.70,24.817,M,-2.408,M,1.0,0680*7B
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 330)
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+DEBUG - Received GGA from serial: $GNGGA,072414.000,2233.024858,N,11358.845574,E,5,42,0.70,25.436,M,-2.408,M,1.0,0680*75
+INFO - Send $GNGGA,072414.000,2233.024858,N,11358.845574,E,5,42,0.70,25.436,M,-2.408,M,1.0,0680*75
+WARNING - No GGA data received from serial port (count: 340)
+INFO - Received (73)bytes from server : 
+\xD3\x00\x13...
+DEBUG - Received GGA from serial: $GNGGA,072415.000,2233.024805,N,11358.845530,E,5,42,0.64,26.056,M,-2.408,M,1.0,0680*78
+INFO - Send $GNGGA,072415.000,2233.024805,N,11358.845530,E,5,42,0.64,26.056,M,-2.408,M,1.0,0680*78
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+DEBUG - Received GGA from serial: $GNGGA,072416.000,2233.024770,N,11358.845502,E,5,42,0.85,26.759,M,-2.408,M,1.0,0680*70
+INFO - Send $GNGGA,072416.000,2233.024770,N,11358.845502,E,5,42,0.85,26.759,M,-2.408,M,1.0,0680*70
+WARNING - No GGA data received from serial port (count: 350)
+DEBUG - Received GGA from serial: $GNGGA,072417.000,2233.024674,N,11358.845430,E,5,42,0.85,27.456,M,-2.408,M,1.0,0680*79
+INFO - Send $GNGGA,072417.000,2233.024674,N,11358.845430,E,5,42,0.85,27.456,M,-2.408,M,1.0,0680*79
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 360)
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+DEBUG - Received GGA from serial: $GNGGA,072418.000,2233.024590,N,11358.845377,E,5,41,0.69,27.922,M,-2.408,M,1.0,0680*74
+INFO - Send $GNGGA,072418.000,2233.024590,N,11358.845377,E,5,41,0.69,27.922,M,-2.408,M,1.0,0680*74
+WARNING - No GGA data received from serial port (count: 370)
+DEBUG - Received GGA from serial: $GNGGA,072419.000,2233.024509,N,11358.845337,E,5,42,0.67,28.249,M,-2.408,M,1.0,0680*75
+INFO - Send $GNGGA,072419.000,2233.024509,N,11358.845337,E,5,42,0.67,28.249,M,-2.408,M,1.0,0680*75
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+DEBUG - Received GGA from serial: $GNGGA,072420.000,2233.024433,N,11358.845303,E,5,42,0.67,28.363,M,-2.408,M,1.0,0680*79
+INFO - Send $GNGGA,072420.000,2233.024433,N,11358.845303,E,5,42,0.67,28.363,M,-2.408,M,1.0,0680*79
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 380)
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+DEBUG - Received GGA from serial: $GNGGA,072421.000,2233.024338,N,11358.845240,E,5,42,0.81,28.925,M,-2.408,M,1.0,0680*72
+INFO - Send $GNGGA,072421.000,2233.024338,N,11358.845240,E,5,42,0.81,28.925,M,-2.408,M,1.0,0680*72
+WARNING - No GGA data received from serial port (count: 390)
+DEBUG - Received GGA from serial: $GNGGA,072422.000,2233.024332,N,11358.845208,E,5,42,0.65,29.366,M,-2.407,M,1.0,0680*7E
+INFO - Send $GNGGA,072422.000,2233.024332,N,11358.845208,E,5,42,0.65,29.366,M,-2.407,M,1.0,0680*7E
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 400)
+DEBUG - Received GGA from serial: $GNGGA,072423.000,2233.024293,N,11358.845170,E,5,42,0.66,29.568,M,-2.408,M,1.0,0680*7D
+INFO - Send $GNGGA,072423.000,2233.024293,N,11358.845170,E,5,42,0.66,29.568,M,-2.408,M,1.0,0680*7D
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 410)
+DEBUG - Received GGA from serial: $GNGGA,072424.000,2233.024261,N,11358.845139,E,5,41,0.76,29.708,M,-2.408,M,1.0,0680*7C
+INFO - Send $GNGGA,072424.000,2233.024261,N,11358.845139,E,5,41,0.76,29.708,M,-2.408,M,1.0,0680*7C
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+INFO - Received (73)bytes from server : 
+\xD3\x00\x13...
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+DEBUG - Received GGA from serial: $GNGGA,072425.000,2233.024219,N,11358.845093,E,5,41,0.85,29.968,M,-2.408,M,1.0,0680*77
+INFO - Send $GNGGA,072425.000,2233.024219,N,11358.845093,E,5,41,0.85,29.968,M,-2.408,M,1.0,0680*77
+WARNING - No GGA data received from serial port (count: 420)
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+DEBUG - Received GGA from serial: $GNGGA,072426.000,2233.024155,N,11358.845063,E,5,41,0.77,30.164,M,-2.408,M,1.0,0680*71
+INFO - Send $GNGGA,072426.000,2233.024155,N,11358.845063,E,5,41,0.77,30.164,M,-2.408,M,1.0,0680*71
+WARNING - No GGA data received from serial port (count: 430)
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+DEBUG - Received GGA from serial: $GNGGA,072427.000,2233.024110,N,11358.845044,E,5,42,0.77,30.274,M,-2.407,M,1.0,0680*7A
+INFO - Send $GNGGA,072427.000,2233.024110,N,11358.845044,E,5,42,0.77,30.274,M,-2.407,M,1.0,0680*7A
+WARNING - No GGA data received from serial port (count: 440)
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+DEBUG - Received GGA from serial: $GNGGA,072428.000,2233.024031,N,11358.844997,E,5,42,0.80,30.538,M,-2.408,M,1.0,0680*79
+INFO - Send $GNGGA,072428.000,2233.024031,N,11358.844997,E,5,42,0.80,30.538,M,-2.408,M,1.0,0680*79
+WARNING - No GGA data received from serial port (count: 450)
+DEBUG - Received GGA from serial: $GNGGA,072429.000,2233.023976,N,11358.844966,E,5,42,0.75,30.747,M,-2.407,M,1.0,0680*74
+INFO - Send $GNGGA,072429.000,2233.023976,N,11358.844966,E,5,42,0.75,30.747,M,-2.407,M,1.0,0680*74
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+DEBUG - Received GGA from serial: $GNGGA,072430.000,2233.023961,N,11358.844974,E,5,43,0.75,30.757,M,-2.408,M,1.0,0680*76
+INFO - Send $GNGGA,072430.000,2233.023961,N,11358.844974,E,5,43,0.75,30.757,M,-2.408,M,1.0,0680*76
+WARNING - No GGA data received from serial port (count: 460)
+DEBUG - Received GGA from serial: $GNGGA,072431.000,2233.023907,N,11358.844945,E,5,43,0.75,30.975,M,-2.408,M,1.0,0680*7B
+INFO - Send $GNGGA,072431.000,2233.023907,N,11358.844945,E,5,43,0.75,30.975,M,-2.408,M,1.0,0680*7B
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 470)
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+DEBUG - Received GGA from serial: $GNGGA,072432.000,2233.023886,N,11358.844950,E,5,43,0.75,31.001,M,-2.408,M,1.0,0680*7F
+INFO - Send $GNGGA,072432.000,2233.023886,N,11358.844950,E,5,43,0.75,31.001,M,-2.408,M,1.0,0680*7F
+WARNING - No GGA data received from serial port (count: 480)
+DEBUG - Received GGA from serial: $GNGGA,072433.000,2233.023881,N,11358.844970,E,5,42,0.75,31.024,M,-2.407,M,1.0,0680*72
+INFO - Send $GNGGA,072433.000,2233.023881,N,11358.844970,E,5,42,0.75,31.024,M,-2.407,M,1.0,0680*72
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+DEBUG - Received GGA from serial: $GNGGA,072434.000,2233.023883,N,11358.844989,E,5,42,0.75,31.139,M,-2.408,M,1.0,0680*73
+INFO - Send $GNGGA,072434.000,2233.023883,N,11358.844989,E,5,42,0.75,31.139,M,-2.408,M,1.0,0680*73
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 490)
+DEBUG - Received GGA from serial: $GNGGA,072435.000,2233.023871,N,11358.844981,E,5,42,0.75,31.134,M,-2.408,M,1.0,0680*7A
+INFO - Send $GNGGA,072435.000,2233.023871,N,11358.844981,E,5,42,0.75,31.134,M,-2.408,M,1.0,0680*7A
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 500)
+INFO - Received (73)bytes from server : 
+\xD3\x00\x13...
+DEBUG - Received GGA from serial: $GNGGA,072436.000,2233.023889,N,11358.844999,E,5,41,0.76,31.066,M,-2.408,M,1.0,0680*71
+INFO - Send $GNGGA,072436.000,2233.023889,N,11358.844999,E,5,41,0.76,31.066,M,-2.408,M,1.0,0680*71
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 510)
+DEBUG - Received GGA from serial: $GNGGA,072437.000,2233.023871,N,11358.845007,E,5,42,0.81,30.981,M,-2.408,M,1.0,0680*72
+INFO - Send $GNGGA,072437.000,2233.023871,N,11358.845007,E,5,42,0.81,30.981,M,-2.408,M,1.0,0680*72
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 520)
+DEBUG - Received GGA from serial: $GNGGA,072438.000,2233.023851,N,11358.844991,E,5,42,0.76,30.888,M,-2.408,M,1.0,0680*78
+INFO - Send $GNGGA,072438.000,2233.023851,N,11358.844991,E,5,42,0.76,30.888,M,-2.408,M,1.0,0680*78
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+DEBUG - Received GGA from serial: $GNGGA,072439.000,2233.023871,N,11358.845027,E,5,42,0.72,30.744,M,-2.408,M,1.0,0680*75
+INFO - Send $GNGGA,072439.000,2233.023871,N,11358.845027,E,5,42,0.72,30.744,M,-2.408,M,1.0,0680*75
+WARNING - No GGA data received from serial port (count: 530)
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+DEBUG - Received GGA from serial: $GNGGA,072440.000,2233.023891,N,11358.845043,E,5,42,0.77,30.725,M,-2.408,M,1.0,0680*75
+INFO - Send $GNGGA,072440.000,2233.023891,N,11358.845043,E,5,42,0.77,30.725,M,-2.408,M,1.0,0680*75
+WARNING - No GGA data received from serial port (count: 540)
+DEBUG - Received GGA from serial: $GNGGA,072441.000,2233.023887,N,11358.845050,E,5,43,0.77,30.597,M,-2.408,M,1.0,0680*7B
+INFO - Send $GNGGA,072441.000,2233.023887,N,11358.845050,E,5,43,0.77,30.597,M,-2.408,M,1.0,0680*7B
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 550)
+DEBUG - Received GGA from serial: $GNGGA,072442.000,2233.023900,N,11358.845054,E,5,42,0.75,30.519,M,-2.408,M,1.0,0680*77
+INFO - Send $GNGGA,072442.000,2233.023900,N,11358.845054,E,5,42,0.75,30.519,M,-2.408,M,1.0,0680*77
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+DEBUG - Received GGA from serial: $GNGGA,072443.000,2233.023912,N,11358.845072,E,5,42,0.80,30.405,M,-2.408,M,1.0,0680*77
+INFO - Send $GNGGA,072443.000,2233.023912,N,11358.845072,E,5,42,0.80,30.405,M,-2.408,M,1.0,0680*77
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 560)
+DEBUG - Received GGA from serial: $GNGGA,072444.000,2233.023919,N,11358.845086,E,5,42,0.81,30.343,M,-2.407,M,1.0,0680*7B
+INFO - Send $GNGGA,072444.000,2233.023919,N,11358.845086,E,5,42,0.81,30.343,M,-2.407,M,1.0,0680*7B
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 570)
+DEBUG - Received GGA from serial: $GNGGA,072445.000,2233.023913,N,11358.845085,E,5,41,0.80,30.341,M,-2.408,M,1.0,0680*7C
+INFO - Send $GNGGA,072445.000,2233.023913,N,11358.845085,E,5,41,0.80,30.341,M,-2.408,M,1.0,0680*7C
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+INFO - Received (73)bytes from server : 
+\xD3\x00\x13...
+WARNING - No GGA data received from serial port (count: 580)
+DEBUG - Received GGA from serial: $GNGGA,072446.000,2233.023923,N,11358.845099,E,5,42,0.80,30.223,M,-2.408,M,1.0,0680*77
+INFO - Send $GNGGA,072446.000,2233.023923,N,11358.845099,E,5,42,0.80,30.223,M,-2.408,M,1.0,0680*77
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+DEBUG - Received GGA from serial: $GNGGA,072447.000,2233.023909,N,11358.845106,E,5,41,0.77,30.184,M,-2.408,M,1.0,0680*7C
+INFO - Send $GNGGA,072447.000,2233.023909,N,11358.845106,E,5,41,0.77,30.184,M,-2.408,M,1.0,0680*7C
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 590)
+DEBUG - Received GGA from serial: $GNGGA,072448.000,2233.023925,N,11358.845112,E,5,42,0.77,30.063,M,-2.408,M,1.0,0680*73
+INFO - Send $GNGGA,072448.000,2233.023925,N,11358.845112,E,5,42,0.77,30.063,M,-2.408,M,1.0,0680*73
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 600)
+DEBUG - Received GGA from serial: $GNGGA,072449.000,2233.023927,N,11358.845110,E,5,42,0.71,29.930,M,-2.408,M,1.0,0680*73
+INFO - Send $GNGGA,072449.000,2233.023927,N,11358.845110,E,5,42,0.71,29.930,M,-2.408,M,1.0,0680*73
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 610)
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+DEBUG - Received GGA from serial: $GNGGA,072450.000,2233.023924,N,11358.845096,E,5,40,0.71,29.858,M,-2.407,M,1.0,0680*75
+INFO - Send $GNGGA,072450.000,2233.023924,N,11358.845096,E,5,40,0.71,29.858,M,-2.407,M,1.0,0680*75
+DEBUG - Received GGA from serial: $GNGGA,072451.000,2233.023940,N,11358.845107,E,5,40,0.71,29.797,M,-2.408,M,1.0,0680*7C
+INFO - Send $GNGGA,072451.000,2233.023940,N,11358.845107,E,5,40,0.71,29.797,M,-2.408,M,1.0,0680*7C
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 620)
+DEBUG - Received GGA from serial: $GNGGA,072452.000,2233.023967,N,11358.845119,E,5,42,0.66,29.687,M,-2.408,M,1.0,0680*71
+INFO - Send $GNGGA,072452.000,2233.023967,N,11358.845119,E,5,42,0.66,29.687,M,-2.408,M,1.0,0680*71
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 630)
+DEBUG - Received GGA from serial: $GNGGA,072453.000,2233.023990,N,11358.845136,E,5,42,0.66,29.653,M,-2.408,M,1.0,0680*7C
+INFO - Send $GNGGA,072453.000,2233.023990,N,11358.845136,E,5,42,0.66,29.653,M,-2.408,M,1.0,0680*7C
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 640)
+DEBUG - Received GGA from serial: $GNGGA,072454.000,2233.024010,N,11358.845134,E,5,42,0.64,29.640,M,-2.408,M,1.0,0680*7F
+INFO - Send $GNGGA,072454.000,2233.024010,N,11358.845134,E,5,42,0.64,29.640,M,-2.408,M,1.0,0680*7F
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 650)
+DEBUG - Received GGA from serial: $GNGGA,072455.000,2233.024017,N,11358.845113,E,5,42,0.67,29.677,M,-2.408,M,1.0,0680*7B
+INFO - Send $GNGGA,072455.000,2233.024017,N,11358.845113,E,5,42,0.67,29.677,M,-2.408,M,1.0,0680*7B
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+INFO - Received (73)bytes from server : 
+\xD3\x00\x13...
+DEBUG - Received GGA from serial: $GNGGA,072456.000,2233.024033,N,11358.845108,E,5,41,0.68,29.619,M,-2.408,M,1.0,0680*70
+INFO - Send $GNGGA,072456.000,2233.024033,N,11358.845108,E,5,41,0.68,29.619,M,-2.408,M,1.0,0680*70
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 660)
+DEBUG - Received GGA from serial: $GNGGA,072457.000,2233.024033,N,11358.845088,E,5,42,0.68,29.618,M,-2.408,M,1.0,0680*7A
+INFO - Send $GNGGA,072457.000,2233.024033,N,11358.845088,E,5,42,0.68,29.618,M,-2.408,M,1.0,0680*7A
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 670)
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+DEBUG - Received GGA from serial: $GNGGA,072458.000,2233.024044,N,11358.845086,E,5,42,0.67,29.605,M,-2.408,M,1.0,0680*78
+INFO - Send $GNGGA,072458.000,2233.024044,N,11358.845086,E,5,42,0.67,29.605,M,-2.408,M,1.0,0680*78
+WARNING - No GGA data received from serial port (count: 680)
+DEBUG - Received GGA from serial: $GNGGA,072459.000,2233.024061,N,11358.845117,E,5,42,0.69,29.560,M,-2.408,M,1.0,0680*79
+INFO - Send $GNGGA,072459.000,2233.024061,N,11358.845117,E,5,42,0.69,29.560,M,-2.408,M,1.0,0680*79
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+DEBUG - Received GGA from serial: $GNGGA,072500.000,2233.024080,N,11358.845132,E,5,41,0.66,29.524,M,-2.408,M,1.0,0680*70
+INFO - Send $GNGGA,072500.000,2233.024080,N,11358.845132,E,5,41,0.66,29.524,M,-2.408,M,1.0,0680*70
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 690)
+DEBUG - Received GGA from serial: $GNGGA,072501.000,2233.024086,N,11358.845143,E,5,40,0.65,29.498,M,-2.408,M,1.0,0680*75
+INFO - Send $GNGGA,072501.000,2233.024086,N,11358.845143,E,5,40,0.65,29.498,M,-2.408,M,1.0,0680*75
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 700)
+DEBUG - Received GGA from serial: $GNGGA,072502.000,2233.024103,N,11358.845165,E,5,41,0.68,29.448,M,-2.408,M,1.0,0680*7F
+INFO - Send $GNGGA,072502.000,2233.024103,N,11358.845165,E,5,41,0.68,29.448,M,-2.408,M,1.0,0680*7F
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 710)
+DEBUG - Received GGA from serial: $GNGGA,072503.000,2233.024112,N,11358.845178,E,5,40,0.67,29.400,M,-2.408,M,1.0,0680*70
+INFO - Send $GNGGA,072503.000,2233.024112,N,11358.845178,E,5,40,0.67,29.400,M,-2.408,M,1.0,0680*70
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+DEBUG - Received GGA from serial: $GNGGA,072504.000,2233.024133,N,11358.845195,E,5,40,0.70,29.315,M,-2.408,M,1.0,0680*72
+INFO - Send $GNGGA,072504.000,2233.024133,N,11358.845195,E,5,40,0.70,29.315,M,-2.408,M,1.0,0680*72
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 720)
+DEBUG - Received GGA from serial: $GNGGA,072505.000,2233.024134,N,11358.845192,E,5,40,0.70,29.345,M,-2.408,M,1.0,0680*76
+INFO - Send $GNGGA,072505.000,2233.024134,N,11358.845192,E,5,40,0.70,29.345,M,-2.408,M,1.0,0680*76
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 730)
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+DEBUG - Received GGA from serial: $GNGGA,072506.000,2233.024143,N,11358.845204,E,5,40,0.70,29.314,M,-2.408,M,1.0,0680*7D
+INFO - Send $GNGGA,072506.000,2233.024143,N,11358.845204,E,5,40,0.70,29.314,M,-2.408,M,1.0,0680*7D
+INFO - Received (73)bytes from server : 
+\xD3\x00\x13...
+DEBUG - Received GGA from serial: $GNGGA,072507.000,2233.024164,N,11358.845193,E,5,39,0.67,29.243,M,-2.408,M,1.0,0680*7F
+INFO - Send $GNGGA,072507.000,2233.024164,N,11358.845193,E,5,39,0.67,29.243,M,-2.408,M,1.0,0680*7F
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 740)
+DEBUG - Received GGA from serial: $GNGGA,072508.000,2233.024171,N,11358.845170,E,5,40,0.70,29.157,M,-2.407,M,1.0,0680*78
+INFO - Send $GNGGA,072508.000,2233.024171,N,11358.845170,E,5,40,0.70,29.157,M,-2.407,M,1.0,0680*78
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 750)
+DEBUG - Received GGA from serial: $GNGGA,072509.000,2233.024196,N,11358.845180,E,5,41,0.70,29.080,M,-2.408,M,1.0,0680*7A
+INFO - Send $GNGGA,072509.000,2233.024196,N,11358.845180,E,5,41,0.70,29.080,M,-2.408,M,1.0,0680*7A
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 760)
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+DEBUG - Received GGA from serial: $GNGGA,072510.000,2233.024220,N,11358.845164,E,5,41,0.70,29.008,M,-2.408,M,1.0,0680*76
+INFO - Send $GNGGA,072510.000,2233.024220,N,11358.845164,E,5,41,0.70,29.008,M,-2.408,M,1.0,0680*76
+WARNING - No GGA data received from serial port (count: 770)
+DEBUG - Received GGA from serial: $GNGGA,072511.000,2233.024235,N,11358.845156,E,5,41,0.69,28.936,M,-2.408,M,1.0,0680*7F
+INFO - Send $GNGGA,072511.000,2233.024235,N,11358.845156,E,5,41,0.69,28.936,M,-2.408,M,1.0,0680*7F
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+DEBUG - Received GGA from serial: $GNGGA,072512.000,2233.024260,N,11358.845117,E,5,41,0.79,28.879,M,-2.408,M,1.0,0680*72
+INFO - Send $GNGGA,072512.000,2233.024260,N,11358.845117,E,5,41,0.79,28.879,M,-2.408,M,1.0,0680*72
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 780)
+DEBUG - Received GGA from serial: $GNGGA,072513.000,2233.024274,N,11358.845107,E,5,41,0.73,28.745,M,-2.408,M,1.0,0680*7D
+INFO - Send $GNGGA,072513.000,2233.024274,N,11358.845107,E,5,41,0.73,28.745,M,-2.408,M,1.0,0680*7D
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 790)
+DEBUG - Received GGA from serial: $GNGGA,072514.000,2233.024288,N,11358.845101,E,5,42,0.79,28.717,M,-2.408,M,1.0,0680*71
+INFO - Send $GNGGA,072514.000,2233.024288,N,11358.845101,E,5,42,0.79,28.717,M,-2.408,M,1.0,0680*71
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 800)
+DEBUG - Received GGA from serial: $GNGGA,072515.000,2233.024302,N,11358.845107,E,5,42,0.76,28.638,M,-2.408,M,1.0,0680*76
+INFO - Send $GNGGA,072515.000,2233.024302,N,11358.845107,E,5,42,0.76,28.638,M,-2.408,M,1.0,0680*76
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+DEBUG - Received GGA from serial: $GNGGA,072516.000,2233.024297,N,11358.845105,E,5,41,0.64,28.576,M,-2.408,M,1.0,0680*73
+INFO - Send $GNGGA,072516.000,2233.024297,N,11358.845105,E,5,41,0.64,28.576,M,-2.408,M,1.0,0680*73
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 810)
+INFO - Received (73)bytes from server : 
+\xD3\x00\x13...
+DEBUG - Received GGA from serial: $GNGGA,072517.000,2233.024307,N,11358.845098,E,5,42,0.63,28.532,M,-2.408,M,1.0,0680*7B
+INFO - Send $GNGGA,072517.000,2233.024307,N,11358.845098,E,5,42,0.63,28.532,M,-2.408,M,1.0,0680*7B
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 820)
+DEBUG - Received GGA from serial: $GNGGA,072518.000,2233.024302,N,11358.845086,E,5,41,0.65,28.480,M,-2.408,M,1.0,0680*73
+INFO - Send $GNGGA,072518.000,2233.024302,N,11358.845086,E,5,41,0.65,28.480,M,-2.408,M,1.0,0680*73
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 830)
+DEBUG - Received GGA from serial: $GNGGA,072519.000,2233.024304,N,11358.845081,E,5,42,0.65,28.492,M,-2.408,M,1.0,0680*73
+INFO - Send $GNGGA,072519.000,2233.024304,N,11358.845081,E,5,42,0.65,28.492,M,-2.408,M,1.0,0680*73
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+DEBUG - Received GGA from serial: $GNGGA,072520.000,2233.024296,N,11358.845079,E,5,40,0.67,28.509,M,-2.407,M,1.0,0680*78
+INFO - Send $GNGGA,072520.000,2233.024296,N,11358.845079,E,5,40,0.67,28.509,M,-2.407,M,1.0,0680*78
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 840)
+DEBUG - Received GGA from serial: $GNGGA,072521.000,2233.024292,N,11358.845073,E,5,41,0.68,28.503,M,-2.407,M,1.0,0680*73
+INFO - Send $GNGGA,072521.000,2233.024292,N,11358.845073,E,5,41,0.68,28.503,M,-2.407,M,1.0,0680*73
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 850)
+DEBUG - Received GGA from serial: $GNGGA,072522.000,2233.024285,N,11358.845060,E,5,40,0.66,28.525,M,-2.408,M,1.0,0680*70
+INFO - Send $GNGGA,072522.000,2233.024285,N,11358.845060,E,5,40,0.66,28.525,M,-2.408,M,1.0,0680*70
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 860)
+DEBUG - Received GGA from serial: $GNGGA,072523.000,2233.024288,N,11358.845049,E,5,37,0.63,28.519,M,-2.408,M,1.0,0680*7D
+INFO - Send $GNGGA,072523.000,2233.024288,N,11358.845049,E,5,37,0.63,28.519,M,-2.408,M,1.0,0680*7D
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+DEBUG - Received GGA from serial: $GNGGA,072524.000,2233.024284,N,11358.845049,E,5,37,0.68,28.515,M,-2.408,M,1.0,0680*71
+INFO - Send $GNGGA,072524.000,2233.024284,N,11358.845049,E,5,37,0.68,28.515,M,-2.408,M,1.0,0680*71
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 870)
+DEBUG - Received GGA from serial: $GNGGA,072525.000,2233.024291,N,11358.845045,E,5,39,0.74,28.514,M,-2.408,M,1.0,0680*7A
+INFO - Send $GNGGA,072525.000,2233.024291,N,11358.845045,E,5,39,0.74,28.514,M,-2.408,M,1.0,0680*7A
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 880)
+DEBUG - Received GGA from serial: $GNGGA,072526.000,2233.024276,N,11358.845031,E,5,40,0.66,28.527,M,-2.408,M,1.0,0680*7E
+INFO - Send $GNGGA,072526.000,2233.024276,N,11358.845031,E,5,40,0.66,28.527,M,-2.408,M,1.0,0680*7E
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+INFO - Received (73)bytes from server : 
+\xD3\x00\x13...
+WARNING - No GGA data received from serial port (count: 890)
+DEBUG - Received GGA from serial: $GNGGA,072527.000,2233.024268,N,11358.845018,E,5,39,0.74,28.523,M,-2.408,M,1.0,0680*72
+INFO - Send $GNGGA,072527.000,2233.024268,N,11358.845018,E,5,39,0.74,28.523,M,-2.408,M,1.0,0680*72
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+DEBUG - Received GGA from serial: $GNGGA,072528.000,2233.024268,N,11358.845004,E,5,39,0.74,28.518,M,-2.408,M,1.0,0680*78
+INFO - Send $GNGGA,072528.000,2233.024268,N,11358.845004,E,5,39,0.74,28.518,M,-2.408,M,1.0,0680*78
+WARNING - No GGA data received from serial port (count: 900)
+DEBUG - Received GGA from serial: $GNGGA,072529.000,2233.024266,N,11358.844989,E,5,38,0.69,28.493,M,-2.408,M,1.0,0680*75
+INFO - Send $GNGGA,072529.000,2233.024266,N,11358.844989,E,5,38,0.69,28.493,M,-2.408,M,1.0,0680*75
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 910)
+DEBUG - Received GGA from serial: $GNGGA,072530.000,2233.024264,N,11358.844981,E,5,38,0.69,28.493,M,-2.408,M,1.0,0680*77
+INFO - Send $GNGGA,072530.000,2233.024264,N,11358.844981,E,5,38,0.69,28.493,M,-2.408,M,1.0,0680*77
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+DEBUG - Received GGA from serial: $GNGGA,072531.000,2233.024268,N,11358.844984,E,5,37,0.74,28.463,M,-2.408,M,1.0,0680*73
+INFO - Send $GNGGA,072531.000,2233.024268,N,11358.844984,E,5,37,0.74,28.463,M,-2.408,M,1.0,0680*73
+WARNING - No GGA data received from serial port (count: 920)
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+DEBUG - Received GGA from serial: $GNGGA,072532.000,2233.024263,N,11358.844974,E,5,37,0.68,28.450,M,-2.408,M,1.0,0680*79
+INFO - Send $GNGGA,072532.000,2233.024263,N,11358.844974,E,5,37,0.68,28.450,M,-2.408,M,1.0,0680*79
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 930)
+DEBUG - Received GGA from serial: $GNGGA,072533.000,2233.024261,N,11358.844972,E,5,36,0.79,28.430,M,-2.408,M,1.0,0680*7B
+INFO - Send $GNGGA,072533.000,2233.024261,N,11358.844972,E,5,36,0.79,28.430,M,-2.408,M,1.0,0680*7B
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 940)
+DEBUG - Received GGA from serial: $GNGGA,072534.000,2233.024262,N,11358.844965,E,5,37,0.79,28.418,M,-2.408,M,1.0,0680*72
+INFO - Send $GNGGA,072534.000,2233.024262,N,11358.844965,E,5,37,0.79,28.418,M,-2.408,M,1.0,0680*72
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+DEBUG - Received GGA from serial: $GNGGA,072535.000,2233.024265,N,11358.844968,E,5,39,0.72,28.400,M,-2.408,M,1.0,0680*75
+INFO - Send $GNGGA,072535.000,2233.024265,N,11358.844968,E,5,39,0.72,28.400,M,-2.408,M,1.0,0680*75
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 950)
+DEBUG - Received GGA from serial: $GNGGA,072536.000,2233.024273,N,11358.844969,E,5,41,0.71,28.369,M,-2.408,M,1.0,0680*74
+INFO - Send $GNGGA,072536.000,2233.024273,N,11358.844969,E,5,41,0.71,28.369,M,-2.408,M,1.0,0680*74
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 960)
+INFO - Received (73)bytes from server : 
+\xD3\x00\x13...
+DEBUG - Received GGA from serial: $GNGGA,072537.000,2233.024272,N,11358.844970,E,5,42,0.71,28.356,M,-2.408,M,1.0,0680*73
+INFO - Send $GNGGA,072537.000,2233.024272,N,11358.844970,E,5,42,0.71,28.356,M,-2.408,M,1.0,0680*73
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 970)
+DEBUG - Received GGA from serial: $GNGGA,072538.000,2233.024276,N,11358.844964,E,5,43,0.73,28.342,M,-2.408,M,1.0,0680*7B
+INFO - Send $GNGGA,072538.000,2233.024276,N,11358.844964,E,5,43,0.73,28.342,M,-2.408,M,1.0,0680*7B
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+DEBUG - Received GGA from serial: $GNGGA,072539.000,2233.024278,N,11358.844974,E,5,42,0.71,28.327,M,-2.408,M,1.0,0680*75
+INFO - Send $GNGGA,072539.000,2233.024278,N,11358.844974,E,5,42,0.71,28.327,M,-2.408,M,1.0,0680*75
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 980)
+DEBUG - Received GGA from serial: $GNGGA,072540.000,2233.024278,N,11358.844969,E,5,42,0.66,28.309,M,-2.408,M,1.0,0680*7D
+INFO - Send $GNGGA,072540.000,2233.024278,N,11358.844969,E,5,42,0.66,28.309,M,-2.408,M,1.0,0680*7D
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 990)
+DEBUG - Received GGA from serial: $GNGGA,072541.000,2233.024276,N,11358.844966,E,5,42,0.71,28.319,M,-2.408,M,1.0,0680*7A
+INFO - Send $GNGGA,072541.000,2233.024276,N,11358.844966,E,5,42,0.71,28.319,M,-2.408,M,1.0,0680*7A
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 1000)
+DEBUG - Received GGA from serial: $GNGGA,072542.000,2233.024281,N,11358.844977,E,5,42,0.71,28.297,M,-2.408,M,1.0,0680*76
+INFO - Send $GNGGA,072542.000,2233.024281,N,11358.844977,E,5,42,0.71,28.297,M,-2.408,M,1.0,0680*76
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+DEBUG - Received GGA from serial: $GNGGA,072543.000,2233.024275,N,11358.844992,E,5,43,0.66,28.306,M,-2.408,M,1.0,0680*79
+INFO - Send $GNGGA,072543.000,2233.024275,N,11358.844992,E,5,43,0.66,28.306,M,-2.408,M,1.0,0680*79
+WARNING - No GGA data received from serial port (count: 1010)
+DEBUG - Received GGA from serial: $GNGGA,072544.000,2233.024272,N,11358.844987,E,5,45,0.66,28.299,M,-2.408,M,1.0,0680*7C
+INFO - Send $GNGGA,072544.000,2233.024272,N,11358.844987,E,5,45,0.66,28.299,M,-2.408,M,1.0,0680*7C
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 1020)
+DEBUG - Received GGA from serial: $GNGGA,072545.000,2233.024271,N,11358.845007,E,5,45,0.68,28.307,M,-2.408,M,1.0,0680*76
+INFO - Send $GNGGA,072545.000,2233.024271,N,11358.845007,E,5,45,0.68,28.307,M,-2.408,M,1.0,0680*76
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 1030)
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+DEBUG - Received GGA from serial: $GNGGA,072546.000,2233.024270,N,11358.845027,E,5,45,0.65,28.317,M,-2.408,M,1.0,0680*7A
+INFO - Send $GNGGA,072546.000,2233.024270,N,11358.845027,E,5,45,0.65,28.317,M,-2.408,M,1.0,0680*7A
+WARNING - No GGA data received from serial port (count: 1040)
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+DEBUG - Received GGA from serial: $GNGGA,072547.000,2233.024271,N,11358.845047,E,5,45,0.69,28.320,M,-2.408,M,1.0,0680*74
+INFO - Send $GNGGA,072547.000,2233.024271,N,11358.845047,E,5,45,0.69,28.320,M,-2.408,M,1.0,0680*74
+INFO - Received (73)bytes from server : 
+\xD3\x00\x13...
+DEBUG - Received GGA from serial: $GNGGA,072548.000,2233.024273,N,11358.845061,E,5,45,0.80,28.309,M,-2.408,M,1.0,0680*71
+INFO - Send $GNGGA,072548.000,2233.024273,N,11358.845061,E,5,45,0.80,28.309,M,-2.408,M,1.0,0680*71
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 1050)
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+DEBUG - Received GGA from serial: $GNGGA,072549.000,2233.024269,N,11358.845086,E,5,45,0.69,28.325,M,-2.408,M,1.0,0680*7B
+INFO - Send $GNGGA,072549.000,2233.024269,N,11358.845086,E,5,45,0.69,28.325,M,-2.408,M,1.0,0680*7B
+WARNING - No GGA data received from serial port (count: 1060)
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+DEBUG - Received GGA from serial: $GNGGA,072550.000,2233.024260,N,11358.845105,E,5,44,0.69,28.367,M,-2.408,M,1.0,0680*77
+INFO - Send $GNGGA,072550.000,2233.024260,N,11358.845105,E,5,44,0.69,28.367,M,-2.408,M,1.0,0680*77
+WARNING - No GGA data received from serial port (count: 1070)
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+DEBUG - Received GGA from serial: $GNGGA,072551.000,2233.024266,N,11358.845134,E,5,45,0.65,28.384,M,-2.408,M,1.0,0680*72
+INFO - Send $GNGGA,072551.000,2233.024266,N,11358.845134,E,5,45,0.65,28.384,M,-2.408,M,1.0,0680*72
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+DEBUG - Received GGA from serial: $GNGGA,072552.000,2233.024266,N,11358.845169,E,5,45,0.69,28.402,M,-2.407,M,1.0,0680*73
+INFO - Send $GNGGA,072552.000,2233.024266,N,11358.845169,E,5,45,0.69,28.402,M,-2.407,M,1.0,0680*73
+WARNING - No GGA data received from serial port (count: 1080)
+DEBUG - Received GGA from serial: $GNGGA,072553.000,2233.024269,N,11358.845207,E,5,45,0.69,28.394,M,-2.408,M,1.0,0680*71
+INFO - Send $GNGGA,072553.000,2233.024269,N,11358.845207,E,5,45,0.69,28.394,M,-2.408,M,1.0,0680*71
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 1090)
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+DEBUG - Received GGA from serial: $GNGGA,072554.000,2233.024268,N,11358.845232,E,5,45,0.67,28.390,M,-2.408,M,1.0,0680*7B
+INFO - Send $GNGGA,072554.000,2233.024268,N,11358.845232,E,5,45,0.67,28.390,M,-2.408,M,1.0,0680*7B
+WARNING - No GGA data received from serial port (count: 1100)
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+DEBUG - Received GGA from serial: $GNGGA,072555.000,2233.024266,N,11358.845259,E,5,44,0.69,28.402,M,-2.408,M,1.0,0680*7A
+INFO - Send $GNGGA,072555.000,2233.024266,N,11358.845259,E,5,44,0.69,28.402,M,-2.408,M,1.0,0680*7A
+WARNING - No GGA data received from serial port (count: 1110)
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+DEBUG - Received GGA from serial: $GNGGA,072556.000,2233.024272,N,11358.845281,E,5,42,0.69,28.414,M,-2.408,M,1.0,0680*78
+INFO - Send $GNGGA,072556.000,2233.024272,N,11358.845281,E,5,42,0.69,28.414,M,-2.408,M,1.0,0680*78
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+DEBUG - Received GGA from serial: $GNGGA,072557.000,2233.024268,N,11358.845307,E,5,42,0.69,28.426,M,-2.408,M,1.0,0680*7C
+INFO - Send $GNGGA,072557.000,2233.024268,N,11358.845307,E,5,42,0.69,28.426,M,-2.408,M,1.0,0680*7C
+WARNING - No GGA data received from serial port (count: 1120)
+INFO - Received (73)bytes from server : 
+\xD3\x00\x13...
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+DEBUG - Received GGA from serial: $GNGGA,072558.000,2233.024267,N,11358.845343,E,5,43,0.69,28.451,M,-2.408,M,1.0,0680*7D
+INFO - Send $GNGGA,072558.000,2233.024267,N,11358.845343,E,5,43,0.69,28.451,M,-2.408,M,1.0,0680*7D
+WARNING - No GGA data received from serial port (count: 1130)
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+DEBUG - Received GGA from serial: $GNGGA,072559.000,2233.024270,N,11358.845372,E,5,43,0.69,28.448,M,-2.408,M,1.0,0680*70
+INFO - Send $GNGGA,072559.000,2233.024270,N,11358.845372,E,5,43,0.69,28.448,M,-2.408,M,1.0,0680*70
+WARNING - No GGA data received from serial port (count: 1140)
+DEBUG - Received GGA from serial: $GNGGA,072600.000,2233.024261,N,11358.845389,E,5,43,0.80,28.494,M,-2.408,M,1.0,0680*7D
+INFO - Send $GNGGA,072600.000,2233.024261,N,11358.845389,E,5,43,0.80,28.494,M,-2.408,M,1.0,0680*7D
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+DEBUG - Received GGA from serial: $GNGGA,072601.000,2233.024250,N,11358.845401,E,5,43,0.84,28.531,M,-2.408,M,1.0,0680*73
+INFO - Send $GNGGA,072601.000,2233.024250,N,11358.845401,E,5,43,0.84,28.531,M,-2.408,M,1.0,0680*73
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 1150)
+DEBUG - Received GGA from serial: $GNGGA,072602.000,2233.024243,N,11358.845416,E,5,42,0.84,28.547,M,-2.408,M,1.0,0680*74
+INFO - Send $GNGGA,072602.000,2233.024243,N,11358.845416,E,5,42,0.84,28.547,M,-2.408,M,1.0,0680*74
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 1160)
+DEBUG - Received GGA from serial: $GNGGA,072603.000,2233.024237,N,11358.845428,E,5,42,0.73,28.561,M,-2.408,M,1.0,0680*77
+INFO - Send $GNGGA,072603.000,2233.024237,N,11358.845428,E,5,42,0.73,28.561,M,-2.408,M,1.0,0680*77
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 1170)
+DEBUG - Received GGA from serial: $GNGGA,072604.000,2233.024233,N,11358.845439,E,5,42,0.76,28.597,M,-2.408,M,1.0,0680*78
+INFO - Send $GNGGA,072604.000,2233.024233,N,11358.845439,E,5,42,0.76,28.597,M,-2.408,M,1.0,0680*78
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+DEBUG - Received GGA from serial: $GNGGA,072605.000,2233.024228,N,11358.845450,E,5,41,0.73,28.605,M,-2.408,M,1.0,0680*72
+INFO - Send $GNGGA,072605.000,2233.024228,N,11358.845450,E,5,41,0.73,28.605,M,-2.408,M,1.0,0680*72
+WARNING - No GGA data received from serial port (count: 1180)
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+DEBUG - Received GGA from serial: $GNGGA,072606.000,2233.024222,N,11358.845463,E,5,42,0.74,28.615,M,-2.408,M,1.0,0680*7E
+INFO - Send $GNGGA,072606.000,2233.024222,N,11358.845463,E,5,42,0.74,28.615,M,-2.408,M,1.0,0680*7E
+WARNING - No GGA data received from serial port (count: 1190)
+DEBUG - Received GGA from serial: $GNGGA,072607.000,2233.024216,N,11358.845476,E,5,42,0.70,28.618,M,-2.408,M,1.0,0680*75
+INFO - Send $GNGGA,072607.000,2233.024216,N,11358.845476,E,5,42,0.70,28.618,M,-2.408,M,1.0,0680*75
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 1200)
+DEBUG - Received GGA from serial: $GNGGA,072608.000,2233.024215,N,11358.845483,E,5,43,0.67,28.649,M,-2.408,M,1.0,0680*70
+INFO - Send $GNGGA,072608.000,2233.024215,N,11358.845483,E,5,43,0.67,28.649,M,-2.408,M,1.0,0680*70
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+INFO - Received (73)bytes from server : 
+\xD3\x00\x13...
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+DEBUG - Received GGA from serial: $GNGGA,072609.000,2233.024208,N,11358.845491,E,5,42,0.68,28.668,M,-2.408,M,1.0,0680*73
+INFO - Send $GNGGA,072609.000,2233.024208,N,11358.845491,E,5,42,0.68,28.668,M,-2.408,M,1.0,0680*73
+WARNING - No GGA data received from serial port (count: 1210)
+DEBUG - Received GGA from serial: $GNGGA,072610.000,2233.024210,N,11358.845503,E,5,41,0.63,28.685,M,-2.408,M,1.0,0680*73
+INFO - Send $GNGGA,072610.000,2233.024210,N,11358.845503,E,5,41,0.63,28.685,M,-2.408,M,1.0,0680*73
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 1220)
+DEBUG - Received GGA from serial: $GNGGA,072611.000,2233.024205,N,11358.845511,E,5,41,0.62,28.702,M,-2.408,M,1.0,0680*7A
+INFO - Send $GNGGA,072611.000,2233.024205,N,11358.845511,E,5,41,0.62,28.702,M,-2.408,M,1.0,0680*7A
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 1230)
+DEBUG - Received GGA from serial: $GNGGA,072612.000,2233.024202,N,11358.845514,E,5,42,0.62,28.721,M,-2.408,M,1.0,0680*79
+INFO - Send $GNGGA,072612.000,2233.024202,N,11358.845514,E,5,42,0.62,28.721,M,-2.408,M,1.0,0680*79
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+DEBUG - Received GGA from serial: $GNGGA,072613.000,2233.024200,N,11358.845533,E,5,42,0.65,28.718,M,-2.408,M,1.0,0680*72
+INFO - Send $GNGGA,072613.000,2233.024200,N,11358.845533,E,5,42,0.65,28.718,M,-2.408,M,1.0,0680*72
+WARNING - No GGA data received from serial port (count: 1240)
+DEBUG - Received GGA from serial: $GNGGA,072614.000,2233.024196,N,11358.845539,E,5,42,0.60,28.743,M,-2.408,M,1.0,0680*78
+INFO - Send $GNGGA,072614.000,2233.024196,N,11358.845539,E,5,42,0.60,28.743,M,-2.408,M,1.0,0680*78
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 1250)
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+DEBUG - Received GGA from serial: $GNGGA,072615.000,2233.024190,N,11358.845553,E,5,42,0.63,28.762,M,-2.408,M,1.0,0680*73
+INFO - Send $GNGGA,072615.000,2233.024190,N,11358.845553,E,5,42,0.63,28.762,M,-2.408,M,1.0,0680*73
+WARNING - No GGA data received from serial port (count: 1260)
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+DEBUG - Received GGA from serial: $GNGGA,072616.000,2233.024185,N,11358.845565,E,5,42,0.64,28.792,M,-2.408,M,1.0,0680*79
+INFO - Send $GNGGA,072616.000,2233.024185,N,11358.845565,E,5,42,0.64,28.792,M,-2.408,M,1.0,0680*79
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+DEBUG - Received GGA from serial: $GNGGA,072617.000,2233.024180,N,11358.845565,E,5,42,0.60,28.810,M,-2.407,M,1.0,0680*73
+INFO - Send $GNGGA,072617.000,2233.024180,N,11358.845565,E,5,42,0.60,28.810,M,-2.407,M,1.0,0680*73
+WARNING - No GGA data received from serial port (count: 1270)
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+DEBUG - Received GGA from serial: $GNGGA,072618.000,2233.024175,N,11358.845579,E,5,42,0.57,28.829,M,-2.407,M,1.0,0680*75
+INFO - Send $GNGGA,072618.000,2233.024175,N,11358.845579,E,5,42,0.57,28.829,M,-2.407,M,1.0,0680*75
+WARNING - No GGA data received from serial port (count: 1280)
+INFO - Received (73)bytes from server : 
+\xD3\x00\x13...
+DEBUG - Received GGA from serial: $GNGGA,072619.000,2233.024161,N,11358.845592,E,5,41,0.57,28.854,M,-2.408,M,1.0,0680*72
+INFO - Send $GNGGA,072619.000,2233.024161,N,11358.845592,E,5,41,0.57,28.854,M,-2.408,M,1.0,0680*72
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 1290)
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+DEBUG - Received GGA from serial: $GNGGA,072620.000,2233.024152,N,11358.845602,E,5,42,0.66,28.867,M,-2.408,M,1.0,0680*73
+INFO - Send $GNGGA,072620.000,2233.024152,N,11358.845602,E,5,42,0.66,28.867,M,-2.408,M,1.0,0680*73
+DEBUG - Received GGA from serial: $GNGGA,072621.000,2233.024139,N,11358.845616,E,5,42,0.69,28.903,M,-2.408,M,1.0,0680*76
+INFO - Send $GNGGA,072621.000,2233.024139,N,11358.845616,E,5,42,0.69,28.903,M,-2.408,M,1.0,0680*76
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 1300)
+DEBUG - Received GGA from serial: $GNGGA,072622.000,2233.024135,N,11358.845629,E,5,42,0.66,28.889,M,-2.408,M,1.0,0680*79
+INFO - Send $GNGGA,072622.000,2233.024135,N,11358.845629,E,5,42,0.66,28.889,M,-2.408,M,1.0,0680*79
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 1310)
+DEBUG - Received GGA from serial: $GNGGA,072623.000,2233.024117,N,11358.845642,E,5,43,0.65,28.923,M,-2.408,M,1.0,0680*76
+INFO - Send $GNGGA,072623.000,2233.024117,N,11358.845642,E,5,43,0.65,28.923,M,-2.408,M,1.0,0680*76
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 1320)
+DEBUG - Received GGA from serial: $GNGGA,072624.000,2233.024101,N,11358.845654,E,5,43,0.65,28.948,M,-2.407,M,1.0,0680*73
+INFO - Send $GNGGA,072624.000,2233.024101,N,11358.845654,E,5,43,0.65,28.948,M,-2.407,M,1.0,0680*73
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 1330)
+DEBUG - Received GGA from serial: $GNGGA,072625.000,2233.024095,N,11358.845658,E,5,44,0.65,28.936,M,-2.408,M,1.0,0680*73
+INFO - Send $GNGGA,072625.000,2233.024095,N,11358.845658,E,5,44,0.65,28.936,M,-2.408,M,1.0,0680*73
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+^C
+eric@u24:~/rtk/nc$ sudo ./nc
+INFO - Starting NTRIP client...
+INFO - Connected to serial port /dev/ttyACM0 at 115200 baud
+INFO - NTRIP server response: ICY 200 OK
+INFO - Successfully connected to NTRIP server
+INFO - NTRIP client started successfully
+DEBUG - Received GGA from serial: $GNGGA,072859.000,2233.023215,N,11358.845869,E,4,43,0.74,30.008,M,-2.408,M,37.0,0680*49
+INFO - Send $GNGGA,072859.000,2233.023215,N,11358.845869,E,4,43,0.74,30.008,M,-2.408,M,37.0,0680*49
+INFO - Received (73)bytes from server : 
+\xD3\x00\x13...
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 10)
+DEBUG - Received GGA from serial: $GNGGA,072900.000,2233.023254,N,11358.845871,E,4,44,0.74,29.990,M,-2.408,M,1.0,0680*7A
+INFO - Send $GNGGA,072900.000,2233.023254,N,11358.845871,E,4,44,0.74,29.990,M,-2.408,M,1.0,0680*7A
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 20)
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+DEBUG - Received GGA from serial: $GNGGA,072901.000,2233.023254,N,11358.845871,E,4,44,0.77,29.991,M,-2.408,M,1.0,0680*79
+INFO - Send $GNGGA,072901.000,2233.023254,N,11358.845871,E,4,44,0.77,29.991,M,-2.408,M,1.0,0680*79
+WARNING - No GGA data received from serial port (count: 30)
+DEBUG - Received GGA from serial: $GNGGA,072902.000,2233.023253,N,11358.845871,E,4,44,0.82,29.998,M,-2.408,M,1.0,0680*7E
+INFO - Send $GNGGA,072902.000,2233.023253,N,11358.845871,E,4,44,0.82,29.998,M,-2.408,M,1.0,0680*7E
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 40)
+DEBUG - Received GGA from serial: $GNGGA,072903.000,2233.023250,N,11358.845868,E,4,44,0.82,29.989,M,-2.408,M,1.0,0680*74
+INFO - Send $GNGGA,072903.000,2233.023250,N,11358.845868,E,4,44,0.82,29.989,M,-2.408,M,1.0,0680*74
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+DEBUG - Received GGA from serial: $GNGGA,072904.000,2233.023249,N,11358.845869,E,4,44,0.77,29.994,M,-2.408,M,1.0,0680*7C
+INFO - Send $GNGGA,072904.000,2233.023249,N,11358.845869,E,4,44,0.77,29.994,M,-2.408,M,1.0,0680*7C
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 50)
+DEBUG - Received GGA from serial: $GNGGA,072905.000,2233.023254,N,11358.845870,E,4,44,0.76,30.002,M,-2.408,M,1.0,0680*76
+INFO - Send $GNGGA,072905.000,2233.023254,N,11358.845870,E,4,44,0.76,30.002,M,-2.408,M,1.0,0680*76
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 60)
+DEBUG - Received GGA from serial: $GNGGA,072906.000,2233.023253,N,11358.845870,E,4,44,0.82,30.008,M,-2.408,M,1.0,0680*73
+INFO - Send $GNGGA,072906.000,2233.023253,N,11358.845870,E,4,44,0.82,30.008,M,-2.408,M,1.0,0680*73
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 70)
+DEBUG - Received GGA from serial: $GNGGA,072907.000,2233.023250,N,11358.845867,E,4,44,0.82,29.984,M,-2.408,M,1.0,0680*72
+INFO - Send $GNGGA,072907.000,2233.023250,N,11358.845867,E,4,44,0.82,29.984,M,-2.408,M,1.0,0680*72
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+DEBUG - Received GGA from serial: $GNGGA,072908.000,2233.023251,N,11358.845869,E,4,43,0.82,29.983,M,-2.408,M,1.0,0680*72
+INFO - Send $GNGGA,072908.000,2233.023251,N,11358.845869,E,4,43,0.82,29.983,M,-2.408,M,1.0,0680*72
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 80)
+DEBUG - Received GGA from serial: $GNGGA,072909.000,2233.023248,N,11358.845868,E,4,44,0.82,29.979,M,-2.408,M,1.0,0680*78
+INFO - Send $GNGGA,072909.000,2233.023248,N,11358.845868,E,4,44,0.82,29.979,M,-2.408,M,1.0,0680*78
+INFO - Received (73)bytes from server : 
+\xD3\x00\x13...
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 90)
+DEBUG - Received GGA from serial: $GNGGA,072910.000,2233.023251,N,11358.845869,E,4,43,0.82,29.969,M,-2.408,M,1.0,0680*7F
+INFO - Send $GNGGA,072910.000,2233.023251,N,11358.845869,E,4,43,0.82,29.969,M,-2.408,M,1.0,0680*7F
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 100)
+DEBUG - Received GGA from serial: $GNGGA,072911.000,2233.023248,N,11358.845868,E,4,43,0.77,29.979,M,-2.408,M,1.0,0680*7C
+INFO - Send $GNGGA,072911.000,2233.023248,N,11358.845868,E,4,43,0.77,29.979,M,-2.408,M,1.0,0680*7C
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 110)
+DEBUG - Received GGA from serial: $GNGGA,072912.000,2233.023248,N,11358.845869,E,4,44,0.74,29.982,M,-2.408,M,1.0,0680*7E
+INFO - Send $GNGGA,072912.000,2233.023248,N,11358.845869,E,4,44,0.74,29.982,M,-2.408,M,1.0,0680*7E
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+DEBUG - Received GGA from serial: $GNGGA,072913.000,2233.023248,N,11358.845869,E,4,44,0.72,29.979,M,-2.408,M,1.0,0680*7D
+INFO - Send $GNGGA,072913.000,2233.023248,N,11358.845869,E,4,44,0.72,29.979,M,-2.408,M,1.0,0680*7D
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 120)
+DEBUG - Received GGA from serial: $GNGGA,072914.000,2233.023245,N,11358.845868,E,4,44,0.73,29.980,M,-2.408,M,1.0,0680*71
+INFO - Send $GNGGA,072914.000,2233.023245,N,11358.845868,E,4,44,0.73,29.980,M,-2.408,M,1.0,0680*71
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 130)
+DEBUG - Received GGA from serial: $GNGGA,072915.000,2233.023247,N,11358.845870,E,4,44,0.77,29.976,M,-2.408,M,1.0,0680*76
+INFO - Send $GNGGA,072915.000,2233.023247,N,11358.845870,E,4,44,0.77,29.976,M,-2.408,M,1.0,0680*76
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 140)
+DEBUG - Received GGA from serial: $GNGGA,072916.000,2233.023249,N,11358.845870,E,4,44,0.79,29.970,M,-2.408,M,1.0,0680*73
+INFO - Send $GNGGA,072916.000,2233.023249,N,11358.845870,E,4,44,0.79,29.970,M,-2.408,M,1.0,0680*73
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+DEBUG - Received GGA from serial: $GNGGA,072917.000,2233.023250,N,11358.845869,E,4,43,0.75,29.961,M,-2.408,M,1.0,0680*79
+INFO - Send $GNGGA,072917.000,2233.023250,N,11358.845869,E,4,43,0.75,29.961,M,-2.408,M,1.0,0680*79
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 150)
+DEBUG - Received GGA from serial: $GNGGA,072918.000,2233.023250,N,11358.845871,E,4,44,0.75,29.971,M,-2.408,M,1.0,0680*79
+INFO - Send $GNGGA,072918.000,2233.023250,N,11358.845871,E,4,44,0.75,29.971,M,-2.408,M,1.0,0680*79
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 160)
+DEBUG - Received GGA from serial: $GNGGA,072919.000,2233.023249,N,11358.845872,E,4,44,0.75,29.971,M,-2.408,M,1.0,0680*73
+INFO - Send $GNGGA,072919.000,2233.023249,N,11358.845872,E,4,44,0.75,29.971,M,-2.408,M,1.0,0680*73
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+INFO - Received (73)bytes from server : 
+\xD3\x00\x13...
+WARNING - No GGA data received from serial port (count: 170)
+DEBUG - Received GGA from serial: $GNGGA,072920.000,2233.023247,N,11358.845868,E,4,44,0.74,29.959,M,-2.407,M,1.0,0680*78
+INFO - Send $GNGGA,072920.000,2233.023247,N,11358.845868,E,4,44,0.74,29.959,M,-2.407,M,1.0,0680*78
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+DEBUG - Received GGA from serial: $GNGGA,072921.000,2233.023247,N,11358.845869,E,4,44,0.79,29.971,M,-2.408,M,1.0,0680*70
+INFO - Send $GNGGA,072921.000,2233.023247,N,11358.845869,E,4,44,0.79,29.971,M,-2.408,M,1.0,0680*70
+INFO - Received (1036)bytes from server : 
+\xD3\x00\x50...
+WARNING - No GGA data received from serial port (count: 180)
+DEBUG - Received GGA from serial: $GNGGA,072922.000,2233.023243,N,11358.845866,E,4,44,0.74,29.968,M,-2.408,M,1.0,0680*7D
+INFO - Send $GNGGA,072922.000,2233.023243,N,11358.845866,E,4,44,0.74,29.968,M,-2.408,M,1.0,0680*7D
+^C
+eric@u24:~/rtk/nc$ 
+eric@u24:~/rtk/nc$ 
+eric@u24:~/rtk/nc$ 
+eric@u24:~/rtk/nc$ 
+eric@u24:~/rtk/nc$ 
+eric@u24:~/rtk/nc$ 
+

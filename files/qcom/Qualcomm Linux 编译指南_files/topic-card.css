@@ -1,0 +1,195 @@
+.topic-card {
+    padding: 24px !important;
+    margin-bottom: 1rem !important;
+    pointer-events: none !important;
+    cursor: default !important;
+}
+
+.topic-card>.sd-card-body {
+    padding: 0px !important;
+}
+
+.topic-card .header-container>.sd-card-text>[class^="svg"] {
+    background: #020B3F !important;
+}
+
+.topic-card .body-container .sd-card-text:has(a):has(svg) {
+    display: flex !important;
+    align-items: center !important;
+    padding: 16px 8px !important;
+    border-bottom: 1px solid var(--color-card-border) !important;
+    transition: all 150ms ease-out !important;
+}
+
+.topic-card .body-container .sd-card-text>a {
+    width: 90% !important;
+    margin: 0px 10px !important;
+    font-size: 14px !important;
+    font-weight: 520 !important;
+}
+
+.topic-card .body-container .sd-card-text svg,
+.topic-card .sub-header .sd-card-text:first-child>[class^="svg"]>svg {
+    width: 16px !important;
+    height: 16px !important;
+    flex-shrink: 0 !important;
+    max-width: none !important;
+}
+
+.topic-card .header-container {
+    display: flex !important;
+    padding-bottom: 24px !important;
+    height: auto !important;
+}
+
+.topic-card .sub-header {
+    display: flex !important;
+    flex-direction: column !important;
+    height: auto !important;
+}
+
+.topic-card .header-container>.sd-card-text>img,
+.topic-card .header-container>.sd-card-text>[class^="svg"] {
+    display: flex !important;
+    width: 72px !important;
+    height: 72px !important;
+    border-radius: 4px !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin: 0px !important;
+}
+
+.topic-card .sub-header>.sd-card-text:first-child {
+    display: flex !important;
+    align-items: center !important;
+    color: var(--color-content) !important;
+    margin-right: 0px !important;
+    font-size: 12px !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    line-height: 100% !important;
+    text-transform: uppercase !important;
+    font-family: "Alfabet", "Roboto Flex" !important;
+}
+
+.topic-card.card-bg-fill .sub-header .sd-card-text:last-child {
+    color: var(--color-front) !important;
+    font-size: 17px !important;
+    font-weight: 520 !important;
+}
+
+.topic-card .body-container .sd-card-text:has(.link-button),
+.topic-card .body-container .sd-card-text:has(.ref-button) {
+    justify-content: center !important;
+    margin-top: 0px !important;
+    margin-bottom: 24px !important;
+    padding: 0px !important;
+    border-bottom: none !important;
+    transition: all 150ms ease-out !important;
+}
+
+.topic-card .body-container>.sd-card-text,
+.topic-card .body-container .sd-card-text>.link-button,
+.topic-card .body-container .sd-card-text>.ref-button {
+    margin: 0px !important;
+}
+
+.topic-card .body-container>.sub-header>.sd-card-text {
+    padding: 0px !important;
+    border-bottom: none !important;
+    margin-bottom: 0px !important;
+}
+
+.topic-card.card-bg-fill .header-container .sd-card-text {
+    padding-bottom: 0px !important;
+}
+
+.topic-card .body-container .sd-card-text:not(:has(.ref-button)):not(:has(.link-button)):has(a) svg path {
+    stroke: var(--color-card-link) !important;
+}
+
+.topic-card.card-bg-fill .body-container>.sd-card-text svg path {
+    stroke: var(--color-card-link) !important;
+}
+
+.topic-card.card-bg-fill {
+    border-radius: 8px !important;
+    background: var(--color-card-bg) !important;
+    box-shadow: 0px 1.5px 3px 0px rgba(0, 0, 0, 0.10) !important;
+}
+
+@media (prefers-color-scheme: dark) {
+    .topic-card:not(.card-bg-fill) {
+        background: var(--color-card-bg) !important;
+        border-radius: 8px !important;
+        border: 1px solid rgba(255, 255, 255, 0.15) !important;
+        box-shadow: 0px 1.5px 3px 0px rgba(255, 255, 255, 0.10) !important;
+    }
+}
+
+.dark-mode .topic-card:not(.card-bg-fill) {
+    background: var(--color-card-bg) !important;
+    border-radius: 8px !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    box-shadow: 0px 1.5px 3px 0px rgba(255, 255, 255, 0.10) !important;
+}
+
+@media (prefers-color-scheme: light) {
+    .topic-card:not(.card-bg-fill) {
+        border-radius: 8px !important;
+        border: 1px solid rgba(0, 0, 0, 0.15) !important;
+        background: transparent !important;
+        box-shadow: 0px 1.5px 3px 0px rgba(0, 0, 0, 0.10) !important;
+    }
+}
+
+.light-mode .topic-card:not(.card-bg-fill) {
+    border-radius: 8px !important;
+    border: 1px solid rgba(0, 0, 0, 0.15) !important;
+    background: transparent !important;
+    box-shadow: 0px 1.5px 3px 0px rgba(0, 0, 0, 0.10) !important;
+}
+
+.topic-card .sub-header>.sd-card-text:first-child svg path {
+    stroke: var(--color-content) !important;
+}
+
+.topic-card .body-container>.sd-card-text:last-child {
+    margin-bottom: 0px !important;
+}
+
+.topic-card .body-container>.sd-card-text:last-child:not(:has(.ref-button)):not(:has(.link-button)) {
+    margin-bottom: 16px !important;
+}
+
+.topic-card .sub-header>.sd-card-text:last-child {
+    font-family: "Roboto Flex" !important;
+    font-size: 17px !important;
+    font-style: normal !important;
+    font-weight: 520 !important;
+    line-height: 20px !important;
+    color: var(--color-front) !important;
+    padding-top: 12px !important;
+    margin-right: 0px !important;
+}
+
+.topic-card .sd-card-text:has(a):has(svg):not(:has(.link-button)):not(:has(.ref-button)):hover {
+    background: var(--color-card-link-hover) !important;
+}
+
+.topic-card .sd-card-text:has(a),
+.topic-card a {
+    pointer-events: auto !important;
+    cursor: pointer !important;
+}
+
+.topic-card .sub-header .sd-card-text:nth-child(1)>[class^=svg] {
+    margin-right: 8px !important;
+    align-items: start !important
+}
+
+.topic-card .header-container>.sd-card-text svg {
+    width: 50px !important;
+    height: 50px !important;
+    max-width: none !important;
+}

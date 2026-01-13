@@ -1,0 +1,1213 @@
+eric@ubuntu:/aml/dock$ rm -rfv /aml/dock/output/a4_ba400_spk_a64_release/build/otbr;source setenv.sh a4_ba400_spk_a64_release;make otbr-rebuild
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/AUTHORS'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/.stamp_rsynced'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/CONTRIBUTING.md'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/build/otbr/CMakeCache.txt'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/build/otbr/tools/CMakeFiles'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/build/otbr/tools'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/build/otbr/src/mdns/CMakeFiles'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/build/otbr/src/mdns'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/build/otbr/src/ncp/posix/CMakeFiles'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/build/otbr/src/ncp/posix'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/build/otbr/src/ncp/CMakeFiles'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/build/otbr/src/ncp'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/build/otbr/src/border_agent/CMakeFiles'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/build/otbr/src/border_agent'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/build/otbr/src/sdp_proxy/CMakeFiles'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/build/otbr/src/sdp_proxy'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/build/otbr/src/agent/otbr-agent.default'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/build/otbr/src/agent/otbr-agent.service'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/build/otbr/src/agent/CMakeFiles'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/build/otbr/src/agent/openthread-otbr-posix-config.h'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/build/otbr/src/agent'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/build/otbr/src/trel_dnssd/CMakeFiles'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/build/otbr/src/trel_dnssd'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/build/otbr/src/utils/CMakeFiles'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/build/otbr/src/utils'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/build/otbr/src/CMakeFiles'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/build/otbr/src/common/CMakeFiles'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/build/otbr/src/common'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/build/otbr/src'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/build/otbr/CMakeFiles/feature_tests.c'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/build/otbr/CMakeFiles/CMakeTmp'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/build/otbr/CMakeFiles/3.10.2/CompilerIdC/tmp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/build/otbr/CMakeFiles/3.10.2/CompilerIdC/a.out'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/build/otbr/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/build/otbr/CMakeFiles/3.10.2/CompilerIdC'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/build/otbr/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/build/otbr/CMakeFiles/3.10.2/CompilerIdCXX/tmp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/build/otbr/CMakeFiles/3.10.2/CompilerIdCXX/a.out'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/build/otbr/CMakeFiles/3.10.2/CompilerIdCXX'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/build/otbr/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_C.bin'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/build/otbr/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_CXX.bin'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/build/otbr/CMakeFiles/3.10.2/CMakeCXXCompiler.cmake'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/build/otbr/CMakeFiles/3.10.2/CMakeCCompiler.cmake'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/build/otbr/CMakeFiles/3.10.2/CMakeSystem.cmake'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/build/otbr/CMakeFiles/3.10.2'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/build/otbr/CMakeFiles/cmake.check_cache'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/build/otbr/CMakeFiles/feature_tests.cxx'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/build/otbr/CMakeFiles/feature_tests.bin'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/build/otbr/CMakeFiles/CMakeOutput.log'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/build/otbr/CMakeFiles'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/build/otbr/third_party/openthread/repo'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/build/otbr/third_party/openthread/CMakeFiles'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/build/otbr/third_party/openthread'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/build/otbr/third_party/CMakeFiles'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/build/otbr/third_party'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/build/otbr/CPackConfig.cmake'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/build/otbr/CPackSourceConfig.cmake'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/build/otbr'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/build'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/tests/mdns/test-service-subtypes'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/tests/mdns/test-single-custom-host'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/tests/mdns/main.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/tests/mdns/test-stop'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/tests/mdns/test_init'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/tests/mdns/test-single-empty-service-name'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/tests/mdns/CMakeLists.txt'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/tests/mdns/test-multiple'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/tests/mdns/test-update'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/tests/mdns/test-single'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/tests/mdns/test-multiple-custom-hosts'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/tests/mdns'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/tests/tools/test-steering-data'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/tests/tools/test-pskc'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/tests/tools/CMakeLists.txt'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/tests/tools'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/tests/rest/test-rest-server'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/tests/rest/CMakeLists.txt'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/tests/rest/test_rest.py'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/tests/rest'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/tests/gtest/test_common_types.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/tests/gtest/test_async_task.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/tests/gtest/test_task_runner.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/tests/gtest/test_mdns_subscribe.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/tests/gtest/test_pskc.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/tests/gtest/test_logging.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/tests/gtest/test_netif.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/tests/gtest/test_once_callback.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/tests/gtest/test_dns_utils.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/tests/gtest/CMakeLists.txt'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/tests/gtest/test_dbus_message.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/tests/gtest/test_mdns_mdnssd.cpp'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/tests/gtest'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/tests/scripts/check-docker'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/tests/scripts/openwrt'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/tests/scripts/auto-attach'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/tests/scripts/check-scan-build'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/tests/scripts/check-raspbian'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/tests/scripts/ncp_mode'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/tests/scripts/infra-link-selector'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/tests/scripts/meshcop'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/tests/scripts/check-scripts'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/tests/scripts/expect/ncp_join_leave.exp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/tests/scripts/expect/_common.exp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/tests/scripts/expect/ncp_schedule_migration.exp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/tests/scripts/expect/ncp_version.exp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/tests/scripts/expect/ncp_get_device_role.exp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/tests/scripts/expect/ncp_test_schedule_migration_dbus_api.exp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/tests/scripts/expect/ncp_netif_address_update.exp'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/tests/scripts/expect'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/tests/scripts/bootstrap.sh'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/tests/scripts'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/tests/dbus/test_dbus_server.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/tests/dbus/test-client'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/tests/dbus/test-server'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/tests/dbus/otbr-test-dbus-server.conf'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/tests/dbus/test_dbus_client.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/tests/dbus/CMakeLists.txt'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/tests/dbus'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/tests/CMakeLists.txt'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/tests'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/.stamp_configured'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/.prettierrc'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/etc/openwrt/openthread-br/README.md'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/etc/openwrt/openthread-br/Makefile'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/etc/openwrt/openthread-br'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/etc/openwrt'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/etc/yocto/otbr_git.bb'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/etc/yocto'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/etc/cmake/options.cmake'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/etc/cmake'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/etc/docker/Dockerfile'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/etc/docker/docker_entrypoint.sh'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/etc/docker'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/etc'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/LICENSE'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/script/_otbr'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/script/otbr-firewall'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/script/_border_routing'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/script/_dns64'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/script/console'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/script/_firewall'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/script/update'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/script/make-pretty'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/script/_swapfile'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/script/reference-device/send_mld_query.py'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/script/reference-device/send_udp.py'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/script/reference-device'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/script/_dhcpv6_pd'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/script/bootstrap'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/script/server'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/script/test'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/script/_network_manager'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/script/standalone_ipv6'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/script/_nat64'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/script/_initrc'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/script/_disable_services'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/script/setup'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/script/clang-format-check'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/script/cibuild'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/script/_ipforward'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/script/clang-format'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/script/_sudo_extend'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/script/_rt_tables'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/script/cmake-build'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/script'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/.stamp_patched'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/tools/pskc.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/tools/reference_device/testharness-discovery'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/tools/reference_device/testharness-discovery.service.in'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/tools/reference_device/testharness-discovery.init.in'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/tools/reference_device/CMakeLists.txt'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/tools/reference_device'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/tools/README.md'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/tools/steering_data.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/tools/CMakeLists.txt'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/tools'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/README.md'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/NOTICE'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/.lgtm.yml'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/.clang-format'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/mdns/mdns.hpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/mdns/mdns_avahi.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/mdns/mdns_avahi.hpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/mdns/mdns_mdnssd.hpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/mdns/mdns_mdnssd.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/mdns/mdns.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/mdns/CMakeLists.txt'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/mdns'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/openwrt/otbr-firewall.init.in'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/openwrt/otbr-agent.uci-config.in'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/openwrt/handle_error.js'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/openwrt/otbr-agent.init.in'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/openwrt/controller/thread.lua'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/openwrt/controller'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/openwrt/ubus/otubus.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/openwrt/ubus/CMakeLists.txt'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/openwrt/ubus/otubus.hpp'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/openwrt/ubus'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/openwrt/view/admin_thread/thread_join.htm'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/openwrt/view/admin_thread/thread_overview.htm'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/openwrt/view/admin_thread/thread_setting.htm'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/openwrt/view/admin_thread/thread_add.htm'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/openwrt/view/admin_thread/thread_view.htm'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/openwrt/view/admin_thread/thread_scan.htm'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/openwrt/view/admin_thread'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/openwrt/view'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/openwrt/CMakeLists.txt'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/openwrt'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/ncp/posix/netif_linux.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/ncp/posix/netif_unix.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/ncp/posix/netif.hpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/ncp/posix/CMakeLists.txt'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/ncp/posix/netif.cpp'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/ncp/posix'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/ncp/async_task.hpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/ncp/async_task.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/ncp/ncp_spinel.hpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/ncp/ncp_host.hpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/ncp/rcp_host.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/ncp/ncp_spinel.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/ncp/ncp_host.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/ncp/thread_host.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/ncp/rcp_host.hpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/ncp/CMakeLists.txt'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/ncp/thread_host.hpp'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/ncp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/border_agent/border_agent.hpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/border_agent/border_agent.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/border_agent/CMakeLists.txt'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/border_agent'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/proto/capabilities.proto'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/proto/feature_flag.proto'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/proto/CMakeLists.txt'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/proto/thread_telemetry.proto'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/proto'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/rest/connection.hpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/rest/json.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/rest/connection.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/rest/rest_web_server.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/rest/request.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/rest/response.hpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/rest/request.hpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/rest/resource.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/rest/rest_web_server.hpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/rest/response.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/rest/types.hpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/rest/parser.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/rest/openapi.yaml'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/rest/resource.hpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/rest/parser.hpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/rest/CMakeLists.txt'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/rest/json.hpp'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/rest'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/sdp_proxy/discovery_proxy.hpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/sdp_proxy/advertising_proxy.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/sdp_proxy/discovery_proxy.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/sdp_proxy/advertising_proxy.hpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/sdp_proxy/CMakeLists.txt'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/sdp_proxy'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/dbus/server/dbus_thread_object_rcp.hpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/dbus/server/dbus_request.hpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/dbus/server/introspect.xml'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/dbus/server/dbus_thread_object_ncp.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/dbus/server/error_helper.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/dbus/server/dbus_agent.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/dbus/server/dbus_thread_object_rcp.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/dbus/server/dbus_object.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/dbus/server/dbus_thread_object_ncp.hpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/dbus/server/error_helper.hpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/dbus/server/CMakeLists.txt'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/dbus/server/dbus_agent.hpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/dbus/server/dbus_object.hpp'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/dbus/server'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/dbus/CMakeLists.txt'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/dbus/common/dbus_message_helper.hpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/dbus/common/dbus_message_dump.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/dbus/common/dbus_message_helper_openthread.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/dbus/common/error.hpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/dbus/common/types.hpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/dbus/common/error.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/dbus/common/dbus_message_dump.hpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/dbus/common/CMakeLists.txt'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/dbus/common/constants.hpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/dbus/common/dbus_message_helper.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/dbus/common/dbus_resources.hpp'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/dbus/common'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/dbus/client/client_error.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/dbus/client/thread_api_dbus.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/dbus/client/thread_api_dbus.hpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/dbus/client/client_error.hpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/dbus/client/CMakeLists.txt'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/dbus/client'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/dbus'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/agent/otbr-agent.conf.in'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/agent/vendor.hpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/agent/otbr-agent.default.in'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/agent/uris.hpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/agent/otbr-agent.service.in'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/agent/openthread-otbr-posix-config.h.in'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/agent/otbr-agent.init.in'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/agent/application.hpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/agent/main.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/agent/application.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/agent/CMakeLists.txt'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/agent'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/web/otbr-web.init.in'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/web/otbr-web.service.in'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/web/main.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/web/web-service/frontend/index.html'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/web/web-service/frontend/join.dialog.html'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/web/web-service/frontend/package.json'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/web/web-service/frontend/res/js/app.js'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/web/web-service/frontend/res/js'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/web/web-service/frontend/res/css/styles.css'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/web/web-service/frontend/res/css'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/web/web-service/frontend/res/img/borderrouter.png'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/web/web-service/frontend/res/img/favicon.png'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/web/web-service/frontend/res/img/icon-info.png'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/web/web-service/frontend/res/img/ios-desktop.png'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/web/web-service/frontend/res/img/android-desktop.png'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/web/web-service/frontend/res/img/openthread_logo.png'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/web/web-service/frontend/res/img'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/web/web-service/frontend/res'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/web/web-service/frontend/CMakeLists.txt'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/web/web-service/frontend/package-lock.json'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/web/web-service/frontend'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/web/web-service/wpan_service.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/web/web-service/wpan_service.hpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/web/web-service/web_server.hpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/web/web-service/web_server.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/web/web-service/ot_client.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/web/web-service/ot_client.hpp'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/web/web-service'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/web/CMakeLists.txt'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/web'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/trel_dnssd/trel_dnssd.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/trel_dnssd/trel_dnssd.hpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/trel_dnssd/CMakeLists.txt'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/trel_dnssd'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/utils/pskc.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/utils/socket_utils.hpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/utils/system_utils.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/utils/pskc.hpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/utils/sha256.hpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/utils/dns_utils.hpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/utils/socket_utils.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/utils/system_utils.hpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/utils/string_utils.hpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/utils/crc16.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/utils/steering_data.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/utils/string_utils.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/utils/sha256.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/utils/thread_helper.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/utils/hex.hpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/utils/hex.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/utils/infra_link_selector.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/utils/infra_link_selector.hpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/utils/steering_data.hpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/utils/CMakeLists.txt'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/utils/thread_helper.hpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/utils/dns_utils.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/utils/crc16.hpp'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/utils'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/CMakeLists.txt'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/backbone_router/backbone_agent.hpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/backbone_router/nd_proxy.hpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/backbone_router/dua_routing_manager.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/backbone_router/nd_proxy.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/backbone_router/backbone_agent.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/backbone_router/CMakeLists.txt'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/backbone_router/constants.hpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/backbone_router/dua_routing_manager.hpp'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/backbone_router'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/common/callback.hpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/common/task_runner.hpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/common/tlv.hpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/common/logging.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/common/dns_utils.hpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/common/code_utils.hpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/common/mainloop.hpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/common/logging.hpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/common/mainloop.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/common/code_utils.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/common/types.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/common/types.hpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/common/byteswap.hpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/common/mainloop_manager.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/common/api_strings.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/common/time.hpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/common/task_runner.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/common/CMakeLists.txt'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/common/api_strings.hpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/common/dns_utils.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/common/mainloop_manager.hpp'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src/common'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/src'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/include/openthread-br/config.h'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/include/openthread-br'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/include'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/.codecov.yml'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/doc/Doxyfile.in'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/doc/CMakeLists.txt'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/doc/images/certified.svg'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/doc/images'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/doc'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/.gitmodules'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/SECURITY.md'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/.gitignore'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/STYLE_GUIDE.md'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/.github/ISSUE_TEMPLATE/feature_request.md'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/.github/ISSUE_TEMPLATE/bug_report.md'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/.github/ISSUE_TEMPLATE'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/.github/ISSUE_TEMPLATE.md'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/.github/dependabot.yml'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/.github/workflows/raspbian.yml'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/.github/workflows/build.yml'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/.github/workflows/openwrt.yml'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/.github/workflows/macOS.yml'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/.github/workflows/ncp_mode.yml'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/.github/workflows/documentation.yml'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/.github/workflows/border_router.yml'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/.github/workflows/docker.yml'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/.github/workflows/meshcop.yml'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/.github/workflows'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/.github'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/CMakeLists.txt'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/CODE_OF_CONDUCT.md'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/stage'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/third_party/Simple-web-server/README.md'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/third_party/Simple-web-server/repo/crypto.hpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/third_party/Simple-web-server/repo/asio_compatibility.hpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/third_party/Simple-web-server/repo/http_examples.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/third_party/Simple-web-server/repo/tests/parse_test.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/third_party/Simple-web-server/repo/tests/assert.hpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/third_party/Simple-web-server/repo/tests/status_code_test.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/third_party/Simple-web-server/repo/tests/io_test.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/third_party/Simple-web-server/repo/tests/fuzzers/http_header_parse.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/third_party/Simple-web-server/repo/tests/fuzzers/README.md'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/third_party/Simple-web-server/repo/tests/fuzzers/response_message_parse.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/third_party/Simple-web-server/repo/tests/fuzzers/request_message_parse.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/third_party/Simple-web-server/repo/tests/fuzzers/http_header_field_value_semicolon_separated_attributes_parse.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/third_party/Simple-web-server/repo/tests/fuzzers/percent_decode.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/third_party/Simple-web-server/repo/tests/fuzzers/query_string_parse.cpp'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/third_party/Simple-web-server/repo/tests/fuzzers'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/third_party/Simple-web-server/repo/tests/CMakeLists.txt'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/third_party/Simple-web-server/repo/tests/crypto_test.cpp'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/third_party/Simple-web-server/repo/tests'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/third_party/Simple-web-server/repo/utility.hpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/third_party/Simple-web-server/repo/server_http.hpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/third_party/Simple-web-server/repo/client_https.hpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/third_party/Simple-web-server/repo/LICENSE'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/third_party/Simple-web-server/repo/README.md'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/third_party/Simple-web-server/repo/docs/benchmarks.md'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/third_party/Simple-web-server/repo/docs/Doxyfile'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/third_party/Simple-web-server/repo/docs'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/third_party/Simple-web-server/repo/client_http.hpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/third_party/Simple-web-server/repo/mutex.hpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/third_party/Simple-web-server/repo/status_code.hpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/third_party/Simple-web-server/repo/https_examples.cpp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/third_party/Simple-web-server/repo/web/index.html'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/third_party/Simple-web-server/repo/web/test.html'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/third_party/Simple-web-server/repo/web'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/third_party/Simple-web-server/repo/CMakeLists.txt'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/third_party/Simple-web-server/repo/paper/.markdown-format'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/third_party/Simple-web-server/repo/paper/paper.bib'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/third_party/Simple-web-server/repo/paper/paper.md'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/third_party/Simple-web-server/repo/paper'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/third_party/Simple-web-server/repo/server_https.hpp'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/third_party/Simple-web-server/repo'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/third_party/Simple-web-server'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/third_party/openthread/repo'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/third_party/openthread/CMakeLists.txt'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/third_party/openthread/mbedtls-config.h'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/third_party/openthread'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/third_party/cJSON/repo'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/third_party/cJSON/CMakeLists.txt'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/third_party/cJSON'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/third_party/CMakeLists.txt'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/third_party/mDNSResponder/0010-Handle-interface-without-ifa_addr.patch'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/third_party/mDNSResponder/0008-Mark-deleted-interfaces-as-being-changed.patch'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/third_party/mDNSResponder/0003-Create-subroutine-for-tearing-down-an-interface.patch'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/third_party/mDNSResponder/0006-Use-list-for-changed-interfaces.patch'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/third_party/mDNSResponder/0009-Handle-errors-from-socket-calls.patch'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/third_party/mDNSResponder/0004-Track-interface-socket-family.patch'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/third_party/mDNSResponder/0005-Indicate-loopback-interface-to-mDNS-core.patch'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/third_party/mDNSResponder/0001-Fix-Linux-build.patch'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/third_party/mDNSResponder/0002-Create-subroutine-for-cleaning-recent-interfaces.patch'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/third_party/mDNSResponder/0007-Handle-noisy-netlink-sockets.patch'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/third_party/mDNSResponder'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/third_party/http-parser/repo'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/third_party/http-parser/CMakeLists.txt'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/third_party/http-parser'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/third_party'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/.applied_patches_list'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/examples/platforms/nxp/linux-imx/arm.cmake'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/examples/platforms/nxp/linux-imx/aarch64.cmake'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/examples/platforms/nxp/linux-imx'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/examples/platforms/nxp'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/examples/platforms/fedora/default'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/examples/platforms/fedora'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/examples/platforms/ubuntu/default'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/examples/platforms/ubuntu'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/examples/platforms/beagleboneblack/default'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/examples/platforms/beagleboneblack'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/examples/platforms/raspbian/default'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/examples/platforms/raspbian/after_bootstrap'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/examples/platforms/raspbian'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/examples/platforms/debian/default'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/examples/platforms/debian'
+removed '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/examples/platforms/amlogic/amlogic_arm.cmake'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/examples/platforms/amlogic'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/examples/platforms'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/examples'
+removed directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr'
+Appling Patches in /aml/dock/aml-patches
+Patches already be applied to this workspace: /aml/dock
+Please clean up and delete .aml-br-patch-done in workspace
+Error: Input parameters check failed
+
+You're building on Linux
+Lunch menu...pick a combo:
+0. a1_ad401_a32_lowpower_release
+1. a1_ad401_a32_release
+2. a1_ad402_a32_release
+3. a1_ad403_a32_k515_release
+4. a1_ad403_a32_release
+5. a1_ad403_a32_speaker_k515_release
+6. a1_ad40ae_a32_k515_release
+7. a1_t404_a32_lowpower_release
+8. a1_t404_a32_release
+9. a213y_au401_a32_fastboot_release
+10. a213y_au401_a32_release
+11. a213y_au40a1_a32_ass_release
+12. a213y_au40a2_a32_release
+13. a4_ba400_a6432_k66_release
+14. a4_ba400_a6432_release
+15. a4_ba400_a64_release
+16. a4_ba400_slcnand_a6432_release
+17. a4_ba400_spinand_a6432_release
+18. a4_ba400_spk_a6432_k66_release
+19. a4_ba400_spk_a6432_release
+20. a4_ba400_spk_a64_k66_release
+21. a4_ba400_spk_a64_release
+22. a4_ba401_a6432_k66_release
+23. a4_ba401_a6432_release
+24. a4_ba401_a64_k66_release
+25. a4_ba401_a64_release
+26. a4_ba401_panel_a6432_release
+27. a4_ba401_spk_a6432_k66_release
+28. a4_ba401_spk_a6432_release
+29. a4_ba409_a6432_k66_release
+30. a4_ba409_a6432_release
+31. a5_av400_a6432_k66_release
+32. a5_av400_a6432_release
+33. a5_av400_a6432_systemd_release
+34. a5_av400_a64_k66_release
+35. a5_av400_a64_release
+36. a5_av400_spk_a6432_k66_release
+37. a5_av400_spk_a6432_release
+38. a5_av400_spk_a64_release
+39. a5_av400v2_a6432_k66_release
+40. a5_av400v2_a6432_release
+41. a5_av400v2_a64_k66_release
+42. a5_av409_a6432_k66_release
+43. a5_av409_a6432_release
+44. axg_s400_a6432_k54_release
+45. axg_s400_a6432_release
+46. axg_s400-emmc_a6432_k54_release
+47. axg_s400-emmc_a6432_release
+48. axg_s400_sbr_a6432_k54_release
+49. axg_s400_sbr_a6432_release
+50. axg_s400_sbravs_a6432_release
+51. axg_s410_SBR_a6432_release
+52. axg_s420_a6432_k54_release
+53. axg_s420_a6432_release
+54. c1_ae400_a6432_release
+55. c1_ae400_a64_k515_release
+56. c1_ae400_a64_release
+57. c1_ae400-base_a64_release
+58. c1_ae400-fastboot_a6432_release
+59. c1_ae400-fastboot_a64_release
+60. c1_ae400_legacy_a6432_release
+61. c1_ae400_legacy_a64_release
+62. c1_ae400-nand_a6432_release
+63. c1_ae400-nand_a64_release
+64. c1_ae400-nand_legacy_a6432_release
+65. c1_ae400-nand_legacy_a64_release
+66. c1_ae400_uvc_a64_release
+67. c1_ae401_a64_release
+68. c1_ae401_legacy_a64_release
+69. c1_ae402_a64_release
+70. c1_ae402-nand_a64_release
+71. c2_af400_a32_k515_release
+72. c2_af400_a6432_release
+73. c2_af400_a64_k510_release
+74. c2_af400_a64_k515_release
+75. c2_af400_a64_release
+76. c2_af400-base_a64_release
+77. c2_af400-fastboot_a64_release
+78. c2_af400-nand_a64_release
+79. c2_af400_uvc_a64_release
+80. c2_af401_a64_release
+81. c2_af402_a64_release
+82. c2_af409_a64_release
+83. c2_af409-nand_a64_release
+84. c2_af409_uvc_a64_release
+85. c2_af419_a64_release
+86. c3_aw401_a32_release
+87. c3_aw402_a32_release
+88. c3_aw402_refapp_a32_release
+89. c3_aw402s_a32_release
+90. c3_aw409_128M_a32_release
+91. c3_aw409_256M_a32_release
+92. c3_aw409_a32_release
+93. c3_aw409_doorbell_a32_release
+94. c3_aw409-emmc_a32_release
+95. c3_aw409_lsb_a32_release
+96. c3_aw409_refapp_a32_release
+97. c3_aw419_a32_release
+98. c3_aw419_doorbell_a32_release
+99. c3_aw419_refapp_a32_release
+100. c3_aw429_a32_release
+101. c3_pxp_a32_release
+102. c3_pxp-new_a32_release
+103. g12a_u200_a6432_release
+104. g12a_u200_a64_release
+105. g12a_u211_a6432_release
+106. g12a_u211_a64_release
+107. g12a_u212_a6432_release
+108. g12a_u212_a64_release
+109. g12a_u212_rdk_a6432_release
+110. g12b_w400_a311_a64_release
+111. g12b_w400_a311_nvr_a64_release
+112. g12b_w400_s922_a6432_release
+113. g12b_w400_s922_a64_release
+114. g12b_w411_a6432_release
+115. g12b_w411_a64_release
+116. gxl_p212_a6432_release
+117. gxl_p212_a64_release
+118. gxl_p230_a6432_release
+119. gxl_p241_a6432_release
+120. gxl_p241_a64_release
+121. gxlx_p271_a6432_release
+122. m8b_m102_a32_release
+123. out-of-date/mesona1_ad401_a32_release
+124. out-of-date/mesona1_ad402_a32_release
+125. out-of-date/mesona1_ad403_a32_release
+126. out-of-date/mesona1_ad409_skt_a32_release
+127. out-of-date/mesona1_t404_a32_release
+128. out-of-date/mesonaxg_a113d_skt_32_release
+129. out-of-date/mesonaxg_a113d_skt_release
+130. out-of-date/mesonaxg_a113x_skt_32_release
+131. out-of-date/mesonaxg_a113x_skt_release
+132. out-of-date/mesonaxg_s400_32_emmc_k5.1_release
+133. out-of-date/mesonaxg_s400_32_emmc_release
+134. out-of-date/mesonaxg_s400_32_release
+135. out-of-date/mesonaxg_s400_emmc_release
+136. out-of-date/mesonaxg_s400_gva_32_release
+137. out-of-date/mesonaxg_s400_release
+138. out-of-date/mesonaxg_s400_sb_32_release
+139. out-of-date/mesonaxg_s400_sbr_32_release
+140. out-of-date/mesonaxg_s400_sbravs_32_release
+141. out-of-date/mesonaxg_s410_32_release
+142. out-of-date/mesonaxg_s410_sbr_32_release
+143. out-of-date/mesonaxg_s420_32_release
+144. out-of-date/mesonaxg_s420_costdown_32_release
+145. out-of-date/mesonaxg_s420_gva_32_release
+146. out-of-date/mesonaxg_s420_release
+147. out-of-date/mesonc1_ae400_a64_nand_release
+148. out-of-date/mesonc1_ae400_a64_neu_release
+149. out-of-date/mesonc1_ae400_a64_release
+150. out-of-date/mesonc1_ae401_a64_neu_release
+151. out-of-date/mesonc1_ae401_a64_release
+152. out-of-date/mesonc1_ae409_skt_a64_release
+153. out-of-date/mesong12a_skt_32_release
+154. out-of-date/mesong12a_skt_release
+155. out-of-date/mesong12a_u200_32_release
+156. out-of-date/mesong12a_u200_release
+157. out-of-date/mesong12a_u200_vccktest_32_release
+158. out-of-date/mesong12a_u200_vccktest_release
+159. out-of-date/mesong12a_u211_32_release
+160. out-of-date/mesong12a_u211_release
+161. out-of-date/mesong12a_u212_32_release
+162. out-of-date/mesong12a_u212_rdk_32_release
+163. out-of-date/mesong12a_u212_release
+164. out-of-date/mesong12b_skt_release
+165. out-of-date/mesong12b_w400_32_release
+166. out-of-date/mesong12b_w400_32_wayland_release
+167. out-of-date/mesong12b_w400_release
+168. out-of-date/mesong12b_w400_s922x_release
+169. out-of-date/mesong12b_w400_vccktest_32_release
+170. out-of-date/mesong12b_w400_vccktest_release
+171. out-of-date/mesong12b_w400_wayland_release
+172. out-of-date/mesong12b_w411_32_release
+173. out-of-date/mesong12b_w411_release
+174. out-of-date/mesongxl_p212_32_kernel49_release
+175. out-of-date/mesongxl_p212_kernel49_release
+176. out-of-date/mesongxl_p212_tdk_32_kernel49_release
+177. out-of-date/mesongxl_p230_32_kernel49_release
+178. out-of-date/mesongxl_p230_kernel49_release
+179. out-of-date/mesongxl_p241_32_kernel49_release
+180. out-of-date/mesongxl_p241_kernel49_release
+181. out-of-date/mesonsm1_ac200_32_release
+182. out-of-date/mesonsm1_ac200_release
+183. out-of-date/mesonsm1_ac200-tdk_a6432_release
+184. out-of-date/mesonsm1_ac213_32_release
+185. out-of-date/mesonsm1_ac214_32_release
+186. out-of-date/mesontl1_x301_32_release
+187. out-of-date/mesontl1_x301_release
+188. out-of-date/mesontm2_ab301_32_release
+189. out-of-date/mesontm2_ab301_rdk_32_release
+190. out-of-date/mesontm2_ab301_release
+191. out-of-date/mesontm2_ab311_32_release
+192. out-of-date/mesontm2_ab311_rdk_32_release
+193. out-of-date/mesontm2_ab311_release
+194. out-of-date/mesontm2_ab311_SBR_a6432_release
+195. s4_ap222_a32_release
+196. s4_ap222_a64_release
+197. s4_ap222-nand_a6432_release
+198. s4_ap222-nand_a64_release
+199. s4_ap222_tizen_a32_release
+200. s4d_ap232_a64_release
+201. s5_ax201_a64_release
+202. sc2_ah212_a6432_release
+203. sc2_ah212_a64_ohw_release
+204. sc2_ah212_a64_release
+205. sc2_ah212_k54_a64_release
+206. sc2_ah212_rdk_a6432_release
+207. sc2_ah219_a6432_release
+208. sm1_ac200_a6432_release
+209. sm1_ac200_a64_release
+210. sm1_ac200_k54_a64_release
+211. sm1_ac200_nvr_a64_release
+212. sm1_ac213_a6432_release
+213. sm1_ac213_a64_release
+214. sm1_ac214_a6432_release
+215. sm1_ac214_a64_release
+216. sm1_ac214_k54_a64_release
+217. t3_ar301_a64_release
+218. t3_t965d4_a64_release
+219. t5_ak301_a6432_release
+220. t5_ak301_roku_a32_release
+221. t5d_am301_a6432_release
+222. t5d_am301_nand_a6432_release
+223. t5d_am301_rdk_a32_release
+224. t5d_am301_roku_a32_release
+225. t5d_am311_a6432_release
+226. t5d_am311_rdk_a32_release
+227. t5w_at301_a32_release
+228. t5w_at301_a6432_release
+229. t5w_at301_a64_release
+230. t5w_at301_roku_release
+231. t7_an400_a6432_release
+232. t7_an400_a64_release
+233. tm2_ab301_a32_release
+234. tm2_ab301_a6432_release
+235. tm2_ab301-nand_a32_release
+236. tm2_ab301_rdk_a32_release
+237. tm2_ab311_a32_release
+238. tm2_ab311_a6432_release
+239. tm2_ab311-nand_a32_release
+240. tm2_ab311_rdk_a32_release
+241. tm2_ab311_roku_a32_release
+242. tm2_ab311_SBR_a6432_release
+243. tm2_t312_nand_roku_a32_release
+244. tm2_t501_a32_release
+
+Which would you like? [-1] a4_ba400_spk_a64_release
+select config: =a4_ba400_spk_a64_release=
+select config: =a4_ba400_spk_a64_release=
+===========================================
+
+#TARGET_BOARD=ba400
+#BUILD_TYPE=64
+#OUTPUT_DIR=output/a4_ba400_spk_a64_release
+#CONFIG=a4_ba400_spk_a64_release_defconfig
+
+===========================================
+  GEN     /aml/dock/output/a4_ba400_spk_a64_release/Makefile
+/aml/dock/buildroot/build/defconfig_hook.py -m /aml/dock/buildroot/configs/a4_ba400_spk_a64_release_defconfig /aml/dock/output/a4_ba400_spk_a64_release/.amlogic-config
+BR2_DEFCONFIG='' KCONFIG_AUTOCONFIG=/aml/dock/output/a4_ba400_spk_a64_release/build/buildroot-config/auto.conf KCONFIG_AUTOHEADER=/aml/dock/output/a4_ba400_spk_a64_release/build/buildroot-config/autoconf.h KCONFIG_TRISTATE=/aml/dock/output/a4_ba400_spk_a64_release/build/buildroot-config/tristate.config BR2_CONFIG=/aml/dock/output/a4_ba400_spk_a64_release/.config HOST_GCC_VERSION="7" BASE_DIR=/aml/dock/output/a4_ba400_spk_a64_release SKIP_LEGACY= BR2_DEFCONFIG=/aml/dock/buildroot/configs/a4_ba400_spk_a64_release_defconfig /aml/dock/output/a4_ba400_spk_a64_release/build/buildroot-config/conf --defconfig=/aml/dock/output/a4_ba400_spk_a64_release/.amlogic-config Config.in;
+package/amlogic/aml-nn-dncnn/Config.in:2:warning: leading whitespace ignored
+package/amlogic/wpe/wpeframework-plugins/Config.in:1000:warning: defaults for choice values not supported
+package/ffmpeg/Config.in:118:warning: config symbol 'BR2_PACKAGE_FFMPEG_DEMUXERS' uses select, but is not bool or tristate
+/aml/dock/output/a4_ba400_spk_a64_release/.amlogic-config:431:warning: override: reassigning to symbol BR2_PACKAGE_NETCHECK
+/aml/dock/output/a4_ba400_spk_a64_release/.amlogic-config:477:warning: override: reassigning to symbol BR2_PACKAGE_PORTAUDIO
+/aml/dock/output/a4_ba400_spk_a64_release/.amlogic-config:495:warning: override: reassigning to symbol BR2_PACKAGE_MDNSRESPONDER
+/aml/dock/output/a4_ba400_spk_a64_release/.amlogic-config:498:warning: override: reassigning to symbol BR2_PACKAGE_LIBCURL
+/aml/dock/output/a4_ba400_spk_a64_release/.amlogic-config:510:warning: override: reassigning to symbol BR2_PACKAGE_BUSYBOX_SHOW_OTHERS
+/aml/dock/output/a4_ba400_spk_a64_release/.amlogic-config:511:warning: override: reassigning to symbol BR2_PACKAGE_FFTW
+/aml/dock/output/a4_ba400_spk_a64_release/.amlogic-config:513:warning: override: reassigning to symbol BR2_PACKAGE_GDB
+/aml/dock/output/a4_ba400_spk_a64_release/.amlogic-config:514:warning: override: reassigning to symbol BR2_PACKAGE_HOST_GDB
+/aml/dock/output/a4_ba400_spk_a64_release/.amlogic-config:515:warning: override: reassigning to symbol BR2_PACKAGE_LINUX_PAM
+/aml/dock/output/a4_ba400_spk_a64_release/.amlogic-config:516:warning: override: reassigning to symbol BR2_PACKAGE_NETPLUG
+/aml/dock/output/a4_ba400_spk_a64_release/.amlogic-config:517:warning: override: reassigning to symbol BR2_PACKAGE_OPENSSH
+/aml/dock/output/a4_ba400_spk_a64_release/.amlogic-config:518:warning: override: reassigning to symbol BR2_PACKAGE_REMOTECFG
+/aml/dock/output/a4_ba400_spk_a64_release/.amlogic-config:520:warning: override: reassigning to symbol BR2_PACKAGE_VIM
+/aml/dock/output/a4_ba400_spk_a64_release/.amlogic-config:521:warning: override: reassigning to symbol BR2_PACKAGE_WIFI_FW_WIFI_MODULE
+/aml/dock/output/a4_ba400_spk_a64_release/.amlogic-config:522:warning: override: reassigning to symbol BR2_PACKAGE_BRCMAP6XXX
+/aml/dock/output/a4_ba400_spk_a64_release/.amlogic-config:523:warning: override: reassigning to symbol BR2_PACKAGE_AML_BRCM_BSA
+/aml/dock/output/a4_ba400_spk_a64_release/.amlogic-config:524:warning: override: reassigning to symbol BR2_SYSTEM_DHCP
+/aml/dock/output/a4_ba400_spk_a64_release/.amlogic-config:525:warning: override: reassigning to symbol BR2_PACKAGE_AML_WIFI
+/aml/dock/output/a4_ba400_spk_a64_release/.amlogic-config:528:warning: override: reassigning to symbol BR2_PACKAGE_AML_BT
+/aml/dock/output/a4_ba400_spk_a64_release/.amlogic-config:536:warning: override: reassigning to symbol BR2_PACKAGE_ALSA_LIB
+/aml/dock/output/a4_ba400_spk_a64_release/.amlogic-config:538:warning: override: reassigning to symbol BR2_PACKAGE_BUSYBOX_SHOW_OTHERS
+/aml/dock/output/a4_ba400_spk_a64_release/.amlogic-config:545:warning: override: reassigning to symbol BR2_PACKAGE_AIRPLAY2
+/aml/dock/output/a4_ba400_spk_a64_release/.amlogic-config:564:warning: override: reassigning to symbol BR2_PACKAGE_AML_BRCM_BSA
+/aml/dock/output/a4_ba400_spk_a64_release/.amlogic-config:590:warning: override: reassigning to symbol BR2_TARGET_ROOTFS_EXT2
+/aml/dock/output/a4_ba400_spk_a64_release/.amlogic-config:599:warning: override: reassigning to symbol BR2_PACKAGE_DISPLAYCARD_AML_IMP
+#
+# configuration written to /aml/dock/output/a4_ba400_spk_a64_release/.config
+#
+CCACHE will be enabled if exist /aml/dock/output/a4_ba400_spk_a64_release/../ccache
+rm -f /aml/dock/output/a4_ba400_spk_a64_release/build/otbr/.stamp_rsynced
+rm -f /aml/dock/output/a4_ba400_spk_a64_release/build/otbr/.stamp_staging_installed
+rm -f /aml/dock/output/a4_ba400_spk_a64_release/build/otbr/.stamp_target_installed
+rm -f /aml/dock/output/a4_ba400_spk_a64_release/build/otbr/.stamp_images_installed
+rm -f /aml/dock/output/a4_ba400_spk_a64_release/build/otbr/.stamp_host_installed
+rm -f /aml/dock/output/a4_ba400_spk_a64_release/build/otbr/.stamp_built
+/usr/bin/make -j1 O=/aml/dock/output/a4_ba400_spk_a64_release HOSTCC="/usr/bin/gcc" HOSTCXX="/usr/bin/g++" syncconfig
+  GEN     /aml/dock/output/a4_ba400_spk_a64_release/Makefile
+package/amlogic/aml-nn-dncnn/Config.in:2:warning: leading whitespace ignored
+package/amlogic/wpe/wpeframework-plugins/Config.in:1000:warning: defaults for choice values not supported
+package/ffmpeg/Config.in:118:warning: config symbol 'BR2_PACKAGE_FFMPEG_DEMUXERS' uses select, but is not bool or tristate
+>>> otbr  Syncing from source dir /aml/dock/buildroot/../vendor/amlogic/ot-br-posix
+rsync -au --chmod=u=rwX,go=rX  --exclude .svn --exclude .git --exclude .hg --exclude .bzr --exclude CVS /aml/dock/buildroot/../vendor/amlogic/ot-br-posix/ /aml/dock/output/a4_ba400_spk_a64_release/build/otbr
+>>> otbr  Patching
+>>> otbr  Configuring
+>>> otbr  Building
+mkdir /aml/dock/output/a4_ba400_spk_a64_release/build/otbr/examples/platforms/amlogic; echo "Copying amlogic_arm.cmake to /aml/dock/output/a4_ba400_spk_a64_release/build/otbr/examples/platforms/amlogic"; cp /aml/dock/buildroot/package/amlogic/otbr/amlogic_arm.cmake /aml/dock/output/a4_ba400_spk_a64_release/build/otbr/examples/platforms/amlogic/; cd /aml/dock/output/a4_ba400_spk_a64_release/build/otbr; ./script/cmake-build -DCMAKE_TOOLCHAIN_FILE=./examples/platforms/amlogic/amlogic_arm.cmake -DOT_DAEMON=ON -DBUILD_TESTING=OFF  -DOTBR_BORDER_ROUTING=ON -DOT_JOINER=ON -DOT_COMMISSIONER=ON -DOTBR_MDNS=mDNSResponder -DSYSROOT_EXTERNAL_PATH=/aml/dock/output/a4_ba400_spk_a64_release/host/aarch64-linux-gnu/sysroot -DTOOLCHAIN_EXTERNAL_PREFIX="aarch64-none-linux-gnu";
+Copying amlogic_arm.cmake to /aml/dock/output/a4_ba400_spk_a64_release/build/otbr/examples/platforms/amlogic
++++ dirname ./script/cmake-build
+++ cd ./script/..
+++ HAVE_SYSTEMCTL=0
+++ have systemctl
+++ command -v systemctl
+++ HAVE_SYSTEMCTL=1
+++ HAVE_SERVICE=0
+++ have service
+++ command -v service
+++ HAVE_SERVICE=1
+++ [[ ! -n '' ]]
+++ grep -s 'BeagleBone Black' /sys/firmware/devicetree/base/model
+++ case "${OSTYPE}" in
+++ have_or_die lsb_release
+++ have lsb_release
+++ command -v lsb_release
++++ lsb_release -i
++++ cut -c17-
++++ tr '[:upper:]' '[:lower:]'
+++ PLATFORM=ubuntu
+++ echo 'Current platform is ubuntu'
+Current platform is ubuntu
+++ with BORDER_ROUTING
+++ local value
++++ printenv BORDER_ROUTING
+++ value=
+++ [[ -z '' ]]
+++ [[ -f examples/platforms/ubuntu/default ]]
++++ . examples/platforms/ubuntu/default
+++++ NAT64=1
+++++ DNS64=0
+++++ DHCPV6_PD=0
+++++ NETWORK_MANAGER=0
+++++ BACKBONE_ROUTER=1
+++++ BORDER_ROUTING=1
+++++ WEB_GUI=1
+++++ REST_API=1
++++ eval echo '${BORDER_ROUTING-}'
+++++ echo 1
+++ value=1
+++ [[ 1 == 1 ]]
+++ with DHCPV6_PD
+++ local value
++++ printenv DHCPV6_PD
+++ value=
+++ [[ -z '' ]]
+++ [[ -f examples/platforms/ubuntu/default ]]
++++ . examples/platforms/ubuntu/default
+++++ NAT64=1
+++++ DNS64=0
+++++ DHCPV6_PD=0
+++++ NETWORK_MANAGER=0
+++++ BACKBONE_ROUTER=1
+++++ BORDER_ROUTING=1
+++++ WEB_GUI=1
+++++ REST_API=1
++++ eval echo '${DHCPV6_PD-}'
+++++ echo 0
+++ value=0
+++ [[ 0 == 1 ]]
+++ with BORDER_ROUTING
+++ local value
++++ printenv BORDER_ROUTING
+++ value=
+++ [[ -z '' ]]
+++ [[ -f examples/platforms/ubuntu/default ]]
++++ . examples/platforms/ubuntu/default
+++++ NAT64=1
+++++ DNS64=0
+++++ DHCPV6_PD=0
+++++ NETWORK_MANAGER=0
+++++ BACKBONE_ROUTER=1
+++++ BORDER_ROUTING=1
+++++ WEB_GUI=1
+++++ REST_API=1
++++ eval echo '${BORDER_ROUTING-}'
+++++ echo 1
+++ value=1
+++ [[ 1 == 1 ]]
+++ with NETWORK_MANAGER
+++ local value
++++ printenv NETWORK_MANAGER
+++ value=
+++ [[ -z '' ]]
+++ [[ -f examples/platforms/ubuntu/default ]]
++++ . examples/platforms/ubuntu/default
+++++ NAT64=1
+++++ DNS64=0
+++++ DHCPV6_PD=0
+++++ NETWORK_MANAGER=0
+++++ BACKBONE_ROUTER=1
+++++ BORDER_ROUTING=1
+++++ WEB_GUI=1
+++++ REST_API=1
++++ eval echo '${NETWORK_MANAGER-}'
+++++ echo 0
+++ value=0
+++ [[ 0 == 1 ]]
+++ STAGE_DIR=/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/stage
+++ BUILD_DIR=/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/build
+++ [[ -d /aml/dock/output/a4_ba400_spk_a64_release/build/otbr/stage ]]
+++ mkdir -v -p /aml/dock/output/a4_ba400_spk_a64_release/build/otbr/stage
+mkdir: created directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/stage'
+++ [[ -d /aml/dock/output/a4_ba400_spk_a64_release/build/otbr/build ]]
+++ mkdir -v -p /aml/dock/output/a4_ba400_spk_a64_release/build/otbr/build
+mkdir: created directory '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/build'
+++ export PATH=/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/stage/usr/bin:/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/stage/usr/sbin:/usr/bin:/home/eric/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/gcc-linaro-7.3.1-2018.05-i686_aarch64-elf/bin
+++ PATH=/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/stage/usr/bin:/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/stage/usr/sbin:/usr/bin:/home/eric/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/gcc-linaro-7.3.1-2018.05-i686_aarch64-elf/bin
++++ basename ./script/cmake-build
+++ TASKNAME=cmake-build
+++ BEFORE_HOOK=examples/platforms/ubuntu/before_cmake-build
+++ AFTER_HOOK=examples/platforms/ubuntu/after_cmake-build
+++ [[ ! -f examples/platforms/ubuntu/before_cmake-build ]]
+++ BEFORE_HOOK=/dev/null
+++ [[ ! -f examples/platforms/ubuntu/after_cmake-build ]]
+++ AFTER_HOOK=/dev/null
++ OTBR_TOP_SRCDIR=/aml/dock/output/a4_ba400_spk_a64_release/build/otbr
++ readonly OTBR_TOP_SRCDIR
++ OTBR_TOP_BUILD_DIR=/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/build/otbr
++ readonly OTBR_TOP_BUILD_DIR
++ OTBR_TARGET=
++ main -DCMAKE_TOOLCHAIN_FILE=./examples/platforms/amlogic/amlogic_arm.cmake -DOT_DAEMON=ON -DBUILD_TESTING=OFF -DOTBR_BORDER_ROUTING=ON -DOT_JOINER=ON -DOT_COMMISSIONER=ON -DOTBR_MDNS=mDNSResponder -DSYSROOT_EXTERNAL_PATH=/aml/dock/output/a4_ba400_spk_a64_release/host/aarch64-linux-gnu/sysroot -DTOOLCHAIN_EXTERNAL_PREFIX=aarch64-none-linux-gnu
++ local builddir=/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/build/otbr
++ mkdir -p /aml/dock/output/a4_ba400_spk_a64_release/build/otbr/build/otbr
++ cd /aml/dock/output/a4_ba400_spk_a64_release/build/otbr/build/otbr
++ cmake -GNinja -DCMAKE_EXPORT_COMPILE_COMMANDS=ON /aml/dock/output/a4_ba400_spk_a64_release/build/otbr -DCMAKE_TOOLCHAIN_FILE=./examples/platforms/amlogic/amlogic_arm.cmake -DOT_DAEMON=ON -DBUILD_TESTING=OFF -DOTBR_BORDER_ROUTING=ON -DOT_JOINER=ON -DOT_COMMISSIONER=ON -DOTBR_MDNS=mDNSResponder -DSYSROOT_EXTERNAL_PATH=/aml/dock/output/a4_ba400_spk_a64_release/host/aarch64-linux-gnu/sysroot -DTOOLCHAIN_EXTERNAL_PREFIX=aarch64-none-linux-gnu
+-- AMLOGIC TOOLPREFIX: /aml/dock/output/a4_ba400_spk_a64_release/host/aarch64-linux-gnu/sysroot/../../bin/aarch64-none-linux-gnu-
+-- AMLOGIC TOOLPREFIX: /aml/dock/output/a4_ba400_spk_a64_release/host/aarch64-linux-gnu/sysroot/../../bin/aarch64-none-linux-gnu-
+-- The C compiler identification is GNU 10.2.1
+-- The CXX compiler identification is GNU 10.2.1
+-- Check for working C compiler: /aml/dock/output/a4_ba400_spk_a64_release/host/aarch64-linux-gnu/sysroot/../../bin/aarch64-none-linux-gnu-gcc
+-- Check for working C compiler: /aml/dock/output/a4_ba400_spk_a64_release/host/aarch64-linux-gnu/sysroot/../../bin/aarch64-none-linux-gnu-gcc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /aml/dock/output/a4_ba400_spk_a64_release/host/aarch64-linux-gnu/sysroot/../../bin/aarch64-none-linux-gnu-g++
+-- Check for working CXX compiler: /aml/dock/output/a4_ba400_spk_a64_release/host/aarch64-linux-gnu/sysroot/../../bin/aarch64-none-linux-gnu-g++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.1") 
+-- OTBR package name: OpenThread_BorderRouter
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+-- Version: 0.3.0
+-- Checking for module 'systemd'
+--   Found systemd, version 237
+-- OpenThread Source Directory: /aml/dock/output/a4_ba400_spk_a64_release/build/otbr/third_party/openthread/repo
+-- Check if the system is big endian
+-- Searching 16 bit integer
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of unsigned short
+-- Check size of unsigned short - done
+-- Using unsigned short
+-- Check if the system is big endian - little endian
+-- OT_APP_CLI=ON
+-- OT_APP_NCP=ON
+-- OT_APP_RCP=ON
+-- OT_FTD=ON
+-- OT_MTD=ON
+-- OT_RCP=ON
+-- - - - - - - - - - - - - - - - - 
+-- OpenThread ON/OFF/Unspecified Configs
+-- OT_15_4=ON --> OPENTHREAD_CONFIG_RADIO_LINK_IEEE_802_15_4_ENABLE=1
+-- OT_ANDROID_NDK=""
+-- OT_ANYCAST_LOCATOR=ON --> OPENTHREAD_CONFIG_TMF_ANYCAST_LOCATOR_ENABLE=1
+-- OT_ASSERT=""
+-- OT_BACKBONE_ROUTER=OFF --> OPENTHREAD_CONFIG_BACKBONE_ROUTER_ENABLE=0
+-- OT_BACKBONE_ROUTER_DUA_NDPROXYING=OFF --> OPENTHREAD_CONFIG_BACKBONE_ROUTER_DUA_NDPROXYING_ENABLE=0
+-- OT_BACKBONE_ROUTER_MULTICAST_ROUTING=""
+-- OT_BLE_TCAT=""
+-- OT_BORDER_AGENT=ON --> OPENTHREAD_CONFIG_BORDER_AGENT_ENABLE=1
+-- OT_BORDER_AGENT_EPSKC=ON --> OPENTHREAD_CONFIG_BORDER_AGENT_EPHEMERAL_KEY_ENABLE=1
+-- OT_BORDER_AGENT_ID=ON --> OPENTHREAD_CONFIG_BORDER_AGENT_ID_ENABLE=1
+-- OT_BORDER_ROUTER=ON --> OPENTHREAD_CONFIG_BORDER_ROUTER_ENABLE=1
+-- OT_BORDER_ROUTING=ON --> OPENTHREAD_CONFIG_BORDER_ROUTING_ENABLE=1
+-- OT_BORDER_ROUTING_DHCP6_PD=OFF --> OPENTHREAD_CONFIG_BORDER_ROUTING_DHCP6_PD_ENABLE=0
+-- OT_BORDER_ROUTING_COUNTERS=ON --> OPENTHREAD_CONFIG_IP6_BR_COUNTERS_ENABLE=1
+-- OT_CHANNEL_MANAGER=""
+-- OT_CHANNEL_MANAGER_CSL=""
+-- OT_CHANNEL_MONITOR=""
+-- OT_COAP=ON --> OPENTHREAD_CONFIG_COAP_API_ENABLE=1
+-- OT_COAP_BLOCK=""
+-- OT_COAP_OBSERVE=""
+-- OT_COAPS=ON --> OPENTHREAD_CONFIG_COAP_SECURE_API_ENABLE=1
+-- OT_COMMISSIONER=ON --> OPENTHREAD_CONFIG_COMMISSIONER_ENABLE=1
+-- OT_CSL_AUTO_SYNC=""
+-- OT_CSL_DEBUG=""
+-- OT_CSL_RECEIVER=""
+-- OT_CSL_RECEIVER_LOCAL_TIME_SYNC=""
+-- OT_DATASET_UPDATER=ON --> OPENTHREAD_CONFIG_DATASET_UPDATER_ENABLE=1
+-- OT_DEVICE_PROP_LEADER_WEIGHT=""
+-- OT_DHCP6_CLIENT=""
+-- OT_DHCP6_SERVER=""
+-- OT_DIAGNOSTIC=""
+-- OT_DNS_CLIENT=ON --> OPENTHREAD_CONFIG_DNS_CLIENT_ENABLE=1
+-- OT_DNS_CLIENT_OVER_TCP=OFF --> OPENTHREAD_CONFIG_DNS_CLIENT_OVER_TCP_ENABLE=0
+-- OT_DNS_DSO=""
+-- OT_DNS_UPSTREAM_QUERY=OFF --> OPENTHREAD_CONFIG_DNS_UPSTREAM_QUERY_ENABLE=0
+-- OT_DNSSD_DISCOVERY_PROXY=""
+-- OT_DNSSD_SERVER=OFF --> OPENTHREAD_CONFIG_DNSSD_SERVER_ENABLE=0
+-- OT_DUA=""
+-- OT_ECDSA=ON --> OPENTHREAD_CONFIG_ECDSA_ENABLE=1
+-- OT_EXTERNAL_HEAP=""
+-- OT_FIREWALL=ON --> OPENTHREAD_POSIX_CONFIG_FIREWALL_ENABLE=1
+-- OT_HISTORY_TRACKER=ON --> OPENTHREAD_CONFIG_HISTORY_TRACKER_ENABLE=1
+-- OT_IP6_FRAGM=""
+-- OT_JAM_DETECTION=""
+-- OT_JOINER=ON --> OPENTHREAD_CONFIG_JOINER_ENABLE=1
+-- OT_LINK_METRICS_INITIATOR=OFF --> OPENTHREAD_CONFIG_MLE_LINK_METRICS_INITIATOR_ENABLE=0
+-- OT_LINK_METRICS_MANAGER=OFF --> OPENTHREAD_CONFIG_LINK_METRICS_MANAGER_ENABLE=0
+-- OT_LINK_METRICS_SUBJECT=ON --> OPENTHREAD_CONFIG_MLE_LINK_METRICS_SUBJECT_ENABLE=1
+-- OT_LINK_RAW=""
+-- OT_LOG_LEVEL_DYNAMIC=ON --> OPENTHREAD_CONFIG_LOG_LEVEL_DYNAMIC_ENABLE=1
+-- OT_MAC_FILTER=ON --> OPENTHREAD_CONFIG_MAC_FILTER_ENABLE=1
+-- OT_MDNS=""
+-- OT_MESH_DIAG=""
+-- OT_MESSAGE_USE_HEAP=""
+-- OT_MLE_LONG_ROUTES=""
+-- OT_MLR=ON --> OPENTHREAD_CONFIG_MLR_ENABLE=1
+-- OT_MULTIPAN_RCP=""
+-- OT_MULTIPLE_INSTANCE=""
+-- OT_NAT64_BORDER_ROUTING=OFF --> OPENTHREAD_CONFIG_NAT64_BORDER_ROUTING_ENABLE=0
+-- OT_NAT64_TRANSLATOR=OFF --> OPENTHREAD_CONFIG_NAT64_TRANSLATOR_ENABLE=0
+-- OT_NEIGHBOR_DISCOVERY_AGENT=""
+-- OT_NETDATA_PUBLISHER=ON --> OPENTHREAD_CONFIG_NETDATA_PUBLISHER_ENABLE=1
+-- OT_NETDIAG_CLIENT=ON --> OPENTHREAD_CONFIG_TMF_NETDIAG_CLIENT_ENABLE=1
+-- OT_NETDIAG_VENDOR_INFO=""
+-- OT_OPERATIONAL_DATASET_AUTO_INIT=""
+-- OT_OTNS=""
+-- OT_PING_SENDER=ON --> OPENTHREAD_CONFIG_PING_SENDER_ENABLE=1
+-- OT_PLATFORM_BOOTLOADER_MODE=""
+-- OT_PLATFORM_KEY_REF=""
+-- OT_PLATFORM_LOG_CRASH_DUMP=""
+-- OT_PLATFORM_NETIF=ON --> OPENTHREAD_CONFIG_PLATFORM_NETIF_ENABLE=1
+-- OT_PLATFORM_POWER_CALIBRATION=""
+-- OT_PLATFORM_UDP=ON --> OPENTHREAD_CONFIG_PLATFORM_UDP_ENABLE=1
+-- OT_REFERENCE_DEVICE=""
+-- OT_SERVICE=ON --> OPENTHREAD_CONFIG_TMF_NETDATA_SERVICE_ENABLE=1
+-- OT_SETTINGS_RAM=""
+-- OT_SLAAC=ON --> OPENTHREAD_CONFIG_IP6_SLAAC_ENABLE=1
+-- OT_SNTP_CLIENT=""
+-- OT_SRP_ADV_PROXY=""
+-- OT_SRP_CLIENT=ON --> OPENTHREAD_CONFIG_SRP_CLIENT_ENABLE=1
+-- OT_SRP_SERVER=""
+-- OT_TCP=OFF --> OPENTHREAD_CONFIG_TCP_ENABLE=0
+-- OT_TIME_SYNC=""
+-- OT_TREL=OFF --> OPENTHREAD_CONFIG_RADIO_LINK_TREL_ENABLE=0
+-- OT_TX_BEACON_PAYLOAD=""
+-- OT_TX_QUEUE_STATS=""
+-- OT_UDP_FORWARD=OFF --> OPENTHREAD_CONFIG_UDP_FORWARD_ENABLE=0
+-- OT_UPTIME=ON --> OPENTHREAD_CONFIG_UPTIME_ENABLE=1
+-- OT_VERHOEFF_CHECKSUM=""
+-- - - - - - - - - - - - - - - - - 
+-- OT_PLATFORM="posix"
+-- OT_THREAD_VERSION="1.3" -> OPENTHREAD_CONFIG_THREAD_VERSION=OT_THREAD_VERSION_1_3
+-- OT_LOG_LEVEL="INFO" --> OPENTHREAD_CONFIG_LOG_LEVEL=OT_LOG_LEVEL_INFO
+-- OT_LOG_OUTPUT=""
+-- OT_VENDOR_NAME=""
+-- OT_VENDOR_MODEL=""
+-- OT_VENDOR_SW_VERSION=""
+-- OT_POWER_SUPPLY=""
+-- OT_MAC_CSL_REQUEST_AHEAD_US=""
+-- OT_MLE_MAX_CHILDREN=""
+-- OT_RCP_RESTORATION_MAX_COUNT=""
+-- OT_RCP_TX_WAIT_TIME_SECS=""
+-- Package Name: OPENTHREAD
+-- Setting default package version: 
+-- Package Version: 
+-- OT_PLATFORM_CONFIG="openthread-core-posix-config.h"
+-- OT_PLATFORM_POSIX_CONFIG_FILE=""
+You have called ADD_LIBRARY for library openthread-cli-ftd without any source files. This typically indicates a problem with your CMakeLists.txt file
+You have called ADD_LIBRARY for library openthread-cli-mtd without any source files. This typically indicates a problem with your CMakeLists.txt file
+You have called ADD_LIBRARY for library openthread-cli-radio without any source files. This typically indicates a problem with your CMakeLists.txt file
+You have called ADD_LIBRARY for library openthread-ftd without any source files. This typically indicates a problem with your CMakeLists.txt file
+You have called ADD_LIBRARY for library openthread-mtd without any source files. This typically indicates a problem with your CMakeLists.txt file
+You have called ADD_LIBRARY for library openthread-radio without any source files. This typically indicates a problem with your CMakeLists.txt file
+You have called ADD_LIBRARY for library openthread-radio-cli without any source files. This typically indicates a problem with your CMakeLists.txt file
+You have called ADD_LIBRARY for library openthread-radio-spinel without any source files. This typically indicates a problem with your CMakeLists.txt file
+You have called ADD_LIBRARY for library openthread-spinel-ncp without any source files. This typically indicates a problem with your CMakeLists.txt file
+You have called ADD_LIBRARY for library openthread-spinel-rcp without any source files. This typically indicates a problem with your CMakeLists.txt file
+You have called ADD_LIBRARY for library openthread-ncp-ftd without any source files. This typically indicates a problem with your CMakeLists.txt file
+You have called ADD_LIBRARY for library openthread-ncp-mtd without any source files. This typically indicates a problem with your CMakeLists.txt file
+You have called ADD_LIBRARY for library openthread-rcp without any source files. This typically indicates a problem with your CMakeLists.txt file
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3") 
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Looking for pthread_create
+-- Looking for pthread_create - found
+-- Found Threads: TRUE  
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS - Success
+-- Checking for module 'libsystemd'
+--   No package 'libsystemd' found
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /aml/dock/output/a4_ba400_spk_a64_release/build/otbr/build/otbr
++ [[ -n '' ]]
++ ninja
+[51/485] cd /aml/dock/output/a4_ba400_spk_a64_release/build/otbr/build/otbr/third_party/openthread/r...ml/dock/output/a4_ba400_spk_a64_release/build/otbr/third_party/openthread/repo/etc/cmake/print.cmake
+OPENTHREAD_CONFIG_RADIO_LINK_IEEE_802_15_4_ENABLE=1
+OPENTHREAD_CONFIG_TMF_ANYCAST_LOCATOR_ENABLE=1
+OPENTHREAD_CONFIG_BACKBONE_ROUTER_ENABLE=0
+OPENTHREAD_CONFIG_BACKBONE_ROUTER_DUA_NDPROXYING_ENABLE=0
+OPENTHREAD_CONFIG_BORDER_AGENT_ENABLE=1
+OPENTHREAD_CONFIG_BORDER_AGENT_EPHEMERAL_KEY_ENABLE=1
+OPENTHREAD_CONFIG_BORDER_AGENT_ID_ENABLE=1
+OPENTHREAD_CONFIG_BORDER_ROUTER_ENABLE=1
+OPENTHREAD_CONFIG_BORDER_ROUTING_ENABLE=1
+OPENTHREAD_CONFIG_BORDER_ROUTING_DHCP6_PD_ENABLE=0
+OPENTHREAD_CONFIG_IP6_BR_COUNTERS_ENABLE=1
+OPENTHREAD_CONFIG_COAP_API_ENABLE=1
+OPENTHREAD_CONFIG_COAP_SECURE_API_ENABLE=1
+OPENTHREAD_CONFIG_COMMISSIONER_ENABLE=1
+OPENTHREAD_CONFIG_DATASET_UPDATER_ENABLE=1
+OPENTHREAD_CONFIG_DNS_CLIENT_ENABLE=1
+OPENTHREAD_CONFIG_DNS_CLIENT_OVER_TCP_ENABLE=0
+OPENTHREAD_CONFIG_DNS_UPSTREAM_QUERY_ENABLE=0
+OPENTHREAD_CONFIG_DNSSD_SERVER_ENABLE=0
+OPENTHREAD_CONFIG_ECDSA_ENABLE=1
+OPENTHREAD_POSIX_CONFIG_FIREWALL_ENABLE=1
+OPENTHREAD_CONFIG_HISTORY_TRACKER_ENABLE=1
+OPENTHREAD_CONFIG_JOINER_ENABLE=1
+OPENTHREAD_CONFIG_MLE_LINK_METRICS_INITIATOR_ENABLE=0
+OPENTHREAD_CONFIG_LINK_METRICS_MANAGER_ENABLE=0
+OPENTHREAD_CONFIG_MLE_LINK_METRICS_SUBJECT_ENABLE=1
+OPENTHREAD_CONFIG_LOG_LEVEL_DYNAMIC_ENABLE=1
+OPENTHREAD_CONFIG_MAC_FILTER_ENABLE=1
+OPENTHREAD_CONFIG_MLR_ENABLE=1
+OPENTHREAD_CONFIG_NAT64_BORDER_ROUTING_ENABLE=0
+OPENTHREAD_CONFIG_NAT64_TRANSLATOR_ENABLE=0
+OPENTHREAD_CONFIG_NETDATA_PUBLISHER_ENABLE=1
+OPENTHREAD_CONFIG_TMF_NETDIAG_CLIENT_ENABLE=1
+OPENTHREAD_CONFIG_PING_SENDER_ENABLE=1
+OPENTHREAD_CONFIG_PLATFORM_NETIF_ENABLE=1
+OPENTHREAD_CONFIG_PLATFORM_UDP_ENABLE=1
+OPENTHREAD_CONFIG_TMF_NETDATA_SERVICE_ENABLE=1
+OPENTHREAD_CONFIG_IP6_SLAAC_ENABLE=1
+OPENTHREAD_CONFIG_SRP_CLIENT_ENABLE=1
+OPENTHREAD_CONFIG_TCP_ENABLE=0
+OPENTHREAD_CONFIG_RADIO_LINK_TREL_ENABLE=0
+OPENTHREAD_CONFIG_UDP_FORWARD_ENABLE=0
+OPENTHREAD_CONFIG_UPTIME_ENABLE=1
+OPENTHREAD_CONFIG_THREAD_VERSION=OT_THREAD_VERSION_1_3
+OPENTHREAD_CONFIG_LOG_LEVEL=OT_LOG_LEVEL_INFO
+OPENTHREAD_CONFIG_ENABLE_BUILTIN_MBEDTLS=1
+OPENTHREAD_CONFIG_ENABLE_BUILTIN_MBEDTLS_MANAGEMENT=0
+OPENTHREAD_CONFIG_POSIX_SETTINGS_PATH=/var/lib/thread
+PACKAGE_NAME=OPENTHREAD
+OPENTHREAD_PLATFORM_POSIX=1
+OPENTHREAD_PLATFORM_CORE_CONFIG_FILE=openthread-core-posix-config.h
+OPENTHREAD_POSIX_CONFIG_DAEMON_ENABLE=1
+OPENTHREAD_CONFIG_NCP_HDLC_ENABLE=1
+OPENTHREAD_CONFIG_LOG_CLI=1
+OPENTHREAD_CONFIG_MAX_STATECHANGE_HANDLERS=3
+OPENTHREAD_CONFIG_MLE_STEERING_DATA_SET_OOB_ENABLE=1
+OPENTHREAD_POSIX_CONFIG_FILE=/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/build/otbr/src/agent/openthread-otbr-posix-config.h
+OPENTHREAD_CONFIG_TMF_PROXY_DUA_ENABLE=1
+OPENTHREAD_CONFIG_TMF_PROXY_MLR_ENABLE=1
+[284/485] Linking C static library third_party/openthread/repo/src/lib/platform/libopenthread-platform.a
+FAILED: third_party/openthread/repo/src/lib/platform/libopenthread-platform.a 
+: && /usr/bin/cmake -E remove third_party/openthread/repo/src/lib/platform/libopenthread-platform.a && "" qc third_party/openthread/repo/src/lib/platform/libopenthread-platform.a  third_party/openthread/repo/src/lib/platform/CMakeFiles/openthread-platform.dir/exit_code.c.o && /aml/dock/output/a4_ba400_spk_a64_release/host/bin/aarch64-none-linux-gnu-ranlib third_party/openthread/repo/src/lib/platform/libopenthread-platform.a && :
+/bin/sh: 1: : Permission denied
+[285/485] Linking CXX static library third_party/openthread/repo/src/lib/hdlc/libopenthread-hdlc.a
+FAILED: third_party/openthread/repo/src/lib/hdlc/libopenthread-hdlc.a 
+: && /usr/bin/cmake -E remove third_party/openthread/repo/src/lib/hdlc/libopenthread-hdlc.a && "" qc third_party/openthread/repo/src/lib/hdlc/libopenthread-hdlc.a  third_party/openthread/repo/src/lib/hdlc/CMakeFiles/openthread-hdlc.dir/hdlc.cpp.o && /aml/dock/output/a4_ba400_spk_a64_release/host/bin/aarch64-none-linux-gnu-ranlib third_party/openthread/repo/src/lib/hdlc/libopenthread-hdlc.a && :
+/bin/sh: 1: : Permission denied
+[297/485] Building CXX object third_party/openthread/repo/src/lib/spinel/CMakeFiles/openthread-radio-spinel.dir/radio_spinel.cpp.o
+ninja: build stopped: subcommand failed.
+package/pkg-generic.mk:266: recipe for target '/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/.stamp_built' failed
+make[1]: *** [/aml/dock/output/a4_ba400_spk_a64_release/build/otbr/.stamp_built] Error 1
+/aml/dock/output/a4_ba400_spk_a64_release/Makefile:23: recipe for target '_all' failed
+make: *** [_all] Error 2
+eric@ubuntu:/aml/dock$ 
