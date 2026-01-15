@@ -145,6 +145,12 @@ find . -name "*.cpp" -or  -name "*.h" | xargs cat|grep -v ^$|wc -l
 \b(?!00:00:00:00:00:00\b)([0-9A-Fa-f]{2}:){5}[0-9A-Fa-f]{2}\b
 \b(?!00:00:00:00:00:00\b)([0-9A-Fa-f]{2}:){5}[0-9A-Fa-f]{2}\b(?![:0-9A-Fa-f])
 ```
+```c
+//Scan and remove char before "收←◆" in each line
+^.*收←◆
+
+```
+
 Victor2102 Oscilloscope
 ```c
 //time
@@ -243,6 +249,18 @@ sudo apt-get install open-vm-tools-desktop
 ```c
 sudo apt install openssh-server
 ```
+VM copy  
+```c
+lsmod | grep vbox
+
+modinfo vboxguest
+
+ps aux | grep VBoxClient
+
+VBoxClient --clipboard
+```
+
+
 ```c
 1. Install adb and fastboot
 sudo apt install android-tools-adb

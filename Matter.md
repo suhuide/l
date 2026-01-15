@@ -346,6 +346,7 @@ ninja -C out/debug chip-tool
 ./out/debug/standalone/chip-lighting-app
 
 # 在另一个终端使用控制器进行配网和控制
+```c
 ./out/debug/chip-tool pairing onnetwork 110 20202021
 ./out/debug/chip-tool onoff on 110
 ```
@@ -393,8 +394,6 @@ connectedhomeip 是一个结构清晰但规模庞大的项目。入门的关键�
 - 采用“问题驱动”的学习方法，追踪一个具体功能的代码流。
 - 理论与实践结合，尽快在真实硬件上看到效果。
 
-
-
 # 11 Matter 1.5 
 作为一次重要的功能扩展，引入了多个全新的设备类型，并在能源管理、网络传输等方面进行了显著增强。
 
@@ -411,7 +410,7 @@ connectedhomeip 是一个结构清晰但规模庞大的项目。入门的关键�
 - 对开发者和厂商而言，开发更高效了。新设备类型有了统一的规范，减少了自定义集成的工作量。TCP支持也让摄像头等高带宽设备的实现更为顺畅。
 - 对未来智能家居的影响，Matter 1.5 让智能家居的互联互通迈上了一个新台阶。摄像头的加入补上了关键一环，而能源管理能力的深化，使得智能家居不再只是控制单个设备，而是能作为一个整体系统，更智能、高效地与家庭能源系统协同工作。
 
-[Matter 工具chip-tool 编译之编译方法](https://blog.csdn.net/akuanglin/article/details/138954496)
+[Matter 工具chip-tool 编译之编译方法](https://blog.csdn.net/akuanglin/article/details/138954496)  
 ```c
 			git clone --recurse-submodules https://github.com/project-chip/connectedhomeip.git
 			git submodule update --init --recursive
@@ -419,8 +418,6 @@ connectedhomeip 是一个结构清晰但规模庞大的项目。入门的关键�
 		source ./scripts/bootstrap.sh 
 		./scripts/examples/gn_build_example.sh examples/chip-tool BUILD_PATH
 ```
-[matter CHIPTool Android demo编译](https://bbs.aithinker.com/forum.php?mod=viewthread&tid=47077&_dsign=d9e258ac)
-
-
-[Matter协议解析记录](https://blog.csdn.net/qq_45689245/article/details/135272551)
-[Matter学习笔记1](https://blog.csdn.net/qq_56914146/article/details/131209867)
+[matter CHIPTool Android demo编译](https://bbs.aithinker.com/forum.php?mod=viewthread&tid=47077&_dsign=d9e258ac)  
+[Matter协议解析记录](https://blog.csdn.net/qq_45689245/article/details/135272551)  
+[Matter学习笔记1](https://blog.csdn.net/qq_56914146/article/details/131209867)  
